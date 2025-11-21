@@ -15,4 +15,4 @@ rm -rf report-*
 while read -r line; do
   MODULE_NAME_ONLY="${line#* }"
   ./scripts/parse_module.sh "$MODULE_NAME_ONLY"
-done < _data/drupalprojects.yml
+done < ./docs/_data/drupalprojects.yml

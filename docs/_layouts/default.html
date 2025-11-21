@@ -13,6 +13,9 @@
   <p>We have taken the 20 most installed modules in Drupal, as well as Drupal itself, and have passed them through <a href="https://www.phpmetrics.org">PHPMetrics</a></p>
   <h2>The projects</h2>
   <ul>
+    {% for project in site.data.drupalprojects %}
+      <li><a href="/report-{{ project }}">Report for {{ project }}</a></li>
+    {% endfor %}
   </ul>
 </body>
 

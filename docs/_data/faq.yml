@@ -1,7 +1,43 @@
 faq:
   - question:
-      en: "What is Drupal?"
-      fr: "Qu'est-ce que Drupal?"
+      en: "Where can I find this project's source code?"
+      fr: "Où puis-je trouver le code source de ce projet?"
     answer:
-      en: "Drupal est un système de gestion de contenu (SGC) open-source utilisé pour créer des sites web et des applications."
-      fr: "Drupal is an open-source content management system (CMS) used for building websites and applications."
+      en: "On GitHub at <https://github.com/dcycle/dcomplexity>"
+      fr: "Sur GitHub à <https://github.com/dcycle/dcomplexity>"
+  - question:
+      en: "What is the URL of this project?"
+      fr: "Quelle est l'URL de ce projet?"
+    answer:
+      en: "<https://dcomplexity.org>"
+      fr: "<https://dcomplexity.org/fr/>"
+  - question:
+      en: "How can I build this website locally?"
+      fr: "Comment puis-je développer ce site Web localement?"
+    answer:
+      en: "`docker compose up` and then visit <http://localhost:4331>"
+      fr: "`docker compose up` puis visitez <http://localhost:4331>"
+  - question:
+      en: "How can I test my own code with PHPMetrics?"
+      fr: "Comment puis-je tester mon propre code avec PHPMetrics?"
+    answer:
+      en: 'Put your code in a directory called `./my-code` and then run `docker run -v "$(pwd)":/my --rm composer /bin/bash -c "composer require phpmetrics/phpmetrics && ./vendor/bin/phpmetrics --report-html=myreport /my/my-code && mv myreport /my/my-report"`'
+      fr: 'Mettez votre code dans un répertoire appelé `./my-code` puis exécutez `docker run -v "$(pwd)":/my --rm composer /bin/bash -c "composer require phpmetrics/phpmetrics && ./vendor/bin/phpmetrics --report-html=myreport /my/my-code && mv myreport /my/my-report"`'
+  - question:
+      en: "How can I suggest a Drupal module to be added?"
+      fr: "Comment puis-je suggérer un module Drupal à ajouter?"
+    answer:
+      en: 'Add a pull request to <https://github.com/dcycle/dcomplexity> suggesting the module on the file ./docs/_data/drupalprojects.yml.'
+      fr: 'Ajoutez une demande de fusion ("pull request") à <https://github.com/dcycle/dcomplexity> suggérant le module dans le fichier ./docs/_data/drupalprojects.yml.'
+  - question:
+      en: "How often is the website updated?"
+      fr: "À quelle fréquence le site Web est-il mis à jour?"
+    answer:
+      en: 'Not often!'
+      fr: 'Pas souvent!'
+  - question:
+      en: "If I add a module to ./docs/_data/drupalprojects.yml, how can I update the website to include it?"
+      fr: "Si j'ajoute un module à ./docs/_data/drupalprojects.yml, comment puis-je mettre à jour le site Web pour l'inclure?"
+    answer:
+      en: '`./scripts/run.sh`'
+      fr: '`./scripts/run.sh`'
