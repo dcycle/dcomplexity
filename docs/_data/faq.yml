@@ -1,0 +1,7 @@
+faq:
+  - question:
+      en: "What is Drupal?"
+      fr: "Qu'est-ce que Drupal?"
+    answer:
+      en: "Drupal est un système de gestion de contenu (SGC) open-source utilisé pour créer des sites web et des applications."
+      fr: "Drupal is an open-source content management system (CMS) used for building websites and applications."
