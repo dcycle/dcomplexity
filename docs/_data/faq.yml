@@ -41,3 +41,9 @@ faq:
     answer:
       en: '`./scripts/run.sh`'
       fr: '`./scripts/run.sh`'
+  - question:
+      en: "Are you associated with the techno-jungle artist Dcomplexity?"
+      fr: "Êtes-vous associé à l'artiste techno-jungle Dcomplexity?"
+    answer:
+      en: "No! I hadn't event heard of him until today. He's not bad, you should check him out."
+      fr: "Non! Je n'avais même pas entendu parler de lui jusqu'à aujourd'hui. Il n'est pas mal, vous devriez l'écouter."

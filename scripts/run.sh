@@ -10,9 +10,11 @@ echo "OK"
 
 rm -rf do-not-commit
 mkdir do-not-commit
-rm -rf report-*
+rm -rf ./docs/report-*
 
 while read -r line; do
-  MODULE_NAME_ONLY="${line#* }"
-  ./scripts/parse_module.sh "$MODULE_NAME_ONLY"
-done < ./docs/_data/drupalprojects.yml
+  if [[ "$line" == "- git_repo"* ]]; then
+    REPO_ONLY="${line#*: }"
+    ./scripts/parse_module.sh "$REPO_ONLY"
+  fi
+done < ./docs/_data/projects.yml

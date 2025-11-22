@@ -4,11 +4,10 @@
 #
 set -e
 
-echo "Parsing module $1"
+CLEAN=$(echo "$1" | sed 's/\//_/g' | sed 's/:/_/g')
 
 cd /my/do-not-commit
-git clone --depth 1 https://git.drupalcode.org/project/"$1".git
+git clone --depth 1 "$1" "$CLEAN"
 cd -
-ls -lah /my/do-not-commit/"$1"
 composer require phpmetrics/phpmetrics
-./vendor/bin/phpmetrics --report-html=myreport /my/do-not-commit/"$1" && mv myreport /my/docs/report-"$1"
+./vendor/bin/phpmetrics --report-html=myreport /my/do-not-commit/"$CLEAN" && mv myreport /my/docs/report-"$CLEAN"

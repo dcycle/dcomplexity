@@ -1,0 +1,48 @@
+- git_repo: https://git.drupalcode.org/project/drupal.git
+  name: Drupal core
+- git_repo: https://github.com/WordPress/WordPress.git
+  name: WordPress CMS
+- git_repo: https://github.com/magento/magento2.git
+  name: Magento
+- git_repo: https://github.com/moodle/moodle.git
+  name: Moodle
+- git_repo: https://git.drupalcode.org/project/token.git
+  name: Token Drupal module
+- git_repo: https://git.drupalcode.org/project/pathauto.git
+  name: Pathauto Drupal module
+- git_repo: https://git.drupalcode.org/project/ctools.git
+  name: CTools Drupal module
+- git_repo: https://git.drupalcode.org/project/metatag.git
+  name: Metatag Drupal module
+- git_repo: https://git.drupalcode.org/project/webform.git
+  name: Webform Drupal module
+- git_repo: https://git.drupalcode.org/project/field_group.git
+  name: Field Group Drupal module
+- git_repo: https://git.drupalcode.org/project/admin_toolbar.git
+  name: Admin Toolbar Drupal module
+- git_repo: https://git.drupalcode.org/project/redirect.git
+  name: Redirect Drupal module
+- git_repo: https://git.drupalcode.org/project/entity.git
+  name: Entity Drupal module
+- git_repo: https://git.drupalcode.org/project/captcha.git
+  name: Captcha Drupal module
+- git_repo: https://git.drupalcode.org/project/entity_reference_revisions.git
+  name: Entity Reference Revisions Drupal module
+- git_repo: https://git.drupalcode.org/project/paragraphs.git
+  name: Paragraphs Drupal module
+- git_repo: https://git.drupalcode.org/project/libraries.git
+  name: Libraries Drupal module
+- git_repo: https://git.drupalcode.org/project/jquery_ui.git
+  name: jQuery UI Drupal module
+- git_repo: https://git.drupalcode.org/project/imce.git
+  name: IMCE Drupal module
+- git_repo: https://git.drupalcode.org/project/views.git
+  name: Views Drupal module
+- git_repo: https://git.drupalcode.org/project/better_exposed_filters.git
+  name: Better Exposed Filters Drupal module
+- git_repo: https://git.drupalcode.org/project/twig_tweak.git
+  name: Twig Tweak Drupal module
+- git_repo: https://git.drupalcode.org/project/google_analytics.git
+  name: Google Analytics Drupal module
+- git_repo: https://git.drupalcode.org/project/search_api.git
+  name: Search API Drupal module

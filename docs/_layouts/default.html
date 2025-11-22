@@ -1,22 +1,101 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang }}">
+{% assign t = site.data.translations %}{% assign l = page.lang %}<!DOCTYPE html>
+<html lang="{{ l }}">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drupal Complexity</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      color: #023047;
+      background: #219ebc;
+      margin: 0;
+    }
+    .section-nav {
+      background: #f1faee;
+    }
+    a {
+      color: #457b9d;
+      text-decoration-style: dotted;
+    }
+    a:hover {
+      color: #1d3557;
+    }
+    section {
+      padding: 20px 20px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: 10px;
+      color: #444;
+    }
+    @media (min-width: 600px) {
+      .grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 900px) {
+      .grid-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .grid-item {
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Drupal Complexity</h1>
-  <p>We have taken the 20 most installed modules in Drupal, as well as Drupal itself, and have passed them through <a href="https://www.phpmetrics.org">PHPMetrics</a></p>
-  <h2>The projects</h2>
+  <section class="section-top">
+    <h1>Drupal Complexity</h1>
+  </section>
+  <section class="section-nav">
+  <nav>
+    <ul>
+      <li><a href="#p">{{ t["The projects"][l] }}</a></li>
+      <li><a href="#faq">{{ t["FAQ"][l] }}</a></li>
+      {% for lang in page.otherlang %}
+        <li><a href="{{ lang.url }}">{{ lang.lang | upcase }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  </section>
+  <section>
+  <p>{{ page.desc | markdownify }}</p>
+  </section>
+  <section>
+  <h2 id="p">{{ t["The projects"][l] }}</h2>
+  <div class="grid-wrapper">
+    {% for project in site.data.projects %}
+      <div class="grid-item"><a href="/report-{{ project.git_repo | replace: ":", "_" | replace: "/", "_"  }}">{{ project.name }}</a></div>
+    {% endfor %}
+  </div>
+  </section>
+  <section>
+  <h2 id="faq">{{ t["FAQ"][l] }}</h2>
   <ul>
-    {% for project in site.data.drupalprojects %}
-      <li><a href="/report-{{ project }}">Report for {{ project }}</a></li>
+    {% for project in site.data.faq.faq %}
+      <h3>{{ project.question[l] }}</h3>
+      <p>{{ project.answer[l] | markdownify }}</p>
     {% endfor %}
   </ul>
+  </section>
 </body>
 
 </html>
