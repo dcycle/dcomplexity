@@ -1,0 +1,2390 @@
+{
+    "hook_captcha_captcha": {
+        "name": "hook_captcha_captcha",
+        "cloc": 56,
+        "loc": 73,
+        "lloc": 17,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_captcha_alter": {
+        "name": "hook_captcha_alter",
+        "cloc": 8,
+        "loc": 15,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_captcha_help": {
+        "name": "hook_captcha_help",
+        "cloc": 10,
+        "loc": 19,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_captcha_custom_validation": {
+        "name": "hook_captcha_custom_validation",
+        "cloc": 16,
+        "loc": 21,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_captcha_custom_advance_validation": {
+        "name": "hook_captcha_custom_advance_validation",
+        "cloc": 19,
+        "loc": 24,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_captcha_placement_map": {
+        "name": "hook_captcha_placement_map",
+        "cloc": 24,
+        "loc": 29,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "captcha_post_update_refresh_captcha_helper_service": {
+        "name": "captcha_post_update_refresh_captcha_helper_service",
+        "cloc": 7,
+        "loc": 12,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "captcha_set_form_id_setting": {
+        "name": "captcha_set_form_id_setting",
+        "cloc": 17,
+        "loc": 33,
+        "lloc": 16,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "captcha_get_form_id_setting": {
+        "name": "captcha_get_form_id_setting",
+        "cloc": 15,
+        "loc": 24,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_generate_captcha_session": {
+        "name": "_captcha_generate_captcha_session",
+        "cloc": 14,
+        "loc": 22,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_update_captcha_session": {
+        "name": "_captcha_update_captcha_session",
+        "cloc": 8,
+        "loc": 13,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_required_for_user": {
+        "name": "_captcha_required_for_user",
+        "cloc": 14,
+        "loc": 38,
+        "lloc": 24,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_get_title": {
+        "name": "_captcha_get_title",
+        "cloc": 6,
+        "loc": 15,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_get_description": {
+        "name": "_captcha_get_description",
+        "cloc": 6,
+        "loc": 15,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_get_error_message": {
+        "name": "_captcha_get_error_message",
+        "cloc": 6,
+        "loc": 15,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_parse_captcha_type": {
+        "name": "_captcha_parse_captcha_type",
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_get_captcha_placement": {
+        "name": "_captcha_get_captcha_placement",
+        "cloc": 22,
+        "loc": 60,
+        "lloc": 38,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "_captcha_search_buttons": {
+        "name": "_captcha_search_buttons",
+        "cloc": 14,
+        "loc": 31,
+        "lloc": 17,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "image_captcha_font_preview": {
+        "name": "image_captcha_font_preview",
+        "cloc": 17,
+        "loc": 57,
+        "lloc": 40,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Drupal\\image_captcha\\Form\\ImageCaptchaSettingsForm": {
+        "name": "Drupal\\image_captcha\\Form\\ImageCaptchaSettingsForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEditableConfigNames",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsDotSection",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 18,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Template\\Attribute",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\DrupalKernel"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\ConfigFormBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 716,
+        "vocabulary": 235,
+        "volume": 5639.59,
+        "difficulty": 11.08,
+        "effort": 62507.48,
+        "level": 0.09,
+        "bugs": 1.88,
+        "time": 3473,
+        "intelligentContent": 508.82,
+        "number_operators": 87,
+        "number_operands": 629,
+        "number_operators_unique": 8,
+        "number_operands_unique": 227,
+        "cloc": 72,
+        "loc": 208,
+        "lloc": 136,
+        "mi": 64.29,
+        "mIwoC": 24.77,
+        "commentWeight": 39.52,
+        "kanDefect": 1.75,
+        "relativeStructuralComplexity": 576,
+        "relativeDataComplexity": 0.28,
+        "relativeSystemComplexity": 576.28,
+        "totalStructuralComplexity": 4032,
+        "totalDataComplexity": 1.96,
+        "totalSystemComplexity": 4033.96,
+        "package": "Drupal\\image_captcha\\Form\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\image_captcha\\Form\\": {
+        "name": "Drupal\\image_captcha\\Form\\",
+        "classes": [
+            "Drupal\\image_captcha\\Form\\ImageCaptchaSettingsForm"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Template\\Attribute",
+            "Drupal\\Core\\DrupalKernel"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Form\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Drupal\\Core\\",
+            "Drupal\\Core\\Template\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\image_captcha\\Constants\\ImageCaptchaConstants": {
+        "name": "Drupal\\image_captcha\\Constants\\ImageCaptchaConstants",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 0,
+        "length": 8,
+        "vocabulary": 6,
+        "volume": 20.68,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.5,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 31.02,
+        "number_operators": 0,
+        "number_operands": 8,
+        "number_operators_unique": 0,
+        "number_operands_unique": 6,
+        "cloc": 9,
+        "loc": 21,
+        "lloc": 12,
+        "mi": 109.57,
+        "mIwoC": 67.11,
+        "commentWeight": 42.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\image_captcha\\Constants\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\image_captcha\\Constants\\": {
+        "name": "Drupal\\image_captcha\\Constants\\",
+        "classes": [
+            "Drupal\\image_captcha\\Constants\\ImageCaptchaConstants"
+        ],
+        "abstraction": 0,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\image_captcha\\Controller\\CaptchaImageRefreshController": {
+        "name": "Drupal\\image_captcha\\Controller\\CaptchaImageRefreshController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "refreshCaptcha",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Drupal\\Component\\Datetime\\TimeInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Component\\Utility\\Crypt",
+            "Drupal\\Core\\Database\\Database",
+            "Drupal\\Core\\Url",
+            "Symfony\\Component\\HttpFoundation\\JsonResponse"
+        ],
+        "parents": [
+            "Drupal\\Core\\Controller\\ControllerBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 102,
+        "vocabulary": 46,
+        "volume": 563.4,
+        "difficulty": 7.09,
+        "effort": 3994.39,
+        "level": 0.14,
+        "bugs": 0.19,
+        "time": 222,
+        "intelligentContent": 79.47,
+        "number_operators": 23,
+        "number_operands": 79,
+        "number_operators_unique": 7,
+        "number_operands_unique": 39,
+        "cloc": 21,
+        "loc": 66,
+        "lloc": 45,
+        "mi": 82.34,
+        "mIwoC": 44,
+        "commentWeight": 38.34,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.18,
+        "relativeSystemComplexity": 256.18,
+        "totalStructuralComplexity": 768,
+        "totalDataComplexity": 0.53,
+        "totalSystemComplexity": 768.53,
+        "package": "Drupal\\image_captcha\\Controller\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\image_captcha\\Controller\\": {
+        "name": "Drupal\\image_captcha\\Controller\\",
+        "classes": [
+            "Drupal\\image_captcha\\Controller\\CaptchaImageRefreshController",
+            "Drupal\\image_captcha\\Controller\\CaptchaFontPreviewController",
+            "Drupal\\image_captcha\\Controller\\CaptchaImageGeneratorController"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Drupal\\Component\\Datetime\\TimeInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Component\\Utility\\Crypt",
+            "Drupal\\Core\\Database\\Database",
+            "Drupal\\Core\\Url",
+            "Symfony\\Component\\HttpFoundation\\JsonResponse",
+            "Drupal\\Core\\DependencyInjection\\ContainerInjectionInterface",
+            "Drupal\\Core\\Config\\ImmutableConfig",
+            "Drupal\\Core\\PageCache\\ResponsePolicy\\KillSwitch",
+            "LogicException",
+            "Symfony\\Component\\HttpFoundation\\StreamedResponse",
+            "Drupal\\Core\\Config\\Config",
+            "Psr\\Log\\LoggerInterface",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Core\\File\\FileSystemInterface",
+            "Drupal\\image_captcha\\Service\\ImageCaptchaRenderService",
+            "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Controller\\",
+            "Drupal\\Component\\Datetime\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\",
+            "Drupal\\Component\\Utility\\",
+            "Drupal\\Core\\Database\\",
+            "Drupal\\Core\\",
+            "Symfony\\Component\\HttpFoundation\\",
+            "Drupal\\Core\\DependencyInjection\\",
+            "Drupal\\Core\\Config\\",
+            "Drupal\\Core\\PageCache\\ResponsePolicy\\",
+            "Psr\\Log\\",
+            "Drupal\\Core\\File\\",
+            "Drupal\\image_captcha\\Service\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\image_captcha\\Service\\": 0.8571428571428571
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\image_captcha\\Controller\\CaptchaFontPreviewController": {
+        "name": "Drupal\\image_captcha\\Controller\\CaptchaFontPreviewController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFont",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 7,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\Core\\DependencyInjection\\ContainerInjectionInterface",
+            "Drupal\\Core\\Config\\ImmutableConfig",
+            "Drupal\\Core\\PageCache\\ResponsePolicy\\KillSwitch",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "LogicException",
+            "LogicException",
+            "Symfony\\Component\\HttpFoundation\\StreamedResponse"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\Core\\DependencyInjection\\ContainerInjectionInterface"
+        ],
+        "lcom": 2,
+        "length": 113,
+        "vocabulary": 43,
+        "volume": 613.17,
+        "difficulty": 8.36,
+        "effort": 5126.77,
+        "level": 0.12,
+        "bugs": 0.2,
+        "time": 285,
+        "intelligentContent": 73.34,
+        "number_operators": 27,
+        "number_operands": 86,
+        "number_operators_unique": 7,
+        "number_operands_unique": 36,
+        "cloc": 35,
+        "loc": 87,
+        "lloc": 52,
+        "mi": 83.7,
+        "mIwoC": 42.11,
+        "commentWeight": 41.6,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.87,
+        "relativeSystemComplexity": 16.87,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 2.6,
+        "totalSystemComplexity": 50.6,
+        "package": "Drupal\\image_captcha\\Controller\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\image_captcha\\Controller\\CaptchaImageGeneratorController": {
+        "name": "Drupal\\image_captcha\\Controller\\CaptchaImageGeneratorController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "image",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\Core\\DependencyInjection\\ContainerInjectionInterface",
+            "Drupal\\Core\\Config\\Config",
+            "Psr\\Log\\LoggerInterface",
+            "Drupal\\Core\\PageCache\\ResponsePolicy\\KillSwitch",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Core\\File\\FileSystemInterface",
+            "Drupal\\image_captcha\\Service\\ImageCaptchaRenderService",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Symfony\\Component\\HttpFoundation\\Request",
+            "Symfony\\Component\\HttpFoundation\\StreamedResponse"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\Core\\DependencyInjection\\ContainerInjectionInterface"
+        ],
+        "lcom": 2,
+        "length": 106,
+        "vocabulary": 39,
+        "volume": 560.25,
+        "difficulty": 5.88,
+        "effort": 3295.6,
+        "level": 0.17,
+        "bugs": 0.19,
+        "time": 183,
+        "intelligentContent": 95.24,
+        "number_operators": 26,
+        "number_operands": 80,
+        "number_operators_unique": 5,
+        "number_operands_unique": 34,
+        "cloc": 51,
+        "loc": 108,
+        "lloc": 57,
+        "mi": 85.38,
+        "mIwoC": 41.65,
+        "commentWeight": 43.73,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.51,
+        "relativeSystemComplexity": 144.51,
+        "totalStructuralComplexity": 432,
+        "totalDataComplexity": 1.54,
+        "totalSystemComplexity": 433.54,
+        "package": "Drupal\\image_captcha\\Controller\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 11,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\image_captcha\\Service\\ImageCaptchaRenderService": {
+        "name": "Drupal\\image_captcha\\Service\\ImageCaptchaRenderService",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hexToRgb",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateImage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLines",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addDots",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "printString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "imageCaptchaAfterBuildProcess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 48,
+        "ccn": 42,
+        "ccnMethodMax": 23,
+        "externals": [
+            "Drupal\\Core\\Config\\ConfigFactory",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Core\\File\\FileSystemInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Link",
+            "Drupal",
+            "Drupal"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 2,
+        "length": 1059,
+        "vocabulary": 168,
+        "volume": 7828.46,
+        "difficulty": 50.36,
+        "effort": 394219.09,
+        "level": 0.02,
+        "bugs": 2.61,
+        "time": 21901,
+        "intelligentContent": 155.46,
+        "number_operators": 354,
+        "number_operands": 705,
+        "number_operators_unique": 21,
+        "number_operands_unique": 147,
+        "cloc": 131,
+        "loc": 355,
+        "lloc": 224,
+        "mi": 56.23,
+        "mIwoC": 15.82,
+        "commentWeight": 40.41,
+        "kanDefect": 1.85,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.73,
+        "relativeSystemComplexity": 196.73,
+        "totalStructuralComplexity": 1372,
+        "totalDataComplexity": 5.13,
+        "totalSystemComplexity": 1377.13,
+        "package": "Drupal\\image_captcha\\Service\\",
+        "pageRank": 0.06,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\image_captcha\\Service\\": {
+        "name": "Drupal\\image_captcha\\Service\\",
+        "classes": [
+            "Drupal\\image_captcha\\Service\\ImageCaptchaRenderService"
+        ],
+        "incoming_class_dependencies": [
+            "Drupal\\image_captcha\\Controller\\CaptchaImageGeneratorController"
+        ],
+        "incoming_package_dependencies": [
+            "Drupal\\image_captcha\\Controller\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Config\\ConfigFactory",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Core\\File\\FileSystemInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Link",
+            "Drupal"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Config\\",
+            "Drupal\\Core\\Database\\",
+            "Drupal\\Core\\File\\",
+            "Drupal\\Core\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.8571428571428571,
+        "dependent_instabilities": [],
+        "distance": 0.1010152544552211,
+        "normalized_distance": 0.1428571428571429,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\Form\\CaptchaPointForm": {
+        "name": "Drupal\\captcha\\Form\\CaptchaPointForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "form",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityForm",
+            "Symfony\\Component\\HttpFoundation\\RequestStack",
+            "Drupal\\captcha\\Service\\CaptchaService",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityForm"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 113,
+        "vocabulary": 42,
+        "volume": 609.33,
+        "difficulty": 6.42,
+        "effort": 3911.25,
+        "level": 0.16,
+        "bugs": 0.2,
+        "time": 217,
+        "intelligentContent": 94.93,
+        "number_operators": 18,
+        "number_operands": 95,
+        "number_operators_unique": 5,
+        "number_operands_unique": 37,
+        "cloc": 39,
+        "loc": 80,
+        "lloc": 41,
+        "mi": 88.65,
+        "mIwoC": 44.51,
+        "commentWeight": 44.14,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.24,
+        "relativeSystemComplexity": 361.24,
+        "totalStructuralComplexity": 1444,
+        "totalDataComplexity": 0.95,
+        "totalSystemComplexity": 1444.95,
+        "package": "Drupal\\captcha\\Form\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Form\\": {
+        "name": "Drupal\\captcha\\Form\\",
+        "classes": [
+            "Drupal\\captcha\\Form\\CaptchaPointForm",
+            "Drupal\\captcha\\Form\\CaptchaPointEnableForm",
+            "Drupal\\captcha\\Form\\CaptchaSettingsForm",
+            "Drupal\\captcha\\Form\\CaptchaExamplesForm",
+            "Drupal\\captcha\\Form\\CaptchaPointDisableForm",
+            "Drupal\\captcha\\Form\\CaptchaPointDeleteForm"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Entity\\EntityForm",
+            "Symfony\\Component\\HttpFoundation\\RequestStack",
+            "Drupal\\captcha\\Service\\CaptchaService",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Drupal\\Core\\Form\\FormBase",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal\\Core\\Link"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Entity\\",
+            "Symfony\\Component\\HttpFoundation\\",
+            "Drupal\\captcha\\Service\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\",
+            "Drupal\\Core\\Form\\",
+            "Drupal\\Core\\",
+            "Drupal\\Core\\Extension\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\captcha\\Service\\": 0.5
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\Form\\CaptchaPointEnableForm": {
+        "name": "Drupal\\captcha\\Form\\CaptchaPointEnableForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 24,
+        "vocabulary": 11,
+        "volume": 83.03,
+        "difficulty": 2.11,
+        "effort": 175.28,
+        "level": 0.47,
+        "bugs": 0.03,
+        "time": 10,
+        "intelligentContent": 39.33,
+        "number_operators": 5,
+        "number_operands": 19,
+        "number_operators_unique": 2,
+        "number_operands_unique": 9,
+        "cloc": 18,
+        "loc": 45,
+        "lloc": 27,
+        "mi": 96.59,
+        "mIwoC": 55.07,
+        "commentWeight": 41.52,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 64.49,
+        "totalStructuralComplexity": 320,
+        "totalDataComplexity": 2.44,
+        "totalSystemComplexity": 322.44,
+        "package": "Drupal\\captcha\\Form\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Form\\CaptchaSettingsForm": {
+        "name": "Drupal\\captcha\\Form\\CaptchaSettingsForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEditableConfigNames",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clearCaptchaPlacementCacheSubmit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 12,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\ConfigFormBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 476,
+        "vocabulary": 130,
+        "volume": 3342.65,
+        "difficulty": 10.33,
+        "effort": 34531.7,
+        "level": 0.1,
+        "bugs": 1.11,
+        "time": 1918,
+        "intelligentContent": 323.57,
+        "number_operators": 49,
+        "number_operands": 427,
+        "number_operators_unique": 6,
+        "number_operands_unique": 124,
+        "cloc": 69,
+        "loc": 175,
+        "lloc": 106,
+        "mi": 70.85,
+        "mIwoC": 29.53,
+        "commentWeight": 41.32,
+        "kanDefect": 1.03,
+        "relativeStructuralComplexity": 484,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 484.23,
+        "totalStructuralComplexity": 3388,
+        "totalDataComplexity": 1.61,
+        "totalSystemComplexity": 3389.61,
+        "package": "Drupal\\captcha\\Form\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Form\\CaptchaExamplesForm": {
+        "name": "Drupal\\captcha\\Form\\CaptchaExamplesForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildChallenge",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 12,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\Core\\Form\\FormBase",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Link",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\FormBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 108,
+        "vocabulary": 40,
+        "volume": 574.77,
+        "difficulty": 9.23,
+        "effort": 5303.54,
+        "level": 0.11,
+        "bugs": 0.19,
+        "time": 295,
+        "intelligentContent": 62.29,
+        "number_operators": 21,
+        "number_operands": 87,
+        "number_operators_unique": 7,
+        "number_operands_unique": 33,
+        "cloc": 31,
+        "loc": 80,
+        "lloc": 49,
+        "mi": 83.82,
+        "mIwoC": 42.73,
+        "commentWeight": 41.08,
+        "kanDefect": 0.82,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.71,
+        "relativeSystemComplexity": 49.71,
+        "totalStructuralComplexity": 294,
+        "totalDataComplexity": 4.25,
+        "totalSystemComplexity": 298.25,
+        "package": "Drupal\\captcha\\Form\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Form\\CaptchaPointDisableForm": {
+        "name": "Drupal\\captcha\\Form\\CaptchaPointDisableForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 24,
+        "vocabulary": 11,
+        "volume": 83.03,
+        "difficulty": 2.11,
+        "effort": 175.28,
+        "level": 0.47,
+        "bugs": 0.03,
+        "time": 10,
+        "intelligentContent": 39.33,
+        "number_operators": 5,
+        "number_operands": 19,
+        "number_operators_unique": 2,
+        "number_operands_unique": 9,
+        "cloc": 18,
+        "loc": 45,
+        "lloc": 27,
+        "mi": 96.59,
+        "mIwoC": 55.07,
+        "commentWeight": 41.52,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 64.49,
+        "totalStructuralComplexity": 320,
+        "totalDataComplexity": 2.44,
+        "totalSystemComplexity": 322.44,
+        "package": "Drupal\\captcha\\Form\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Form\\CaptchaPointDeleteForm": {
+        "name": "Drupal\\captcha\\Form\\CaptchaPointDeleteForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 22,
+        "vocabulary": 11,
+        "volume": 76.11,
+        "difficulty": 2,
+        "effort": 152.21,
+        "level": 0.5,
+        "bugs": 0.03,
+        "time": 8,
+        "intelligentContent": 38.05,
+        "number_operators": 4,
+        "number_operands": 18,
+        "number_operators_unique": 2,
+        "number_operands_unique": 9,
+        "cloc": 15,
+        "loc": 37,
+        "lloc": 22,
+        "mi": 98.98,
+        "mIwoC": 57.27,
+        "commentWeight": 41.7,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.39,
+        "relativeSystemComplexity": 64.39,
+        "totalStructuralComplexity": 256,
+        "totalDataComplexity": 1.56,
+        "totalSystemComplexity": 257.56,
+        "package": "Drupal\\captcha\\Form\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Entity\\Controller\\CaptchaPointListBuilder": {
+        "name": "Drupal\\captcha\\Entity\\Controller\\CaptchaPointListBuilder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "buildHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildRow",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityListBuilder",
+            "Drupal\\Core\\Entity\\EntityInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityListBuilder"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 39,
+        "vocabulary": 15,
+        "volume": 152.37,
+        "difficulty": 3.63,
+        "effort": 552.34,
+        "level": 0.28,
+        "bugs": 0.05,
+        "time": 31,
+        "intelligentContent": 42.03,
+        "number_operators": 10,
+        "number_operands": 29,
+        "number_operators_unique": 3,
+        "number_operands_unique": 12,
+        "cloc": 9,
+        "loc": 27,
+        "lloc": 18,
+        "mi": 96.06,
+        "mIwoC": 57.06,
+        "commentWeight": 38.99,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.36,
+        "relativeSystemComplexity": 36.36,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 0.71,
+        "totalSystemComplexity": 72.71,
+        "package": "Drupal\\captcha\\Entity\\Controller\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Entity\\Controller\\": {
+        "name": "Drupal\\captcha\\Entity\\Controller\\",
+        "classes": [
+            "Drupal\\captcha\\Entity\\Controller\\CaptchaPointListBuilder"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityListBuilder",
+            "Drupal\\Core\\Entity\\EntityInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Config\\Entity\\",
+            "Drupal\\Core\\Entity\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\Entity\\CaptchaPoint": {
+        "name": "Drupal\\captcha\\Entity\\CaptchaPoint",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "id",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFormId",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabel",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabel",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCaptchaType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCaptchaType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 2,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityBase",
+            "Drupal\\captcha\\CaptchaPointInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityBase"
+        ],
+        "implements": [
+            "Drupal\\captcha\\CaptchaPointInterface"
+        ],
+        "lcom": 1,
+        "length": 27,
+        "vocabulary": 10,
+        "volume": 89.69,
+        "difficulty": 5.67,
+        "effort": 508.25,
+        "level": 0.18,
+        "bugs": 0.03,
+        "time": 28,
+        "intelligentContent": 15.83,
+        "number_operators": 10,
+        "number_operands": 17,
+        "number_operators_unique": 4,
+        "number_operands_unique": 6,
+        "cloc": 80,
+        "loc": 119,
+        "lloc": 39,
+        "mi": 98.97,
+        "mIwoC": 51.22,
+        "commentWeight": 47.76,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.09,
+        "relativeSystemComplexity": 17.09,
+        "totalStructuralComplexity": 112,
+        "totalDataComplexity": 7.6,
+        "totalSystemComplexity": 119.6,
+        "package": "Drupal\\captcha\\Entity\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Entity\\": {
+        "name": "Drupal\\captcha\\Entity\\",
+        "classes": [
+            "Drupal\\captcha\\Entity\\CaptchaPoint"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityBase",
+            "Drupal\\captcha\\CaptchaPointInterface",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Config\\Entity\\",
+            "Drupal\\captcha\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\captcha\\": 0.5
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\Constants\\CaptchaConstants": {
+        "name": "Drupal\\captcha\\Constants\\CaptchaConstants",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 0,
+        "length": 14,
+        "vocabulary": 8,
+        "volume": 42,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.14,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 48,
+        "number_operators": 0,
+        "number_operands": 14,
+        "number_operators_unique": 0,
+        "number_operands_unique": 8,
+        "cloc": 19,
+        "loc": 37,
+        "lloc": 18,
+        "mi": 105.91,
+        "mIwoC": 61.12,
+        "commentWeight": 44.79,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\captcha\\Constants\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Constants\\": {
+        "name": "Drupal\\captcha\\Constants\\",
+        "classes": [
+            "Drupal\\captcha\\Constants\\CaptchaConstants"
+        ],
+        "abstraction": 0,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\Plugin\\migrate\\source\\CaptchaPoints": {
+        "name": "Drupal\\captcha\\Plugin\\migrate\\source\\CaptchaPoints",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 36,
+        "vocabulary": 21,
+        "volume": 158.12,
+        "difficulty": 1.63,
+        "effort": 257.99,
+        "level": 0.61,
+        "bugs": 0.05,
+        "time": 14,
+        "intelligentContent": 96.91,
+        "number_operators": 5,
+        "number_operands": 31,
+        "number_operators_unique": 2,
+        "number_operands_unique": 19,
+        "cloc": 20,
+        "loc": 41,
+        "lloc": 21,
+        "mi": 99.77,
+        "mIwoC": 55.63,
+        "commentWeight": 44.15,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.05,
+        "relativeSystemComplexity": 17.05,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 4.2,
+        "totalSystemComplexity": 68.2,
+        "package": "Drupal\\captcha\\Plugin\\migrate\\source\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Plugin\\migrate\\source\\": {
+        "name": "Drupal\\captcha\\Plugin\\migrate\\source\\",
+        "classes": [
+            "Drupal\\captcha\\Plugin\\migrate\\source\\CaptchaPoints"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\Plugin\\migrate\\process\\CaptchaTypeFormatter": {
+        "name": "Drupal\\captcha\\Plugin\\migrate\\process\\CaptchaTypeFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "transform",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\migrate\\ProcessPluginBase",
+            "Drupal\\migrate\\MigrateExecutableInterface",
+            "Drupal\\migrate\\Row"
+        ],
+        "parents": [
+            "Drupal\\migrate\\ProcessPluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 13,
+        "volume": 74.01,
+        "difficulty": 3.11,
+        "effort": 230.25,
+        "level": 0.32,
+        "bugs": 0.02,
+        "time": 13,
+        "intelligentContent": 23.79,
+        "number_operators": 6,
+        "number_operands": 14,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 18,
+        "loc": 28,
+        "lloc": 10,
+        "mi": 112.15,
+        "mIwoC": 64.83,
+        "commentWeight": 47.32,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.5,
+        "relativeSystemComplexity": 3.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 2.5,
+        "totalSystemComplexity": 3.5,
+        "package": "Drupal\\captcha\\Plugin\\migrate\\process\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Plugin\\migrate\\process\\": {
+        "name": "Drupal\\captcha\\Plugin\\migrate\\process\\",
+        "classes": [
+            "Drupal\\captcha\\Plugin\\migrate\\process\\CaptchaTypeFormatter"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\migrate\\ProcessPluginBase",
+            "Drupal\\migrate\\MigrateExecutableInterface",
+            "Drupal\\migrate\\Row"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\migrate\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\Element\\Captcha": {
+        "name": "Drupal\\captcha\\Element\\Captcha",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processCaptchaElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRenderProcess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 27,
+        "ccn": 23,
+        "ccnMethodMax": 17,
+        "externals": [
+            "Drupal\\Core\\Render\\Element\\FormElement",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal",
+            "Drupal\\Component\\Utility\\Crypt",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal"
+        ],
+        "parents": [
+            "Drupal\\Core\\Render\\Element\\FormElement"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface"
+        ],
+        "lcom": 4,
+        "length": 307,
+        "vocabulary": 83,
+        "volume": 1957.14,
+        "difficulty": 11.28,
+        "effort": 22082.17,
+        "level": 0.09,
+        "bugs": 0.65,
+        "time": 1227,
+        "intelligentContent": 173.46,
+        "number_operators": 62,
+        "number_operands": 245,
+        "number_operators_unique": 7,
+        "number_operands_unique": 76,
+        "cloc": 116,
+        "loc": 217,
+        "lloc": 101,
+        "mi": 75.41,
+        "mIwoC": 30.14,
+        "commentWeight": 45.28,
+        "kanDefect": 0.99,
+        "relativeStructuralComplexity": 441,
+        "relativeDataComplexity": 0.43,
+        "relativeSystemComplexity": 441.43,
+        "totalStructuralComplexity": 2205,
+        "totalDataComplexity": 2.14,
+        "totalSystemComplexity": 2207.14,
+        "package": "Drupal\\captcha\\Element\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Element\\": {
+        "name": "Drupal\\captcha\\Element\\",
+        "classes": [
+            "Drupal\\captcha\\Element\\Captcha"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Render\\Element\\FormElement",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal",
+            "Drupal\\Component\\Utility\\Crypt"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Render\\Element\\",
+            "Drupal\\Core\\Plugin\\",
+            "Drupal\\Core\\Config\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\",
+            "Drupal\\Core\\Form\\",
+            "Drupal\\Component\\Utility\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\Service\\CaptchaService": {
+        "name": "Drupal\\captcha\\Service\\CaptchaService",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAvailableChallengeTypes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "insertCaptchaElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 18,
+        "ccn": 17,
+        "ccnMethodMax": 11,
+        "externals": [
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 2,
+        "length": 134,
+        "vocabulary": 41,
+        "volume": 717.91,
+        "difficulty": 11.76,
+        "effort": 8440.9,
+        "level": 0.09,
+        "bugs": 0.24,
+        "time": 469,
+        "intelligentContent": 61.06,
+        "number_operators": 37,
+        "number_operands": 97,
+        "number_operators_unique": 8,
+        "number_operands_unique": 33,
+        "cloc": 60,
+        "loc": 126,
+        "lloc": 66,
+        "mi": 81.86,
+        "mIwoC": 38.02,
+        "commentWeight": 43.84,
+        "kanDefect": 1.63,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.89,
+        "relativeSystemComplexity": 4.89,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 2.67,
+        "totalSystemComplexity": 14.67,
+        "package": "Drupal\\captcha\\Service\\",
+        "pageRank": 0.07,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\Service\\": {
+        "name": "Drupal\\captcha\\Service\\",
+        "classes": [
+            "Drupal\\captcha\\Service\\CaptchaService"
+        ],
+        "incoming_class_dependencies": [
+            "Drupal\\captcha\\Form\\CaptchaPointForm"
+        ],
+        "incoming_package_dependencies": [
+            "Drupal\\captcha\\Form\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Extension\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\EventSubscriber\\CaptchaCachedSettingsSubscriber": {
+        "name": "Drupal\\captcha\\EventSubscriber\\CaptchaCachedSettingsSubscriber",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface",
+            "Drupal\\Core\\Render\\ElementInfoManagerInterface",
+            "Drupal\\Core\\Config\\ConfigCrudEvent"
+        ],
+        "parents": [],
+        "implements": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface"
+        ],
+        "lcom": 2,
+        "length": 15,
+        "vocabulary": 10,
+        "volume": 49.83,
+        "difficulty": 3.33,
+        "effort": 166.1,
+        "level": 0.3,
+        "bugs": 0.02,
+        "time": 9,
+        "intelligentContent": 14.95,
+        "number_operators": 5,
+        "number_operands": 10,
+        "number_operators_unique": 4,
+        "number_operands_unique": 6,
+        "cloc": 25,
+        "loc": 45,
+        "lloc": 20,
+        "mi": 105.2,
+        "mIwoC": 59.46,
+        "commentWeight": 45.73,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.42,
+        "relativeSystemComplexity": 9.42,
+        "totalStructuralComplexity": 27,
+        "totalDataComplexity": 1.25,
+        "totalSystemComplexity": 28.25,
+        "package": "Drupal\\captcha\\EventSubscriber\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\captcha\\EventSubscriber\\": {
+        "name": "Drupal\\captcha\\EventSubscriber\\",
+        "classes": [
+            "Drupal\\captcha\\EventSubscriber\\CaptchaCachedSettingsSubscriber"
+        ],
+        "outgoing_class_dependencies": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface",
+            "Drupal\\Core\\Render\\ElementInfoManagerInterface",
+            "Drupal\\Core\\Config\\ConfigCrudEvent"
+        ],
+        "outgoing_package_dependencies": [
+            "Symfony\\Component\\EventDispatcher\\",
+            "Drupal\\Core\\Render\\",
+            "Drupal\\Core\\Config\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\captcha\\CaptchaPointInterface": {
+        "name": "Drupal\\captcha\\CaptchaPointInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCaptchaType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCaptchaType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityInterface"
+        ],
+        "implements": [],
+        "kanDefect": 0.15,
+        "package": "Drupal\\captcha\\",
+        "pageRank": 0.11,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Drupal\\captcha\\": {
+        "name": "Drupal\\captcha\\",
+        "classes": [
+            "Drupal\\captcha\\CaptchaPointInterface"
+        ],
+        "incoming_class_dependencies": [
+            "Drupal\\captcha\\Entity\\CaptchaPoint"
+        ],
+        "incoming_package_dependencies": [
+            "Drupal\\captcha\\Entity\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Config\\Entity\\"
+        ],
+        "abstraction": 1,
+        "instability": 0.5,
+        "dependent_instabilities": [],
+        "distance": 0.35355339059327373,
+        "normalized_distance": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.61,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": [],
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "searches": {
+        "name": "searches",
+        "violations": {},
+        "_type": "Hal\\Metric\\SearchMetric"
+    }
+}

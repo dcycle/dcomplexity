@@ -1,0 +1,3417 @@
+{
+    "field_group_field_ui_form_params": {
+        "name": "field_group_field_ui_form_params",
+        "cloc": 22,
+        "loc": 59,
+        "lloc": 37,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_get_context_from_display": {
+        "name": "field_group_get_context_from_display",
+        "cloc": 9,
+        "loc": 19,
+        "lloc": 10,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_field_ui_display_form_alter": {
+        "name": "field_group_field_ui_display_form_alter",
+        "cloc": 28,
+        "loc": 151,
+        "lloc": 123,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_field_ui_create_vertical_tabs": {
+        "name": "field_group_field_ui_create_vertical_tabs",
+        "cloc": 6,
+        "loc": 29,
+        "lloc": 23,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_display_overview_row_region": {
+        "name": "field_group_display_overview_row_region",
+        "cloc": 10,
+        "loc": 15,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_field_overview_submit": {
+        "name": "field_group_field_overview_submit",
+        "cloc": 24,
+        "loc": 71,
+        "lloc": 47,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_format_settings_form": {
+        "name": "field_group_format_settings_form",
+        "cloc": 10,
+        "loc": 20,
+        "lloc": 10,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_formatter_row_update": {
+        "name": "field_group_formatter_row_update",
+        "cloc": 12,
+        "loc": 20,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_formatter_settings_update": {
+        "name": "field_group_formatter_settings_update",
+        "cloc": 9,
+        "loc": 20,
+        "lloc": 11,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_format_settings_summary": {
+        "name": "field_group_format_settings_summary",
+        "cloc": 11,
+        "loc": 19,
+        "lloc": 8,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_field_ui_clone_field_groups_validate": {
+        "name": "field_group_field_ui_clone_field_groups_validate",
+        "cloc": 8,
+        "loc": 32,
+        "lloc": 24,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_field_ui_clone_field_groups": {
+        "name": "field_group_field_ui_clone_field_groups",
+        "cloc": 5,
+        "loc": 25,
+        "lloc": 20,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d7\\FieldGroup": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d7\\FieldGroup",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareRow",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 19,
+        "ccn": 14,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase",
+            "Drupal\\migrate\\Plugin\\MigrationInterface",
+            "Drupal\\Core\\State\\StateInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\field_group\\FieldGroupFormatterPluginManager",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\migrate\\Row"
+        ],
+        "parents": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 223,
+        "vocabulary": 74,
+        "volume": 1384.71,
+        "difficulty": 11.39,
+        "effort": 15777.28,
+        "level": 0.09,
+        "bugs": 0.46,
+        "time": 877,
+        "intelligentContent": 121.53,
+        "number_operators": 35,
+        "number_operands": 188,
+        "number_operators_unique": 8,
+        "number_operands_unique": 66,
+        "cloc": 53,
+        "loc": 134,
+        "lloc": 81,
+        "mi": 75.85,
+        "mIwoC": 34.49,
+        "commentWeight": 41.37,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.65,
+        "relativeSystemComplexity": 100.65,
+        "totalStructuralComplexity": 600,
+        "totalDataComplexity": 3.91,
+        "totalSystemComplexity": 603.91,
+        "package": "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d7\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d7\\": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d7\\",
+        "classes": [
+            "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d7\\FieldGroup"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase",
+            "Drupal\\migrate\\Plugin\\MigrationInterface",
+            "Drupal\\Core\\State\\StateInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\field_group\\FieldGroupFormatterPluginManager",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\migrate\\Row"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\",
+            "Drupal\\migrate\\Plugin\\",
+            "Drupal\\Core\\State\\",
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\field_group\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\",
+            "Drupal\\migrate\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\field_group\\": 0.6428571428571429
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d6\\FieldGroup": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d6\\FieldGroup",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareRow",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transformEntityFormDisplaySettings",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transformEntityViewDisplaySettings",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 22,
+        "ccn": 17,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase",
+            "Drupal\\migrate\\Row",
+            "Drupal\\migrate\\Row",
+            "Drupal\\migrate\\Row"
+        ],
+        "parents": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 256,
+        "vocabulary": 60,
+        "volume": 1512.16,
+        "difficulty": 11.56,
+        "effort": 17473.9,
+        "level": 0.09,
+        "bugs": 0.5,
+        "time": 971,
+        "intelligentContent": 130.86,
+        "number_operators": 48,
+        "number_operands": 208,
+        "number_operators_unique": 6,
+        "number_operands_unique": 54,
+        "cloc": 28,
+        "loc": 142,
+        "lloc": 114,
+        "mi": 62.33,
+        "mIwoC": 30.58,
+        "commentWeight": 31.75,
+        "kanDefect": 1.11,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.42,
+        "relativeSystemComplexity": 144.42,
+        "totalStructuralComplexity": 864,
+        "totalDataComplexity": 2.54,
+        "totalSystemComplexity": 866.54,
+        "package": "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d6\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d6\\": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d6\\",
+        "classes": [
+            "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d6\\FieldGroup"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\DrupalSqlBase",
+            "Drupal\\migrate\\Row"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\migrate_drupal\\Plugin\\migrate\\source\\",
+            "Drupal\\migrate\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\d7\\FieldGroup": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\d7\\FieldGroup",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "import",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rollback",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntity",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\DestinationBase",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\migrate\\Plugin\\MigrationInterface",
+            "Drupal\\Core\\Entity\\EntityDisplayRepositoryInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\migrate\\Row"
+        ],
+        "parents": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\DestinationBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface"
+        ],
+        "lcom": 3,
+        "length": 140,
+        "vocabulary": 37,
+        "volume": 729.32,
+        "difficulty": 11.32,
+        "effort": 8257.82,
+        "level": 0.09,
+        "bugs": 0.24,
+        "time": 459,
+        "intelligentContent": 64.41,
+        "number_operators": 23,
+        "number_operands": 117,
+        "number_operators_unique": 6,
+        "number_operands_unique": 31,
+        "cloc": 48,
+        "loc": 104,
+        "lloc": 56,
+        "mi": 84.44,
+        "mIwoC": 41.01,
+        "commentWeight": 43.43,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.69,
+        "relativeSystemComplexity": 100.69,
+        "totalStructuralComplexity": 700,
+        "totalDataComplexity": 4.82,
+        "totalSystemComplexity": 704.82,
+        "package": "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\d7\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\d7\\": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\d7\\",
+        "classes": [
+            "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\d7\\FieldGroup"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\DestinationBase",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\migrate\\Plugin\\MigrationInterface",
+            "Drupal\\Core\\Entity\\EntityDisplayRepositoryInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\migrate\\Row"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\",
+            "Drupal\\Core\\Plugin\\",
+            "Drupal\\migrate\\Plugin\\",
+            "Drupal\\Core\\Entity\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\",
+            "Drupal\\migrate\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\FieldGroupEntityViewDisplay": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\FieldGroupEntityViewDisplay",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "import",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\PerComponentEntityDisplay",
+            "Drupal\\migrate\\Row"
+        ],
+        "parents": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\PerComponentEntityDisplay"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 59,
+        "vocabulary": 26,
+        "volume": 277.33,
+        "difficulty": 8.84,
+        "effort": 2452.15,
+        "level": 0.11,
+        "bugs": 0.09,
+        "time": 136,
+        "intelligentContent": 31.36,
+        "number_operators": 11,
+        "number_operands": 48,
+        "number_operators_unique": 7,
+        "number_operands_unique": 19,
+        "cloc": 12,
+        "loc": 34,
+        "lloc": 22,
+        "mi": 92.59,
+        "mIwoC": 52.8,
+        "commentWeight": 39.79,
+        "kanDefect": 0.68,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 49.38,
+        "totalStructuralComplexity": 49,
+        "totalDataComplexity": 0.38,
+        "totalSystemComplexity": 49.38,
+        "package": "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\",
+        "classes": [
+            "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\FieldGroupEntityViewDisplay",
+            "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\FieldGroupEntityFormDisplay"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\PerComponentEntityDisplay",
+            "Drupal\\migrate\\Row",
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\PerComponentEntityFormDisplay"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\",
+            "Drupal\\migrate\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\FieldGroupEntityFormDisplay": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\FieldGroupEntityFormDisplay",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "import",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\PerComponentEntityFormDisplay",
+            "Drupal\\migrate\\Row"
+        ],
+        "parents": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\PerComponentEntityFormDisplay"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 54,
+        "vocabulary": 24,
+        "volume": 247.59,
+        "difficulty": 8.85,
+        "effort": 2191.88,
+        "level": 0.11,
+        "bugs": 0.08,
+        "time": 122,
+        "intelligentContent": 27.97,
+        "number_operators": 11,
+        "number_operands": 43,
+        "number_operators_unique": 7,
+        "number_operands_unique": 17,
+        "cloc": 12,
+        "loc": 32,
+        "lloc": 20,
+        "mi": 94.82,
+        "mIwoC": 54.19,
+        "commentWeight": 40.63,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.43,
+        "relativeSystemComplexity": 36.43,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 0.43,
+        "totalSystemComplexity": 36.43,
+        "package": "Drupal\\field_group_migrate\\Plugin\\migrate\\destination\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\D7FieldGroupDeriver": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\D7FieldGroupDeriver",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getDerivativeDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 59,
+        "vocabulary": 20,
+        "volume": 254.99,
+        "difficulty": 5.75,
+        "effort": 1466.21,
+        "level": 0.17,
+        "bugs": 0.08,
+        "time": 81,
+        "intelligentContent": 44.35,
+        "number_operators": 13,
+        "number_operands": 46,
+        "number_operators_unique": 4,
+        "number_operands_unique": 16,
+        "cloc": 13,
+        "loc": 46,
+        "lloc": 33,
+        "mi": 86.03,
+        "mIwoC": 49.35,
+        "commentWeight": 36.68,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 16.6,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 0.6,
+        "totalSystemComplexity": 16.6,
+        "package": "Drupal\\field_group_migrate\\Plugin\\migrate\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_migrate\\Plugin\\migrate\\": {
+        "name": "Drupal\\field_group_migrate\\Plugin\\migrate\\",
+        "classes": [
+            "Drupal\\field_group_migrate\\Plugin\\migrate\\D7FieldGroupDeriver"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Component\\Plugin\\Derivative\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "hook_field_group_pre_render": {
+        "name": "hook_field_group_pre_render",
+        "cloc": 16,
+        "loc": 25,
+        "lloc": 9,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_field_group_pre_render_alter": {
+        "name": "hook_field_group_pre_render_alter",
+        "cloc": 10,
+        "loc": 17,
+        "lloc": 7,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_field_group_build_pre_render_alter": {
+        "name": "hook_field_group_build_pre_render_alter",
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_field_group_form_process": {
+        "name": "hook_field_group_form_process",
+        "cloc": 10,
+        "loc": 15,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_field_group_form_process_alter": {
+        "name": "hook_field_group_form_process_alter",
+        "cloc": 10,
+        "loc": 15,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_field_group_form_process_build_alter": {
+        "name": "hook_field_group_form_process_build_alter",
+        "cloc": 10,
+        "loc": 15,
+        "lloc": 5,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "hook_field_group_delete_field_group": {
+        "name": "hook_field_group_delete_field_group",
+        "cloc": 7,
+        "loc": 11,
+        "lloc": 4,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "field_group_post_update_0001": {
+        "name": "field_group_post_update_0001",
+        "cloc": 9,
+        "loc": 51,
+        "lloc": 42,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "template_preprocess_horizontal_tabs": {
+        "name": "template_preprocess_horizontal_tabs",
+        "cloc": 14,
+        "loc": 20,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "template_preprocess_field_group_html_element": {
+        "name": "template_preprocess_field_group_html_element",
+        "cloc": 10,
+        "loc": 24,
+        "lloc": 14,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "template_preprocess_field_group_accordion": {
+        "name": "template_preprocess_field_group_accordion",
+        "cloc": 10,
+        "loc": 16,
+        "lloc": 6,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "template_preprocess_field_group_accordion_item": {
+        "name": "template_preprocess_field_group_accordion_item",
+        "cloc": 10,
+        "loc": 24,
+        "lloc": 14,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\Accordion": {
+        "name": "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\Accordion",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Form\\FormState",
+            "Drupal\\field_group_accordion\\Element\\Accordion"
+        ],
+        "parents": [
+            "Drupal\\field_group\\FieldGroupFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 79,
+        "vocabulary": 35,
+        "volume": 405.21,
+        "difficulty": 5.33,
+        "effort": 2161.14,
+        "level": 0.19,
+        "bugs": 0.14,
+        "time": 120,
+        "intelligentContent": 75.98,
+        "number_operators": 15,
+        "number_operands": 64,
+        "number_operators_unique": 5,
+        "number_operands_unique": 30,
+        "cloc": 29,
+        "loc": 67,
+        "lloc": 38,
+        "mi": 89.46,
+        "mIwoC": 46.88,
+        "commentWeight": 42.58,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 81.4,
+        "totalStructuralComplexity": 405,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 407,
+        "package": "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\": {
+        "name": "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "classes": [
+            "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\Accordion",
+            "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\AccordionItem"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Form\\FormState",
+            "Drupal\\field_group_accordion\\Element\\Accordion",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Core\\Render\\Markup"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\field_group\\",
+            "Drupal\\Component\\Utility\\",
+            "Drupal\\Core\\Form\\",
+            "Drupal\\field_group_accordion\\Element\\",
+            "Drupal\\Core\\Render\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\field_group\\": 0.6428571428571429,
+            "Drupal\\field_group_accordion\\Element\\": 0.6666666666666666
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\AccordionItem": {
+        "name": "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\AccordionItem",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 13,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html"
+        ],
+        "parents": [
+            "Drupal\\field_group\\FieldGroupFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 147,
+        "vocabulary": 53,
+        "volume": 842,
+        "difficulty": 8.75,
+        "effort": 7367.54,
+        "level": 0.11,
+        "bugs": 0.28,
+        "time": 409,
+        "intelligentContent": 96.23,
+        "number_operators": 32,
+        "number_operands": 115,
+        "number_operators_unique": 7,
+        "number_operands_unique": 46,
+        "cloc": 35,
+        "loc": 100,
+        "lloc": 65,
+        "mi": 77.9,
+        "mIwoC": 38.22,
+        "commentWeight": 39.67,
+        "kanDefect": 1.01,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.31,
+        "relativeSystemComplexity": 144.31,
+        "totalStructuralComplexity": 720,
+        "totalDataComplexity": 1.54,
+        "totalSystemComplexity": 721.54,
+        "package": "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_accordion\\Element\\Accordion": {
+        "name": "Drupal\\field_group_accordion\\Element\\Accordion",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processAccordion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 42,
+        "vocabulary": 21,
+        "volume": 184.48,
+        "difficulty": 3.88,
+        "effort": 716.21,
+        "level": 0.26,
+        "bugs": 0.06,
+        "time": 40,
+        "intelligentContent": 47.52,
+        "number_operators": 9,
+        "number_operands": 33,
+        "number_operators_unique": 4,
+        "number_operands_unique": 17,
+        "cloc": 22,
+        "loc": 42,
+        "lloc": 20,
+        "mi": 100.38,
+        "mIwoC": 55.35,
+        "commentWeight": 45.03,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 6,
+        "totalSystemComplexity": 6,
+        "package": "Drupal\\field_group_accordion\\Element\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group_accordion\\Element\\": {
+        "name": "Drupal\\field_group_accordion\\Element\\",
+        "classes": [
+            "Drupal\\field_group_accordion\\Element\\Accordion",
+            "Drupal\\field_group_accordion\\Element\\AccordionItem"
+        ],
+        "incoming_class_dependencies": [
+            "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\Accordion"
+        ],
+        "incoming_package_dependencies": [
+            "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Render\\Element\\",
+            "Drupal\\Core\\Form\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group_accordion\\Element\\AccordionItem": {
+        "name": "Drupal\\field_group_accordion\\Element\\AccordionItem",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase"
+        ],
+        "parents": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 13,
+        "vocabulary": 11,
+        "volume": 44.97,
+        "difficulty": 1.22,
+        "effort": 54.97,
+        "level": 0.82,
+        "bugs": 0.01,
+        "time": 3,
+        "intelligentContent": 36.8,
+        "number_operators": 2,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 9,
+        "cloc": 8,
+        "loc": 17,
+        "lloc": 9,
+        "mi": 111.16,
+        "mIwoC": 67.48,
+        "commentWeight": 43.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\field_group_accordion\\Element\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\FieldGroupFormatterInterface": {
+        "name": "Drupal\\field_group\\FieldGroupFormatterInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\PluginInspectionInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\PluginInspectionInterface"
+        ],
+        "implements": [],
+        "kanDefect": 0.15,
+        "package": "Drupal\\field_group\\",
+        "pageRank": 0.12,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "Drupal\\field_group\\": {
+        "name": "Drupal\\field_group\\",
+        "classes": [
+            "Drupal\\field_group\\FieldGroupFormatterInterface",
+            "Drupal\\field_group\\FieldgroupUi",
+            "Drupal\\field_group\\FieldGroupFormatterPluginManager",
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\field_group\\FormatterHelper"
+        ],
+        "incoming_class_dependencies": [
+            "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d7\\FieldGroup",
+            "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\Accordion",
+            "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\AccordionItem",
+            "Drupal\\field_group\\Form\\FieldGroupDeleteForm",
+            "Drupal\\field_group\\Form\\FieldGroupAddForm",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tabs",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Details",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tab",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\HtmlElement",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Fieldset"
+        ],
+        "incoming_package_dependencies": [
+            "Drupal\\field_group_migrate\\Plugin\\migrate\\source\\d7\\",
+            "Drupal\\field_group_accordion\\Plugin\\field_group\\FieldGroupFormatter\\",
+            "Drupal\\field_group\\Form\\",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Component\\Plugin\\PluginInspectionInterface",
+            "Drupal",
+            "Drupal\\field_ui\\FieldUI",
+            "Drupal\\Core\\Url",
+            "stdClass",
+            "InvalidArgumentException",
+            "Drupal\\Core\\Plugin\\DefaultPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Component\\Plugin\\Factory\\DefaultFactory",
+            "plugin_class",
+            "Drupal\\Core\\Field\\PluginSettingsBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Security\\TrustedCallbackInterface",
+            "static",
+            "Drupal\\Core\\Render\\Element"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Component\\Plugin\\",
+            "\\",
+            "Drupal\\field_ui\\",
+            "Drupal\\Core\\",
+            "Drupal\\Core\\Plugin\\",
+            "Drupal\\Core\\Cache\\",
+            "Drupal\\Core\\Extension\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Drupal\\Component\\Plugin\\Factory\\",
+            "Drupal\\Core\\Field\\",
+            "Drupal\\Core\\Form\\",
+            "Drupal\\Core\\Security\\",
+            "Drupal\\Core\\Render\\"
+        ],
+        "abstraction": 0.4,
+        "instability": 0.6428571428571429,
+        "dependent_instabilities": [],
+        "distance": 0.030304576336566368,
+        "normalized_distance": 0.04285714285714293,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group\\FieldgroupUi": {
+        "name": "Drupal\\field_group\\FieldgroupUi",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFieldUiRoute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDeleteRoute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 9,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal",
+            "Drupal\\field_ui\\FieldUI",
+            "Drupal\\Core\\Url",
+            "stdClass",
+            "Drupal",
+            "Drupal\\field_ui\\FieldUI",
+            "Drupal\\Core\\Url",
+            "InvalidArgumentException"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 2,
+        "length": 120,
+        "vocabulary": 31,
+        "volume": 594.5,
+        "difficulty": 9.48,
+        "effort": 5635.89,
+        "level": 0.11,
+        "bugs": 0.2,
+        "time": 313,
+        "intelligentContent": 62.71,
+        "number_operators": 41,
+        "number_operands": 79,
+        "number_operators_unique": 6,
+        "number_operands_unique": 25,
+        "cloc": 23,
+        "loc": 75,
+        "lloc": 52,
+        "mi": 79.76,
+        "mIwoC": 41.93,
+        "commentWeight": 37.82,
+        "kanDefect": 0.71,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 16.6,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 1.2,
+        "totalSystemComplexity": 33.2,
+        "package": "Drupal\\field_group\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 2,
+        "efferentCoupling": 5,
+        "instability": 0.71,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\FieldGroupFormatterPluginManager": {
+        "name": "Drupal\\field_group\\FieldGroupFormatterPluginManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 7,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\Core\\Plugin\\DefaultPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Component\\Plugin\\Factory\\DefaultFactory",
+            "plugin_class",
+            "plugin_class",
+            "Drupal\\Component\\Plugin\\Factory\\DefaultFactory",
+            "plugin_class"
+        ],
+        "parents": [
+            "Drupal\\Core\\Plugin\\DefaultPluginManager"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 127,
+        "vocabulary": 30,
+        "volume": 623.18,
+        "difficulty": 12.38,
+        "effort": 7711.79,
+        "level": 0.08,
+        "bugs": 0.21,
+        "time": 428,
+        "intelligentContent": 50.36,
+        "number_operators": 28,
+        "number_operands": 99,
+        "number_operators_unique": 6,
+        "number_operands_unique": 24,
+        "cloc": 75,
+        "loc": 127,
+        "lloc": 52,
+        "mi": 88.49,
+        "mIwoC": 42.06,
+        "commentWeight": 46.43,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.85,
+        "relativeSystemComplexity": 100.85,
+        "totalStructuralComplexity": 500,
+        "totalDataComplexity": 4.27,
+        "totalSystemComplexity": 504.27,
+        "package": "Drupal\\field_group\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 2,
+        "efferentCoupling": 7,
+        "instability": 0.78,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Form\\FieldGroupDeleteForm": {
+        "name": "Drupal\\field_group\\Form\\FieldGroupDeleteForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\Core\\Form\\ConfirmFormBase",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeBundleInfoInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\field_group\\FieldgroupUi"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\ConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 80,
+        "vocabulary": 28,
+        "volume": 384.59,
+        "difficulty": 5.25,
+        "effort": 2019.09,
+        "level": 0.19,
+        "bugs": 0.13,
+        "time": 112,
+        "intelligentContent": 73.25,
+        "number_operators": 17,
+        "number_operands": 63,
+        "number_operators_unique": 4,
+        "number_operands_unique": 24,
+        "cloc": 48,
+        "loc": 101,
+        "lloc": 53,
+        "mi": 87.69,
+        "mIwoC": 43.88,
+        "commentWeight": 43.81,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 100.67,
+        "totalStructuralComplexity": 800,
+        "totalDataComplexity": 5.36,
+        "totalSystemComplexity": 805.36,
+        "package": "Drupal\\field_group\\Form\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Form\\": {
+        "name": "Drupal\\field_group\\Form\\",
+        "classes": [
+            "Drupal\\field_group\\Form\\FieldGroupDeleteForm",
+            "Drupal\\field_group\\Form\\FieldGroupAddForm"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Form\\ConfirmFormBase",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeBundleInfoInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\field_group\\FieldgroupUi",
+            "Drupal\\Core\\Form\\FormBase",
+            "Drupal\\field_group\\FieldGroupFormatterPluginManager",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\field_group\\FormatterHelper",
+            "stdClass"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Form\\",
+            "Drupal\\Core\\Messenger\\",
+            "Drupal\\Core\\Entity\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\",
+            "Drupal\\field_group\\",
+            "Drupal\\Core\\Cache\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\field_group\\": 0.6428571428571429
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group\\Form\\FieldGroupAddForm": {
+        "name": "Drupal\\field_group\\Form\\FieldGroupAddForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildFormatterSelectionForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateFormatterSelection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "groupNameExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 6,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\Core\\Form\\FormBase",
+            "Drupal\\field_group\\FieldGroupFormatterPluginManager",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\field_group\\FormatterHelper",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "stdClass",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\field_group\\FieldgroupUi",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\FormBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 340,
+        "vocabulary": 101,
+        "volume": 2263.79,
+        "difficulty": 10.65,
+        "effort": 24106.98,
+        "level": 0.09,
+        "bugs": 0.75,
+        "time": 1339,
+        "intelligentContent": 212.58,
+        "number_operators": 54,
+        "number_operands": 286,
+        "number_operators_unique": 7,
+        "number_operands_unique": 94,
+        "cloc": 98,
+        "loc": 216,
+        "lloc": 118,
+        "mi": 73.71,
+        "mIwoC": 30.51,
+        "commentWeight": 43.21,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.31,
+        "relativeSystemComplexity": 361.31,
+        "totalStructuralComplexity": 3249,
+        "totalDataComplexity": 2.8,
+        "totalSystemComplexity": 3251.8,
+        "package": "Drupal\\field_group\\Form\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\FieldGroupFormatterBase": {
+        "name": "Drupal\\field_group\\FieldGroupFormatterBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabel",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getClasses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateCssClass",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 21,
+        "ccn": 12,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\Core\\Field\\PluginSettingsBase",
+            "Drupal\\field_group\\FieldGroupFormatterInterface",
+            "stdClass",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Field\\PluginSettingsBase"
+        ],
+        "implements": [
+            "Drupal\\field_group\\FieldGroupFormatterInterface"
+        ],
+        "lcom": 5,
+        "length": 281,
+        "vocabulary": 74,
+        "volume": 1744.86,
+        "difficulty": 8.26,
+        "effort": 14414.03,
+        "level": 0.12,
+        "bugs": 0.58,
+        "time": 801,
+        "intelligentContent": 211.22,
+        "number_operators": 53,
+        "number_operands": 228,
+        "number_operators_unique": 5,
+        "number_operands_unique": 69,
+        "cloc": 89,
+        "loc": 191,
+        "lloc": 102,
+        "mi": 75.43,
+        "mIwoC": 31.87,
+        "commentWeight": 43.56,
+        "kanDefect": 0.78,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 81.83,
+        "totalStructuralComplexity": 891,
+        "totalDataComplexity": 9.1,
+        "totalSystemComplexity": 900.1,
+        "package": "Drupal\\field_group\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 7,
+        "efferentCoupling": 4,
+        "instability": 0.36,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\FormatterHelper": {
+        "name": "Drupal\\field_group\\FormatterHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "formatterOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityViewPreRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formProcess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formGroupPreRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "groupElementsContainErrors",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trustedCallbacks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 32,
+        "ccn": 27,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Drupal\\Core\\Security\\TrustedCallbackInterface",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "static",
+            "Drupal\\Core\\Render\\Element",
+            "static"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\Core\\Security\\TrustedCallbackInterface"
+        ],
+        "lcom": 6,
+        "length": 201,
+        "vocabulary": 51,
+        "volume": 1140.16,
+        "difficulty": 10.27,
+        "effort": 11705.62,
+        "level": 0.1,
+        "bugs": 0.38,
+        "time": 650,
+        "intelligentContent": 111.05,
+        "number_operators": 47,
+        "number_operands": 154,
+        "number_operators_unique": 6,
+        "number_operands_unique": 45,
+        "cloc": 65,
+        "loc": 175,
+        "lloc": 110,
+        "mi": 70.93,
+        "mIwoC": 30.43,
+        "commentWeight": 40.5,
+        "kanDefect": 3.04,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 1.13,
+        "relativeSystemComplexity": 65.13,
+        "totalStructuralComplexity": 384,
+        "totalDataComplexity": 6.78,
+        "totalSystemComplexity": 390.78,
+        "package": "Drupal\\field_group\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Plugin\\Derivative\\FieldGroupLocalAction": {
+        "name": "Drupal\\field_group\\Plugin\\Derivative\\FieldGroupLocalAction",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDerivativeDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase",
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface",
+            "Drupal\\Core\\Routing\\RouteProviderInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface"
+        ],
+        "lcom": 2,
+        "length": 96,
+        "vocabulary": 29,
+        "volume": 466.37,
+        "difficulty": 9.39,
+        "effort": 4379.79,
+        "level": 0.11,
+        "bugs": 0.16,
+        "time": 243,
+        "intelligentContent": 49.66,
+        "number_operators": 24,
+        "number_operands": 72,
+        "number_operators_unique": 6,
+        "number_operands_unique": 23,
+        "cloc": 27,
+        "loc": 60,
+        "lloc": 33,
+        "mi": 90.75,
+        "mIwoC": 47.65,
+        "commentWeight": 43.1,
+        "kanDefect": 0.68,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.73,
+        "relativeSystemComplexity": 16.73,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 2.2,
+        "totalSystemComplexity": 50.2,
+        "package": "Drupal\\field_group\\Plugin\\Derivative\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Plugin\\Derivative\\": {
+        "name": "Drupal\\field_group\\Plugin\\Derivative\\",
+        "classes": [
+            "Drupal\\field_group\\Plugin\\Derivative\\FieldGroupLocalAction"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase",
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface",
+            "Drupal\\Core\\Routing\\RouteProviderInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Component\\Plugin\\Derivative\\",
+            "Drupal\\Core\\Plugin\\Discovery\\",
+            "Drupal\\Core\\Routing\\",
+            "Drupal\\Core\\Entity\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tabs": {
+        "name": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tabs",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getClasses",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 6,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Core\\Form\\FormState",
+            "Drupal\\Core\\Render\\Element\\VerticalTabs",
+            "Drupal\\Core\\Form\\FormState",
+            "Drupal\\field_group\\Element\\HorizontalTabs"
+        ],
+        "parents": [
+            "Drupal\\field_group\\FieldGroupFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 178,
+        "vocabulary": 67,
+        "volume": 1079.76,
+        "difficulty": 8.17,
+        "effort": 8818.07,
+        "level": 0.12,
+        "bugs": 0.36,
+        "time": 490,
+        "intelligentContent": 132.22,
+        "number_operators": 38,
+        "number_operands": 140,
+        "number_operators_unique": 7,
+        "number_operands_unique": 60,
+        "cloc": 39,
+        "loc": 97,
+        "lloc": 58,
+        "mi": 81.08,
+        "mIwoC": 39.49,
+        "commentWeight": 41.59,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.28,
+        "relativeSystemComplexity": 256.28,
+        "totalStructuralComplexity": 1536,
+        "totalDataComplexity": 1.71,
+        "totalSystemComplexity": 1537.71,
+        "package": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\": {
+        "name": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "classes": [
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tabs",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\DetailsSidebar",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Details",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tab",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\HtmlElement",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Fieldset"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Core\\Form\\FormState",
+            "Drupal\\Core\\Render\\Element\\VerticalTabs",
+            "Drupal\\field_group\\Element\\HorizontalTabs",
+            "Drupal\\Core\\Template\\Attribute",
+            "Drupal\\field_group\\Element\\HtmlElement"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\field_group\\",
+            "Drupal\\Component\\Utility\\",
+            "Drupal\\Core\\Render\\",
+            "Drupal\\Core\\Form\\",
+            "Drupal\\Core\\Render\\Element\\",
+            "Drupal\\field_group\\Element\\",
+            "Drupal\\Core\\Template\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\field_group\\": 0.6428571428571429,
+            "Drupal\\field_group\\Element\\": 0.6666666666666666
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\DetailsSidebar": {
+        "name": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\DetailsSidebar",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Details"
+        ],
+        "parents": [
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Details"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 55,
+        "vocabulary": 22,
+        "volume": 245.27,
+        "difficulty": 3.32,
+        "effort": 813.26,
+        "level": 0.3,
+        "bugs": 0.08,
+        "time": 45,
+        "intelligentContent": 73.97,
+        "number_operators": 13,
+        "number_operands": 42,
+        "number_operators_unique": 3,
+        "number_operands_unique": 19,
+        "cloc": 25,
+        "loc": 57,
+        "lloc": 32,
+        "mi": 92.79,
+        "mIwoC": 50.03,
+        "commentWeight": 42.76,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.54,
+        "relativeSystemComplexity": 36.54,
+        "totalStructuralComplexity": 144,
+        "totalDataComplexity": 2.14,
+        "totalSystemComplexity": 146.14,
+        "package": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Details": {
+        "name": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Details",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 9,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html"
+        ],
+        "parents": [
+            "Drupal\\field_group\\FieldGroupFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 150,
+        "vocabulary": 48,
+        "volume": 837.74,
+        "difficulty": 8.5,
+        "effort": 7120.83,
+        "level": 0.12,
+        "bugs": 0.28,
+        "time": 396,
+        "intelligentContent": 98.56,
+        "number_operators": 31,
+        "number_operands": 119,
+        "number_operators_unique": 6,
+        "number_operands_unique": 42,
+        "cloc": 29,
+        "loc": 85,
+        "lloc": 56,
+        "mi": 79.5,
+        "mIwoC": 40.19,
+        "commentWeight": 39.32,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.31,
+        "relativeSystemComplexity": 144.31,
+        "totalStructuralComplexity": 720,
+        "totalDataComplexity": 1.54,
+        "totalSystemComplexity": 721.54,
+        "package": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tab": {
+        "name": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tab",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 8,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html"
+        ],
+        "parents": [
+            "Drupal\\field_group\\FieldGroupFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 150,
+        "vocabulary": 53,
+        "volume": 859.19,
+        "difficulty": 9.21,
+        "effort": 7910.13,
+        "level": 0.11,
+        "bugs": 0.29,
+        "time": 439,
+        "intelligentContent": 93.32,
+        "number_operators": 29,
+        "number_operands": 121,
+        "number_operators_unique": 7,
+        "number_operands_unique": 46,
+        "cloc": 31,
+        "loc": 81,
+        "lloc": 50,
+        "mi": 82.23,
+        "mIwoC": 41.32,
+        "commentWeight": 40.91,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 144.25,
+        "totalStructuralComplexity": 576,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 577,
+        "package": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\HtmlElement": {
+        "name": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\HtmlElement",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 22,
+        "ccn": 18,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Core\\Template\\Attribute",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Core\\Template\\Attribute",
+            "Drupal\\Core\\Form\\FormState",
+            "Drupal\\field_group\\Element\\HtmlElement"
+        ],
+        "parents": [
+            "Drupal\\field_group\\FieldGroupFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 381,
+        "vocabulary": 103,
+        "volume": 2547.56,
+        "difficulty": 11.74,
+        "effort": 29907.25,
+        "level": 0.09,
+        "bugs": 0.85,
+        "time": 1662,
+        "intelligentContent": 217.01,
+        "number_operators": 59,
+        "number_operands": 322,
+        "number_operators_unique": 7,
+        "number_operands_unique": 96,
+        "cloc": 36,
+        "loc": 132,
+        "lloc": 96,
+        "mi": 66.67,
+        "mIwoC": 30.49,
+        "commentWeight": 36.18,
+        "kanDefect": 1.36,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.24,
+        "relativeSystemComplexity": 256.24,
+        "totalStructuralComplexity": 1280,
+        "totalDataComplexity": 1.18,
+        "totalSystemComplexity": 1281.18,
+        "package": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Fieldset": {
+        "name": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Fieldset",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultContextSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 10,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\field_group\\FieldGroupFormatterBase",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html"
+        ],
+        "parents": [
+            "Drupal\\field_group\\FieldGroupFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 128,
+        "vocabulary": 45,
+        "volume": 702.96,
+        "difficulty": 9.21,
+        "effort": 6474.61,
+        "level": 0.11,
+        "bugs": 0.23,
+        "time": 360,
+        "intelligentContent": 76.32,
+        "number_operators": 28,
+        "number_operands": 100,
+        "number_operators_unique": 7,
+        "number_operands_unique": 38,
+        "cloc": 31,
+        "loc": 90,
+        "lloc": 59,
+        "mi": 79.54,
+        "mIwoC": 40.09,
+        "commentWeight": 39.45,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.29,
+        "relativeSystemComplexity": 169.29,
+        "totalStructuralComplexity": 845,
+        "totalDataComplexity": 1.43,
+        "totalSystemComplexity": 846.43,
+        "package": "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Element\\VerticalTabs": {
+        "name": "Drupal\\field_group\\Element\\VerticalTabs",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "preRenderGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 11,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Drupal\\Core\\Render\\Element\\RenderCallbackInterface",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\Core\\Render\\Element\\RenderCallbackInterface"
+        ],
+        "lcom": 2,
+        "length": 96,
+        "vocabulary": 29,
+        "volume": 466.37,
+        "difficulty": 8.02,
+        "effort": 3740.65,
+        "level": 0.12,
+        "bugs": 0.16,
+        "time": 208,
+        "intelligentContent": 58.14,
+        "number_operators": 19,
+        "number_operands": 77,
+        "number_operators_unique": 5,
+        "number_operands_unique": 24,
+        "cloc": 39,
+        "loc": 79,
+        "lloc": 40,
+        "mi": 89.18,
+        "mIwoC": 44.89,
+        "commentWeight": 44.3,
+        "kanDefect": 0.8,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 5.67,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 3.33,
+        "totalSystemComplexity": 11.33,
+        "package": "Drupal\\field_group\\Element\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Element\\": {
+        "name": "Drupal\\field_group\\Element\\",
+        "classes": [
+            "Drupal\\field_group\\Element\\VerticalTabs",
+            "Drupal\\field_group\\Element\\HtmlElement",
+            "Drupal\\field_group\\Element\\HorizontalTabs"
+        ],
+        "incoming_class_dependencies": [
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\Tabs",
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\HtmlElement"
+        ],
+        "incoming_package_dependencies": [
+            "Drupal\\field_group\\Plugin\\field_group\\FieldGroupFormatter\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Render\\Element\\RenderCallbackInterface",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Render\\Element\\RenderElementBase"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Render\\Element\\",
+            "Drupal\\Core\\Render\\",
+            "Drupal\\Core\\Form\\"
+        ],
+        "abstraction": 0,
+        "instability": 0.6666666666666666,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551584,
+        "normalized_distance": 0.33333333333333337,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group\\Element\\HtmlElement": {
+        "name": "Drupal\\field_group\\Element\\HtmlElement",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processHtmlElement",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 67,
+        "vocabulary": 30,
+        "volume": 328.76,
+        "difficulty": 6.5,
+        "effort": 2136.95,
+        "level": 0.15,
+        "bugs": 0.11,
+        "time": 119,
+        "intelligentContent": 50.58,
+        "number_operators": 15,
+        "number_operands": 52,
+        "number_operators_unique": 6,
+        "number_operands_unique": 24,
+        "cloc": 22,
+        "loc": 48,
+        "lloc": 26,
+        "mi": 94.18,
+        "mIwoC": 50.84,
+        "commentWeight": 43.34,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 5,
+        "package": "Drupal\\field_group\\Element\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Element\\HorizontalTabs": {
+        "name": "Drupal\\field_group\\Element\\HorizontalTabs",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRenderGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processHorizontalTabs",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 18,
+        "ccn": 15,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Render\\Element\\RenderElementBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 189,
+        "vocabulary": 54,
+        "volume": 1087.67,
+        "difficulty": 9.38,
+        "effort": 10196.94,
+        "level": 0.11,
+        "bugs": 0.36,
+        "time": 566,
+        "intelligentContent": 116.02,
+        "number_operators": 39,
+        "number_operands": 150,
+        "number_operators_unique": 6,
+        "number_operands_unique": 48,
+        "cloc": 70,
+        "loc": 135,
+        "lloc": 65,
+        "mi": 82.08,
+        "mIwoC": 37.17,
+        "commentWeight": 44.91,
+        "kanDefect": 1.01,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.35,
+        "relativeSystemComplexity": 17.35,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 5.4,
+        "totalSystemComplexity": 69.4,
+        "package": "Drupal\\field_group\\Element\\",
+        "pageRank": 0.03,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Annotation\\FieldGroupFormatter": {
+        "name": "Drupal\\field_group\\Annotation\\FieldGroupFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 52,
+        "loc": 62,
+        "lloc": 10,
+        "mi": 220.42,
+        "mIwoC": 171,
+        "commentWeight": 49.42,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\field_group\\Annotation\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Annotation\\": {
+        "name": "Drupal\\field_group\\Annotation\\",
+        "classes": [
+            "Drupal\\field_group\\Annotation\\FieldGroupFormatter"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Component\\Annotation\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group\\Routing\\FieldGroupConverter": {
+        "name": "Drupal\\field_group\\Routing\\FieldGroupConverter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "applies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\ParamConverter\\ParamConverterInterface",
+            "Symfony\\Component\\Routing\\Route"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\Core\\ParamConverter\\ParamConverterInterface"
+        ],
+        "lcom": 2,
+        "length": 35,
+        "vocabulary": 21,
+        "volume": 153.73,
+        "difficulty": 5.4,
+        "effort": 830.15,
+        "level": 0.19,
+        "bugs": 0.05,
+        "time": 46,
+        "intelligentContent": 28.47,
+        "number_operators": 8,
+        "number_operands": 27,
+        "number_operators_unique": 6,
+        "number_operands_unique": 15,
+        "cloc": 9,
+        "loc": 25,
+        "lloc": 16,
+        "mi": 98.08,
+        "mIwoC": 58.02,
+        "commentWeight": 40.07,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 6.5,
+        "relativeSystemComplexity": 6.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 13,
+        "totalSystemComplexity": 13,
+        "package": "Drupal\\field_group\\Routing\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\field_group\\Routing\\": {
+        "name": "Drupal\\field_group\\Routing\\",
+        "classes": [
+            "Drupal\\field_group\\Routing\\FieldGroupConverter",
+            "Drupal\\field_group\\Routing\\RouteSubscriber"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\ParamConverter\\ParamConverterInterface",
+            "Symfony\\Component\\Routing\\Route",
+            "Drupal\\Core\\Routing\\RouteSubscriberBase",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Symfony\\Component\\Routing\\RouteCollection"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\ParamConverter\\",
+            "Symfony\\Component\\Routing\\",
+            "Drupal\\Core\\Routing\\",
+            "Drupal\\Core\\Entity\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\field_group\\Routing\\RouteSubscriber": {
+        "name": "Drupal\\field_group\\Routing\\RouteSubscriber",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterRoutes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 9,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\Core\\Routing\\RouteSubscriberBase",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Symfony\\Component\\Routing\\RouteCollection",
+            "Symfony\\Component\\Routing\\Route",
+            "Symfony\\Component\\Routing\\Route",
+            "Symfony\\Component\\Routing\\Route",
+            "Symfony\\Component\\Routing\\Route",
+            "Symfony\\Component\\Routing\\Route",
+            "Symfony\\Component\\Routing\\Route",
+            "Symfony\\Component\\Routing\\Route",
+            "Symfony\\Component\\Routing\\Route"
+        ],
+        "parents": [
+            "Drupal\\Core\\Routing\\RouteSubscriberBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 239,
+        "vocabulary": 46,
+        "volume": 1320.13,
+        "difficulty": 19.37,
+        "effort": 25568.86,
+        "level": 0.05,
+        "bugs": 0.44,
+        "time": 1420,
+        "intelligentContent": 68.16,
+        "number_operators": 55,
+        "number_operands": 184,
+        "number_operators_unique": 8,
+        "number_operands_unique": 38,
+        "cloc": 29,
+        "loc": 82,
+        "lloc": 53,
+        "mi": 79.28,
+        "mIwoC": 39.46,
+        "commentWeight": 39.82,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.19,
+        "relativeSystemComplexity": 64.19,
+        "totalStructuralComplexity": 192,
+        "totalDataComplexity": 0.56,
+        "totalSystemComplexity": 192.56,
+        "package": "Drupal\\field_group\\Routing\\",
+        "pageRank": 0.02,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.88,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "drupal\/core": {
+                "latest": "11.2.8",
+                "license": [
+                    "GPL-2.0-or-later"
+                ],
+                "homepage": "",
+                "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+                "time": "2025-11-12T21:53:29+00:00",
+                "zip": "https:\/\/api.github.com\/repos\/drupal\/core\/zipball\/e9c111ea8f26f751797fbf6a918f845730fc95ee",
+                "compare": true,
+                "type": "drupal-core",
+                "github_stars": 193,
+                "github_watchers": 14,
+                "github_forks": 59,
+                "github_open_issues": 0,
+                "download_total": 58315072,
+                "download_monthly": 972944,
+                "download_daily": 8137,
+                "favers": 215,
+                "name": "drupal\/core",
+                "installed": null,
+                "required": "^10.3 || ^11",
+                "status": "unknown"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "searches": {
+        "name": "searches",
+        "violations": {},
+        "_type": "Hal\\Metric\\SearchMetric"
+    }
+}

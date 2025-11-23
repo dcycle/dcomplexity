@@ -1,0 +1,27126 @@
+var classes = [
+    {
+        "name": "SearchApiSubContext",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "indexEntities",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTagsFromFeature",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\DrupalExtension\\Context\\DrupalSubContextBase",
+            "Behat\\Behat\\Hook\\Scope\\AfterStepScope",
+            "static",
+            "Drupal",
+            "Behat\\Gherkin\\Node\\FeatureNode"
+        ],
+        "parents": [
+            "Drupal\\DrupalExtension\\Context\\DrupalSubContextBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 31,
+        "vocabulary": 11,
+        "volume": 107.24,
+        "difficulty": 3.94,
+        "effort": 422.27,
+        "level": 0.25,
+        "bugs": 0.04,
+        "time": 23,
+        "intelligentContent": 27.24,
+        "number_operators": 10,
+        "number_operands": 21,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 44,
+        "loc": 70,
+        "lloc": 26,
+        "mi": 101.47,
+        "mIwoC": 54.38,
+        "commentWeight": 47.09,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 64.33,
+        "totalStructuralComplexity": 128,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 128.67,
+        "package": "\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api_db\\Plugin\\search_api\\backend\\Database",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatabase",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getModuleHandler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setModuleHandler",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigFactory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfigFactory",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataTypePluginManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDataTypePluginManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeyValueStore",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setKeyValueStore",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDateFormatter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDateFormatter",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEventDispatcher",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEventDispatcher",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataTypeHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDataTypeHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDbmsCompatibilityHandler",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDbmsCompatibilityHandler",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedFeatures",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsDataType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findFreeTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findFreeColumn",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createFieldTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sqlType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fieldsUpdated",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeFieldStorage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPositionalScore",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cleanNumericString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertValuesToScoredTokens",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexItem",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTextFieldName",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convert",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "splitIntoWords",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteAllIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "search",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractRetrievedFieldValuesWhereAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createDbQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "splitKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "eliminateDuplicates",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createKeysQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLanguageConditions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createDbCondition",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTableAlias",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setQuerySort",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFacets",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTemporaryResultsTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeTagFromConditionGroup",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAutocompleteSuggestions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSpecialFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldInfo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexDbInfo",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackendDefinedFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__sleep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__wakeup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 67,
+        "nbMethods": 57,
+        "nbMethodsPrivate": 29,
+        "nbMethodsPublic": 28,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 8,
+        "wmc": 458,
+        "ccn": 402,
+        "ccnMethodMax": 51,
+        "externals": [
+            "Drupal\\search_api\\Backend\\BackendPluginBase",
+            "Drupal\\search_api\\Contrib\\AutocompleteBackendInterface",
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Drupal\\Core\\Database\\Database",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\search_api_db\\DatabaseCompatibility\\GenericDatabase",
+            "Drupal",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal",
+            "Drupal\\search_api\\DataType\\DataTypePluginManager",
+            "Drupal",
+            "Drupal\\Core\\KeyValueStore\\KeyValueStoreInterface",
+            "Drupal",
+            "Drupal\\Core\\Datetime\\DateFormatterInterface",
+            "Drupal",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\DataTypeHelper",
+            "Drupal\\search_api_db\\DatabaseCompatibility\\DatabaseCompatibilityHandlerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Database\\Database",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Component\\Utility\\Unicode",
+            "Drupal\\Component\\Utility\\Unicode",
+            "Drupal\\Component\\Utility\\Unicode",
+            "Drupal\\Component\\Utility\\Unicode",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "static",
+            "Drupal\\search_api\\SearchApiException",
+            "static",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "static",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "static",
+            "Drupal\\Component\\Utility\\Crypt",
+            "Drupal\\search_api\\IndexInterface",
+            "static",
+            "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextToken",
+            "static",
+            "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextToken",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api_db\\Event\\QueryPreExecuteEvent",
+            "static",
+            "static",
+            "static",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "static",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api_autocomplete\\SearchInterface",
+            "Drupal\\search_api_autocomplete\\Suggestion\\SuggestionFactory",
+            "static",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Item\\Field",
+            "Drupal\\Core\\TypedData\\DataDefinition",
+            "Drupal\\Core\\Database\\Database"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Backend\\BackendPluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Contrib\\AutocompleteBackendInterface",
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "lcom": 6,
+        "length": 4380,
+        "vocabulary": 514,
+        "volume": 39444.64,
+        "difficulty": 92.5,
+        "effort": 3648790.78,
+        "level": 0.01,
+        "bugs": 13.15,
+        "time": 202711,
+        "intelligentContent": 426.41,
+        "number_operators": 1043,
+        "number_operands": 3337,
+        "number_operators_unique": 27,
+        "number_operands_unique": 487,
+        "cloc": 963,
+        "loc": 2653,
+        "lloc": 1690,
+        "mi": 40.18,
+        "mIwoC": 0,
+        "commentWeight": 40.18,
+        "kanDefect": 26.65,
+        "relativeStructuralComplexity": 67600,
+        "relativeDataComplexity": 0.35,
+        "relativeSystemComplexity": 67600.35,
+        "totalStructuralComplexity": 4529200,
+        "totalDataComplexity": 23.24,
+        "totalSystemComplexity": 4529223.24,
+        "package": "Drupal\\search_api_db\\Plugin\\search_api\\backend\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 34,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api_db\\Event\\QueryPreExecuteEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDbQuery",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDbQuery",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuery",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 18,
+        "vocabulary": 6,
+        "volume": 46.53,
+        "difficulty": 3,
+        "effort": 139.59,
+        "level": 0.33,
+        "bugs": 0.02,
+        "time": 8,
+        "intelligentContent": 15.51,
+        "number_operators": 6,
+        "number_operands": 12,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 43,
+        "loc": 67,
+        "lloc": 24,
+        "mi": 105.39,
+        "mIwoC": 58.08,
+        "commentWeight": 47.31,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3.75,
+        "relativeSystemComplexity": 3.75,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 15,
+        "totalSystemComplexity": 15,
+        "package": "Drupal\\search_api_db\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api_db\\Event\\SearchApiDbEvents",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 0,
+        "length": 1,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 1,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 13,
+        "loc": 18,
+        "lloc": 5,
+        "mi": 219.39,
+        "mIwoC": 171,
+        "commentWeight": 48.39,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api_db\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api_db\\DatabaseCompatibility\\GenericDatabase",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatabase",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCloneForDatabase",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterNewTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderByRandom",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\DatabaseCompatibilityHandlerInterface",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Component\\Transliteration\\TransliterationInterface",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Core\\Database\\Query\\SelectInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\DatabaseCompatibilityHandlerInterface"
+        ],
+        "lcom": 4,
+        "length": 43,
+        "vocabulary": 17,
+        "volume": 175.76,
+        "difficulty": 4.92,
+        "effort": 865.28,
+        "level": 0.2,
+        "bugs": 0.06,
+        "time": 48,
+        "intelligentContent": 35.7,
+        "number_operators": 11,
+        "number_operands": 32,
+        "number_operators_unique": 4,
+        "number_operands_unique": 13,
+        "cloc": 37,
+        "loc": 76,
+        "lloc": 39,
+        "mi": 93.42,
+        "mIwoC": 49.3,
+        "commentWeight": 44.12,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1.33,
+        "relativeSystemComplexity": 10.33,
+        "totalStructuralComplexity": 54,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 62,
+        "package": "Drupal\\search_api_db\\DatabaseCompatibility\\",
+        "pageRank": 0,
+        "afferentCoupling": 3,
+        "efferentCoupling": 4,
+        "instability": 0.57,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api_db\\DatabaseCompatibility\\MySql",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "alterNewTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderByRandom",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isLocationEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLocationFieldSqlType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLocationFilter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLocationSort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addLocationDbCondition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 28,
+        "ccn": 20,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\GenericDatabase",
+            "Drupal\\search_api_db\\DatabaseCompatibility\\LocationAwareDatabaseInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\GenericDatabase"
+        ],
+        "implements": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\LocationAwareDatabaseInterface"
+        ],
+        "lcom": 9,
+        "length": 217,
+        "vocabulary": 61,
+        "volume": 1286.97,
+        "difficulty": 12.68,
+        "effort": 16317.81,
+        "level": 0.08,
+        "bugs": 0.43,
+        "time": 907,
+        "intelligentContent": 101.5,
+        "number_operators": 49,
+        "number_operands": 168,
+        "number_operators_unique": 8,
+        "number_operands_unique": 53,
+        "cloc": 103,
+        "loc": 193,
+        "lloc": 90,
+        "mi": 78.16,
+        "mIwoC": 32.91,
+        "commentWeight": 45.26,
+        "kanDefect": 1.4,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 196.67,
+        "totalStructuralComplexity": 1764,
+        "totalDataComplexity": 6.07,
+        "totalSystemComplexity": 1770.07,
+        "package": "Drupal\\search_api_db\\DatabaseCompatibility\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api_db\\DatabaseCompatibility\\CaseSensitiveDatabase",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "preprocessIndexValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\GenericDatabase"
+        ],
+        "parents": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\GenericDatabase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 4,
+        "volume": 10,
+        "difficulty": 0.67,
+        "effort": 6.67,
+        "level": 1.5,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 15,
+        "number_operators": 1,
+        "number_operands": 4,
+        "number_operators_unique": 1,
+        "number_operands_unique": 3,
+        "cloc": 6,
+        "loc": 14,
+        "lloc": 8,
+        "mi": 115.62,
+        "mIwoC": 73.16,
+        "commentWeight": 42.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api_db\\DatabaseCompatibility\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api_db\\DatabaseCompatibility\\Pgsql",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "orderByRandom",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 7,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\CaseSensitiveDatabase",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Component\\Transliteration\\TransliterationInterface",
+            "Drupal\\Core\\Logger\\LoggerChannelFactoryInterface",
+            "Drupal\\Core\\Database\\Query\\SelectInterface",
+            "Drupal\\Core\\Utility\\Error"
+        ],
+        "parents": [
+            "Drupal\\search_api_db\\DatabaseCompatibility\\CaseSensitiveDatabase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 44,
+        "vocabulary": 23,
+        "volume": 199.04,
+        "difficulty": 8.53,
+        "effort": 1698.45,
+        "level": 0.12,
+        "bugs": 0.07,
+        "time": 94,
+        "intelligentContent": 23.32,
+        "number_operators": 12,
+        "number_operands": 32,
+        "number_operators_unique": 8,
+        "number_operands_unique": 15,
+        "cloc": 23,
+        "loc": 55,
+        "lloc": 32,
+        "mi": 92.25,
+        "mIwoC": 50.13,
+        "commentWeight": 42.12,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.29,
+        "relativeSystemComplexity": 36.29,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 0.57,
+        "totalSystemComplexity": 72.57,
+        "package": "Drupal\\search_api_db\\DatabaseCompatibility\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Datasource\\DatasourcePluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemBundle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemLanguage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkItemAccess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemAccessResult",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getViewModes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBundles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewItem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewMultipleItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "canContainEntityReferences",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAffectedItemsForEntityChange",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getListCacheContexts",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCombinedId",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 20,
+        "nbMethods": 20,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 19,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 5,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\IndexPluginBase",
+            "Drupal\\search_api\\Datasource\\DatasourceInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\Access\\AccessResult",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\IndexPluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Datasource\\DatasourceInterface"
+        ],
+        "lcom": 15,
+        "length": 82,
+        "vocabulary": 21,
+        "volume": 360.17,
+        "difficulty": 4.5,
+        "effort": 1620.77,
+        "level": 0.22,
+        "bugs": 0.12,
+        "time": 90,
+        "intelligentContent": 80.04,
+        "number_operators": 28,
+        "number_operands": 54,
+        "number_operators_unique": 3,
+        "number_operands_unique": 18,
+        "cloc": 90,
+        "loc": 187,
+        "lloc": 97,
+        "mi": 82.06,
+        "mIwoC": 38.09,
+        "commentWeight": 43.97,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 1.93,
+        "relativeSystemComplexity": 122.93,
+        "totalStructuralComplexity": 2420,
+        "totalDataComplexity": 38.58,
+        "totalSystemComplexity": 2458.58,
+        "package": "Drupal\\search_api\\Datasource\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Datasource\\DatasourcePluginManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\SearchApiPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\SearchApiPluginManager"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 16,
+        "vocabulary": 10,
+        "volume": 53.15,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.25,
+        "bugs": 0.02,
+        "time": 0,
+        "intelligentContent": 66.44,
+        "number_operators": 0,
+        "number_operands": 16,
+        "number_operators_unique": 0,
+        "number_operands_unique": 10,
+        "cloc": 10,
+        "loc": 26,
+        "lloc": 16,
+        "mi": 102.5,
+        "mIwoC": 61.52,
+        "commentWeight": 40.98,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.8,
+        "relativeSystemComplexity": 16.8,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 0.8,
+        "totalSystemComplexity": 16.8,
+        "package": "Drupal\\search_api\\Datasource\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\ProxyClass\\ParamConverter\\SearchApiConverter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "lazyLoadItself",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "applies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\ParamConverter\\ParamConverterInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Symfony\\Component\\Routing\\Route"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\Core\\ParamConverter\\ParamConverterInterface"
+        ],
+        "lcom": 1,
+        "length": 34,
+        "vocabulary": 11,
+        "volume": 117.62,
+        "difficulty": 5.06,
+        "effort": 595.45,
+        "level": 0.2,
+        "bugs": 0.04,
+        "time": 33,
+        "intelligentContent": 23.23,
+        "number_operators": 7,
+        "number_operands": 27,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 45,
+        "loc": 73,
+        "lloc": 28,
+        "mi": 100.56,
+        "mIwoC": 53.67,
+        "commentWeight": 46.89,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 1.05,
+        "relativeSystemComplexity": 17.05,
+        "totalStructuralComplexity": 64,
+        "totalDataComplexity": 4.2,
+        "totalSystemComplexity": 68.2,
+        "package": "Drupal\\search_api\\ProxyClass\\ParamConverter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\FieldConfigurationForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "form",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "actions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "copyFormValuesToEntity",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityForm",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Render\\RendererInterface",
+            "Drupal\\Core\\Datetime\\DateFormatterInterface",
+            "Symfony\\Component\\HttpFoundation\\RequestStack",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityForm"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 238,
+        "vocabulary": 55,
+        "volume": 1375.96,
+        "difficulty": 5.39,
+        "effort": 7422.27,
+        "level": 0.19,
+        "bugs": 0.46,
+        "time": 412,
+        "intelligentContent": 255.08,
+        "number_operators": 51,
+        "number_operands": 187,
+        "number_operators_unique": 3,
+        "number_operands_unique": 52,
+        "cloc": 75,
+        "loc": 184,
+        "lloc": 109,
+        "mi": 74.41,
+        "mIwoC": 32.64,
+        "commentWeight": 41.78,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 441,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 441.49,
+        "totalStructuralComplexity": 4851,
+        "totalDataComplexity": 5.36,
+        "totalSystemComplexity": 4856.36,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 12,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexDeleteConfirmForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityDeleteForm",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityDeleteForm"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 33,
+        "vocabulary": 14,
+        "volume": 125.64,
+        "difficulty": 2.25,
+        "effort": 282.7,
+        "level": 0.44,
+        "bugs": 0.04,
+        "time": 16,
+        "intelligentContent": 55.84,
+        "number_operators": 6,
+        "number_operands": 27,
+        "number_operators_unique": 2,
+        "number_operands_unique": 12,
+        "cloc": 29,
+        "loc": 61,
+        "lloc": 32,
+        "mi": 96.15,
+        "mIwoC": 52.33,
+        "commentWeight": 43.82,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.58,
+        "relativeSystemComplexity": 49.58,
+        "totalStructuralComplexity": 294,
+        "totalDataComplexity": 3.5,
+        "totalSystemComplexity": 297.5,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\UnsavedConfigurationFormTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRenderer",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDateFormatter",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkEntityEditable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 1,
+        "length": 65,
+        "vocabulary": 32,
+        "volume": 325,
+        "difficulty": 3.93,
+        "effort": 1276.79,
+        "level": 0.25,
+        "bugs": 0.11,
+        "time": 71,
+        "intelligentContent": 82.73,
+        "number_operators": 10,
+        "number_operands": 55,
+        "number_operators_unique": 4,
+        "number_operands_unique": 28,
+        "cloc": 42,
+        "loc": 69,
+        "lloc": 27,
+        "mi": 97.27,
+        "mIwoC": 50.52,
+        "commentWeight": 46.76,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.3,
+        "relativeSystemComplexity": 81.3,
+        "totalStructuralComplexity": 243,
+        "totalDataComplexity": 0.9,
+        "totalSystemComplexity": 243.9,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexClearConfirmForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Utility\\Error"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 59,
+        "vocabulary": 23,
+        "volume": 266.89,
+        "difficulty": 6.67,
+        "effort": 1779.27,
+        "level": 0.15,
+        "bugs": 0.09,
+        "time": 99,
+        "intelligentContent": 40.03,
+        "number_operators": 11,
+        "number_operands": 48,
+        "number_operators_unique": 5,
+        "number_operands_unique": 18,
+        "cloc": 19,
+        "loc": 56,
+        "lloc": 37,
+        "mi": 87.64,
+        "mIwoC": 48.4,
+        "commentWeight": 39.24,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.26,
+        "relativeSystemComplexity": 289.26,
+        "totalStructuralComplexity": 1445,
+        "totalDataComplexity": 1.28,
+        "totalSystemComplexity": 1446.28,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexRebuildTrackerConfirmForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 36,
+        "vocabulary": 14,
+        "volume": 137.06,
+        "difficulty": 2.5,
+        "effort": 342.66,
+        "level": 0.4,
+        "bugs": 0.05,
+        "time": 19,
+        "intelligentContent": 54.83,
+        "number_operators": 6,
+        "number_operands": 30,
+        "number_operators_unique": 2,
+        "number_operands_unique": 12,
+        "cloc": 19,
+        "loc": 48,
+        "lloc": 29,
+        "mi": 94.38,
+        "mIwoC": 53,
+        "commentWeight": 41.38,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 169.33,
+        "totalStructuralComplexity": 845,
+        "totalDataComplexity": 1.64,
+        "totalSystemComplexity": 846.64,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\ServerClearConfirmForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 10,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Utility\\Error"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 82,
+        "vocabulary": 34,
+        "volume": 417.17,
+        "difficulty": 6.86,
+        "effort": 2860.61,
+        "level": 0.15,
+        "bugs": 0.14,
+        "time": 159,
+        "intelligentContent": 60.84,
+        "number_operators": 18,
+        "number_operands": 64,
+        "number_operators_unique": 6,
+        "number_operands_unique": 28,
+        "cloc": 30,
+        "loc": 84,
+        "lloc": 54,
+        "mi": 83.01,
+        "mIwoC": 43.06,
+        "commentWeight": 39.96,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 324,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 324.25,
+        "totalStructuralComplexity": 1944,
+        "totalDataComplexity": 1.47,
+        "totalSystemComplexity": 1945.47,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "form",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildEntityForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildDatasourcesConfigForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildTrackerConfigForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitAjaxDatasourceConfigForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildAjaxDatasourceConfigForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitAjaxTrackerConfigForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildAjaxTrackerConfigForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "actions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 16,
+        "nbMethods": 16,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 14,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 61,
+        "ccn": 46,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityForm",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\Utility\\PluginHelperInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Utility\\Error"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityForm"
+        ],
+        "implements": [],
+        "lcom": 6,
+        "length": 888,
+        "vocabulary": 177,
+        "volume": 6631.23,
+        "difficulty": 31.56,
+        "effort": 209311.03,
+        "level": 0.03,
+        "bugs": 2.21,
+        "time": 11628,
+        "intelligentContent": 210.09,
+        "number_operators": 153,
+        "number_operands": 735,
+        "number_operators_unique": 14,
+        "number_operands_unique": 163,
+        "cloc": 188,
+        "loc": 472,
+        "lloc": 284,
+        "mi": 55,
+        "mIwoC": 13.54,
+        "commentWeight": 41.46,
+        "kanDefect": 3.79,
+        "relativeStructuralComplexity": 5476,
+        "relativeDataComplexity": 0.17,
+        "relativeSystemComplexity": 5476.17,
+        "totalStructuralComplexity": 87616,
+        "totalDataComplexity": 2.76,
+        "totalSystemComplexity": 87618.76,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 11,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\ServerDisableConfirmForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 39,
+        "vocabulary": 16,
+        "volume": 156,
+        "difficulty": 2.21,
+        "effort": 345.43,
+        "level": 0.45,
+        "bugs": 0.05,
+        "time": 19,
+        "intelligentContent": 70.45,
+        "number_operators": 8,
+        "number_operands": 31,
+        "number_operators_unique": 2,
+        "number_operands_unique": 14,
+        "cloc": 33,
+        "loc": 70,
+        "lloc": 37,
+        "mi": 94.01,
+        "mIwoC": 50.3,
+        "commentWeight": 43.71,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.62,
+        "relativeSystemComplexity": 64.62,
+        "totalStructuralComplexity": 448,
+        "totalDataComplexity": 4.33,
+        "totalSystemComplexity": 452.33,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexProcessorsForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "form",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "actions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllProcessors",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 44,
+        "ccn": 36,
+        "ccnMethodMax": 19,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityForm",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\Processor\\ProcessorPluginManager",
+            "Psr\\Log\\LoggerInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityForm"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 586,
+        "vocabulary": 129,
+        "volume": 4108.58,
+        "difficulty": 20.21,
+        "effort": 83034.73,
+        "level": 0.05,
+        "bugs": 1.37,
+        "time": 4613,
+        "intelligentContent": 203.29,
+        "number_operators": 105,
+        "number_operands": 481,
+        "number_operators_unique": 10,
+        "number_operands_unique": 119,
+        "cloc": 76,
+        "loc": 271,
+        "lloc": 195,
+        "mi": 56.47,
+        "mIwoC": 19.9,
+        "commentWeight": 36.57,
+        "kanDefect": 4.1,
+        "relativeStructuralComplexity": 1521,
+        "relativeDataComplexity": 0.22,
+        "relativeSystemComplexity": 1521.22,
+        "totalStructuralComplexity": 13689,
+        "totalDataComplexity": 1.95,
+        "totalSystemComplexity": 13690.95,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexFieldsForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildFieldsTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "actions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cancel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 44,
+        "ccn": 34,
+        "ccnMethodMax": 15,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityForm",
+            "Drupal\\Core\\TempStore\\SharedTempStoreFactory",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\DataType\\DataTypePluginManager",
+            "Drupal\\Core\\Render\\RendererInterface",
+            "Drupal\\Core\\Datetime\\DateFormatterInterface",
+            "Drupal\\search_api\\Utility\\DataTypeHelperInterface",
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Component\\Serialization\\Json",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Url",
+            "Drupal\\Component\\Serialization\\Json",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityForm"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 676,
+        "vocabulary": 176,
+        "volume": 5042.58,
+        "difficulty": 13.21,
+        "effort": 66634.04,
+        "level": 0.08,
+        "bugs": 1.68,
+        "time": 3702,
+        "intelligentContent": 381.6,
+        "number_operators": 121,
+        "number_operands": 555,
+        "number_operators_unique": 8,
+        "number_operands_unique": 168,
+        "cloc": 109,
+        "loc": 327,
+        "lloc": 218,
+        "mi": 57.48,
+        "mIwoC": 18.49,
+        "commentWeight": 38.99,
+        "kanDefect": 3.57,
+        "relativeStructuralComplexity": 2601,
+        "relativeDataComplexity": 0.19,
+        "relativeSystemComplexity": 2601.19,
+        "totalStructuralComplexity": 28611,
+        "totalDataComplexity": 2.12,
+        "totalSystemComplexity": 28613.12,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 16,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\ReadOnlyFormSubscriber",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onFormAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface",
+            "Drupal\\config_readonly\\ReadOnlyFormEvent"
+        ],
+        "parents": [],
+        "implements": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface"
+        ],
+        "lcom": 2,
+        "length": 21,
+        "vocabulary": 13,
+        "volume": 77.71,
+        "difficulty": 2.25,
+        "effort": 174.85,
+        "level": 0.44,
+        "bugs": 0.03,
+        "time": 10,
+        "intelligentContent": 34.54,
+        "number_operators": 6,
+        "number_operands": 15,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 15,
+        "loc": 35,
+        "lloc": 20,
+        "mi": 100.43,
+        "mIwoC": 57.98,
+        "commentWeight": 42.45,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.3,
+        "relativeSystemComplexity": 16.3,
+        "totalStructuralComplexity": 32,
+        "totalDataComplexity": 0.6,
+        "totalSystemComplexity": 32.6,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexBreakLockForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\TempStore\\SharedTempStoreFactory",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Render\\RendererInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 104,
+        "vocabulary": 32,
+        "volume": 520,
+        "difficulty": 4.24,
+        "effort": 2205.52,
+        "level": 0.24,
+        "bugs": 0.17,
+        "time": 123,
+        "intelligentContent": 122.6,
+        "number_operators": 22,
+        "number_operands": 82,
+        "number_operators_unique": 3,
+        "number_operands_unique": 29,
+        "cloc": 59,
+        "loc": 120,
+        "lloc": 61,
+        "mi": 86.01,
+        "mIwoC": 41.77,
+        "commentWeight": 44.24,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 196.6,
+        "totalStructuralComplexity": 1764,
+        "totalDataComplexity": 5.4,
+        "totalSystemComplexity": 1769.4,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexAddFieldsForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trustedCallbacks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBaseFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParameter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildDatasourcesForm",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRenderForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceListItem",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertiesList",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compareFieldLabels",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "actions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 65,
+        "ccn": 52,
+        "ccnMethodMax": 34,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityForm",
+            "Drupal\\Core\\Security\\TrustedCallbackInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface",
+            "Drupal\\search_api\\Utility\\DataTypeHelperInterface",
+            "Drupal\\Core\\Render\\RendererInterface",
+            "Drupal\\Core\\Datetime\\DateFormatterInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Url",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\TypedData\\DataDefinitionInterface",
+            "Drupal\\Core\\TypedData\\DataDefinitionInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityForm"
+        ],
+        "implements": [
+            "Drupal\\Core\\Security\\TrustedCallbackInterface"
+        ],
+        "lcom": 6,
+        "length": 739,
+        "vocabulary": 175,
+        "volume": 5506.45,
+        "difficulty": 26.72,
+        "effort": 147125.33,
+        "level": 0.04,
+        "bugs": 1.84,
+        "time": 8174,
+        "intelligentContent": 206.09,
+        "number_operators": 169,
+        "number_operands": 570,
+        "number_operators_unique": 15,
+        "number_operands_unique": 160,
+        "cloc": 214,
+        "loc": 464,
+        "lloc": 250,
+        "mi": 57.93,
+        "mIwoC": 14.5,
+        "commentWeight": 43.42,
+        "kanDefect": 3.72,
+        "relativeStructuralComplexity": 2809,
+        "relativeDataComplexity": 0.3,
+        "relativeSystemComplexity": 2809.3,
+        "totalStructuralComplexity": 39326,
+        "totalDataComplexity": 4.19,
+        "totalSystemComplexity": 39330.19,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 17,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexStatusForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexTaskManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndexTaskManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 28,
+        "ccn": 22,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\Core\\Form\\FormBase",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\search_api\\Utility\\IndexingBatchHelperInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal",
+            "Drupal\\search_api\\Task\\IndexTaskManagerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\FormBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 364,
+        "vocabulary": 101,
+        "volume": 2423.59,
+        "difficulty": 16.7,
+        "effort": 40481.93,
+        "level": 0.06,
+        "bugs": 0.81,
+        "time": 2249,
+        "intelligentContent": 145.1,
+        "number_operators": 60,
+        "number_operands": 304,
+        "number_operators_unique": 10,
+        "number_operands_unique": 91,
+        "cloc": 64,
+        "loc": 182,
+        "lloc": 118,
+        "mi": 67.89,
+        "mIwoC": 28.15,
+        "commentWeight": 39.74,
+        "kanDefect": 1.09,
+        "relativeStructuralComplexity": 625,
+        "relativeDataComplexity": 0.28,
+        "relativeSystemComplexity": 625.28,
+        "totalStructuralComplexity": 5000,
+        "totalDataComplexity": 2.27,
+        "totalSystemComplexity": 5002.27,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexReindexConfirmForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Utility\\Error"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 61,
+        "vocabulary": 23,
+        "volume": 275.94,
+        "difficulty": 6.81,
+        "effort": 1877.91,
+        "level": 0.15,
+        "bugs": 0.09,
+        "time": 104,
+        "intelligentContent": 40.55,
+        "number_operators": 12,
+        "number_operands": 49,
+        "number_operators_unique": 5,
+        "number_operands_unique": 18,
+        "cloc": 30,
+        "loc": 71,
+        "lloc": 41,
+        "mi": 89.59,
+        "mIwoC": 47.32,
+        "commentWeight": 42.26,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.31,
+        "relativeSystemComplexity": 196.31,
+        "totalStructuralComplexity": 1176,
+        "totalDataComplexity": 1.87,
+        "totalSystemComplexity": 1177.87,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\ServerForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "form",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildEntityForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "actions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildBackendConfigForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildAjaxBackendConfigForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 32,
+        "ccn": 23,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityForm",
+            "Drupal\\search_api\\Backend\\BackendPluginManager",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\ServerInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\ServerInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\SubformState",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Utility\\Error"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityForm"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 414,
+        "vocabulary": 100,
+        "volume": 2750.56,
+        "difficulty": 16.42,
+        "effort": 45157.49,
+        "level": 0.06,
+        "bugs": 0.92,
+        "time": 2509,
+        "intelligentContent": 167.54,
+        "number_operators": 82,
+        "number_operands": 332,
+        "number_operators_unique": 9,
+        "number_operands_unique": 91,
+        "cloc": 92,
+        "loc": 251,
+        "lloc": 159,
+        "mi": 65.12,
+        "mIwoC": 24.8,
+        "commentWeight": 40.32,
+        "kanDefect": 1.43,
+        "relativeStructuralComplexity": 2209,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 2209.23,
+        "totalStructuralComplexity": 22090,
+        "totalDataComplexity": 2.31,
+        "totalSystemComplexity": 22092.31,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 11,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\ServerDeleteConfirmForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityDeleteForm",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityDeleteForm"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 36,
+        "vocabulary": 15,
+        "volume": 140.65,
+        "difficulty": 2.23,
+        "effort": 313.75,
+        "level": 0.45,
+        "bugs": 0.05,
+        "time": 17,
+        "intelligentContent": 63.05,
+        "number_operators": 7,
+        "number_operands": 29,
+        "number_operators_unique": 2,
+        "number_operands_unique": 13,
+        "cloc": 32,
+        "loc": 68,
+        "lloc": 36,
+        "mi": 94.56,
+        "mIwoC": 50.88,
+        "commentWeight": 43.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.7,
+        "relativeSystemComplexity": 49.7,
+        "totalStructuralComplexity": 343,
+        "totalDataComplexity": 4.88,
+        "totalSystemComplexity": 347.88,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\ServerStatusForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerTaskManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setServerTaskManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeTasks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 8,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Form\\FormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\search_api\\Task\\ServerTaskManagerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\FormBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 107,
+        "vocabulary": 39,
+        "volume": 565.54,
+        "difficulty": 3.71,
+        "effort": 2097.2,
+        "level": 0.27,
+        "bugs": 0.19,
+        "time": 117,
+        "intelligentContent": 152.5,
+        "number_operators": 18,
+        "number_operands": 89,
+        "number_operators_unique": 3,
+        "number_operands_unique": 36,
+        "cloc": 41,
+        "loc": 89,
+        "lloc": 48,
+        "mi": 87.06,
+        "mIwoC": 43.65,
+        "commentWeight": 43.41,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.48,
+        "relativeSystemComplexity": 144.48,
+        "totalStructuralComplexity": 1008,
+        "totalDataComplexity": 3.38,
+        "totalSystemComplexity": 1011.38,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Form\\IndexDisableConfirmForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuestion",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCancelUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfirmText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\EntityConfirmFormBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 39,
+        "vocabulary": 16,
+        "volume": 156,
+        "difficulty": 2.21,
+        "effort": 345.43,
+        "level": 0.45,
+        "bugs": 0.05,
+        "time": 19,
+        "intelligentContent": 70.45,
+        "number_operators": 8,
+        "number_operands": 31,
+        "number_operators_unique": 2,
+        "number_operands_unique": 14,
+        "cloc": 33,
+        "loc": 70,
+        "lloc": 37,
+        "mi": 94.01,
+        "mIwoC": 50.3,
+        "commentWeight": 43.71,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.62,
+        "relativeSystemComplexity": 64.62,
+        "totalStructuralComplexity": 448,
+        "totalDataComplexity": 4.33,
+        "totalSystemComplexity": 452.33,
+        "package": "Drupal\\search_api\\Form\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Attribute\\SearchApiDataType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 8,
+        "volume": 24,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 48,
+        "number_operators": 0,
+        "number_operands": 8,
+        "number_operators_unique": 0,
+        "number_operands_unique": 8,
+        "cloc": 29,
+        "loc": 36,
+        "lloc": 7,
+        "mi": 120.96,
+        "mIwoC": 71.77,
+        "commentWeight": 49.19,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 7,
+        "relativeSystemComplexity": 7,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 7,
+        "package": "Drupal\\search_api\\Attribute\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Attribute\\SearchApiDatasource",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 5,
+        "volume": 11.61,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 5,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 23,
+        "loc": 30,
+        "lloc": 7,
+        "mi": 122.83,
+        "mIwoC": 73.97,
+        "commentWeight": 48.86,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 5,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 5,
+        "package": "Drupal\\search_api\\Attribute\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Attribute\\SearchApiViewsDisplay",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Attribute\\SearchApiDisplay"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Attribute\\SearchApiDisplay"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 9,
+        "vocabulary": 9,
+        "volume": 28.53,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 57.06,
+        "number_operators": 0,
+        "number_operands": 9,
+        "number_operators_unique": 0,
+        "number_operands_unique": 9,
+        "cloc": 24,
+        "loc": 31,
+        "lloc": 7,
+        "mi": 120.17,
+        "mIwoC": 71.24,
+        "commentWeight": 48.93,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 8,
+        "relativeSystemComplexity": 8,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 8,
+        "package": "Drupal\\search_api\\Attribute\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Attribute\\SearchApiDisplay",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 8,
+        "volume": 24,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 48,
+        "number_operators": 0,
+        "number_operands": 8,
+        "number_operators_unique": 0,
+        "number_operands_unique": 8,
+        "cloc": 27,
+        "loc": 34,
+        "lloc": 7,
+        "mi": 120.86,
+        "mIwoC": 71.77,
+        "commentWeight": 49.1,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 7,
+        "relativeSystemComplexity": 7,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 7,
+        "package": "Drupal\\search_api\\Attribute\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Attribute\\SearchApiParseMode",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 5,
+        "volume": 11.61,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 5,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 23,
+        "loc": 30,
+        "lloc": 7,
+        "mi": 122.83,
+        "mIwoC": 73.97,
+        "commentWeight": 48.86,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 5,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 5,
+        "package": "Drupal\\search_api\\Attribute\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Attribute\\SearchApiProcessor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 7,
+        "volume": 19.65,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 39.3,
+        "number_operators": 0,
+        "number_operands": 7,
+        "number_operators_unique": 0,
+        "number_operands_unique": 7,
+        "cloc": 32,
+        "loc": 39,
+        "lloc": 7,
+        "mi": 121.67,
+        "mIwoC": 72.37,
+        "commentWeight": 49.3,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 7,
+        "relativeSystemComplexity": 7,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 7,
+        "totalSystemComplexity": 7,
+        "package": "Drupal\\search_api\\Attribute\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Attribute\\SearchApiTracker",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 5,
+        "volume": 11.61,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 5,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 23,
+        "loc": 30,
+        "lloc": 7,
+        "mi": 122.83,
+        "mIwoC": 73.97,
+        "commentWeight": 48.86,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 5,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 5,
+        "package": "Drupal\\search_api\\Attribute\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Attribute\\SearchApiBackend",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Attribute\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 5,
+        "volume": 11.61,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 23.22,
+        "number_operators": 0,
+        "number_operands": 5,
+        "number_operators_unique": 0,
+        "number_operands_unique": 5,
+        "cloc": 23,
+        "loc": 30,
+        "lloc": 7,
+        "mi": 122.83,
+        "mIwoC": 73.97,
+        "commentWeight": 48.86,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 5,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 5,
+        "package": "Drupal\\search_api\\Attribute\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Entity\\SearchApiConfigEntityStorage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "doPostSave",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 10,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityStorage",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "Drupal\\Component\\Utility\\DeprecationHelper"
+        ],
+        "parents": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityStorage"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 79,
+        "vocabulary": 17,
+        "volume": 322.91,
+        "difficulty": 9.85,
+        "effort": 3179.42,
+        "level": 0.1,
+        "bugs": 0.11,
+        "time": 177,
+        "intelligentContent": 32.8,
+        "number_operators": 15,
+        "number_operands": 64,
+        "number_operators_unique": 4,
+        "number_operands_unique": 13,
+        "cloc": 20,
+        "loc": 58,
+        "lloc": 38,
+        "mi": 86.09,
+        "mIwoC": 46.63,
+        "commentWeight": 39.47,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 400,
+        "relativeDataComplexity": 0.1,
+        "relativeSystemComplexity": 400.1,
+        "totalStructuralComplexity": 400,
+        "totalDataComplexity": 0.1,
+        "totalSystemComplexity": 400.1,
+        "package": "Drupal\\search_api\\Entity\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Entity\\TaskStorageSchema",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Core\\Entity\\Sql\\SqlContentEntityStorageSchema"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\Sql\\SqlContentEntityStorageSchema"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 8,
+        "loc": 12,
+        "lloc": 4,
+        "mi": 218.68,
+        "mIwoC": 171,
+        "commentWeight": 47.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Entity\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Entity\\Server",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasValidBackend",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackendId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackend",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackendIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackendConfig",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBackendConfig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsFeature",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedFeatures",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsDataType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDiscouragedProcessors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackendDefinedFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteAllIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteAllItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "search",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onDependencyRemoval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "backendPluginManager",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__clone",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 31,
+        "nbMethods": 28,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 27,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 96,
+        "ccn": 69,
+        "ccnMethodMax": 14,
+        "externals": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityBase",
+            "Drupal\\search_api\\ServerInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Event\\DeterminingServerFeaturesEvent",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "Drupal",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal",
+            "Drupal\\search_api\\Backend\\BackendPluginManager",
+            "Drupal"
+        ],
+        "parents": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\ServerInterface"
+        ],
+        "lcom": 2,
+        "length": 634,
+        "vocabulary": 117,
+        "volume": 4355.81,
+        "difficulty": 24.49,
+        "effort": 106676.28,
+        "level": 0.04,
+        "bugs": 1.45,
+        "time": 5926,
+        "intelligentContent": 177.86,
+        "number_operators": 162,
+        "number_operands": 472,
+        "number_operators_unique": 11,
+        "number_operands_unique": 106,
+        "cloc": 215,
+        "loc": 557,
+        "lloc": 342,
+        "mi": 50.99,
+        "mIwoC": 9.96,
+        "commentWeight": 41.03,
+        "kanDefect": 3.33,
+        "relativeStructuralComplexity": 4096,
+        "relativeDataComplexity": 0.47,
+        "relativeSystemComplexity": 4096.47,
+        "totalStructuralComplexity": 126976,
+        "totalDataComplexity": 14.66,
+        "totalSystemComplexity": 126990.66,
+        "package": "Drupal\\search_api\\Entity\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 13,
+        "instability": 0.87,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Entity\\Index",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "id",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isReadOnly",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasources",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isValidDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatasources",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasValidTracker",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTrackerId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTrackerInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTrackerInstanceIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTracker",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasValidServer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isServerEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerInstanceIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setServer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessorsByStage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isValidProcessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessorIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addProcessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeProcessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProcessors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterIndexedItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postprocessSearchResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "renameField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFields",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldsByDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFulltextFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldRenames",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "discardFieldChanges",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadItem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadItemsMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerUnreliableItemIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexSpecificItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isBatchTracking",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "startBatchTracking",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stopBatchTracking",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsInserted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsUpdated",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsInsertedOrUpdated",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsDeleted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reindex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rebuildTracker",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isReindexing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHasReindexed",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLockId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexingRequestTime",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndexingRequestTime",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "writeChangesToSettings",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reactToServerSwitch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reactToDatasourceSwitch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reactToTrackerSwitch",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reactToProcessorChanges",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDependencyData",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldDependencies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onDependencyRemoval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllPlugins",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__sleep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 88,
+        "nbMethods": 79,
+        "nbMethodsPrivate": 10,
+        "nbMethodsPublic": 69,
+        "nbMethodsGetter": 6,
+        "nbMethodsSetters": 3,
+        "wmc": 322,
+        "ccn": 244,
+        "ccnMethodMax": 26,
+        "externals": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityBase",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Datasource\\DatasourceInterface",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Tracker\\TrackerInterface",
+            "Drupal\\search_api\\Entity\\Server",
+            "Drupal\\search_api\\Entity\\Server",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Processor\\ProcessorInterface",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Query\\ResultSetInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Event\\IndexingItemsEvent",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Event\\ItemsIndexedEvent",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Event\\ReindexScheduledEvent",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Event\\ReindexScheduledEvent",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Event\\ReindexScheduledEvent",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Entity\\Server",
+            "Drupal",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "static",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal",
+            "Drupal\\views\\Views",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal",
+            "Drupal\\views\\Views",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal",
+            "Drupal",
+            "Drupal\\Component\\Utility\\NestedArray",
+            "Drupal\\Component\\Utility\\NestedArray",
+            "Drupal",
+            "Drupal"
+        ],
+        "parents": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "lcom": 3,
+        "length": 2074,
+        "vocabulary": 275,
+        "volume": 16806.22,
+        "difficulty": 44.86,
+        "effort": 753855.88,
+        "level": 0.02,
+        "bugs": 5.6,
+        "time": 41881,
+        "intelligentContent": 374.67,
+        "number_operators": 519,
+        "number_operands": 1555,
+        "number_operators_unique": 15,
+        "number_operands_unique": 260,
+        "cloc": 788,
+        "loc": 1951,
+        "lloc": 1163,
+        "mi": 41.65,
+        "mIwoC": 0,
+        "commentWeight": 41.65,
+        "kanDefect": 23.14,
+        "relativeStructuralComplexity": 36100,
+        "relativeDataComplexity": 0.44,
+        "relativeSystemComplexity": 36100.44,
+        "totalStructuralComplexity": 3176800,
+        "totalDataComplexity": 38.6,
+        "totalSystemComplexity": 3176838.6,
+        "package": "Drupal\\search_api\\Entity\\",
+        "pageRank": 0,
+        "afferentCoupling": 7,
+        "efferentCoupling": 22,
+        "instability": 0.76,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Entity\\InstallingTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "isInstallingFromExtension",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isNew",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 3,
+        "volume": 6.34,
+        "difficulty": 2,
+        "effort": 12.68,
+        "level": 0.5,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 3.17,
+        "number_operators": 2,
+        "number_operands": 2,
+        "number_operators_unique": 2,
+        "number_operands_unique": 1,
+        "cloc": 25,
+        "loc": 34,
+        "lloc": 9,
+        "mi": 121.84,
+        "mIwoC": 73.3,
+        "commentWeight": 48.54,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api\\Entity\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Entity\\Task",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "baseFieldDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 20,
+        "ccn": 13,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Core\\Entity\\ContentEntityBase",
+            "Drupal\\search_api\\Task\\TaskInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeInterface",
+            "Drupal\\Core\\Field\\BaseFieldDefinition",
+            "Drupal\\Core\\Field\\BaseFieldDefinition",
+            "Drupal\\Core\\Field\\BaseFieldDefinition",
+            "Drupal\\Core\\Field\\BaseFieldDefinition"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\ContentEntityBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Task\\TaskInterface"
+        ],
+        "lcom": 2,
+        "length": 131,
+        "vocabulary": 37,
+        "volume": 682.44,
+        "difficulty": 5.94,
+        "effort": 4053.27,
+        "level": 0.17,
+        "bugs": 0.23,
+        "time": 225,
+        "intelligentContent": 114.9,
+        "number_operators": 33,
+        "number_operands": 98,
+        "number_operators_unique": 4,
+        "number_operands_unique": 33,
+        "cloc": 69,
+        "loc": 144,
+        "lloc": 75,
+        "mi": 81.42,
+        "mIwoC": 37.5,
+        "commentWeight": 43.92,
+        "kanDefect": 0.64,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.51,
+        "relativeSystemComplexity": 289.51,
+        "totalStructuralComplexity": 2601,
+        "totalDataComplexity": 4.61,
+        "totalSystemComplexity": 2605.61,
+        "package": "Drupal\\search_api\\Entity\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataTypeHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDataTypeHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getElementInfoManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setElementInfoManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trustedCallbacks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preIndexSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRenderFieldsCheckboxes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processConditions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "testField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "testType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processFieldValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processKey",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processConditionValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldProcess",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 23,
+        "nbMethods": 21,
+        "nbMethodsPrivate": 10,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 89,
+        "ccn": 69,
+        "ccnMethodMax": 17,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Drupal\\Core\\Security\\TrustedCallbackInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\DataTypeHelperInterface",
+            "Drupal",
+            "Drupal\\Core\\Render\\ElementInfoManagerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\search_api\\Item\\FieldInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Drupal\\Core\\Security\\TrustedCallbackInterface"
+        ],
+        "lcom": 6,
+        "length": 533,
+        "vocabulary": 88,
+        "volume": 3442.88,
+        "difficulty": 31.18,
+        "effort": 107363.4,
+        "level": 0.03,
+        "bugs": 1.15,
+        "time": 5965,
+        "intelligentContent": 110.4,
+        "number_operators": 138,
+        "number_operands": 395,
+        "number_operators_unique": 12,
+        "number_operands_unique": 76,
+        "cloc": 246,
+        "loc": 530,
+        "lloc": 284,
+        "mi": 55.94,
+        "mIwoC": 12.44,
+        "commentWeight": 43.51,
+        "kanDefect": 5.2,
+        "relativeStructuralComplexity": 2809,
+        "relativeDataComplexity": 0.3,
+        "relativeSystemComplexity": 2809.3,
+        "totalStructuralComplexity": 64607,
+        "totalDataComplexity": 6.85,
+        "totalSystemComplexity": 64613.85,
+        "package": "Drupal\\search_api\\Processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 7,
+        "efferentCoupling": 12,
+        "instability": 0.63,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Processor\\ProcessorPluginManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessingStages",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\SearchApiPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\Core\\StringTranslation\\TranslationInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\SearchApiPluginManager"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 29,
+        "vocabulary": 16,
+        "volume": 116,
+        "difficulty": 0.93,
+        "effort": 108.27,
+        "level": 1.07,
+        "bugs": 0.04,
+        "time": 6,
+        "intelligentContent": 124.29,
+        "number_operators": 1,
+        "number_operands": 28,
+        "number_operators_unique": 1,
+        "number_operands_unique": 15,
+        "cloc": 22,
+        "loc": 45,
+        "lloc": 23,
+        "mi": 99.88,
+        "mIwoC": 55.71,
+        "commentWeight": 44.17,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 36.5,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 73,
+        "package": "Drupal\\search_api\\Processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 6,
+        "instability": 0.75,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Processor\\ConfigurablePropertyBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfiguration",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorProperty",
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorProperty"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyInterface"
+        ],
+        "lcom": 3,
+        "length": 25,
+        "vocabulary": 8,
+        "volume": 75,
+        "difficulty": 3.17,
+        "effort": 237.5,
+        "level": 0.32,
+        "bugs": 0.03,
+        "time": 13,
+        "intelligentContent": 23.68,
+        "number_operators": 6,
+        "number_operands": 19,
+        "number_operators_unique": 2,
+        "number_operands_unique": 6,
+        "cloc": 32,
+        "loc": 59,
+        "lloc": 27,
+        "mi": 100.96,
+        "mIwoC": 55.51,
+        "commentWeight": 45.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.77,
+        "relativeSystemComplexity": 25.77,
+        "totalStructuralComplexity": 125,
+        "totalDataComplexity": 3.83,
+        "totalSystemComplexity": 128.83,
+        "package": "Drupal\\search_api\\Processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 4,
+        "efferentCoupling": 4,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Processor\\EntityProcessorProperty",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getProcessorId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isHidden",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinition",
+            "Drupal\\search_api\\Processor\\ProcessorPropertyInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinition"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Processor\\ProcessorPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 11,
+        "vocabulary": 7,
+        "volume": 30.88,
+        "difficulty": 1.4,
+        "effort": 43.23,
+        "level": 0.71,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 22.06,
+        "number_operators": 4,
+        "number_operands": 7,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 12,
+        "loc": 28,
+        "lloc": 16,
+        "mi": 105.49,
+        "mIwoC": 63.03,
+        "commentWeight": 42.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 4.5,
+        "totalSystemComplexity": 7.5,
+        "package": "Drupal\\search_api\\Processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Processor\\ProcessorProperty",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getProcessorId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isHidden",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\TypedData\\DataDefinition",
+            "Drupal\\search_api\\Processor\\ProcessorPropertyInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\TypedData\\DataDefinition"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Processor\\ProcessorPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 11,
+        "vocabulary": 7,
+        "volume": 30.88,
+        "difficulty": 1.4,
+        "effort": 43.23,
+        "level": 0.71,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 22.06,
+        "number_operators": 4,
+        "number_operands": 7,
+        "number_operators_unique": 2,
+        "number_operands_unique": 5,
+        "cloc": 12,
+        "loc": 28,
+        "lloc": 16,
+        "mi": 105.49,
+        "mIwoC": 63.03,
+        "commentWeight": 42.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 3,
+        "totalDataComplexity": 4.5,
+        "totalSystemComplexity": 7.5,
+        "package": "Drupal\\search_api\\Processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 5,
+        "efferentCoupling": 2,
+        "instability": 0.29,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldsHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFieldsHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsStage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWeight",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isLocked",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isHidden",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preIndexSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterIndexedItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postprocessSearchResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "requiresReindexing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ensureField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 16,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 29,
+        "ccn": 12,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\IndexPluginBase",
+            "Drupal\\search_api\\Processor\\ProcessorInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Query\\ResultSetInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\SearchApiException"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\IndexPluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Processor\\ProcessorInterface"
+        ],
+        "lcom": 9,
+        "length": 151,
+        "vocabulary": 41,
+        "volume": 808.99,
+        "difficulty": 11.53,
+        "effort": 9327.18,
+        "level": 0.09,
+        "bugs": 0.27,
+        "time": 518,
+        "intelligentContent": 70.17,
+        "number_operators": 39,
+        "number_operands": 112,
+        "number_operators_unique": 7,
+        "number_operands_unique": 34,
+        "cloc": 131,
+        "loc": 238,
+        "lloc": 107,
+        "mi": 79.38,
+        "mIwoC": 33.76,
+        "commentWeight": 45.62,
+        "kanDefect": 0.8,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.81,
+        "relativeSystemComplexity": 361.81,
+        "totalStructuralComplexity": 6859,
+        "totalDataComplexity": 15.45,
+        "totalSystemComplexity": 6874.45,
+        "package": "Drupal\\search_api\\Processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 16,
+        "efferentCoupling": 11,
+        "instability": 0.41,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\ParamConverter\\SearchApiConverter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "applies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 11,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\Core\\ParamConverter\\EntityConverter",
+            "Drupal\\Core\\ParamConverter\\ParamConverterInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal",
+            "TypeError",
+            "Drupal\\search_api\\UnsavedIndexConfiguration",
+            "Drupal\\search_api\\UnsavedIndexConfiguration",
+            "Symfony\\Component\\Routing\\Route"
+        ],
+        "parents": [
+            "Drupal\\Core\\ParamConverter\\EntityConverter"
+        ],
+        "implements": [
+            "Drupal\\Core\\ParamConverter\\ParamConverterInterface"
+        ],
+        "lcom": 2,
+        "length": 111,
+        "vocabulary": 36,
+        "volume": 573.86,
+        "difficulty": 8.2,
+        "effort": 4705.67,
+        "level": 0.12,
+        "bugs": 0.19,
+        "time": 261,
+        "intelligentContent": 69.98,
+        "number_operators": 29,
+        "number_operands": 82,
+        "number_operators_unique": 6,
+        "number_operands_unique": 30,
+        "cloc": 45,
+        "loc": 102,
+        "lloc": 57,
+        "mi": 83.74,
+        "mIwoC": 40.9,
+        "commentWeight": 42.84,
+        "kanDefect": 0.8,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.74,
+        "relativeSystemComplexity": 144.74,
+        "totalStructuralComplexity": 432,
+        "totalDataComplexity": 2.23,
+        "totalSystemComplexity": 434.23,
+        "package": "Drupal\\search_api\\ParamConverter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\PluginFormTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "validateConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 2,
+        "length": 8,
+        "vocabulary": 4,
+        "volume": 16,
+        "difficulty": 1.17,
+        "effort": 18.67,
+        "level": 0.86,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 13.71,
+        "number_operators": 1,
+        "number_operands": 7,
+        "number_operators_unique": 1,
+        "number_operands_unique": 3,
+        "cloc": 27,
+        "loc": 40,
+        "lloc": 13,
+        "mi": 114.8,
+        "mIwoC": 67,
+        "commentWeight": 47.8,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.33,
+        "totalSystemComplexity": 9.33,
+        "package": "Drupal\\search_api\\Plugin\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\IndexPluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndex",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 3,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\ConfigurablePluginBase",
+            "Drupal\\search_api\\Plugin\\IndexPluginInterface",
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\ConfigurablePluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\IndexPluginInterface"
+        ],
+        "lcom": 1,
+        "length": 21,
+        "vocabulary": 10,
+        "volume": 69.76,
+        "difficulty": 5.67,
+        "effort": 395.31,
+        "level": 0.18,
+        "bugs": 0.02,
+        "time": 22,
+        "intelligentContent": 12.31,
+        "number_operators": 4,
+        "number_operands": 17,
+        "number_operators_unique": 4,
+        "number_operands_unique": 6,
+        "cloc": 17,
+        "loc": 38,
+        "lloc": 21,
+        "mi": 100.87,
+        "mIwoC": 57.84,
+        "commentWeight": 43.02,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.78,
+        "relativeSystemComplexity": 4.78,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 14.33,
+        "package": "Drupal\\search_api\\Plugin\\",
+        "pageRank": 0,
+        "afferentCoupling": 3,
+        "efferentCoupling": 3,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\datasource\\ContentEntity",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatabaseConnection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatabaseConnection",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityStorage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityFieldManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityFieldManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityDisplayRepository",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityDisplayRepository",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeBundleInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeBundleInfo",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTypedDataManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTypedDataManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigFactory",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfigFactory",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguageManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguageManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldsHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFieldsHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setState",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityMemoryCache",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityMemoryCache",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityBundleOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTranslationOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntity",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatItemId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemBundle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemAccessResult",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasBundles",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTranslatable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityBundles",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPartialItemIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBundles",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguages",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getViewModes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewItem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewMultipleItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "canContainEntityReferences",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAffectedItemsForEntityChange",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyPathDependencies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexesForEntity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterValidItemIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getListCacheContexts",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 60,
+        "nbMethods": 48,
+        "nbMethodsPrivate": 11,
+        "nbMethodsPublic": 37,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 11,
+        "wmc": 169,
+        "ccn": 122,
+        "ccnMethodMax": 30,
+        "externals": [
+            "Drupal\\search_api\\Datasource\\DatasourcePluginBase",
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityFieldManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityDisplayRepositoryInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeBundleInfoInterface",
+            "Drupal",
+            "Drupal\\Core\\TypedData\\TypedDataManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal",
+            "Drupal\\Core\\Language\\LanguageManagerInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface",
+            "Drupal",
+            "Drupal\\Core\\State\\StateInterface",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "static",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\Access\\AccessResult",
+            "Drupal\\Component\\Utility\\Crypt",
+            "static",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "static",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Dependencies",
+            "Drupal\\Core\\Entity\\ContentEntityInterface",
+            "Drupal",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Plugin\\search_api\\datasource\\ContentEntityTrackingManager",
+            "Drupal\\Core\\Cache\\Cache"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Datasource\\DatasourcePluginBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "lcom": 6,
+        "length": 1177,
+        "vocabulary": 179,
+        "volume": 8808.45,
+        "difficulty": 45.28,
+        "effort": 398854.28,
+        "level": 0.02,
+        "bugs": 2.94,
+        "time": 22159,
+        "intelligentContent": 194.53,
+        "number_operators": 314,
+        "number_operands": 863,
+        "number_operators_unique": 17,
+        "number_operands_unique": 162,
+        "cloc": 523,
+        "loc": 1143,
+        "lloc": 620,
+        "mi": 43.32,
+        "mIwoC": 0,
+        "commentWeight": 43.32,
+        "kanDefect": 8.56,
+        "relativeStructuralComplexity": 23716,
+        "relativeDataComplexity": 0.48,
+        "relativeSystemComplexity": 23716.48,
+        "totalStructuralComplexity": 1422960,
+        "totalDataComplexity": 28.61,
+        "totalSystemComplexity": 1422988.61,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\datasource\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 27,
+        "instability": 0.96,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\datasource\\ContentEntityTaskManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface",
+            "Drupal\\search_api\\Task\\TaskManagerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\Task\\TaskEvent",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\search_api\\SearchApiException"
+        ],
+        "parents": [],
+        "implements": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface"
+        ],
+        "lcom": 3,
+        "length": 86,
+        "vocabulary": 30,
+        "volume": 421.99,
+        "difficulty": 6.3,
+        "effort": 2658.55,
+        "level": 0.16,
+        "bugs": 0.14,
+        "time": 148,
+        "intelligentContent": 66.98,
+        "number_operators": 23,
+        "number_operands": 63,
+        "number_operators_unique": 5,
+        "number_operands_unique": 25,
+        "cloc": 23,
+        "loc": 70,
+        "lloc": 47,
+        "mi": 83.13,
+        "mIwoC": 44.34,
+        "commentWeight": 38.79,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.21,
+        "relativeSystemComplexity": 225.21,
+        "totalStructuralComplexity": 675,
+        "totalDataComplexity": 0.63,
+        "totalSystemComplexity": 675.63,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\datasource\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\datasource\\ContentEntityTrackingManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatItemId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityInsert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackEntityChange",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexesForEntity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterValidItemIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 57,
+        "ccn": 49,
+        "ccnMethodMax": 17,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Language\\LanguageManagerInterface",
+            "Drupal\\search_api\\Task\\TaskManagerInterface",
+            "Drupal\\search_api\\Plugin\\search_api\\datasource\\ContentEntity",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Entity\\ContentEntityInterface",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "static",
+            "static",
+            "static",
+            "static",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "static",
+            "Drupal\\Core\\Entity\\ContentEntityInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 4,
+        "length": 408,
+        "vocabulary": 72,
+        "volume": 2517.33,
+        "difficulty": 26.15,
+        "effort": 65821.97,
+        "level": 0.04,
+        "bugs": 0.84,
+        "time": 3657,
+        "intelligentContent": 96.27,
+        "number_operators": 118,
+        "number_operands": 290,
+        "number_operators_unique": 11,
+        "number_operands_unique": 61,
+        "cloc": 162,
+        "loc": 364,
+        "lloc": 202,
+        "mi": 62.26,
+        "mIwoC": 19.31,
+        "commentWeight": 42.95,
+        "kanDefect": 3.95,
+        "relativeStructuralComplexity": 1681,
+        "relativeDataComplexity": 0.35,
+        "relativeSystemComplexity": 1681.35,
+        "totalStructuralComplexity": 15129,
+        "totalDataComplexity": 3.17,
+        "totalSystemComplexity": 15132.17,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\datasource\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 10,
+        "instability": 0.83,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\datasource\\ContentEntityDeriver",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDerivativeDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase",
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface"
+        ],
+        "lcom": 2,
+        "length": 55,
+        "vocabulary": 20,
+        "volume": 237.71,
+        "difficulty": 5.13,
+        "effort": 1218.24,
+        "level": 0.2,
+        "bugs": 0.08,
+        "time": 68,
+        "intelligentContent": 46.38,
+        "number_operators": 14,
+        "number_operands": 41,
+        "number_operators_unique": 4,
+        "number_operands_unique": 16,
+        "cloc": 37,
+        "loc": 75,
+        "lloc": 38,
+        "mi": 92.52,
+        "mIwoC": 48.23,
+        "commentWeight": 44.29,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 64.56,
+        "totalStructuralComplexity": 256,
+        "totalDataComplexity": 2.22,
+        "totalSystemComplexity": 258.22,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\datasource\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Stemmer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "supportsIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEnglish",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguageManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguageManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "testType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSiteEnglishOnly",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 30,
+        "ccn": 19,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "static",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Language\\LanguageManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Language\\LanguageManagerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "static",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "static",
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Porter2",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 6,
+        "length": 193,
+        "vocabulary": 65,
+        "volume": 1162.32,
+        "difficulty": 10.18,
+        "effort": 11827.09,
+        "level": 0.1,
+        "bugs": 0.39,
+        "time": 657,
+        "intelligentContent": 114.23,
+        "number_operators": 48,
+        "number_operands": 145,
+        "number_operators_unique": 8,
+        "number_operands_unique": 57,
+        "cloc": 81,
+        "loc": 200,
+        "lloc": 119,
+        "mi": 72.39,
+        "mIwoC": 30.71,
+        "commentWeight": 41.69,
+        "kanDefect": 2.16,
+        "relativeStructuralComplexity": 729,
+        "relativeDataComplexity": 0.47,
+        "relativeSystemComplexity": 729.47,
+        "totalStructuralComplexity": 9477,
+        "totalDataComplexity": 6.11,
+        "totalSystemComplexity": 9483.11,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\RenderedItem",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAccountSwitcher",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setAccountSwitcher",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRenderer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRenderer",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getThemeSwitcher",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setThemeSwitcher",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPostRequestIndexing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPostRequestIndexing",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onDependencyRemoval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 9,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 4,
+        "wmc": 44,
+        "ccn": 36,
+        "ccnMethodMax": 16,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Session\\AccountSwitcherInterface",
+            "Drupal",
+            "Drupal\\Core\\Render\\RendererInterface",
+            "Drupal\\search_api\\Utility\\ThemeSwitcherInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\ThemeSwitcherInterface",
+            "Drupal\\search_api\\Utility\\PostRequestIndexingInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\PostRequestIndexingInterface",
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\RenderedItemProperty",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\Core\\Session\\UserSession",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "Drupal\\Core\\Utility\\Error",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Link",
+            "Drupal\\Core\\Entity\\Entity\\EntityViewMode",
+            "Drupal\\Core\\Entity\\Entity\\EntityViewMode"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 354,
+        "vocabulary": 83,
+        "volume": 2256.76,
+        "difficulty": 16.36,
+        "effort": 36916.39,
+        "level": 0.06,
+        "bugs": 0.75,
+        "time": 2051,
+        "intelligentContent": 137.96,
+        "number_operators": 85,
+        "number_operands": 269,
+        "number_operators_unique": 9,
+        "number_operands_unique": 74,
+        "cloc": 136,
+        "loc": 306,
+        "lloc": 170,
+        "mi": 65.96,
+        "mIwoC": 23.02,
+        "commentWeight": 42.94,
+        "kanDefect": 3.04,
+        "relativeStructuralComplexity": 3025,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 3025.23,
+        "totalStructuralComplexity": 39325,
+        "totalDataComplexity": 2.98,
+        "totalSystemComplexity": 39327.98,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 15,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\AddURL",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\AddURLProperty",
+            "Drupal\\search_api\\Item\\ItemInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 53,
+        "vocabulary": 26,
+        "volume": 249.12,
+        "difficulty": 2.8,
+        "effort": 698.63,
+        "level": 0.36,
+        "bugs": 0.08,
+        "time": 39,
+        "intelligentContent": 88.83,
+        "number_operators": 10,
+        "number_operands": 43,
+        "number_operators_unique": 3,
+        "number_operands_unique": 23,
+        "cloc": 10,
+        "loc": 36,
+        "lloc": 26,
+        "mi": 88.25,
+        "mIwoC": 51.82,
+        "commentWeight": 36.44,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.14,
+        "relativeSystemComplexity": 169.14,
+        "totalStructuralComplexity": 338,
+        "totalDataComplexity": 0.29,
+        "totalSystemComplexity": 338.29,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\AggregatedFields",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 23,
+        "ccn": 22,
+        "ccnMethodMax": 21,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\AggregatedFieldProperty",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 146,
+        "vocabulary": 46,
+        "volume": 806.44,
+        "difficulty": 6.83,
+        "effort": 5507.4,
+        "level": 0.15,
+        "bugs": 0.27,
+        "time": 306,
+        "intelligentContent": 118.09,
+        "number_operators": 34,
+        "number_operands": 112,
+        "number_operators_unique": 5,
+        "number_operands_unique": 41,
+        "cloc": 14,
+        "loc": 92,
+        "lloc": 78,
+        "mi": 63.83,
+        "mIwoC": 35.41,
+        "commentWeight": 28.41,
+        "kanDefect": 2.01,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.15,
+        "relativeSystemComplexity": 144.15,
+        "totalStructuralComplexity": 288,
+        "totalDataComplexity": 0.31,
+        "totalSystemComplexity": 288.31,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\RoleAccess",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentUser",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCurrentUser",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createTransientAccountWithRole",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preIndexSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 18,
+        "ccn": 11,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Session\\AccountProxyInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\Processor\\ProcessorProperty",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\Core\\Session\\AccountInterface",
+            "Drupal\\user\\RoleInterface",
+            "Drupal\\Core\\Session\\UserSession",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\user\\Entity\\User"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 168,
+        "vocabulary": 57,
+        "volume": 979.93,
+        "difficulty": 6.2,
+        "effort": 6077.42,
+        "level": 0.16,
+        "bugs": 0.33,
+        "time": 338,
+        "intelligentContent": 158,
+        "number_operators": 39,
+        "number_operands": 129,
+        "number_operators_unique": 5,
+        "number_operands_unique": 52,
+        "cloc": 80,
+        "loc": 177,
+        "lloc": 97,
+        "mi": 77.4,
+        "mIwoC": 34.24,
+        "commentWeight": 43.16,
+        "kanDefect": 0.8,
+        "relativeStructuralComplexity": 1369,
+        "relativeDataComplexity": 0.29,
+        "relativeSystemComplexity": 1369.29,
+        "totalStructuralComplexity": 13690,
+        "totalDataComplexity": 2.89,
+        "totalSystemComplexity": 13692.89,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 12,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\EntityType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 5,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\search_api\\Processor\\ProcessorProperty",
+            "Drupal\\search_api\\Item\\ItemInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 49,
+        "vocabulary": 24,
+        "volume": 224.66,
+        "difficulty": 3.7,
+        "effort": 831.25,
+        "level": 0.27,
+        "bugs": 0.07,
+        "time": 46,
+        "intelligentContent": 60.72,
+        "number_operators": 12,
+        "number_operands": 37,
+        "number_operators_unique": 4,
+        "number_operands_unique": 20,
+        "cloc": 10,
+        "loc": 39,
+        "lloc": 29,
+        "mi": 86.28,
+        "mIwoC": 50.96,
+        "commentWeight": 35.32,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 81.4,
+        "totalStructuralComplexity": 162,
+        "totalDataComplexity": 0.8,
+        "totalSystemComplexity": 162.8,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\AddHierarchy",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHierarchyFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findHierarchicalProperties",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addHierarchyValues",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 49,
+        "ccn": 40,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "static",
+            "static",
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinitionInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "lcom": 4,
+        "length": 366,
+        "vocabulary": 88,
+        "volume": 2364.15,
+        "difficulty": 16.29,
+        "effort": 38514.73,
+        "level": 0.06,
+        "bugs": 0.79,
+        "time": 2140,
+        "intelligentContent": 145.12,
+        "number_operators": 80,
+        "number_operands": 286,
+        "number_operators_unique": 9,
+        "number_operands_unique": 79,
+        "cloc": 105,
+        "loc": 285,
+        "lloc": 180,
+        "mi": 62.19,
+        "mIwoC": 21.8,
+        "commentWeight": 40.39,
+        "kanDefect": 4.17,
+        "relativeStructuralComplexity": 1936,
+        "relativeDataComplexity": 0.21,
+        "relativeSystemComplexity": 1936.21,
+        "totalStructuralComplexity": 21296,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 21298.33,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 11,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\AddURLProperty",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyBase",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 26,
+        "vocabulary": 17,
+        "volume": 106.27,
+        "difficulty": 2.25,
+        "effort": 239.12,
+        "level": 0.44,
+        "bugs": 0.04,
+        "time": 13,
+        "intelligentContent": 47.23,
+        "number_operators": 5,
+        "number_operands": 21,
+        "number_operators_unique": 3,
+        "number_operands_unique": 14,
+        "cloc": 11,
+        "loc": 26,
+        "lloc": 15,
+        "mi": 102.17,
+        "mIwoC": 59.89,
+        "commentWeight": 42.28,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.17,
+        "relativeSystemComplexity": 5.17,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 2.33,
+        "totalSystemComplexity": 10.33,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\RenderedItemProperty",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyBase",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\user\\Entity\\Role"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 148,
+        "vocabulary": 48,
+        "volume": 826.57,
+        "difficulty": 7.15,
+        "effort": 5910.97,
+        "level": 0.14,
+        "bugs": 0.28,
+        "time": 328,
+        "intelligentContent": 115.59,
+        "number_operators": 25,
+        "number_operands": 123,
+        "number_operators_unique": 5,
+        "number_operands_unique": 43,
+        "cloc": 13,
+        "loc": 54,
+        "lloc": 41,
+        "mi": 77.77,
+        "mIwoC": 43.32,
+        "commentWeight": 34.45,
+        "kanDefect": 0.75,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.41,
+        "relativeSystemComplexity": 100.41,
+        "totalStructuralComplexity": 200,
+        "totalDataComplexity": 0.82,
+        "totalSystemComplexity": 200.82,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\CustomValueProperty",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 9,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyBase",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal",
+            "Drupal\\Core\\Url"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 78,
+        "vocabulary": 38,
+        "volume": 409.34,
+        "difficulty": 4.55,
+        "effort": 1860.63,
+        "level": 0.22,
+        "bugs": 0.14,
+        "time": 103,
+        "intelligentContent": 90.05,
+        "number_operators": 18,
+        "number_operands": 60,
+        "number_operators_unique": 5,
+        "number_operands_unique": 33,
+        "cloc": 13,
+        "loc": 46,
+        "lloc": 33,
+        "mi": 84.05,
+        "mIwoC": 47.37,
+        "commentWeight": 36.68,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.32,
+        "relativeSystemComplexity": 100.32,
+        "totalStructuralComplexity": 200,
+        "totalDataComplexity": 0.64,
+        "totalSystemComplexity": 200.64,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\AggregatedFieldProperty",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTypes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceLabelPrefixes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAvailableProperties",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 24,
+        "ccn": 17,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyBase",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ConfigurablePropertyBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 385,
+        "vocabulary": 111,
+        "volume": 2615.85,
+        "difficulty": 17.54,
+        "effort": 45895.09,
+        "level": 0.06,
+        "bugs": 0.87,
+        "time": 2550,
+        "intelligentContent": 149.09,
+        "number_operators": 66,
+        "number_operands": 319,
+        "number_operators_unique": 11,
+        "number_operands_unique": 100,
+        "cloc": 64,
+        "loc": 176,
+        "lloc": 112,
+        "mi": 69.29,
+        "mIwoC": 29.08,
+        "commentWeight": 40.21,
+        "kanDefect": 2.18,
+        "relativeStructuralComplexity": 400,
+        "relativeDataComplexity": 0.39,
+        "relativeSystemComplexity": 400.39,
+        "totalStructuralComplexity": 3200,
+        "totalDataComplexity": 3.14,
+        "totalSystemComplexity": 3203.14,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Zl",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 123.79,
+        "mIwoC": 78.06,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Me",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 4,
+        "volume": 8,
+        "difficulty": 1,
+        "effort": 8,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 8,
+        "number_operators": 2,
+        "number_operands": 2,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 119.58,
+        "mIwoC": 73.84,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Co",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 123.79,
+        "mIwoC": 78.06,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Mc",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 102,
+        "vocabulary": 53,
+        "volume": 584.25,
+        "difficulty": 1,
+        "effort": 584.25,
+        "level": 1,
+        "bugs": 0.19,
+        "time": 32,
+        "intelligentContent": 584.25,
+        "number_operators": 51,
+        "number_operands": 51,
+        "number_operators_unique": 2,
+        "number_operands_unique": 51,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 106.53,
+        "mIwoC": 60.79,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Po",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 124,
+        "vocabulary": 64,
+        "volume": 744,
+        "difficulty": 1,
+        "effort": 744,
+        "level": 1,
+        "bugs": 0.25,
+        "time": 41,
+        "intelligentContent": 744,
+        "number_operators": 62,
+        "number_operands": 62,
+        "number_operators_unique": 2,
+        "number_operands_unique": 62,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 105.79,
+        "mIwoC": 60.06,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Sc",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 14,
+        "vocabulary": 9,
+        "volume": 44.38,
+        "difficulty": 1,
+        "effort": 44.38,
+        "level": 1,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 44.38,
+        "number_operators": 7,
+        "number_operands": 7,
+        "number_operators_unique": 2,
+        "number_operands_unique": 7,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 114.37,
+        "mIwoC": 68.63,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Pi",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 4,
+        "volume": 8,
+        "difficulty": 1,
+        "effort": 8,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 8,
+        "number_operators": 2,
+        "number_operands": 2,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 119.58,
+        "mIwoC": 73.84,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Pe",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 22,
+        "vocabulary": 13,
+        "volume": 81.41,
+        "difficulty": 1,
+        "effort": 81.41,
+        "level": 1,
+        "bugs": 0.03,
+        "time": 5,
+        "intelligentContent": 81.41,
+        "number_operators": 11,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 11,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 112.52,
+        "mIwoC": 66.79,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Pd",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 6,
+        "volume": 20.68,
+        "difficulty": 1,
+        "effort": 20.68,
+        "level": 1,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 20.68,
+        "number_operators": 4,
+        "number_operands": 4,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 116.69,
+        "mIwoC": 70.95,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Ps",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 22,
+        "vocabulary": 13,
+        "volume": 81.41,
+        "difficulty": 1,
+        "effort": 81.41,
+        "level": 1,
+        "bugs": 0.03,
+        "time": 5,
+        "intelligentContent": 81.41,
+        "number_operators": 11,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 11,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 112.52,
+        "mIwoC": 66.79,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Pf",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 4,
+        "volume": 8,
+        "difficulty": 1,
+        "effort": 8,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 8,
+        "number_operators": 2,
+        "number_operands": 2,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 119.58,
+        "mIwoC": 73.84,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Sk",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 34,
+        "vocabulary": 19,
+        "volume": 144.43,
+        "difficulty": 1,
+        "effort": 144.43,
+        "level": 1,
+        "bugs": 0.05,
+        "time": 8,
+        "intelligentContent": 144.43,
+        "number_operators": 17,
+        "number_operands": 17,
+        "number_operators_unique": 2,
+        "number_operands_unique": 17,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 110.78,
+        "mIwoC": 65.04,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Pc",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 4,
+        "volume": 8,
+        "difficulty": 1,
+        "effort": 8,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 8,
+        "number_operators": 2,
+        "number_operands": 2,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 119.58,
+        "mIwoC": 73.84,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\So",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 1260,
+        "vocabulary": 632,
+        "volume": 11722.76,
+        "difficulty": 1,
+        "effort": 11722.76,
+        "level": 1,
+        "bugs": 3.91,
+        "time": 651,
+        "intelligentContent": 11722.76,
+        "number_operators": 630,
+        "number_operands": 630,
+        "number_operators_unique": 2,
+        "number_operands_unique": 630,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 97.41,
+        "mIwoC": 51.67,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Sm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 272,
+        "vocabulary": 138,
+        "volume": 1933.52,
+        "difficulty": 1,
+        "effort": 1933.52,
+        "level": 1,
+        "bugs": 0.64,
+        "time": 107,
+        "intelligentContent": 1933.52,
+        "number_operators": 136,
+        "number_operands": 136,
+        "number_operators_unique": 2,
+        "number_operands_unique": 136,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 102.89,
+        "mIwoC": 57.15,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Cf",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 42,
+        "vocabulary": 23,
+        "volume": 189.99,
+        "difficulty": 1,
+        "effort": 189.99,
+        "level": 1,
+        "bugs": 0.06,
+        "time": 11,
+        "intelligentContent": 189.99,
+        "number_operators": 21,
+        "number_operands": 21,
+        "number_operators_unique": 2,
+        "number_operands_unique": 21,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 109.94,
+        "mIwoC": 64.21,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Zs",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 1,
+        "effort": 13.93,
+        "level": 1,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 13.93,
+        "number_operators": 3,
+        "number_operands": 3,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 117.89,
+        "mIwoC": 72.16,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Porter2",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exceptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step0",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step1a",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step1b",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step1c",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step3",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step4",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "step5",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeDoubles",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isVowel",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "charAt",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isShortSyllable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isShort",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "R",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inR1",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "inR2",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "length",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasEnding",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addEnding",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeEnding",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "containsVowel",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validLi",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 25,
+        "nbMethods": 25,
+        "nbMethodsPrivate": 23,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 108,
+        "ccn": 84,
+        "ccnMethodMax": 12,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 1,
+        "length": 727,
+        "vocabulary": 190,
+        "volume": 5503.29,
+        "difficulty": 28.26,
+        "effort": 155499.8,
+        "level": 0.04,
+        "bugs": 1.83,
+        "time": 8639,
+        "intelligentContent": 194.77,
+        "number_operators": 187,
+        "number_operands": 540,
+        "number_operators_unique": 18,
+        "number_operands_unique": 172,
+        "cloc": 242,
+        "loc": 577,
+        "lloc": 335,
+        "mi": 49.59,
+        "mIwoC": 7.43,
+        "commentWeight": 42.16,
+        "kanDefect": 6.06,
+        "relativeStructuralComplexity": 529,
+        "relativeDataComplexity": 1.24,
+        "relativeSystemComplexity": 530.24,
+        "totalStructuralComplexity": 13225,
+        "totalDataComplexity": 30.88,
+        "totalSystemComplexity": 13255.88,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Mn",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 366,
+        "vocabulary": 185,
+        "volume": 2756.49,
+        "difficulty": 1,
+        "effort": 2756.49,
+        "level": 1,
+        "bugs": 0.92,
+        "time": 153,
+        "intelligentContent": 2756.49,
+        "number_operators": 183,
+        "number_operands": 183,
+        "number_operators_unique": 2,
+        "number_operands_unique": 183,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 101.81,
+        "mIwoC": 56.08,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Zp",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 123.79,
+        "mIwoC": 78.06,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\Cc",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getRegularExpression",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\UnicodeCharacterPropertyInterface"
+        ],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 12,
+        "volume": 71.7,
+        "difficulty": 1,
+        "effort": 71.7,
+        "level": 1,
+        "bugs": 0.02,
+        "time": 4,
+        "intelligentContent": 71.7,
+        "number_operators": 10,
+        "number_operands": 10,
+        "number_operators_unique": 2,
+        "number_operands_unique": 10,
+        "cloc": 10,
+        "loc": 18,
+        "lloc": 8,
+        "mi": 112.91,
+        "mIwoC": 67.17,
+        "commentWeight": 45.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\Resources\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\ReverseEntityReferences",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityFieldManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityFieldManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeBundleInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeBundleInfo",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguageManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguageManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCache",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCache",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityReferences",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 15,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 5,
+        "wmc": 42,
+        "ccn": 33,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityFieldManager",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeBundleInfoInterface",
+            "Drupal",
+            "Drupal\\Core\\Language\\LanguageManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Processor\\EntityProcessorProperty",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 347,
+        "vocabulary": 85,
+        "volume": 2224.06,
+        "difficulty": 15.34,
+        "effort": 34107.11,
+        "level": 0.07,
+        "bugs": 0.74,
+        "time": 1895,
+        "intelligentContent": 145.03,
+        "number_operators": 88,
+        "number_operands": 259,
+        "number_operators_unique": 9,
+        "number_operands_unique": 76,
+        "cloc": 141,
+        "loc": 339,
+        "lloc": 198,
+        "mi": 64.07,
+        "mIwoC": 22.03,
+        "commentWeight": 42.05,
+        "kanDefect": 3.13,
+        "relativeStructuralComplexity": 2916,
+        "relativeDataComplexity": 0.36,
+        "relativeSystemComplexity": 2916.36,
+        "totalStructuralComplexity": 43740,
+        "totalDataComplexity": 5.4,
+        "totalSystemComplexity": 43745.4,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 12,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Highlight",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataTypeHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDataTypeHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preIndexSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postprocessSearchResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addExcerpts",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "highlightFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFulltextFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterEmptyValuesPreserveKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeywords",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flattenKeysArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createExcerptForFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processFieldValues",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildFinalExcerpt",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateContextLength",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepareTextForExcerpt",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findKeywordRanges",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findKeywordPosition",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findContextStart",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findContextEnd",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractSnippets",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createFallbackExcerpt",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createExcerpt",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "highlightField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEllipses",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 28,
+        "nbMethods": 27,
+        "nbMethodsPrivate": 20,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 123,
+        "ccn": 97,
+        "ccnMethodMax": 11,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\DataTypeHelperInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Query\\ResultSetInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\search_api\\SearchApiException"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "lcom": 6,
+        "length": 1225,
+        "vocabulary": 220,
+        "volume": 9532.17,
+        "difficulty": 51.9,
+        "effort": 494680.69,
+        "level": 0.02,
+        "bugs": 3.18,
+        "time": 27482,
+        "intelligentContent": 183.68,
+        "number_operators": 336,
+        "number_operands": 889,
+        "number_operators_unique": 23,
+        "number_operands_unique": 197,
+        "cloc": 331,
+        "loc": 821,
+        "lloc": 490,
+        "mi": 42.03,
+        "mIwoC": 0.41,
+        "commentWeight": 41.63,
+        "kanDefect": 9.06,
+        "relativeStructuralComplexity": 3025,
+        "relativeDataComplexity": 0.77,
+        "relativeSystemComplexity": 3025.77,
+        "totalStructuralComplexity": 84700,
+        "totalDataComplexity": 21.54,
+        "totalSystemComplexity": 84721.54,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\EntityStatus",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "supportsIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterIndexedItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 10,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 52,
+        "vocabulary": 21,
+        "volume": 228.4,
+        "difficulty": 5.47,
+        "effort": 1249.07,
+        "level": 0.18,
+        "bugs": 0.08,
+        "time": 69,
+        "intelligentContent": 41.76,
+        "number_operators": 17,
+        "number_operands": 35,
+        "number_operators_unique": 5,
+        "number_operands_unique": 16,
+        "cloc": 15,
+        "loc": 52,
+        "lloc": 37,
+        "mi": 84.9,
+        "mIwoC": 47.93,
+        "commentWeight": 36.97,
+        "kanDefect": 0.96,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 81.4,
+        "totalStructuralComplexity": 162,
+        "totalDataComplexity": 0.8,
+        "totalSystemComplexity": 162.8,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\RoleFilter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterIndexedItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 13,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "lcom": 5,
+        "length": 147,
+        "vocabulary": 51,
+        "volume": 833.85,
+        "difficulty": 5.11,
+        "effort": 4257.94,
+        "level": 0.2,
+        "bugs": 0.28,
+        "time": 237,
+        "intelligentContent": 163.29,
+        "number_operators": 27,
+        "number_operands": 120,
+        "number_operators_unique": 4,
+        "number_operands_unique": 47,
+        "cloc": 45,
+        "loc": 113,
+        "lloc": 68,
+        "mi": 80.09,
+        "mIwoC": 38.63,
+        "commentWeight": 41.46,
+        "kanDefect": 0.82,
+        "relativeStructuralComplexity": 324,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 324.49,
+        "totalStructuralComplexity": 2592,
+        "totalDataComplexity": 3.95,
+        "totalSystemComplexity": 2595.95,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Tokenizer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "testType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPregClassNumbers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPregClassPunctuation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPregClassCjk",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processFieldValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "simplifyText",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandCjk",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "prepare",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 10,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 33,
+        "ccn": 20,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 417,
+        "vocabulary": 120,
+        "volume": 2880.17,
+        "difficulty": 22.92,
+        "effort": 66022.44,
+        "level": 0.04,
+        "bugs": 0.96,
+        "time": 3668,
+        "intelligentContent": 125.65,
+        "number_operators": 119,
+        "number_operands": 298,
+        "number_operators_unique": 16,
+        "number_operands_unique": 104,
+        "cloc": 124,
+        "loc": 261,
+        "lloc": 137,
+        "mi": 70.28,
+        "mIwoC": 26.48,
+        "commentWeight": 43.81,
+        "kanDefect": 1.91,
+        "relativeStructuralComplexity": 400,
+        "relativeDataComplexity": 0.47,
+        "relativeSystemComplexity": 400.47,
+        "totalStructuralComplexity": 5600,
+        "totalDataComplexity": 6.57,
+        "totalSystemComplexity": 5606.57,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Stopwords",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "testType",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getStopWords",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 6,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Query\\QueryInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 5,
+        "length": 163,
+        "vocabulary": 70,
+        "volume": 999.07,
+        "difficulty": 4.06,
+        "effort": 4056.84,
+        "level": 0.25,
+        "bugs": 0.33,
+        "time": 225,
+        "intelligentContent": 246.04,
+        "number_operators": 29,
+        "number_operands": 134,
+        "number_operators_unique": 4,
+        "number_operands_unique": 66,
+        "cloc": 42,
+        "loc": 113,
+        "lloc": 71,
+        "mi": 78.32,
+        "mIwoC": 37.81,
+        "commentWeight": 40.51,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 196.4,
+        "totalStructuralComplexity": 1568,
+        "totalDataComplexity": 3.2,
+        "totalSystemComplexity": 1571.2,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\IgnoreCase",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "processField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase",
+            "Drupal\\search_api\\Item\\FieldInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 21,
+        "vocabulary": 13,
+        "volume": 77.71,
+        "difficulty": 1.73,
+        "effort": 134.23,
+        "level": 0.58,
+        "bugs": 0.03,
+        "time": 7,
+        "intelligentContent": 44.99,
+        "number_operators": 2,
+        "number_operands": 19,
+        "number_operators_unique": 2,
+        "number_operands_unique": 11,
+        "cloc": 10,
+        "loc": 27,
+        "lloc": 17,
+        "mi": 99.98,
+        "mIwoC": 59.52,
+        "commentWeight": 40.46,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 9.25,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 18.5,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\Transliteration",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTransliterator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTransliterator",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguageManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguageManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLangcode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLangcode",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 3,
+        "wmc": 15,
+        "ccn": 9,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Component\\Transliteration\\TransliterationInterface",
+            "Drupal",
+            "Drupal\\Core\\Language\\LanguageManagerInterface",
+            "Drupal\\search_api\\Query\\QueryInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 88,
+        "vocabulary": 30,
+        "volume": 431.81,
+        "difficulty": 7.1,
+        "effort": 3065.83,
+        "level": 0.14,
+        "bugs": 0.14,
+        "time": 170,
+        "intelligentContent": 60.82,
+        "number_operators": 17,
+        "number_operands": 71,
+        "number_operators_unique": 5,
+        "number_operands_unique": 25,
+        "cloc": 76,
+        "loc": 142,
+        "lloc": 66,
+        "mi": 85.94,
+        "mIwoC": 40.65,
+        "commentWeight": 45.29,
+        "kanDefect": 0.75,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 361.4,
+        "totalStructuralComplexity": 3610,
+        "totalDataComplexity": 4,
+        "totalSystemComplexity": 3614,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\NumberFieldBoost",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 17,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "lcom": 3,
+        "length": 201,
+        "vocabulary": 64,
+        "volume": 1206,
+        "difficulty": 13.66,
+        "effort": 16478.35,
+        "level": 0.07,
+        "bugs": 0.4,
+        "time": 915,
+        "intelligentContent": 88.26,
+        "number_operators": 34,
+        "number_operands": 167,
+        "number_operators_unique": 9,
+        "number_operands_unique": 55,
+        "cloc": 22,
+        "loc": 97,
+        "lloc": 75,
+        "mi": 68.87,
+        "mIwoC": 35.24,
+        "commentWeight": 33.63,
+        "kanDefect": 1.79,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 169.23,
+        "totalStructuralComplexity": 676,
+        "totalDataComplexity": 0.93,
+        "totalSystemComplexity": 676.93,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\IgnoreCharacters",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCharacterSets",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormatRegularExpression",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 10,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "class"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 258,
+        "vocabulary": 107,
+        "volume": 1739.3,
+        "difficulty": 9.92,
+        "effort": 17251,
+        "level": 0.1,
+        "bugs": 0.58,
+        "time": 958,
+        "intelligentContent": 175.36,
+        "number_operators": 42,
+        "number_operands": 216,
+        "number_operators_unique": 9,
+        "number_operands_unique": 98,
+        "cloc": 43,
+        "loc": 108,
+        "lloc": 65,
+        "mi": 77.87,
+        "mIwoC": 36.42,
+        "commentWeight": 41.46,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.44,
+        "relativeSystemComplexity": 169.44,
+        "totalStructuralComplexity": 1183,
+        "totalDataComplexity": 3.07,
+        "totalSystemComplexity": 1186.07,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\TypeBoost",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 17,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Drupal\\Core\\Plugin\\PluginFormInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "lcom": 2,
+        "length": 207,
+        "vocabulary": 58,
+        "volume": 1212.6,
+        "difficulty": 17.6,
+        "effort": 21346.85,
+        "level": 0.06,
+        "bugs": 0.4,
+        "time": 1186,
+        "intelligentContent": 68.88,
+        "number_operators": 38,
+        "number_operands": 169,
+        "number_operators_unique": 10,
+        "number_operands_unique": 48,
+        "cloc": 21,
+        "loc": 89,
+        "lloc": 68,
+        "mi": 70.32,
+        "mIwoC": 36.15,
+        "commentWeight": 34.17,
+        "kanDefect": 1.88,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.18,
+        "relativeSystemComplexity": 289.18,
+        "totalStructuralComplexity": 1156,
+        "totalDataComplexity": 0.72,
+        "totalSystemComplexity": 1156.72,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\LanguageWithFallback",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityRepository",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityRepository",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguageManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguageManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getReverseLanguageFallbacks",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 2,
+        "wmc": 13,
+        "ccn": 10,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Entity\\EntityRepositoryInterface",
+            "Drupal\\Core\\Language\\LanguageManagerInterface",
+            "Drupal\\search_api\\Processor\\ProcessorProperty",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\Core\\Entity\\ContentEntityInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 129,
+        "vocabulary": 47,
+        "volume": 716.54,
+        "difficulty": 7.1,
+        "effort": 5085.7,
+        "level": 0.14,
+        "bugs": 0.24,
+        "time": 283,
+        "intelligentContent": 100.96,
+        "number_operators": 32,
+        "number_operands": 97,
+        "number_operators_unique": 6,
+        "number_operands_unique": 41,
+        "cloc": 71,
+        "loc": 149,
+        "lloc": 78,
+        "mi": 81.23,
+        "mIwoC": 37.39,
+        "commentWeight": 43.85,
+        "kanDefect": 1.12,
+        "relativeStructuralComplexity": 324,
+        "relativeDataComplexity": 0.53,
+        "relativeSystemComplexity": 324.53,
+        "totalStructuralComplexity": 2592,
+        "totalDataComplexity": 4.26,
+        "totalSystemComplexity": 2596.26,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\CustomValue",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getToken",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setToken",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 14,
+        "ccn": 10,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Utility\\Token",
+            "Drupal",
+            "Drupal\\Core\\Utility\\Token",
+            "Drupal\\search_api\\Plugin\\search_api\\processor\\Property\\CustomValueProperty",
+            "Drupal\\search_api\\Item\\ItemInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 131,
+        "vocabulary": 43,
+        "volume": 710.84,
+        "difficulty": 8.27,
+        "effort": 5878.84,
+        "level": 0.12,
+        "bugs": 0.24,
+        "time": 327,
+        "intelligentContent": 85.95,
+        "number_operators": 29,
+        "number_operands": 102,
+        "number_operators_unique": 6,
+        "number_operands_unique": 37,
+        "cloc": 47,
+        "loc": 107,
+        "lloc": 60,
+        "mi": 82.68,
+        "mIwoC": 39.9,
+        "commentWeight": 42.78,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 441,
+        "relativeDataComplexity": 0.29,
+        "relativeSystemComplexity": 441.29,
+        "totalStructuralComplexity": 2646,
+        "totalDataComplexity": 1.73,
+        "totalSystemComplexity": 2647.73,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\ContentAccess",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatabase",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatabase",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentUser",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCurrentUser",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preIndexSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNode",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addNodeAccess",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 48,
+        "ccn": 39,
+        "ccnMethodMax": 20,
+        "externals": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal",
+            "Drupal\\Core\\Session\\AccountProxyInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Processor\\ProcessorProperty",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\user\\Entity\\User",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Session\\AccountInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\ProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 348,
+        "vocabulary": 90,
+        "volume": 2259.16,
+        "difficulty": 7.88,
+        "effort": 17807.53,
+        "level": 0.13,
+        "bugs": 0.75,
+        "time": 989,
+        "intelligentContent": 286.61,
+        "number_operators": 80,
+        "number_operands": 268,
+        "number_operators_unique": 5,
+        "number_operands_unique": 85,
+        "cloc": 111,
+        "loc": 301,
+        "lloc": 190,
+        "mi": 61.96,
+        "mIwoC": 21.56,
+        "commentWeight": 40.4,
+        "kanDefect": 4.2,
+        "relativeStructuralComplexity": 2304,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 2304.33,
+        "totalStructuralComplexity": 27648,
+        "totalDataComplexity": 3.94,
+        "totalSystemComplexity": 27651.94,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 12,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\processor\\HtmlFilter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getDataTypeHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDataTypeHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processFieldValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeInvisibleHtmlElements",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleAttributes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serializeHtml",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseHtml",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "normalizeText",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 8,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 55,
+        "ccn": 44,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\DataTypeHelperInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Symfony\\Component\\Yaml\\Dumper",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Symfony\\Component\\Yaml\\Parser",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Component\\Utility\\Html",
+            "DOMXPath",
+            "static",
+            "DOMDocument",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Component\\Utility\\Html"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Processor\\FieldsProcessorPluginBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 582,
+        "vocabulary": 136,
+        "volume": 4124.9,
+        "difficulty": 33.1,
+        "effort": 136541.29,
+        "level": 0.03,
+        "bugs": 1.37,
+        "time": 7586,
+        "intelligentContent": 124.61,
+        "number_operators": 148,
+        "number_operands": 434,
+        "number_operators_unique": 18,
+        "number_operands_unique": 118,
+        "cloc": 124,
+        "loc": 337,
+        "lloc": 216,
+        "mi": 58.21,
+        "mIwoC": 17.84,
+        "commentWeight": 40.37,
+        "kanDefect": 4.22,
+        "relativeStructuralComplexity": 1024,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 1024.49,
+        "totalStructuralComplexity": 13312,
+        "totalDataComplexity": 6.39,
+        "totalSystemComplexity": 13318.39,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\processor\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 14,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\tracker\\Basic",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\search_api\\Tracker\\TrackerPluginBase",
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Tracker\\TrackerPluginBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\PluginFormInterface"
+        ],
+        "lcom": 0,
+        "length": 3,
+        "vocabulary": 3,
+        "volume": 4.75,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 9.51,
+        "number_operators": 0,
+        "number_operands": 3,
+        "number_operators_unique": 0,
+        "number_operands_unique": 3,
+        "cloc": 4,
+        "loc": 8,
+        "lloc": 4,
+        "mi": 126.45,
+        "mIwoC": 81.99,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\tracker\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsEmbed",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 4,
+        "loc": 8,
+        "lloc": 4,
+        "mi": 129.08,
+        "mIwoC": 84.62,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\display\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsBlock",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getThemeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setThemeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getModuleHandler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setModuleHandler",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEventDispatcher",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEventDispatcher",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRenderedInCurrentRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 3,
+        "wmc": 16,
+        "ccn": 12,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Theme\\ThemeManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Theme\\ThemeManagerInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\search_api\\Event\\IsRenderedInCurrentRequestEvent"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 117,
+        "vocabulary": 34,
+        "volume": 595.23,
+        "difficulty": 9.11,
+        "effort": 5420.87,
+        "level": 0.11,
+        "bugs": 0.2,
+        "time": 301,
+        "intelligentContent": 65.36,
+        "number_operators": 32,
+        "number_operands": 85,
+        "number_operators_unique": 6,
+        "number_operands_unique": 28,
+        "cloc": 74,
+        "loc": 147,
+        "lloc": 73,
+        "mi": 82.85,
+        "mIwoC": 38.31,
+        "commentWeight": 44.54,
+        "kanDefect": 0.89,
+        "relativeStructuralComplexity": 841,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 841.4,
+        "totalStructuralComplexity": 6728,
+        "totalDataComplexity": 3.17,
+        "totalSystemComplexity": 6731.17,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\display\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentRouteMatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCurrentRouteMatch",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRenderedInCurrentRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getView",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 10,
+        "ccn": 5,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\search_api\\Display\\DisplayPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Routing\\RouteMatchInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Display\\DisplayPluginBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 76,
+        "vocabulary": 20,
+        "volume": 328.47,
+        "difficulty": 8.67,
+        "effort": 2846.71,
+        "level": 0.12,
+        "bugs": 0.11,
+        "time": 158,
+        "intelligentContent": 37.9,
+        "number_operators": 24,
+        "number_operands": 52,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 49,
+        "loc": 97,
+        "lloc": 48,
+        "mi": 89.62,
+        "mIwoC": 45.03,
+        "commentWeight": 44.58,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.54,
+        "relativeSystemComplexity": 225.54,
+        "totalStructuralComplexity": 1575,
+        "totalDataComplexity": 3.81,
+        "totalSystemComplexity": 1578.81,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\display\\",
+        "pageRank": 0,
+        "afferentCoupling": 5,
+        "efferentCoupling": 4,
+        "instability": 0.44,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsRest",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 4,
+        "loc": 8,
+        "lloc": 4,
+        "mi": 129.08,
+        "mIwoC": 84.62,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\display\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayDeriver",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getDerivativeDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDisplaysForView",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 10,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\search_api\\Display\\DisplayDeriverBase",
+            "Drupal\\views\\ViewEntityInterface",
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Display\\DisplayDeriverBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 145,
+        "vocabulary": 46,
+        "volume": 800.92,
+        "difficulty": 12.89,
+        "effort": 10325.33,
+        "level": 0.08,
+        "bugs": 0.27,
+        "time": 574,
+        "intelligentContent": 62.13,
+        "number_operators": 39,
+        "number_operands": 106,
+        "number_operators_unique": 9,
+        "number_operands_unique": 37,
+        "cloc": 32,
+        "loc": 88,
+        "lloc": 56,
+        "mi": 80.4,
+        "mIwoC": 40.19,
+        "commentWeight": 40.21,
+        "kanDefect": 1.19,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 196.4,
+        "totalStructuralComplexity": 392,
+        "totalDataComplexity": 0.8,
+        "totalSystemComplexity": 392.8,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\display\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsPage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 4,
+        "loc": 8,
+        "lloc": 4,
+        "mi": 129.08,
+        "mIwoC": 84.62,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\display\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsFeed",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\search_api\\display\\ViewsDisplayBase"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 4,
+        "loc": 8,
+        "lloc": 4,
+        "mi": 129.08,
+        "mIwoC": 84.62,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\display\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextValue",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toText",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginalText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOriginalText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTokens",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTokens",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProperties",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProperties",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 3,
+        "wmc": 8,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextValueInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextValueInterface"
+        ],
+        "lcom": 2,
+        "length": 75,
+        "vocabulary": 15,
+        "volume": 293.02,
+        "difficulty": 8.73,
+        "effort": 2557.24,
+        "level": 0.11,
+        "bugs": 0.1,
+        "time": 142,
+        "intelligentContent": 33.57,
+        "number_operators": 27,
+        "number_operands": 48,
+        "number_operators_unique": 4,
+        "number_operands_unique": 11,
+        "cloc": 65,
+        "loc": 140,
+        "lloc": 75,
+        "mi": 84.93,
+        "mIwoC": 41.42,
+        "commentWeight": 43.51,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 3.14,
+        "relativeSystemComplexity": 19.14,
+        "totalStructuralComplexity": 208,
+        "totalDataComplexity": 40.8,
+        "totalSystemComplexity": 248.8,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextToken",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getText",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setText",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBoost",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBoost",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 2,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextTokenInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextTokenInterface"
+        ],
+        "lcom": 2,
+        "length": 28,
+        "vocabulary": 6,
+        "volume": 72.38,
+        "difficulty": 4.75,
+        "effort": 343.8,
+        "level": 0.21,
+        "bugs": 0.02,
+        "time": 19,
+        "intelligentContent": 15.24,
+        "number_operators": 9,
+        "number_operands": 19,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 38,
+        "loc": 71,
+        "lloc": 33,
+        "mi": 99.01,
+        "mIwoC": 53.72,
+        "commentWeight": 45.29,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.83,
+        "relativeSystemComplexity": 3.83,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 17,
+        "totalSystemComplexity": 23,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\data_type\\BooleanDataType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 6,
+        "volume": 18.09,
+        "difficulty": 0.6,
+        "effort": 10.86,
+        "level": 1.67,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 30.16,
+        "number_operators": 1,
+        "number_operands": 6,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 7,
+        "loc": 15,
+        "lloc": 8,
+        "mi": 114.94,
+        "mIwoC": 71.36,
+        "commentWeight": 43.58,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\data_type\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\data_type\\IntegerDataType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 6,
+        "volume": 18.09,
+        "difficulty": 0.6,
+        "effort": 10.86,
+        "level": 1.67,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 30.16,
+        "number_operators": 1,
+        "number_operands": 6,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 7,
+        "loc": 15,
+        "lloc": 8,
+        "mi": 114.94,
+        "mIwoC": 71.36,
+        "commentWeight": 43.58,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\data_type\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\data_type\\DecimalDataType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 17,
+        "vocabulary": 11,
+        "volume": 58.81,
+        "difficulty": 2.44,
+        "effort": 143.35,
+        "level": 0.41,
+        "bugs": 0.02,
+        "time": 8,
+        "intelligentContent": 24.13,
+        "number_operators": 4,
+        "number_operands": 13,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 7,
+        "loc": 19,
+        "lloc": 12,
+        "mi": 104.19,
+        "mIwoC": 63.8,
+        "commentWeight": 40.39,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\data_type\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\data_type\\TextDataType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase",
+            "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextValue"
+        ],
+        "parents": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 6,
+        "volume": 18.09,
+        "difficulty": 0.6,
+        "effort": 10.86,
+        "level": 1.67,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 30.16,
+        "number_operators": 1,
+        "number_operands": 6,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 16,
+        "loc": 24,
+        "lloc": 8,
+        "mi": 119.04,
+        "mIwoC": 71.36,
+        "commentWeight": 47.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\data_type\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\data_type\\StringDataType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 6,
+        "volume": 18.09,
+        "difficulty": 0.6,
+        "effort": 10.86,
+        "level": 1.67,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 30.16,
+        "number_operators": 1,
+        "number_operands": 6,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 7,
+        "loc": 15,
+        "lloc": 8,
+        "mi": 114.94,
+        "mIwoC": 71.36,
+        "commentWeight": 43.58,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\data_type\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\data_type\\DateDataType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 6,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "DateTimeZone",
+            "Drupal\\Component\\Datetime\\DateTimePlus"
+        ],
+        "parents": [
+            "Drupal\\search_api\\DataType\\DataTypePluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 56,
+        "vocabulary": 25,
+        "volume": 260.06,
+        "difficulty": 4,
+        "effort": 1040.22,
+        "level": 0.25,
+        "bugs": 0.09,
+        "time": 58,
+        "intelligentContent": 65.01,
+        "number_operators": 14,
+        "number_operands": 42,
+        "number_operators_unique": 4,
+        "number_operands_unique": 21,
+        "cloc": 12,
+        "loc": 45,
+        "lloc": 33,
+        "mi": 85.03,
+        "mIwoC": 49.16,
+        "commentWeight": 35.87,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.75,
+        "relativeSystemComplexity": 81.75,
+        "totalStructuralComplexity": 162,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 163.5,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\data_type\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\Terms",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "parseInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 17,
+        "ccn": 17,
+        "ccnMethodMax": 17,
+        "externals": [
+            "Drupal\\search_api\\ParseMode\\ParseModePluginBase",
+            "Drupal\\Component\\Utility\\Unicode"
+        ],
+        "parents": [
+            "Drupal\\search_api\\ParseMode\\ParseModePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 143,
+        "vocabulary": 33,
+        "volume": 721.35,
+        "difficulty": 15.04,
+        "effort": 10849.08,
+        "level": 0.07,
+        "bugs": 0.24,
+        "time": 603,
+        "intelligentContent": 47.96,
+        "number_operators": 49,
+        "number_operands": 94,
+        "number_operators_unique": 8,
+        "number_operands_unique": 25,
+        "cloc": 17,
+        "loc": 82,
+        "lloc": 65,
+        "mi": 70.57,
+        "mIwoC": 38.15,
+        "commentWeight": 32.42,
+        "kanDefect": 1.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 5,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\Phrase",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "parseInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\ParseMode\\ParseModePluginBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\ParseMode\\ParseModePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 8,
+        "vocabulary": 7,
+        "volume": 22.46,
+        "difficulty": 0.58,
+        "effort": 13.1,
+        "level": 1.71,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 38.5,
+        "number_operators": 1,
+        "number_operands": 7,
+        "number_operators_unique": 1,
+        "number_operands_unique": 6,
+        "cloc": 7,
+        "loc": 15,
+        "lloc": 8,
+        "mi": 114.28,
+        "mIwoC": 70.7,
+        "commentWeight": 43.58,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 2,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\Complex",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "parseInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "tokenizeInput",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findClosingQuote",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findTermEnd",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseTokens",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseExpression",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "containsNegation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "parseTerm",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "convertStringToConjunctionArray",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 8,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 48,
+        "ccn": 40,
+        "ccnMethodMax": 12,
+        "externals": [
+            "Drupal\\search_api\\ParseMode\\ParseModePluginBase",
+            "Drupal\\Component\\Utility\\Unicode"
+        ],
+        "parents": [
+            "Drupal\\search_api\\ParseMode\\ParseModePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 395,
+        "vocabulary": 59,
+        "volume": 2323.64,
+        "difficulty": 45.68,
+        "effort": 106148.28,
+        "level": 0.02,
+        "bugs": 0.77,
+        "time": 5897,
+        "intelligentContent": 50.87,
+        "number_operators": 127,
+        "number_operands": 268,
+        "number_operators_unique": 15,
+        "number_operands_unique": 44,
+        "cloc": 108,
+        "loc": 279,
+        "lloc": 171,
+        "mi": 63.41,
+        "mIwoC": 22.34,
+        "commentWeight": 41.07,
+        "kanDefect": 2.84,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 102,
+        "totalStructuralComplexity": 900,
+        "totalDataComplexity": 18,
+        "totalSystemComplexity": 918,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\Direct",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "parseInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\ParseMode\\ParseModePluginBase"
+        ],
+        "parents": [
+            "Drupal\\search_api\\ParseMode\\ParseModePluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 6,
+        "vocabulary": 5,
+        "volume": 13.93,
+        "difficulty": 0.63,
+        "effort": 8.71,
+        "level": 1.6,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 22.29,
+        "number_operators": 1,
+        "number_operands": 5,
+        "number_operators_unique": 1,
+        "number_operands_unique": 4,
+        "cloc": 7,
+        "loc": 15,
+        "lloc": 8,
+        "mi": 115.73,
+        "mIwoC": 72.16,
+        "commentWeight": 43.58,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2,
+        "relativeSystemComplexity": 2,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 2,
+        "package": "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\HideablePluginBase",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "isHidden",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Plugin\\PluginBase",
+            "Drupal\\search_api\\Plugin\\HideablePluginInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Plugin\\PluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\HideablePluginInterface"
+        ],
+        "lcom": 1,
+        "length": 3,
+        "vocabulary": 3,
+        "volume": 4.75,
+        "difficulty": 0.5,
+        "effort": 2.38,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 9.51,
+        "number_operators": 1,
+        "number_operands": 2,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 6,
+        "loc": 14,
+        "lloc": 8,
+        "mi": 117.88,
+        "mIwoC": 75.43,
+        "commentWeight": 42.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Plugin\\",
+        "pageRank": 0,
+        "afferentCoupling": 4,
+        "efferentCoupling": 2,
+        "instability": 0.33,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\DataType\\Html",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\DataType\\Text"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\DataType\\Text"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 8,
+        "loc": 12,
+        "lloc": 4,
+        "mi": 132.3,
+        "mIwoC": 84.62,
+        "commentWeight": 47.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\DataType\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\DataType\\Text",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Core\\TypedData\\Plugin\\DataType\\StringData"
+        ],
+        "parents": [
+            "Drupal\\Core\\TypedData\\Plugin\\DataType\\StringData"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 11,
+        "loc": 15,
+        "lloc": 4,
+        "mi": 133.14,
+        "mIwoC": 84.62,
+        "commentWeight": 48.52,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\DataType\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\ConfigAction\\AddDatasourceToIndex",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "apply",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Core\\Config\\Action\\ConfigActionPluginInterface",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\Core\\Config\\ConfigManagerInterface",
+            "Drupal\\search_api\\Utility\\PluginHelperInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Config\\Action\\ConfigActionException",
+            "Drupal\\Core\\Config\\Action\\ConfigActionException"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\Core\\Config\\Action\\ConfigActionPluginInterface",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface"
+        ],
+        "lcom": 3,
+        "length": 53,
+        "vocabulary": 25,
+        "volume": 246.12,
+        "difficulty": 5.88,
+        "effort": 1445.98,
+        "level": 0.17,
+        "bugs": 0.08,
+        "time": 80,
+        "intelligentContent": 41.89,
+        "number_operators": 6,
+        "number_operands": 47,
+        "number_operators_unique": 5,
+        "number_operands_unique": 20,
+        "cloc": 18,
+        "loc": 45,
+        "lloc": 27,
+        "mi": 93.01,
+        "mIwoC": 51.5,
+        "commentWeight": 41.52,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.41,
+        "relativeSystemComplexity": 64.41,
+        "totalStructuralComplexity": 192,
+        "totalDataComplexity": 1.22,
+        "totalSystemComplexity": 193.22,
+        "package": "Drupal\\search_api\\Plugin\\ConfigAction\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\ConfigurablePluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "label",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfiguration",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onDependencyRemoval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPluginDependencies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculatePluginDependencies",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "moduleHandler",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "themeHandler",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 13,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\HideablePluginBase",
+            "Drupal\\search_api\\Plugin\\ConfigurablePluginInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Component\\Plugin\\PluginInspectionInterface",
+            "Drupal\\Component\\Plugin\\PluginInspectionInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\HideablePluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Plugin\\ConfigurablePluginInterface"
+        ],
+        "lcom": 9,
+        "length": 67,
+        "vocabulary": 19,
+        "volume": 284.61,
+        "difficulty": 8.75,
+        "effort": 2490.35,
+        "level": 0.11,
+        "bugs": 0.09,
+        "time": 138,
+        "intelligentContent": 32.53,
+        "number_operators": 18,
+        "number_operands": 49,
+        "number_operators_unique": 5,
+        "number_operands_unique": 14,
+        "cloc": 100,
+        "loc": 172,
+        "lloc": 72,
+        "mi": 88.28,
+        "mIwoC": 42.03,
+        "commentWeight": 46.25,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 1.08,
+        "relativeSystemComplexity": 82.08,
+        "totalStructuralComplexity": 1053,
+        "totalDataComplexity": 14.1,
+        "totalSystemComplexity": 1067.1,
+        "package": "Drupal\\search_api\\Plugin\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 5,
+        "instability": 0.71,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\join\\SearchApiJoin",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "buildJoin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\join\\JoinPluginBase"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\join\\JoinPluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 4,
+        "vocabulary": 4,
+        "volume": 8,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 16,
+        "number_operators": 0,
+        "number_operands": 4,
+        "number_operators_unique": 0,
+        "number_operands_unique": 4,
+        "cloc": 13,
+        "loc": 20,
+        "lloc": 7,
+        "mi": 122.54,
+        "mIwoC": 75.11,
+        "commentWeight": 47.43,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 3,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api\\Plugin\\views\\join\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\sort\\SearchApiSort",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\sort\\SortPluginBase"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\sort\\SortPluginBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 13,
+        "vocabulary": 6,
+        "volume": 33.6,
+        "difficulty": 2.5,
+        "effort": 84.01,
+        "level": 0.4,
+        "bugs": 0.01,
+        "time": 5,
+        "intelligentContent": 13.44,
+        "number_operators": 3,
+        "number_operands": 10,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 15,
+        "loc": 29,
+        "lloc": 14,
+        "mi": 108.92,
+        "mIwoC": 64.04,
+        "commentWeight": 44.88,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 4,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 4,
+        "package": "Drupal\\search_api\\Plugin\\views\\sort\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiFulltext",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParseModeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setParseModeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFulltextFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 19,
+        "ccn": 14,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\search_api\\ParseMode\\ParseModePluginManager",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 210,
+        "vocabulary": 56,
+        "volume": 1219.54,
+        "difficulty": 4.87,
+        "effort": 5936.65,
+        "level": 0.21,
+        "bugs": 0.41,
+        "time": 330,
+        "intelligentContent": 250.53,
+        "number_operators": 38,
+        "number_operands": 172,
+        "number_operators_unique": 3,
+        "number_operands_unique": 53,
+        "cloc": 46,
+        "loc": 135,
+        "lloc": 89,
+        "mi": 73.28,
+        "mIwoC": 33.98,
+        "commentWeight": 39.3,
+        "kanDefect": 1.24,
+        "relativeStructuralComplexity": 676,
+        "relativeDataComplexity": 0.26,
+        "relativeSystemComplexity": 676.26,
+        "totalStructuralComplexity": 4732,
+        "totalDataComplexity": 1.85,
+        "totalSystemComplexity": 4733.85,
+        "package": "Drupal\\search_api\\Plugin\\views\\argument\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiDate",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDateFormatter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDateFormatter",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "title",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTimestamp",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unpackArgumentValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "abort",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 32,
+        "ccn": 26,
+        "ccnMethodMax": 11,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Datetime\\DateFormatterInterface",
+            "Drupal\\Component\\Render\\FormattableMarkup"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 222,
+        "vocabulary": 64,
+        "volume": 1332,
+        "difficulty": 13.17,
+        "effort": 17546.07,
+        "level": 0.08,
+        "bugs": 0.44,
+        "time": 975,
+        "intelligentContent": 101.12,
+        "number_operators": 61,
+        "number_operands": 161,
+        "number_operators_unique": 9,
+        "number_operands_unique": 55,
+        "cloc": 59,
+        "loc": 171,
+        "lloc": 112,
+        "mi": 69.4,
+        "mIwoC": 29.92,
+        "commentWeight": 39.47,
+        "kanDefect": 1.59,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.73,
+        "relativeSystemComplexity": 196.73,
+        "totalStructuralComplexity": 1568,
+        "totalDataComplexity": 5.87,
+        "totalSystemComplexity": 1573.87,
+        "package": "Drupal\\search_api\\Plugin\\views\\argument\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiAllTerms",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 36,
+        "ccn": 34,
+        "ccnMethodMax": 33,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiTerm",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiTerm"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 242,
+        "vocabulary": 64,
+        "volume": 1452,
+        "difficulty": 20.42,
+        "effort": 29654.31,
+        "level": 0.05,
+        "bugs": 0.48,
+        "time": 1647,
+        "intelligentContent": 71.1,
+        "number_operators": 65,
+        "number_operands": 177,
+        "number_operators_unique": 12,
+        "number_operands_unique": 52,
+        "cloc": 57,
+        "loc": 168,
+        "lloc": 111,
+        "mi": 67.91,
+        "mIwoC": 28.67,
+        "commentWeight": 39.24,
+        "kanDefect": 3.22,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.48,
+        "relativeSystemComplexity": 361.48,
+        "totalStructuralComplexity": 1444,
+        "totalDataComplexity": 1.9,
+        "totalSystemComplexity": 1445.9,
+        "package": "Drupal\\search_api\\Plugin\\views\\argument\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiTerm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityRepository",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityRepository",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTermStorage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTermStorage",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "title",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 10,
+        "ccn": 7,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityRepositoryInterface",
+            "Drupal",
+            "Drupal\\taxonomy\\TermStorageInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 62,
+        "vocabulary": 17,
+        "volume": 253.42,
+        "difficulty": 5.04,
+        "effort": 1276.16,
+        "level": 0.2,
+        "bugs": 0.08,
+        "time": 71,
+        "intelligentContent": 50.33,
+        "number_operators": 15,
+        "number_operands": 47,
+        "number_operators_unique": 3,
+        "number_operands_unique": 14,
+        "cloc": 58,
+        "loc": 105,
+        "lloc": 47,
+        "mi": 91.42,
+        "mIwoC": 45.75,
+        "commentWeight": 45.67,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.57,
+        "relativeSystemComplexity": 169.57,
+        "totalStructuralComplexity": 1014,
+        "totalDataComplexity": 3.43,
+        "totalSystemComplexity": 1017.43,
+        "package": "Drupal\\search_api\\Plugin\\views\\argument\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultActions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "fillValue",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 33,
+        "ccn": 27,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\argument\\ArgumentPluginBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\argument\\ArgumentPluginBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 301,
+        "vocabulary": 63,
+        "volume": 1799.16,
+        "difficulty": 17.38,
+        "effort": 31272.69,
+        "level": 0.06,
+        "bugs": 0.6,
+        "time": 1737,
+        "intelligentContent": 103.51,
+        "number_operators": 62,
+        "number_operands": 239,
+        "number_operators_unique": 8,
+        "number_operands_unique": 55,
+        "cloc": 46,
+        "loc": 167,
+        "lloc": 121,
+        "mi": 64.46,
+        "mIwoC": 28.14,
+        "commentWeight": 36.32,
+        "kanDefect": 1.71,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 121.6,
+        "totalStructuralComplexity": 847,
+        "totalDataComplexity": 4.17,
+        "totalSystemComplexity": 851.17,
+        "package": "Drupal\\search_api\\Plugin\\views\\argument\\",
+        "pageRank": 0,
+        "afferentCoupling": 4,
+        "efferentCoupling": 3,
+        "instability": 0.43,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiMoreLikeThis",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 7,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Entity\\Index"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\argument\\SearchApiStandard"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 101,
+        "vocabulary": 40,
+        "volume": 537.51,
+        "difficulty": 5.86,
+        "effort": 3148.3,
+        "level": 0.17,
+        "bugs": 0.18,
+        "time": 175,
+        "intelligentContent": 91.77,
+        "number_operators": 19,
+        "number_operands": 82,
+        "number_operators_unique": 5,
+        "number_operands_unique": 35,
+        "cloc": 15,
+        "loc": 64,
+        "lloc": 49,
+        "mi": 77.15,
+        "mIwoC": 43.07,
+        "commentWeight": 34.08,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.17,
+        "relativeSystemComplexity": 289.17,
+        "totalStructuralComplexity": 867,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 867.5,
+        "package": "Drupal\\search_api\\Plugin\\views\\argument\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\ResultRow",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__isset",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__sleep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 9,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\views\\ResultRow"
+        ],
+        "parents": [
+            "Drupal\\views\\ResultRow"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 69,
+        "vocabulary": 23,
+        "volume": 312.13,
+        "difficulty": 9,
+        "effort": 2809.13,
+        "level": 0.11,
+        "bugs": 0.1,
+        "time": 156,
+        "intelligentContent": 34.68,
+        "number_operators": 18,
+        "number_operands": 51,
+        "number_operators_unique": 6,
+        "number_operands_unique": 17,
+        "cloc": 64,
+        "loc": 103,
+        "lloc": 39,
+        "mi": 93.59,
+        "mIwoC": 46.62,
+        "commentWeight": 46.98,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1.89,
+        "relativeSystemComplexity": 5.89,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 5.67,
+        "totalSystemComplexity": 17.67,
+        "package": "Drupal\\search_api\\Plugin\\views\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiText",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render_item",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 9,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\field\\SearchApiStandard",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\Component\\Utility\\Xss",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Render\\Markup"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\field\\SearchApiStandard"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 158,
+        "vocabulary": 59,
+        "volume": 929.46,
+        "difficulty": 9.57,
+        "effort": 8893.63,
+        "level": 0.1,
+        "bugs": 0.31,
+        "time": 494,
+        "intelligentContent": 97.14,
+        "number_operators": 36,
+        "number_operands": 122,
+        "number_operators_unique": 8,
+        "number_operands_unique": 51,
+        "cloc": 16,
+        "loc": 62,
+        "lloc": 46,
+        "mi": 77.15,
+        "mIwoC": 41.73,
+        "commentWeight": 35.41,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.31,
+        "relativeSystemComplexity": 169.31,
+        "totalStructuralComplexity": 507,
+        "totalDataComplexity": 0.93,
+        "totalSystemComplexity": 507.93,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiBoolean",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\field\\Boolean",
+            "Drupal\\views\\Plugin\\views\\field\\MultiItemsFieldHandlerInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\field\\Boolean"
+        ],
+        "implements": [
+            "Drupal\\views\\Plugin\\views\\field\\MultiItemsFieldHandlerInterface"
+        ],
+        "lcom": 0,
+        "length": 1,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 1,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "mi": 216.52,
+        "mIwoC": 171,
+        "commentWeight": 45.52,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiFieldTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getTypedDataManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTypedDataManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldsHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFieldsHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clickSort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clickSortable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRetrievedProperty",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "expandRequiredProperties",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preLoadResultItems",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValuesToExtract",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractProcessorProperty",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractPropertyValues",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkHighlighting",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "combineHighlightedValues",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isActiveForRow",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkEntityAccess",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCombinedPropertyPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCombinedPropertyPath",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render_item",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "renderItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sanitizeValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItemUrl",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRenderer",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 34,
+        "nbMethods": 31,
+        "nbMethodsPrivate": 13,
+        "nbMethodsPublic": 18,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 3,
+        "wmc": 152,
+        "ccn": 122,
+        "ccnMethodMax": 24,
+        "externals": [
+            "Drupal",
+            "Drupal\\Core\\TypedData\\TypedDataManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Processor\\ProcessorPropertyInterface",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\views\\ResultRow"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 1,
+        "length": 1145,
+        "vocabulary": 161,
+        "volume": 8393.9,
+        "difficulty": 52.99,
+        "effort": 444817.99,
+        "level": 0.02,
+        "bugs": 2.8,
+        "time": 24712,
+        "intelligentContent": 158.4,
+        "number_operators": 303,
+        "number_operands": 842,
+        "number_operators_unique": 18,
+        "number_operands_unique": 143,
+        "cloc": 595,
+        "loc": 1153,
+        "lloc": 558,
+        "mi": 44.85,
+        "mIwoC": 0,
+        "commentWeight": 44.85,
+        "kanDefect": 11.31,
+        "relativeStructuralComplexity": 5625,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 5625.56,
+        "totalStructuralComplexity": 191250,
+        "totalDataComplexity": 18.97,
+        "totalSystemComplexity": 191268.97,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiDate",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "render_item",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\field\\Date",
+            "Drupal\\views\\Plugin\\views\\field\\MultiItemsFieldHandlerInterface",
+            "DateTimeZone",
+            "DateTime"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\field\\Date"
+        ],
+        "implements": [
+            "Drupal\\views\\Plugin\\views\\field\\MultiItemsFieldHandlerInterface"
+        ],
+        "lcom": 1,
+        "length": 33,
+        "vocabulary": 16,
+        "volume": 132,
+        "difficulty": 5.68,
+        "effort": 750,
+        "level": 0.18,
+        "bugs": 0.04,
+        "time": 42,
+        "intelligentContent": 23.23,
+        "number_operators": 8,
+        "number_operands": 25,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 24,
+        "loc": 45,
+        "lloc": 21,
+        "mi": 101.02,
+        "mIwoC": 55.77,
+        "commentWeight": 45.25,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 10,
+        "totalStructuralComplexity": 9,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 10,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiEntity",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityDisplayRepository",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityDisplayRepository",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeBundleInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeBundleInfo",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTargetEntityTypeId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render_item",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItem",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDisplayMethod",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 47,
+        "ccn": 36,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\field\\SearchApiStandard",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityDisplayRepositoryInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeBundleInfo",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\Core\\Entity\\EntityInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\field\\SearchApiStandard"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 431,
+        "vocabulary": 95,
+        "volume": 2831.61,
+        "difficulty": 21.87,
+        "effort": 61924.57,
+        "level": 0.05,
+        "bugs": 0.94,
+        "time": 3440,
+        "intelligentContent": 129.48,
+        "number_operators": 97,
+        "number_operands": 334,
+        "number_operators_unique": 11,
+        "number_operands_unique": 84,
+        "cloc": 100,
+        "loc": 281,
+        "lloc": 181,
+        "mi": 61.64,
+        "mIwoC": 21.74,
+        "commentWeight": 39.91,
+        "kanDefect": 3.37,
+        "relativeStructuralComplexity": 1600,
+        "relativeDataComplexity": 0.44,
+        "relativeSystemComplexity": 1600.44,
+        "totalStructuralComplexity": 22400,
+        "totalDataComplexity": 6.17,
+        "totalSystemComplexity": 22406.17,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiBulkForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheContexts",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntity",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewsFormValidate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateEntityBulkFormKey",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadEntityFromBulkFormKey",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isWorkspaceSafeForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 34,
+        "ccn": 25,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\field\\BulkForm",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\field\\BulkForm"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 309,
+        "vocabulary": 82,
+        "volume": 1964.48,
+        "difficulty": 17.89,
+        "effort": 35153.19,
+        "level": 0.06,
+        "bugs": 0.65,
+        "time": 1953,
+        "intelligentContent": 109.78,
+        "number_operators": 78,
+        "number_operands": 231,
+        "number_operators_unique": 11,
+        "number_operands_unique": 71,
+        "cloc": 104,
+        "loc": 258,
+        "lloc": 154,
+        "mi": 67.48,
+        "mIwoC": 25.86,
+        "commentWeight": 41.62,
+        "kanDefect": 1.75,
+        "relativeStructuralComplexity": 1369,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 1369.38,
+        "totalStructuralComplexity": 13690,
+        "totalDataComplexity": 3.79,
+        "totalSystemComplexity": 13693.79,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiNumeric",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\field\\NumericField",
+            "Drupal\\views\\Plugin\\views\\field\\MultiItemsFieldHandlerInterface",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\field\\NumericField"
+        ],
+        "implements": [
+            "Drupal\\views\\Plugin\\views\\field\\MultiItemsFieldHandlerInterface"
+        ],
+        "lcom": 2,
+        "length": 24,
+        "vocabulary": 11,
+        "volume": 83.03,
+        "difficulty": 3.56,
+        "effort": 295.78,
+        "level": 0.28,
+        "bugs": 0.03,
+        "time": 16,
+        "intelligentContent": 23.31,
+        "number_operators": 5,
+        "number_operands": 19,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 15,
+        "loc": 35,
+        "lloc": 20,
+        "mi": 100.36,
+        "mIwoC": 57.91,
+        "commentWeight": 42.45,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.83,
+        "relativeSystemComplexity": 4.83,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 9.67,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiEntityOperations",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getContainedEntity",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 8,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\field\\EntityOperations",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\Core\\Cache\\CacheableMetadata",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\field\\EntityOperations"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 68,
+        "vocabulary": 23,
+        "volume": 307.6,
+        "difficulty": 6.94,
+        "effort": 2136.13,
+        "level": 0.14,
+        "bugs": 0.1,
+        "time": 119,
+        "intelligentContent": 44.29,
+        "number_operators": 18,
+        "number_operands": 50,
+        "number_operators_unique": 5,
+        "number_operands_unique": 18,
+        "cloc": 22,
+        "loc": 65,
+        "lloc": 43,
+        "mi": 85.08,
+        "mIwoC": 45.87,
+        "commentWeight": 39.21,
+        "kanDefect": 0.66,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.28,
+        "relativeSystemComplexity": 144.28,
+        "totalStructuralComplexity": 432,
+        "totalDataComplexity": 0.85,
+        "totalSystemComplexity": 432.85,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiEntityField",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParentPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParentOptionKeys",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render_item",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityFieldRenderer",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "renderItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 41,
+        "ccn": 30,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\field\\EntityField",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase",
+            "Drupal\\views\\Views",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormHelper",
+            "Drupal\\Core\\Form\\FormHelper",
+            "Drupal\\views\\ResultRow",
+            "Drupal\\search_api\\Plugin\\views\\EntityFieldRenderer",
+            "Drupal\\views\\ResultRow"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\field\\EntityField"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 348,
+        "vocabulary": 79,
+        "volume": 2193.72,
+        "difficulty": 14.65,
+        "effort": 32133.3,
+        "level": 0.07,
+        "bugs": 0.73,
+        "time": 1785,
+        "intelligentContent": 149.76,
+        "number_operators": 88,
+        "number_operands": 260,
+        "number_operators_unique": 8,
+        "number_operands_unique": 71,
+        "cloc": 100,
+        "loc": 267,
+        "lloc": 167,
+        "mi": 64.7,
+        "mIwoC": 24.08,
+        "commentWeight": 40.62,
+        "kanDefect": 2.24,
+        "relativeStructuralComplexity": 1296,
+        "relativeDataComplexity": 0.54,
+        "relativeSystemComplexity": 1296.54,
+        "totalStructuralComplexity": 15552,
+        "totalDataComplexity": 6.51,
+        "totalSystemComplexity": 15558.51,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiRenderedItem",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 22,
+        "ccn": 17,
+        "ccnMethodMax": 11,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\field\\FieldPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase",
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery",
+            "InvalidArgumentException",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\views\\ResultRow"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\field\\FieldPluginBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 221,
+        "vocabulary": 64,
+        "volume": 1326,
+        "difficulty": 10.81,
+        "effort": 14330.11,
+        "level": 0.09,
+        "bugs": 0.44,
+        "time": 796,
+        "intelligentContent": 122.7,
+        "number_operators": 45,
+        "number_operands": 176,
+        "number_operators_unique": 7,
+        "number_operands_unique": 57,
+        "cloc": 33,
+        "loc": 120,
+        "lloc": 87,
+        "mi": 69.84,
+        "mIwoC": 33.54,
+        "commentWeight": 36.3,
+        "kanDefect": 1.17,
+        "relativeStructuralComplexity": 784,
+        "relativeDataComplexity": 0.3,
+        "relativeSystemComplexity": 784.3,
+        "totalStructuralComplexity": 4704,
+        "totalDataComplexity": 1.83,
+        "totalSystemComplexity": 4705.83,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\field\\SearchApiStandard",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "render_item",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\field\\FieldPluginBase",
+            "Drupal\\views\\Plugin\\views\\field\\MultiItemsFieldHandlerInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\field\\FieldPluginBase"
+        ],
+        "implements": [
+            "Drupal\\views\\Plugin\\views\\field\\MultiItemsFieldHandlerInterface"
+        ],
+        "lcom": 1,
+        "length": 14,
+        "vocabulary": 11,
+        "volume": 48.43,
+        "difficulty": 2.06,
+        "effort": 99.89,
+        "level": 0.48,
+        "bugs": 0.02,
+        "time": 6,
+        "intelligentContent": 23.48,
+        "number_operators": 3,
+        "number_operands": 11,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 9,
+        "loc": 19,
+        "lloc": 10,
+        "mi": 109.89,
+        "mIwoC": 66.12,
+        "commentWeight": 43.77,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 2.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 2.5,
+        "package": "Drupal\\search_api\\Plugin\\views\\field\\",
+        "pageRank": 0,
+        "afferentCoupling": 3,
+        "efferentCoupling": 2,
+        "instability": 0.4,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\row\\SearchApiDataRow",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 10,
+        "ccn": 7,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\rest\\Plugin\\views\\row\\DataEntityRow",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase",
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery",
+            "InvalidArgumentException"
+        ],
+        "parents": [
+            "Drupal\\rest\\Plugin\\views\\row\\DataEntityRow"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 53,
+        "vocabulary": 22,
+        "volume": 236.35,
+        "difficulty": 6.03,
+        "effort": 1425.05,
+        "level": 0.17,
+        "bugs": 0.08,
+        "time": 79,
+        "intelligentContent": 39.2,
+        "number_operators": 12,
+        "number_operands": 41,
+        "number_operators_unique": 5,
+        "number_operands_unique": 17,
+        "cloc": 29,
+        "loc": 71,
+        "lloc": 42,
+        "mi": 88.83,
+        "mIwoC": 47.03,
+        "commentWeight": 41.8,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.22,
+        "relativeSystemComplexity": 196.22,
+        "totalStructuralComplexity": 784,
+        "totalDataComplexity": 0.87,
+        "totalSystemComplexity": 784.87,
+        "package": "Drupal\\search_api\\Plugin\\views\\row\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\row\\SearchApiRow",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 38,
+        "ccn": 30,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\row\\RowPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase",
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery",
+            "InvalidArgumentException",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\row\\RowPluginBase"
+        ],
+        "implements": [],
+        "lcom": 5,
+        "length": 338,
+        "vocabulary": 80,
+        "volume": 2136.81,
+        "difficulty": 16.67,
+        "effort": 35618.54,
+        "level": 0.06,
+        "bugs": 0.71,
+        "time": 1979,
+        "intelligentContent": 128.19,
+        "number_operators": 75,
+        "number_operands": 263,
+        "number_operators_unique": 9,
+        "number_operands_unique": 71,
+        "cloc": 66,
+        "loc": 200,
+        "lloc": 134,
+        "mi": 65.1,
+        "mIwoC": 26.25,
+        "commentWeight": 38.85,
+        "kanDefect": 1.91,
+        "relativeStructuralComplexity": 1024,
+        "relativeDataComplexity": 0.32,
+        "relativeSystemComplexity": 1024.32,
+        "totalStructuralComplexity": 10240,
+        "totalDataComplexity": 3.15,
+        "totalSystemComplexity": 10243.15,
+        "package": "Drupal\\search_api\\Plugin\\views\\row\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\relationship\\SearchApiRelationship",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 8,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\relationship\\RelationshipPluginBase",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\relationship\\RelationshipPluginBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 62,
+        "vocabulary": 26,
+        "volume": 291.43,
+        "difficulty": 3.07,
+        "effort": 893.29,
+        "level": 0.33,
+        "bugs": 0.1,
+        "time": 50,
+        "intelligentContent": 95.08,
+        "number_operators": 15,
+        "number_operands": 47,
+        "number_operators_unique": 3,
+        "number_operands_unique": 23,
+        "cloc": 37,
+        "loc": 78,
+        "lloc": 41,
+        "mi": 90.81,
+        "mIwoC": 47.02,
+        "commentWeight": 43.79,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 49.56,
+        "totalStructuralComplexity": 294,
+        "totalDataComplexity": 3.38,
+        "totalSystemComplexity": 297.38,
+        "package": "Drupal\\search_api\\Plugin\\views\\relationship\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\EntityFieldRenderer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getDatasourceId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatasourceId",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParentPath",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setParentPath",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compatibleWithField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTranslationRenderer",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRenderableFieldIds",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 2,
+        "wmc": 13,
+        "ccn": 11,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\views\\Entity\\Render\\EntityFieldRenderer",
+            "Drupal\\views\\Plugin\\views\\field\\FieldHandlerInterface",
+            "Drupal\\search_api\\Plugin\\views\\EntityTranslationRenderer"
+        ],
+        "parents": [
+            "Drupal\\views\\Entity\\Render\\EntityFieldRenderer"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 69,
+        "vocabulary": 15,
+        "volume": 269.58,
+        "difficulty": 14,
+        "effort": 3774.06,
+        "level": 0.07,
+        "bugs": 0.09,
+        "time": 210,
+        "intelligentContent": 19.26,
+        "number_operators": 27,
+        "number_operands": 42,
+        "number_operators_unique": 6,
+        "number_operands_unique": 9,
+        "cloc": 65,
+        "loc": 114,
+        "lloc": 49,
+        "mi": 90.66,
+        "mIwoC": 44.63,
+        "commentWeight": 46.03,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 1.05,
+        "relativeSystemComplexity": 50.05,
+        "totalStructuralComplexity": 343,
+        "totalDataComplexity": 7.38,
+        "totalSystemComplexity": 350.38,
+        "package": "Drupal\\search_api\\Plugin\\views\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\SearchApiHandlerTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "ensureMyTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 6,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 2,
+        "length": 23,
+        "vocabulary": 8,
+        "volume": 69,
+        "difficulty": 6.5,
+        "effort": 448.5,
+        "level": 0.15,
+        "bugs": 0.02,
+        "time": 25,
+        "intelligentContent": 10.62,
+        "number_operators": 10,
+        "number_operands": 13,
+        "number_operators_unique": 4,
+        "number_operands_unique": 4,
+        "cloc": 38,
+        "loc": 62,
+        "lloc": 24,
+        "mi": 103.04,
+        "mIwoC": 56.21,
+        "commentWeight": 46.83,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 25.67,
+        "totalStructuralComplexity": 100,
+        "totalDataComplexity": 2.67,
+        "totalSystemComplexity": 102.67,
+        "package": "Drupal\\search_api\\Plugin\\views\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiText",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "operators",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiString"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiString"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 31,
+        "vocabulary": 14,
+        "volume": 118.03,
+        "difficulty": 2.08,
+        "effort": 245.89,
+        "level": 0.48,
+        "bugs": 0.04,
+        "time": 14,
+        "intelligentContent": 56.65,
+        "number_operators": 6,
+        "number_operands": 25,
+        "number_operators_unique": 2,
+        "number_operands_unique": 12,
+        "cloc": 9,
+        "loc": 22,
+        "lloc": 13,
+        "mi": 102.88,
+        "mIwoC": 61.06,
+        "commentWeight": 41.83,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 4.33,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.33,
+        "totalSystemComplexity": 4.33,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiBoolean",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\filter\\BooleanOperator"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\filter\\BooleanOperator"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 1,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 1,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 6,
+        "loc": 11,
+        "lloc": 5,
+        "mi": 216.52,
+        "mIwoC": 171,
+        "commentWeight": 45.52,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiString",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "opBetween",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 8,
+        "ccn": 8,
+        "ccnMethodMax": 8,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiNumeric"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiNumeric"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 64,
+        "vocabulary": 20,
+        "volume": 276.6,
+        "difficulty": 8.67,
+        "effort": 2397.23,
+        "level": 0.12,
+        "bugs": 0.09,
+        "time": 133,
+        "intelligentContent": 31.92,
+        "number_operators": 12,
+        "number_operands": 52,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 16,
+        "loc": 33,
+        "lloc": 17,
+        "mi": 99.05,
+        "mIwoC": 54.99,
+        "commentWeight": 44.07,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 4.33,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.33,
+        "totalSystemComplexity": 4.33,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiFulltext",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParseModeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setParseModeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "showOperatorForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "operatorOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "operators",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultExposeOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildExposeForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildExposedForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "valueForm",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "exposedTranslate",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateExposed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFulltextFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 16,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 74,
+        "ccn": 60,
+        "ccnMethodMax": 23,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\filter\\FilterPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\search_api\\ParseMode\\ParseModePluginManager",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Component\\Utility\\Unicode",
+            "Drupal\\search_api\\Entity\\Index"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\filter\\FilterPluginBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 790,
+        "vocabulary": 155,
+        "volume": 5748.14,
+        "difficulty": 29.25,
+        "effort": 168133.04,
+        "level": 0.03,
+        "bugs": 1.92,
+        "time": 9341,
+        "intelligentContent": 196.52,
+        "number_operators": 151,
+        "number_operands": 639,
+        "number_operators_unique": 13,
+        "number_operands_unique": 142,
+        "cloc": 114,
+        "loc": 376,
+        "lloc": 262,
+        "mi": 50.52,
+        "mIwoC": 12.85,
+        "commentWeight": 37.66,
+        "kanDefect": 4.37,
+        "relativeStructuralComplexity": 1936,
+        "relativeDataComplexity": 0.32,
+        "relativeSystemComplexity": 1936.32,
+        "totalStructuralComplexity": 30976,
+        "totalDataComplexity": 5.07,
+        "totalSystemComplexity": 30981.07,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiDatasource",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getValueOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiOptions"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiOptions"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 21,
+        "vocabulary": 8,
+        "volume": 63,
+        "difficulty": 4.2,
+        "effort": 264.6,
+        "level": 0.24,
+        "bugs": 0.02,
+        "time": 15,
+        "intelligentContent": 15,
+        "number_operators": 7,
+        "number_operands": 14,
+        "number_operators_unique": 3,
+        "number_operands_unique": 5,
+        "cloc": 9,
+        "loc": 27,
+        "lloc": 18,
+        "mi": 98.47,
+        "mIwoC": 59.48,
+        "commentWeight": 38.99,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 9.5,
+        "totalStructuralComplexity": 9,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 9.5,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiDate",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getTimeService",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTimeService",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "operators",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "acceptExposedInput",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "opBetween",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "opSimple",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 29,
+        "ccn": 25,
+        "ccnMethodMax": 14,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\filter\\Date",
+            "Drupal",
+            "Drupal\\Component\\Datetime\\TimeInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\filter\\Date"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 180,
+        "vocabulary": 43,
+        "volume": 976.73,
+        "difficulty": 19.39,
+        "effort": 18942.6,
+        "level": 0.05,
+        "bugs": 0.33,
+        "time": 1052,
+        "intelligentContent": 50.36,
+        "number_operators": 52,
+        "number_operands": 128,
+        "number_operators_unique": 10,
+        "number_operands_unique": 33,
+        "cloc": 53,
+        "loc": 129,
+        "lloc": 76,
+        "mi": 76.56,
+        "mIwoC": 34.67,
+        "commentWeight": 41.88,
+        "kanDefect": 0.78,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.96,
+        "relativeSystemComplexity": 64.96,
+        "totalStructuralComplexity": 384,
+        "totalDataComplexity": 5.78,
+        "totalSystemComplexity": 389.78,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiLanguage",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 9,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\filter\\LanguageFilter",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\filter\\LanguageFilter"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 47,
+        "vocabulary": 16,
+        "volume": 188,
+        "difficulty": 7.27,
+        "effort": 1367.27,
+        "level": 0.14,
+        "bugs": 0.06,
+        "time": 76,
+        "intelligentContent": 25.85,
+        "number_operators": 15,
+        "number_operands": 32,
+        "number_operators_unique": 5,
+        "number_operands_unique": 11,
+        "cloc": 14,
+        "loc": 38,
+        "lloc": 24,
+        "mi": 93.15,
+        "mIwoC": 52.76,
+        "commentWeight": 40.39,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 49,
+        "totalStructuralComplexity": 49,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 49,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiNumeric",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "operators",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\filter\\NumericFilter"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\filter\\NumericFilter"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 7,
+        "vocabulary": 5,
+        "volume": 16.25,
+        "difficulty": 1.67,
+        "effort": 27.09,
+        "level": 0.6,
+        "bugs": 0.01,
+        "time": 2,
+        "intelligentContent": 9.75,
+        "number_operators": 2,
+        "number_operands": 5,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 17,
+        "loc": 28,
+        "lloc": 11,
+        "mi": 115.4,
+        "mIwoC": 68.67,
+        "commentWeight": 46.73,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 1.5,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiUser",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "operators",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\user\\Plugin\\views\\filter\\Name"
+        ],
+        "parents": [
+            "Drupal\\user\\Plugin\\views\\filter\\Name"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 72,
+        "vocabulary": 26,
+        "volume": 338.43,
+        "difficulty": 1.42,
+        "effort": 480.57,
+        "level": 0.7,
+        "bugs": 0.11,
+        "time": 27,
+        "intelligentContent": 238.33,
+        "number_operators": 1,
+        "number_operands": 71,
+        "number_operators_unique": 1,
+        "number_operands_unique": 25,
+        "cloc": 11,
+        "loc": 20,
+        "lloc": 9,
+        "mi": 106.95,
+        "mIwoC": 61.34,
+        "commentWeight": 45.62,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 1.5,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiOptions",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValueOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\filter\\ManyToOne",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\filter\\ManyToOne"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 14,
+        "vocabulary": 9,
+        "volume": 44.38,
+        "difficulty": 4,
+        "effort": 177.52,
+        "level": 0.25,
+        "bugs": 0.01,
+        "time": 10,
+        "intelligentContent": 11.09,
+        "number_operators": 4,
+        "number_operands": 10,
+        "number_operators_unique": 4,
+        "number_operands_unique": 5,
+        "cloc": 12,
+        "loc": 30,
+        "lloc": 18,
+        "mi": 102.33,
+        "mIwoC": 60.81,
+        "commentWeight": 41.52,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 1.33,
+        "totalSystemComplexity": 9.33,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiTerm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\taxonomy\\Plugin\\views\\filter\\TaxonomyIndexTid"
+        ],
+        "parents": [
+            "Drupal\\taxonomy\\Plugin\\views\\filter\\TaxonomyIndexTid"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 13,
+        "loc": 18,
+        "lloc": 5,
+        "mi": 219.39,
+        "mIwoC": 171,
+        "commentWeight": 48.39,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\filter\\SearchApiFilterTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "valueForm",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "opSimple",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "opHelper",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 11,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 2,
+        "length": 70,
+        "vocabulary": 25,
+        "volume": 325.07,
+        "difficulty": 10.11,
+        "effort": 3286.82,
+        "level": 0.1,
+        "bugs": 0.11,
+        "time": 183,
+        "intelligentContent": 32.15,
+        "number_operators": 18,
+        "number_operands": 52,
+        "number_operators_unique": 7,
+        "number_operands_unique": 18,
+        "cloc": 35,
+        "loc": 74,
+        "lloc": 39,
+        "mi": 89.97,
+        "mIwoC": 46.22,
+        "commentWeight": 43.75,
+        "kanDefect": 0.73,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.56,
+        "relativeSystemComplexity": 64.56,
+        "totalStructuralComplexity": 192,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 193.67,
+        "package": "Drupal\\search_api\\Plugin\\views\\filter\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexFromTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityFromRow",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getModuleHandler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setModuleHandler",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessenger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMessenger",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "init",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRetrievedProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addRetrievedFieldValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "build",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "abort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldAbort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addResults",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheContexts",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheMaxAge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWhere",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAccessAccount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSearchApiQuery",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSearchApiQuery",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSearchApiResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParseMode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setParseMode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguages",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguages",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createConditionGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createAndAddConditionGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "keys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFulltextFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addConditionGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCondition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addWhere",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGroupOperator",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getGroupType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "transformDbCondition",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sanitizeFieldId",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sanitizeOperator",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addOrderBy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "range",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginalKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFulltextFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFilter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "ensureTable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 61,
+        "nbMethods": 54,
+        "nbMethodsPrivate": 4,
+        "nbMethodsPublic": 50,
+        "nbMethodsGetter": 4,
+        "nbMethodsSetters": 3,
+        "wmc": 170,
+        "ccn": 117,
+        "ccnMethodMax": 15,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\query\\QueryPluginBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\search_api\\Plugin\\views\\ResultRow",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\search_api\\Plugin\\views\\field\\SearchApiStandard",
+            "Drupal",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase",
+            "static",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\search_api\\Query\\ResultSetInterface",
+            "Drupal\\views\\ViewExecutable",
+            "Drupal\\search_api\\Plugin\\views\\ResultRow",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal\\user\\Entity\\User",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Plugin\\search_api\\parse_mode\\Terms",
+            "Drupal\\search_api\\ParseMode\\ParseModeInterface",
+            "Drupal\\search_api\\Query\\ConditionGroup",
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "Drupal\\search_api\\Query\\ConditionGroup",
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "Drupal\\Core\\Database\\Query\\ConditionInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\query\\QueryPluginBase"
+        ],
+        "implements": [],
+        "lcom": 7,
+        "length": 1068,
+        "vocabulary": 190,
+        "volume": 8084.61,
+        "difficulty": 35.77,
+        "effort": 289187.28,
+        "level": 0.03,
+        "bugs": 2.69,
+        "time": 16066,
+        "intelligentContent": 226.02,
+        "number_operators": 290,
+        "number_operands": 778,
+        "number_operators_unique": 16,
+        "number_operands_unique": 174,
+        "cloc": 811,
+        "loc": 1447,
+        "lloc": 636,
+        "mi": 45.84,
+        "mIwoC": 0,
+        "commentWeight": 45.84,
+        "kanDefect": 7.91,
+        "relativeStructuralComplexity": 12769,
+        "relativeDataComplexity": 0.69,
+        "relativeSystemComplexity": 12769.69,
+        "totalStructuralComplexity": 778909,
+        "totalDataComplexity": 41.82,
+        "totalSystemComplexity": 778950.82,
+        "package": "Drupal\\search_api\\Plugin\\views\\query\\",
+        "pageRank": 0,
+        "afferentCoupling": 8,
+        "efferentCoupling": 22,
+        "instability": 0.73,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Plugin\\views\\EntityTranslationRenderer",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getLangcode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\views\\Entity\\Render\\TranslationLanguageRenderer",
+            "Drupal\\views\\ResultRow"
+        ],
+        "parents": [
+            "Drupal\\views\\Entity\\Render\\TranslationLanguageRenderer"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 4,
+        "volume": 10,
+        "difficulty": 1.5,
+        "effort": 15,
+        "level": 0.67,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 6.67,
+        "number_operators": 2,
+        "number_operands": 3,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 9,
+        "loc": 17,
+        "lloc": 8,
+        "mi": 118.19,
+        "mIwoC": 73.03,
+        "commentWeight": 45.16,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 4.67,
+        "package": "Drupal\\search_api\\Plugin\\views\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\DataType\\DataTypePluginManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInstances",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInstancesOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 8,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\SearchApiPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\SearchApiPluginManager"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 67,
+        "vocabulary": 22,
+        "volume": 298.78,
+        "difficulty": 5.78,
+        "effort": 1726.3,
+        "level": 0.17,
+        "bugs": 0.1,
+        "time": 96,
+        "intelligentContent": 51.71,
+        "number_operators": 15,
+        "number_operands": 52,
+        "number_operators_unique": 4,
+        "number_operands_unique": 18,
+        "cloc": 55,
+        "loc": 104,
+        "lloc": 49,
+        "mi": 89.87,
+        "mIwoC": 44.72,
+        "commentWeight": 45.15,
+        "kanDefect": 0.89,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.45,
+        "relativeSystemComplexity": 81.45,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 1.8,
+        "totalSystemComplexity": 325.8,
+        "package": "Drupal\\search_api\\DataType\\",
+        "pageRank": 0,
+        "afferentCoupling": 4,
+        "efferentCoupling": 5,
+        "instability": 0.56,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\DataType\\DataTypePluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFallbackType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isDefault",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "label",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\HideablePluginBase",
+            "Drupal\\search_api\\DataType\\DataTypeInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\HideablePluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\DataType\\DataTypeInterface"
+        ],
+        "lcom": 4,
+        "length": 31,
+        "vocabulary": 14,
+        "volume": 118.03,
+        "difficulty": 3,
+        "effort": 354.08,
+        "level": 0.33,
+        "bugs": 0.04,
+        "time": 20,
+        "intelligentContent": 39.34,
+        "number_operators": 9,
+        "number_operands": 22,
+        "number_operators_unique": 3,
+        "number_operands_unique": 11,
+        "cloc": 46,
+        "loc": 76,
+        "lloc": 30,
+        "mi": 99.7,
+        "mIwoC": 53,
+        "commentWeight": 46.7,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 3.42,
+        "relativeSystemComplexity": 4.42,
+        "totalStructuralComplexity": 6,
+        "totalDataComplexity": 20.5,
+        "totalSystemComplexity": 26.5,
+        "package": "Drupal\\search_api\\DataType\\",
+        "pageRank": 0,
+        "afferentCoupling": 6,
+        "efferentCoupling": 4,
+        "instability": 0.4,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Annotation\\SearchApiDataType",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 1,
+        "vocabulary": 1,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 1,
+        "number_operators_unique": 0,
+        "number_operands_unique": 1,
+        "cloc": 41,
+        "loc": 50,
+        "lloc": 9,
+        "mi": 220.3,
+        "mIwoC": 171,
+        "commentWeight": 49.3,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Annotation\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Annotation\\SearchApiDatasource",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 29,
+        "loc": 36,
+        "lloc": 7,
+        "mi": 220.19,
+        "mIwoC": 171,
+        "commentWeight": 49.19,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Annotation\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Annotation\\SearchApiDisplay",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 39,
+        "loc": 48,
+        "lloc": 9,
+        "mi": 220.24,
+        "mIwoC": 171,
+        "commentWeight": 49.24,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Annotation\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Annotation\\SearchApiParseMode",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 29,
+        "loc": 36,
+        "lloc": 7,
+        "mi": 220.19,
+        "mIwoC": 171,
+        "commentWeight": 49.19,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Annotation\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Annotation\\SearchApiProcessor",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 39,
+        "loc": 47,
+        "lloc": 8,
+        "mi": 220.36,
+        "mIwoC": 171,
+        "commentWeight": 49.36,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Annotation\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Annotation\\SearchApiTracker",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 29,
+        "loc": 36,
+        "lloc": 7,
+        "mi": 220.19,
+        "mIwoC": 171,
+        "commentWeight": 49.19,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Annotation\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Annotation\\SearchApiBackend",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "parents": [
+            "Drupal\\Component\\Annotation\\Plugin"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 29,
+        "loc": 36,
+        "lloc": 7,
+        "mi": 220.19,
+        "mIwoC": 171,
+        "commentWeight": 49.19,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Annotation\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Tracker\\TrackerPluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatabaseConnection",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatabaseConnection",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTimeService",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTimeService",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildConfigurationForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createSelectStatement",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createInsertStatement",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createUpdateStatement",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createDeleteStatement",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createRemainingItemsStatement",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsInserted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsUpdated",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackAllItemsUpdated",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsIndexed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsDeleted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackAllItemsDeleted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRemainingItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTotalItemsCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexedItemsCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRemainingItemsCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 22,
+        "nbMethods": 20,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 15,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 52,
+        "ccn": 33,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\IndexPluginBase",
+            "Drupal\\search_api\\Tracker\\TrackerInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal",
+            "Drupal\\Component\\Datetime\\TimeInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\IndexPluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Tracker\\TrackerInterface"
+        ],
+        "lcom": 3,
+        "length": 366,
+        "vocabulary": 62,
+        "volume": 2179.24,
+        "difficulty": 18.71,
+        "effort": 40771.52,
+        "level": 0.05,
+        "bugs": 0.73,
+        "time": 2265,
+        "intelligentContent": 116.48,
+        "number_operators": 72,
+        "number_operands": 294,
+        "number_operators_unique": 7,
+        "number_operands_unique": 55,
+        "cloc": 155,
+        "loc": 381,
+        "lloc": 226,
+        "mi": 62.58,
+        "mIwoC": 20.83,
+        "commentWeight": 41.75,
+        "kanDefect": 2.14,
+        "relativeStructuralComplexity": 1764,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 1764.49,
+        "totalStructuralComplexity": 38808,
+        "totalDataComplexity": 10.7,
+        "totalSystemComplexity": 38818.7,
+        "package": "Drupal\\search_api\\Tracker\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 8,
+        "instability": 0.89,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Tracker\\TrackerPluginManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptionsList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api\\SearchApiPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\search_api\\Utility\\Utility"
+        ],
+        "parents": [
+            "Drupal\\search_api\\SearchApiPluginManager"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 28,
+        "vocabulary": 16,
+        "volume": 112,
+        "difficulty": 1.79,
+        "effort": 200,
+        "level": 0.56,
+        "bugs": 0.04,
+        "time": 11,
+        "intelligentContent": 62.72,
+        "number_operators": 3,
+        "number_operands": 25,
+        "number_operators_unique": 2,
+        "number_operands_unique": 14,
+        "cloc": 18,
+        "loc": 42,
+        "lloc": 24,
+        "mi": 97.73,
+        "mIwoC": 55.27,
+        "commentWeight": 42.45,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.43,
+        "relativeSystemComplexity": 36.43,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 0.86,
+        "totalSystemComplexity": 72.86,
+        "package": "Drupal\\search_api\\Tracker\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Backend\\BackendPluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldsHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFieldsHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessenger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMessenger",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServer",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setServer",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedFeatures",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "supportsDataType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postInsert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBackendDefinedFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "updateIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDiscouragedProcessors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSpecialFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validateOperator",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__sleep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__wakeup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQueryFulltextFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 27,
+        "nbMethods": 23,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 20,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 3,
+        "wmc": 47,
+        "ccn": 25,
+        "ccnMethodMax": 11,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\ConfigurablePluginBase",
+            "Drupal\\search_api\\Backend\\BackendInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\FieldsHelper",
+            "Drupal",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\search_api\\ServerInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Entity\\Server",
+            "Drupal\\search_api\\Query\\QueryInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\ConfigurablePluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Backend\\BackendInterface"
+        ],
+        "lcom": 17,
+        "length": 197,
+        "vocabulary": 52,
+        "volume": 1122.99,
+        "difficulty": 15.59,
+        "effort": 17510.76,
+        "level": 0.06,
+        "bugs": 0.37,
+        "time": 973,
+        "intelligentContent": 72.02,
+        "number_operators": 48,
+        "number_operands": 149,
+        "number_operators_unique": 9,
+        "number_operands_unique": 43,
+        "cloc": 181,
+        "loc": 350,
+        "lloc": 169,
+        "mi": 71.55,
+        "mIwoC": 26.68,
+        "commentWeight": 44.87,
+        "kanDefect": 0.79,
+        "relativeStructuralComplexity": 1089,
+        "relativeDataComplexity": 0.55,
+        "relativeSystemComplexity": 1089.55,
+        "totalStructuralComplexity": 29403,
+        "totalDataComplexity": 14.88,
+        "totalSystemComplexity": 29417.88,
+        "package": "Drupal\\search_api\\Backend\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 11,
+        "instability": 0.92,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Backend\\BackendPluginManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\SearchApiPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\SearchApiPluginManager"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 16,
+        "vocabulary": 10,
+        "volume": 53.15,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1.25,
+        "bugs": 0.02,
+        "time": 0,
+        "intelligentContent": 66.44,
+        "number_operators": 0,
+        "number_operands": 16,
+        "number_operators_unique": 0,
+        "number_operands_unique": 10,
+        "cloc": 10,
+        "loc": 26,
+        "lloc": 16,
+        "mi": 102.5,
+        "mIwoC": 61.52,
+        "commentWeight": 40.98,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.8,
+        "relativeSystemComplexity": 16.8,
+        "totalStructuralComplexity": 16,
+        "totalDataComplexity": 0.8,
+        "totalSystemComplexity": 16.8,
+        "package": "Drupal\\search_api\\Backend\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 5,
+        "instability": 0.71,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Contrib\\ViewsBulkOperationsEventSubscriber",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "provideViewData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface",
+            "Drupal\\views_bulk_operations\\ViewsBulkOperationsEvent",
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery"
+        ],
+        "parents": [],
+        "implements": [
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface"
+        ],
+        "lcom": 2,
+        "length": 23,
+        "vocabulary": 10,
+        "volume": 76.4,
+        "difficulty": 3.43,
+        "effort": 261.96,
+        "level": 0.29,
+        "bugs": 0.03,
+        "time": 15,
+        "intelligentContent": 22.28,
+        "number_operators": 7,
+        "number_operands": 16,
+        "number_operators_unique": 3,
+        "number_operands_unique": 7,
+        "cloc": 17,
+        "loc": 38,
+        "lloc": 21,
+        "mi": 100.59,
+        "mIwoC": 57.57,
+        "commentWeight": 43.02,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.21,
+        "relativeSystemComplexity": 36.21,
+        "totalStructuralComplexity": 72,
+        "totalDataComplexity": 0.43,
+        "totalSystemComplexity": 72.43,
+        "package": "Drupal\\search_api\\Contrib\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Contrib\\RowsOfMultiValueFields",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "renderCell",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "arrayToString",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "Consolidation\\OutputFormatters\\StructuredData\\RenderCellInterface",
+            "Consolidation\\OutputFormatters\\Options\\FormatterOptions",
+            "static",
+            "static"
+        ],
+        "parents": [
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields"
+        ],
+        "implements": [
+            "Consolidation\\OutputFormatters\\StructuredData\\RenderCellInterface"
+        ],
+        "lcom": 2,
+        "length": 27,
+        "vocabulary": 13,
+        "volume": 99.91,
+        "difficulty": 4.22,
+        "effort": 421.85,
+        "level": 0.24,
+        "bugs": 0.03,
+        "time": 23,
+        "intelligentContent": 23.66,
+        "number_operators": 8,
+        "number_operands": 19,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 17,
+        "loc": 36,
+        "lloc": 19,
+        "mi": 101.3,
+        "mIwoC": 57.57,
+        "commentWeight": 43.73,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 2.75,
+        "relativeSystemComplexity": 3.75,
+        "totalStructuralComplexity": 2,
+        "totalDataComplexity": 5.5,
+        "totalSystemComplexity": 7.5,
+        "package": "Drupal\\search_api\\Contrib\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 4,
+        "instability": 0.8,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Controller\\TaskController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTaskManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTaskManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeTasks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeTasksAccess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 6,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\search_api\\Task\\TaskManagerInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Session\\AccountInterface",
+            "Drupal\\Core\\Access\\AccessResult",
+            "Drupal\\Core\\Access\\AccessResult"
+        ],
+        "parents": [
+            "Drupal\\Core\\Controller\\ControllerBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 30,
+        "vocabulary": 13,
+        "volume": 111.01,
+        "difficulty": 3.15,
+        "effort": 349.69,
+        "level": 0.32,
+        "bugs": 0.04,
+        "time": 19,
+        "intelligentContent": 35.24,
+        "number_operators": 9,
+        "number_operands": 21,
+        "number_operators_unique": 3,
+        "number_operands_unique": 10,
+        "cloc": 38,
+        "loc": 70,
+        "lloc": 32,
+        "mi": 97.9,
+        "mIwoC": 52.44,
+        "commentWeight": 45.46,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.55,
+        "relativeSystemComplexity": 121.55,
+        "totalStructuralComplexity": 605,
+        "totalDataComplexity": 2.75,
+        "totalSystemComplexity": 607.75,
+        "package": "Drupal\\search_api\\Controller\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Controller\\IndexController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRequestStack",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRequestStack",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessenger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMessenger",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "page",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pageTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexBypassEnable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 17,
+        "ccn": 10,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Symfony\\Component\\HttpFoundation\\RequestStack",
+            "Drupal",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
+            "Drupal\\Core\\Ajax\\AjaxResponse",
+            "Drupal\\Core\\Ajax\\RemoveCommand"
+        ],
+        "parents": [
+            "Drupal\\Core\\Controller\\ControllerBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 123,
+        "vocabulary": 31,
+        "volume": 609.37,
+        "difficulty": 8.94,
+        "effort": 5449.14,
+        "level": 0.11,
+        "bugs": 0.2,
+        "time": 303,
+        "intelligentContent": 68.14,
+        "number_operators": 30,
+        "number_operands": 93,
+        "number_operators_unique": 5,
+        "number_operands_unique": 26,
+        "cloc": 103,
+        "loc": 185,
+        "lloc": 82,
+        "mi": 83.17,
+        "mIwoC": 37.41,
+        "commentWeight": 45.76,
+        "kanDefect": 0.43,
+        "relativeStructuralComplexity": 900,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 900.38,
+        "totalStructuralComplexity": 9000,
+        "totalDataComplexity": 3.81,
+        "totalSystemComplexity": 9003.81,
+        "package": "Drupal\\search_api\\Controller\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Controller\\ServerController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getMessenger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setMessenger",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "page",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "pageTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serverBypassEnable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\search_api\\ServerInterface",
+            "Drupal\\search_api\\ServerInterface",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\search_api\\ServerInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Controller\\ControllerBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 59,
+        "vocabulary": 22,
+        "volume": 263.11,
+        "difficulty": 3.71,
+        "effort": 976.26,
+        "level": 0.27,
+        "bugs": 0.09,
+        "time": 54,
+        "intelligentContent": 70.91,
+        "number_operators": 12,
+        "number_operands": 47,
+        "number_operators_unique": 3,
+        "number_operands_unique": 19,
+        "cloc": 58,
+        "loc": 97,
+        "lloc": 39,
+        "mi": 94.51,
+        "mIwoC": 47.94,
+        "commentWeight": 46.56,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 289,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 289.38,
+        "totalStructuralComplexity": 1734,
+        "totalDataComplexity": 2.28,
+        "totalSystemComplexity": 1736.28,
+        "package": "Drupal\\search_api\\Controller\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\ParseMode\\ParseModePluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "label",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConjunction",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConjunction",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 3,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\HideablePluginBase",
+            "Drupal\\search_api\\ParseMode\\ParseModeInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\HideablePluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\ParseMode\\ParseModeInterface"
+        ],
+        "lcom": 2,
+        "length": 29,
+        "vocabulary": 11,
+        "volume": 100.32,
+        "difficulty": 2.33,
+        "effort": 234.09,
+        "level": 0.43,
+        "bugs": 0.03,
+        "time": 13,
+        "intelligentContent": 43,
+        "number_operators": 8,
+        "number_operands": 21,
+        "number_operators_unique": 2,
+        "number_operands_unique": 9,
+        "cloc": 43,
+        "loc": 71,
+        "lloc": 28,
+        "mi": 100.99,
+        "mIwoC": 54.28,
+        "commentWeight": 46.7,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 3,
+        "relativeSystemComplexity": 4,
+        "totalStructuralComplexity": 5,
+        "totalDataComplexity": 15,
+        "totalSystemComplexity": 20,
+        "package": "Drupal\\search_api\\ParseMode\\",
+        "pageRank": 0,
+        "afferentCoupling": 4,
+        "efferentCoupling": 4,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\ParseMode\\ParseModePluginManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInstances",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInstancesOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\search_api\\SearchApiPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\SearchApiPluginManager"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 42,
+        "vocabulary": 19,
+        "volume": 178.41,
+        "difficulty": 3.28,
+        "effort": 585.42,
+        "level": 0.3,
+        "bugs": 0.06,
+        "time": 33,
+        "intelligentContent": 54.37,
+        "number_operators": 7,
+        "number_operands": 35,
+        "number_operators_unique": 3,
+        "number_operands_unique": 16,
+        "cloc": 25,
+        "loc": 59,
+        "lloc": 34,
+        "mi": 92.59,
+        "mIwoC": 50.29,
+        "commentWeight": 42.3,
+        "kanDefect": 0.68,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.37,
+        "relativeSystemComplexity": 64.37,
+        "totalStructuralComplexity": 192,
+        "totalDataComplexity": 1.11,
+        "totalSystemComplexity": 193.11,
+        "package": "Drupal\\search_api\\ParseMode\\",
+        "pageRank": 0,
+        "afferentCoupling": 4,
+        "efferentCoupling": 5,
+        "instability": 0.56,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\IndexListBuilder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkDefaultsModuleCanBeInstalled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefaultOperations",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildHeader",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildRow",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadGroups",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sortByStatusThenAlphabetically",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 38,
+        "ccn": 30,
+        "ccnMethodMax": 10,
+        "externals": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityListBuilder",
+            "Drupal\\Core\\Entity\\EntityTypeInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeInterface",
+            "static",
+            "Drupal",
+            "Drupal\\node\\Entity\\NodeType",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Component\\Utility\\Xss",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityListBuilder"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 420,
+        "vocabulary": 137,
+        "volume": 2981.17,
+        "difficulty": 13.23,
+        "effort": 39436,
+        "level": 0.08,
+        "bugs": 0.99,
+        "time": 2191,
+        "intelligentContent": 225.36,
+        "number_operators": 84,
+        "number_operands": 336,
+        "number_operators_unique": 10,
+        "number_operands_unique": 127,
+        "cloc": 72,
+        "loc": 210,
+        "lloc": 138,
+        "mi": 64.34,
+        "mIwoC": 24.96,
+        "commentWeight": 39.39,
+        "kanDefect": 2.76,
+        "relativeStructuralComplexity": 1521,
+        "relativeDataComplexity": 0.27,
+        "relativeSystemComplexity": 1521.27,
+        "totalStructuralComplexity": 13689,
+        "totalDataComplexity": 2.45,
+        "totalSystemComplexity": 13691.45,
+        "package": "Drupal\\search_api\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 11,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\SearchApiException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Exception"
+        ],
+        "parents": [
+            "Exception"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 3,
+        "loc": 7,
+        "lloc": 4,
+        "mi": 213.45,
+        "mIwoC": 171,
+        "commentWeight": 42.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\",
+        "pageRank": 0,
+        "afferentCoupling": 19,
+        "efferentCoupling": 1,
+        "instability": 0.05,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Item\\Field",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDataTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldIdentifier",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginalFieldIdentifier",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFieldIdentifier",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wasRenamed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatasourceId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyPath",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setPropertyPath",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCombinedPropertyPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLabel",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabel",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPrefixedLabel",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLabelPrefix",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isHidden",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setHidden",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataDefinition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDataDefinition",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataTypePlugin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValues",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginalType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOriginalType",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBoost",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBoost",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isIndexedLocked",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndexedLocked",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTypeLocked",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTypeLocked",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfiguration",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setConfiguration",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDependencies",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDependencies",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIterator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__sleep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 49,
+        "nbMethods": 26,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 26,
+        "nbMethodsGetter": 12,
+        "nbMethodsSetters": 11,
+        "wmc": 69,
+        "ccn": 44,
+        "ccnMethodMax": 8,
+        "externals": [
+            "IteratorAggregate",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal",
+            "Drupal\\search_api\\DataType\\DataTypePluginManager",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "InvalidArgumentException",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\Core\\TypedData\\DataDefinitionInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Traversable",
+            "ArrayIterator",
+            "Drupal"
+        ],
+        "parents": [],
+        "implements": [
+            "IteratorAggregate",
+            "Drupal\\search_api\\Item\\FieldInterface"
+        ],
+        "lcom": 1,
+        "length": 483,
+        "vocabulary": 66,
+        "volume": 2919.44,
+        "difficulty": 31.7,
+        "effort": 92546.32,
+        "level": 0.03,
+        "bugs": 0.97,
+        "time": 5141,
+        "intelligentContent": 92.1,
+        "number_operators": 166,
+        "number_operands": 317,
+        "number_operators_unique": 11,
+        "number_operands_unique": 55,
+        "cloc": 300,
+        "loc": 669,
+        "lloc": 369,
+        "mi": 56.88,
+        "mIwoC": 13.82,
+        "commentWeight": 43.05,
+        "kanDefect": 2.13,
+        "relativeStructuralComplexity": 1681,
+        "relativeDataComplexity": 1.18,
+        "relativeSystemComplexity": 1682.18,
+        "totalStructuralComplexity": 82369,
+        "totalDataComplexity": 57.69,
+        "totalSystemComplexity": 82426.69,
+        "package": "Drupal\\search_api\\Item\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 12,
+        "instability": 0.86,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Item\\Item",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguage",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getId",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginalObject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOriginalObject",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFieldsExtracted",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFieldsExtracted",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getScore",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setScore",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBoost",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBoost",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExcerpt",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExcerpt",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasExtraData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtraData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllExtraData",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExtraData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasWarnings",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWarnings",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addWarning",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkAccess",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAccessResult",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIterator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__clone",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__sleep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__wakeup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 35,
+        "nbMethods": 22,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 22,
+        "nbMethodsGetter": 9,
+        "nbMethodsSetters": 4,
+        "wmc": 70,
+        "ccn": 49,
+        "ccnMethodMax": 14,
+        "externals": [
+            "IteratorAggregate",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal",
+            "InvalidArgumentException",
+            "Drupal",
+            "Drupal\\Core\\Access\\AccessResult",
+            "Traversable",
+            "ArrayIterator",
+            "Drupal",
+            "Drupal"
+        ],
+        "parents": [],
+        "implements": [
+            "IteratorAggregate",
+            "Drupal\\search_api\\Item\\ItemInterface"
+        ],
+        "lcom": 1,
+        "length": 437,
+        "vocabulary": 69,
+        "volume": 2669.43,
+        "difficulty": 32,
+        "effort": 85421.61,
+        "level": 0.03,
+        "bugs": 0.89,
+        "time": 4746,
+        "intelligentContent": 83.42,
+        "number_operators": 133,
+        "number_operands": 304,
+        "number_operators_unique": 12,
+        "number_operands_unique": 57,
+        "cloc": 223,
+        "loc": 532,
+        "lloc": 309,
+        "mi": 57.26,
+        "mIwoC": 15.1,
+        "commentWeight": 42.15,
+        "kanDefect": 4.02,
+        "relativeStructuralComplexity": 1681,
+        "relativeDataComplexity": 0.8,
+        "relativeSystemComplexity": 1681.8,
+        "totalStructuralComplexity": 58835,
+        "totalDataComplexity": 28.07,
+        "totalSystemComplexity": 58863.07,
+        "package": "Drupal\\search_api\\Item\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 11,
+        "instability": 0.92,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\IndexBatchHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setStringTranslation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finish",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "service",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\StringTranslation\\TranslationInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "static",
+            "Drupal\\search_api\\IndexInterface",
+            "static",
+            "static",
+            "Drupal\\search_api\\Utility\\IndexingBatchHelperInterface",
+            "Drupal"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 5,
+        "length": 29,
+        "vocabulary": 12,
+        "volume": 103.96,
+        "difficulty": 1.27,
+        "effort": 132.32,
+        "level": 0.79,
+        "bugs": 0.03,
+        "time": 7,
+        "intelligentContent": 81.69,
+        "number_operators": 1,
+        "number_operands": 28,
+        "number_operators_unique": 1,
+        "number_operands_unique": 11,
+        "cloc": 57,
+        "loc": 80,
+        "lloc": 23,
+        "mi": 104.32,
+        "mIwoC": 56.04,
+        "commentWeight": 48.28,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.6,
+        "relativeSystemComplexity": 25.6,
+        "totalStructuralComplexity": 125,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 128,
+        "package": "Drupal\\search_api\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\LoggerTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "getLogger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogger",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "logException",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal",
+            "Psr\\Log\\LoggerInterface",
+            "Throwable",
+            "Drupal\\Core\\Utility\\Error"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 1,
+        "length": 32,
+        "vocabulary": 13,
+        "volume": 118.41,
+        "difficulty": 5.33,
+        "effort": 631.54,
+        "level": 0.19,
+        "bugs": 0.04,
+        "time": 35,
+        "intelligentContent": 22.2,
+        "number_operators": 8,
+        "number_operands": 24,
+        "number_operators_unique": 4,
+        "number_operands_unique": 9,
+        "cloc": 46,
+        "loc": 71,
+        "lloc": 25,
+        "mi": 101.85,
+        "mIwoC": 54.45,
+        "commentWeight": 47.4,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.8,
+        "relativeSystemComplexity": 16.8,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 2.4,
+        "totalSystemComplexity": 50.4,
+        "package": "Drupal\\search_api\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Task\\IndexTaskManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processIndexTasks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "startTracking",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTaskConditions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addItemsOnce",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addItemsBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addItemsAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stopTracking",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTrackingComplete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 11,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 31,
+        "ccn": 21,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\search_api\\Task\\IndexTaskManagerInterface",
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface",
+            "Drupal\\search_api\\Task\\TaskManagerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Config\\ConfigImporter",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal",
+            "Drupal\\Core\\Utility\\Error",
+            "Drupal",
+            "Drupal\\search_api\\Task\\TaskEvent",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Task\\IndexTaskManagerInterface",
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface"
+        ],
+        "lcom": 4,
+        "length": 253,
+        "vocabulary": 54,
+        "volume": 1455.99,
+        "difficulty": 25.07,
+        "effort": 36501.24,
+        "level": 0.04,
+        "bugs": 0.49,
+        "time": 2028,
+        "intelligentContent": 58.08,
+        "number_operators": 57,
+        "number_operands": 196,
+        "number_operators_unique": 11,
+        "number_operands_unique": 43,
+        "cloc": 52,
+        "loc": 181,
+        "lloc": 129,
+        "mi": 65.9,
+        "mIwoC": 28.99,
+        "commentWeight": 36.91,
+        "kanDefect": 1.98,
+        "relativeStructuralComplexity": 1521,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 1521.23,
+        "totalStructuralComplexity": 16731,
+        "totalDataComplexity": 2.55,
+        "totalSystemComplexity": 16733.55,
+        "package": "Drupal\\search_api\\Task\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 12,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Task\\TaskEvent",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTask",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getException",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setException",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\Task\\TaskInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 14,
+        "vocabulary": 5,
+        "volume": 32.51,
+        "difficulty": 3,
+        "effort": 97.52,
+        "level": 0.33,
+        "bugs": 0.01,
+        "time": 5,
+        "intelligentContent": 10.84,
+        "number_operators": 5,
+        "number_operands": 9,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 46,
+        "loc": 69,
+        "lloc": 23,
+        "mi": 107.25,
+        "mIwoC": 59.57,
+        "commentWeight": 47.68,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3.5,
+        "relativeSystemComplexity": 3.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 14,
+        "totalSystemComplexity": 14,
+        "package": "Drupal\\search_api\\Task\\",
+        "pageRank": 0,
+        "afferentCoupling": 4,
+        "efferentCoupling": 2,
+        "instability": 0.33,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Task\\ServerTaskManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSubscribedEvents",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSupportedTypes",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processEvent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeTask",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExecuteBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTaskConditions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 34,
+        "ccn": 25,
+        "ccnMethodMax": 15,
+        "externals": [
+            "Drupal\\search_api\\Task\\ServerTaskManagerInterface",
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface",
+            "Drupal\\search_api\\Task\\TaskManagerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "static",
+            "Drupal\\search_api\\Task\\TaskEvent",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Task\\TaskInterface",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "static"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Task\\ServerTaskManagerInterface",
+            "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface"
+        ],
+        "lcom": 5,
+        "length": 161,
+        "vocabulary": 32,
+        "volume": 805,
+        "difficulty": 18.83,
+        "effort": 15160.83,
+        "level": 0.05,
+        "bugs": 0.27,
+        "time": 842,
+        "intelligentContent": 42.74,
+        "number_operators": 48,
+        "number_operands": 113,
+        "number_operators_unique": 8,
+        "number_operands_unique": 24,
+        "cloc": 53,
+        "loc": 165,
+        "lloc": 112,
+        "mi": 70.06,
+        "mIwoC": 31.59,
+        "commentWeight": 38.47,
+        "kanDefect": 1.37,
+        "relativeStructuralComplexity": 729,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 729.5,
+        "totalStructuralComplexity": 7290,
+        "totalDataComplexity": 5.04,
+        "totalSystemComplexity": 7295.04,
+        "package": "Drupal\\search_api\\Task\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 9,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Task\\TaskManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTaskStorage",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTasksQuery",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTasksCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTask",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadTasks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteTask",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteTasks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeSpecificTask",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeSingleTask",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "executeAllTasks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTasksBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finishBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 14,
+        "nbMethods": 14,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 51,
+        "ccn": 38,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\search_api\\Task\\TaskManagerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\Core\\StringTranslation\\TranslationInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\search_api\\Task\\TaskInterface",
+            "Drupal\\search_api\\Task\\TaskEvent",
+            "Drupal\\search_api\\SearchApiException"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Task\\TaskManagerInterface"
+        ],
+        "lcom": 2,
+        "length": 393,
+        "vocabulary": 72,
+        "volume": 2424.78,
+        "difficulty": 35,
+        "effort": 84867.32,
+        "level": 0.03,
+        "bugs": 0.81,
+        "time": 4715,
+        "intelligentContent": 69.28,
+        "number_operators": 103,
+        "number_operands": 290,
+        "number_operators_unique": 14,
+        "number_operands_unique": 58,
+        "cloc": 130,
+        "loc": 330,
+        "lloc": 200,
+        "mi": 62.31,
+        "mIwoC": 20.99,
+        "commentWeight": 41.31,
+        "kanDefect": 3.03,
+        "relativeStructuralComplexity": 1369,
+        "relativeDataComplexity": 0.44,
+        "relativeSystemComplexity": 1369.44,
+        "totalStructuralComplexity": 19166,
+        "totalDataComplexity": 6.13,
+        "totalSystemComplexity": 19172.13,
+        "package": "Drupal\\search_api\\Task\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\UnsavedIndexConfiguration",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCurrentUserId",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginal",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOriginal",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasChanges",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isLocked",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLockOwner",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLastUpdated",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLockInformation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "savePermanent",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "discardChanges",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isReadOnly",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasources",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isValidDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDatasourceIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDatasources",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasValidTracker",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTrackerId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTrackerInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTrackerInstanceIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setTracker",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasValidServer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isServerEnabled",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerInstance",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServerInstanceIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setServer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessorsByStage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isValidProcessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessorIfAvailable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addProcessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeProcessor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProcessors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterIndexedItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessIndexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preprocessSearchQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postprocessSearchResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "renameField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldsByDatasource",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFulltextFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldRenames",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "discardFieldChanges",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPropertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadItem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadItemsMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerUnreliableItemIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexSpecificItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isBatchTracking",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "startBatchTracking",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "stopBatchTracking",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsInserted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsUpdated",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trackItemsDeleted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reindex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rebuildTracker",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isReindexing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLockId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexingRequestTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndexingRequestTime",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setStatus",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSyncing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "status",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isSyncing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isUninstalling",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "get",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "set",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onDependencyRemoval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isInstallable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "trustData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasTrustedData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "uuid",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "id",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "language",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isNew",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enforceIsNew",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "bundle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "label",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "urlInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "url",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "link",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toLink",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasLinkTemplate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "uriRelationships",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "load",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadMultiple",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postCreate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postLoad",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createDuplicate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "referencedEntities",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginalId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheTagsToInvalidate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOriginalId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "toArray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTypedData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigDependencyKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigDependencyName",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigTarget",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "access",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheContexts",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheMaxAge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCacheContexts",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCacheTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "mergeCacheMaxAge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCacheableDependency",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setThirdPartySetting",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getThirdPartySetting",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getThirdPartySettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "unsetThirdPartySetting",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getThirdPartyProviders",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 147,
+        "nbMethods": 144,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 144,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 2,
+        "wmc": 152,
+        "ccn": 9,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\UnsavedConfigurationInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\TempStore\\SharedTempStore",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\search_api\\Datasource\\DatasourceInterface",
+            "Drupal\\search_api\\Tracker\\TrackerInterface",
+            "Drupal\\search_api\\Processor\\ProcessorInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Query\\ResultSetInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\Core\\Entity\\EntityStorageException",
+            "Drupal\\Core\\Entity\\EntityStorageException",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\search_api\\UnsavedIndexConfiguration"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\UnsavedConfigurationInterface"
+        ],
+        "lcom": 8,
+        "length": 584,
+        "vocabulary": 73,
+        "volume": 3614.86,
+        "difficulty": 19.61,
+        "effort": 70894.37,
+        "level": 0.05,
+        "bugs": 1.2,
+        "time": 3939,
+        "intelligentContent": 184.32,
+        "number_operators": 146,
+        "number_operands": 438,
+        "number_operators_unique": 6,
+        "number_operands_unique": 67,
+        "cloc": 494,
+        "loc": 1156,
+        "lloc": 662,
+        "mi": 54.76,
+        "mIwoC": 12.34,
+        "commentWeight": 42.41,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 21904,
+        "relativeDataComplexity": 0.86,
+        "relativeSystemComplexity": 21904.86,
+        "totalStructuralComplexity": 3219888,
+        "totalDataComplexity": 126.01,
+        "totalSystemComplexity": 3220014.01,
+        "package": "Drupal\\search_api\\",
+        "pageRank": 0,
+        "afferentCoupling": 3,
+        "efferentCoupling": 16,
+        "instability": 0.84,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Display\\DisplayPluginManager",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInstances",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clearCachedDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\search_api\\SearchApiPluginManager",
+            "Drupal\\search_api\\Display\\DisplayPluginManagerInterface",
+            "Traversable",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+        ],
+        "parents": [
+            "Drupal\\search_api\\SearchApiPluginManager"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Display\\DisplayPluginManagerInterface"
+        ],
+        "lcom": 2,
+        "length": 42,
+        "vocabulary": 18,
+        "volume": 175.14,
+        "difficulty": 6.35,
+        "effort": 1111.45,
+        "level": 0.16,
+        "bugs": 0.06,
+        "time": 62,
+        "intelligentContent": 27.6,
+        "number_operators": 9,
+        "number_operands": 33,
+        "number_operators_unique": 5,
+        "number_operands_unique": 13,
+        "cloc": 23,
+        "loc": 58,
+        "lloc": 35,
+        "mi": 91.34,
+        "mIwoC": 49.94,
+        "commentWeight": 41.4,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.29,
+        "relativeSystemComplexity": 49.29,
+        "totalStructuralComplexity": 147,
+        "totalDataComplexity": 0.88,
+        "totalSystemComplexity": 147.88,
+        "package": "Drupal\\search_api\\Display\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Display\\DisplayPluginBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setCurrentPath",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "label",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUrl",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRenderedInCurrentRequest",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "calculateDependencies",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 10,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 10,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 2,
+        "wmc": 15,
+        "ccn": 6,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\HideablePluginBase",
+            "Drupal\\search_api\\Display\\DisplayInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal",
+            "Drupal\\Core\\Path\\CurrentPathStack",
+            "Drupal",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Url"
+        ],
+        "parents": [
+            "Drupal\\search_api\\Plugin\\HideablePluginBase"
+        ],
+        "implements": [
+            "Drupal\\search_api\\Display\\DisplayInterface"
+        ],
+        "lcom": 2,
+        "length": 104,
+        "vocabulary": 24,
+        "volume": 476.84,
+        "difficulty": 7,
+        "effort": 3337.85,
+        "level": 0.14,
+        "bugs": 0.16,
+        "time": 185,
+        "intelligentContent": 68.12,
+        "number_operators": 34,
+        "number_operands": 70,
+        "number_operators_unique": 4,
+        "number_operands_unique": 20,
+        "cloc": 89,
+        "loc": 168,
+        "lloc": 79,
+        "mi": 84.21,
+        "mIwoC": 39.04,
+        "commentWeight": 45.17,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.97,
+        "relativeSystemComplexity": 225.97,
+        "totalStructuralComplexity": 2700,
+        "totalDataComplexity": 11.63,
+        "totalSystemComplexity": 2711.63,
+        "package": "Drupal\\search_api\\Display\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 8,
+        "instability": 0.89,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Display\\DisplayDeriverBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeManager",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEntityTypeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase",
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface"
+        ],
+        "lcom": 1,
+        "length": 26,
+        "vocabulary": 10,
+        "volume": 86.37,
+        "difficulty": 2.38,
+        "effort": 205.13,
+        "level": 0.42,
+        "bugs": 0.03,
+        "time": 11,
+        "intelligentContent": 36.37,
+        "number_operators": 7,
+        "number_operands": 19,
+        "number_operators_unique": 2,
+        "number_operands_unique": 8,
+        "cloc": 28,
+        "loc": 53,
+        "lloc": 25,
+        "mi": 100.95,
+        "mIwoC": 55.81,
+        "commentWeight": 45.14,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 10,
+        "totalStructuralComplexity": 27,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 30,
+        "package": "Drupal\\search_api\\Display\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 5,
+        "instability": 0.83,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\SearchApiPluginManager",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterEvent",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "alterDefinitions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 5,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Core\\Plugin\\DefaultPluginManager",
+            "Traversable",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\search_api\\Event\\GatheringPluginInfoEvent"
+        ],
+        "parents": [
+            "Drupal\\Core\\Plugin\\DefaultPluginManager"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 47,
+        "vocabulary": 17,
+        "volume": 192.11,
+        "difficulty": 4.18,
+        "effort": 802.75,
+        "level": 0.24,
+        "bugs": 0.06,
+        "time": 45,
+        "intelligentContent": 45.98,
+        "number_operators": 8,
+        "number_operands": 39,
+        "number_operators_unique": 3,
+        "number_operands_unique": 14,
+        "cloc": 44,
+        "loc": 74,
+        "lloc": 30,
+        "mi": 97.75,
+        "mIwoC": 51.25,
+        "commentWeight": 46.5,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.87,
+        "relativeSystemComplexity": 16.87,
+        "totalStructuralComplexity": 48,
+        "totalDataComplexity": 2.6,
+        "totalSystemComplexity": 50.6,
+        "package": "Drupal\\search_api\\",
+        "pageRank": 0,
+        "afferentCoupling": 7,
+        "efferentCoupling": 5,
+        "instability": 0.42,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Query\\ResultSet",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuery",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResultCount",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setResultCount",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResultItems",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addResultItem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setResultItems",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preLoadResultItems",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getWarnings",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addWarning",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setWarnings",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIgnoredSearchKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addIgnoredSearchKey",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIgnoredSearchKeys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasExtraData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getExtraData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllExtraData",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setExtraData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCloneForQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIterator",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 21,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 5,
+        "nbMethodsSetters": 4,
+        "wmc": 26,
+        "ccn": 15,
+        "ccnMethodMax": 8,
+        "externals": [
+            "IteratorAggregate",
+            "Drupal\\search_api\\Query\\ResultSetInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Item\\ItemInterface",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Traversable",
+            "ArrayIterator"
+        ],
+        "parents": [],
+        "implements": [
+            "IteratorAggregate",
+            "Drupal\\search_api\\Query\\ResultSetInterface"
+        ],
+        "lcom": 2,
+        "length": 183,
+        "vocabulary": 37,
+        "volume": 953.33,
+        "difficulty": 14.58,
+        "effort": 13902.73,
+        "level": 0.07,
+        "bugs": 0.32,
+        "time": 772,
+        "intelligentContent": 65.37,
+        "number_operators": 58,
+        "number_operands": 125,
+        "number_operators_unique": 7,
+        "number_operands_unique": 30,
+        "cloc": 101,
+        "loc": 248,
+        "lloc": 147,
+        "mi": 71.61,
+        "mIwoC": 29.84,
+        "commentWeight": 41.76,
+        "kanDefect": 1.79,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 1.72,
+        "relativeSystemComplexity": 122.72,
+        "totalStructuralComplexity": 2541,
+        "totalDataComplexity": 36.17,
+        "totalSystemComplexity": 2577.17,
+        "package": "Drupal\\search_api\\Query\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Query\\Query",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getModuleHandler",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setModuleHandler",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEventDispatcher",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setEventDispatcher",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParseModeManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setParseModeManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDisplayPluginManager",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setDisplayPluginManager",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQueryHelper",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setQueryHelper",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSearchId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setSearchId",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDisplayPlugin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getParseMode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setParseMode",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLanguages",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLanguages",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createConditionGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createAndAddConditionGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "keys",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setFulltextFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addConditionGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCondition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "range",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessingLevel",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setProcessingLevel",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "abort",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "wasAborted",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAbortMessage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "shouldAbort",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preExecute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postExecute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasExecuted",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResults",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getKeys",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginalKeys",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFulltextFields",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConditionGroup",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getSorts",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOption",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOptions",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addTag",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasTag",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasAllTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasAnyTag",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTags",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOriginalQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheContexts",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheMaxAge",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__clone",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__sleep",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__wakeup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "sanitizeOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 61,
+        "nbMethods": 41,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 39,
+        "nbMethodsGetter": 13,
+        "nbMethodsSetters": 7,
+        "wmc": 88,
+        "ccn": 48,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Cache\\RefinableCacheableDependencyInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\Query\\ResultSet",
+            "Drupal\\search_api\\IndexInterface",
+            "static",
+            "Drupal",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal",
+            "Drupal\\search_api\\ParseMode\\ParseModePluginManager",
+            "Drupal",
+            "Drupal\\search_api\\Display\\DisplayPluginManagerInterface",
+            "Drupal",
+            "Drupal\\search_api\\Utility\\QueryHelperInterface",
+            "Drupal\\search_api\\ParseMode\\ParseModeInterface",
+            "Drupal\\search_api\\Query\\ConditionGroup",
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "Drupal\\search_api\\Event\\QueryPreExecuteEvent",
+            "Drupal\\search_api\\Event\\QueryPreExecuteEvent",
+            "Drupal\\search_api\\Event\\ProcessingResultsEvent",
+            "Drupal\\search_api\\Event\\ProcessingResultsEvent",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal",
+            "Drupal",
+            "Drupal"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\Core\\Cache\\RefinableCacheableDependencyInterface"
+        ],
+        "lcom": 2,
+        "length": 612,
+        "vocabulary": 83,
+        "volume": 3901.52,
+        "difficulty": 25.24,
+        "effort": 98460.76,
+        "level": 0.04,
+        "bugs": 1.3,
+        "time": 5470,
+        "intelligentContent": 154.6,
+        "number_operators": 197,
+        "number_operands": 415,
+        "number_operators_unique": 9,
+        "number_operands_unique": 74,
+        "cloc": 382,
+        "loc": 818,
+        "lloc": 436,
+        "mi": 54.41,
+        "mIwoC": 10.82,
+        "commentWeight": 43.59,
+        "kanDefect": 2.91,
+        "relativeStructuralComplexity": 2500,
+        "relativeDataComplexity": 1.25,
+        "relativeSystemComplexity": 2501.25,
+        "totalStructuralComplexity": 152500,
+        "totalDataComplexity": 76.06,
+        "totalSystemComplexity": 152576.06,
+        "package": "Drupal\\search_api\\Query\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 18,
+        "instability": 0.95,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Query\\Condition",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getField",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setField",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOperator",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOperator",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 3,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Query\\ConditionInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Query\\ConditionInterface"
+        ],
+        "lcom": 1,
+        "length": 45,
+        "vocabulary": 11,
+        "volume": 155.67,
+        "difficulty": 5.81,
+        "effort": 904.86,
+        "level": 0.17,
+        "bugs": 0.05,
+        "time": 50,
+        "intelligentContent": 26.78,
+        "number_operators": 14,
+        "number_operands": 31,
+        "number_operators_unique": 3,
+        "number_operands_unique": 8,
+        "cloc": 49,
+        "loc": 93,
+        "lloc": 44,
+        "mi": 93.77,
+        "mIwoC": 48.67,
+        "commentWeight": 45.1,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 7.75,
+        "relativeSystemComplexity": 7.75,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 62,
+        "totalSystemComplexity": 62,
+        "package": "Drupal\\search_api\\Query\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Query\\ConditionGroup",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConjunction",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addConditionGroup",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addCondition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConditions",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasTag",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTags",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__clone",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__toString",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 10,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "Drupal\\search_api\\Query\\ConditionGroupInterface",
+            "Drupal\\search_api\\Query\\Condition"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Query\\ConditionGroupInterface"
+        ],
+        "lcom": 1,
+        "length": 86,
+        "vocabulary": 28,
+        "volume": 413.43,
+        "difficulty": 8.18,
+        "effort": 3382.63,
+        "level": 0.12,
+        "bugs": 0.14,
+        "time": 188,
+        "intelligentContent": 50.53,
+        "number_operators": 26,
+        "number_operands": 60,
+        "number_operators_unique": 6,
+        "number_operands_unique": 22,
+        "cloc": 61,
+        "loc": 128,
+        "lloc": 67,
+        "mi": 84.35,
+        "mIwoC": 40.5,
+        "commentWeight": 43.85,
+        "kanDefect": 1.05,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 5.85,
+        "relativeSystemComplexity": 6.85,
+        "totalStructuralComplexity": 10,
+        "totalDataComplexity": 58.5,
+        "totalSystemComplexity": 68.5,
+        "package": "Drupal\\search_api\\Query\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Drush\\Commands\\SearchApiDrushCommands",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setLogger",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "listCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enableAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "status",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "index",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resetTracker",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rebuildTracker",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "search",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serverList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serverEnable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serverDisable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serverClear",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndexServer",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 19,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 19,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 21,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drush\\Commands\\DrushCommands",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\search_api\\Utility\\CommandHelper",
+            "Psr\\Container\\ContainerInterface",
+            "static",
+            "Psr\\Log\\LoggerInterface",
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "Drupal\\search_api\\Contrib\\RowsOfMultiValueFields",
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields"
+        ],
+        "parents": [
+            "Drush\\Commands\\DrushCommands"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 328,
+        "vocabulary": 201,
+        "volume": 2509.54,
+        "difficulty": 3.97,
+        "effort": 9954.96,
+        "level": 0.25,
+        "bugs": 0.84,
+        "time": 553,
+        "intelligentContent": 632.63,
+        "number_operators": 17,
+        "number_operands": 311,
+        "number_operators_unique": 5,
+        "number_operands_unique": 196,
+        "cloc": 488,
+        "loc": 581,
+        "lloc": 93,
+        "mi": 82.28,
+        "mIwoC": 32.85,
+        "commentWeight": 49.43,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 324,
+        "relativeDataComplexity": 0.32,
+        "relativeSystemComplexity": 324.32,
+        "totalStructuralComplexity": 6156,
+        "totalDataComplexity": 6.11,
+        "totalSystemComplexity": 6162.11,
+        "package": "Drupal\\search_api\\Drush\\Commands\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\QueryPreExecuteEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getQuery",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\Query\\QueryInterface",
+            "Drupal\\search_api\\Query\\QueryInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 6,
+        "vocabulary": 4,
+        "volume": 12,
+        "difficulty": 2,
+        "effort": 24,
+        "level": 0.5,
+        "bugs": 0,
+        "time": 1,
+        "intelligentContent": 6,
+        "number_operators": 2,
+        "number_operands": 4,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 20,
+        "loc": 33,
+        "lloc": 13,
+        "mi": 114.72,
+        "mIwoC": 68.01,
+        "commentWeight": 46.71,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\IsRenderedInCurrentRequestEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDisplay",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRendered",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setRendered",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\Display\\DisplayInterface",
+            "Drupal\\search_api\\Display\\DisplayInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 16,
+        "vocabulary": 5,
+        "volume": 37.15,
+        "difficulty": 3.67,
+        "effort": 136.22,
+        "level": 0.27,
+        "bugs": 0.01,
+        "time": 8,
+        "intelligentContent": 10.13,
+        "number_operators": 5,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 42,
+        "loc": 65,
+        "lloc": 23,
+        "mi": 106.54,
+        "mIwoC": 59.17,
+        "commentWeight": 47.37,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.75,
+        "relativeSystemComplexity": 2.75,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 11,
+        "totalSystemComplexity": 11,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\ReindexScheduledEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isClear",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 12,
+        "vocabulary": 5,
+        "volume": 27.86,
+        "difficulty": 2.67,
+        "effort": 74.3,
+        "level": 0.38,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 10.45,
+        "number_operators": 4,
+        "number_operands": 8,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 34,
+        "loc": 53,
+        "lloc": 19,
+        "mi": 109.16,
+        "mIwoC": 61.85,
+        "commentWeight": 47.3,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 8,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 2,
+        "efferentCoupling": 2,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\GatheringPluginInfoEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDefinitions",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 3,
+        "volume": 7.92,
+        "difficulty": 1,
+        "effort": 7.92,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 7.92,
+        "number_operators": 1,
+        "number_operands": 4,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 20,
+        "loc": 33,
+        "lloc": 13,
+        "mi": 115.98,
+        "mIwoC": 69.27,
+        "commentWeight": 46.71,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\MappingFieldTypesEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldTypeMapping",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 3,
+        "volume": 7.92,
+        "difficulty": 1,
+        "effort": 7.92,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 7.92,
+        "number_operators": 1,
+        "number_operands": 4,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 22,
+        "loc": 35,
+        "lloc": 13,
+        "mi": 116.37,
+        "mIwoC": 69.27,
+        "commentWeight": 47.09,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\MappingViewsHandlersEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHandlerMapping",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 3,
+        "volume": 7.92,
+        "difficulty": 1,
+        "effort": 7.92,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 7.92,
+        "number_operators": 1,
+        "number_operands": 4,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 25,
+        "loc": 38,
+        "lloc": 13,
+        "mi": 116.82,
+        "mIwoC": 69.27,
+        "commentWeight": 47.55,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\MappingForeignRelationshipsEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getForeignRelationshipsMapping",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheability",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Cache\\RefinableCacheableDependencyInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Cache\\RefinableCacheableDependencyInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 17,
+        "vocabulary": 6,
+        "volume": 43.94,
+        "difficulty": 3,
+        "effort": 131.83,
+        "level": 0.33,
+        "bugs": 0.01,
+        "time": 7,
+        "intelligentContent": 14.65,
+        "number_operators": 5,
+        "number_operands": 12,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 58,
+        "loc": 83,
+        "lloc": 25,
+        "mi": 105.98,
+        "mIwoC": 57.87,
+        "commentWeight": 48.11,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 3.75,
+        "relativeSystemComplexity": 3.75,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 15,
+        "totalSystemComplexity": 15,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 3,
+        "instability": 0.75,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\MappingViewsFieldHandlersEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldHandlerMapping",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 5,
+        "vocabulary": 3,
+        "volume": 7.92,
+        "difficulty": 1,
+        "effort": 7.92,
+        "level": 1,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 7.92,
+        "number_operators": 1,
+        "number_operands": 4,
+        "number_operators_unique": 1,
+        "number_operands_unique": 2,
+        "cloc": 28,
+        "loc": 41,
+        "lloc": 13,
+        "mi": 117.18,
+        "mIwoC": 69.27,
+        "commentWeight": 47.9,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 3,
+        "totalSystemComplexity": 3,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\ProcessingResultsEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResults",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setResults",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 2,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\Query\\ResultSetInterface",
+            "Drupal\\search_api\\Query\\ResultSetInterface",
+            "Drupal\\search_api\\Query\\ResultSetInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 10,
+        "vocabulary": 4,
+        "volume": 20,
+        "difficulty": 3.5,
+        "effort": 70,
+        "level": 0.29,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 5.71,
+        "number_operators": 3,
+        "number_operands": 7,
+        "number_operators_unique": 2,
+        "number_operands_unique": 2,
+        "cloc": 35,
+        "loc": 52,
+        "lloc": 17,
+        "mi": 111.68,
+        "mIwoC": 63.91,
+        "commentWeight": 47.77,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1.67,
+        "relativeSystemComplexity": 1.67,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 5,
+        "totalSystemComplexity": 5,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\DeterminingServerFeaturesEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFeatures",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getServer",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\ServerInterface",
+            "Drupal\\search_api\\ServerInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 11,
+        "vocabulary": 5,
+        "volume": 25.54,
+        "difficulty": 2.67,
+        "effort": 68.11,
+        "level": 0.38,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 9.58,
+        "number_operators": 3,
+        "number_operands": 8,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 33,
+        "loc": 52,
+        "lloc": 19,
+        "mi": 109.31,
+        "mIwoC": 62.12,
+        "commentWeight": 47.19,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 8,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\IndexingItemsEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getItems",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setItems",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 1,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 16,
+        "vocabulary": 5,
+        "volume": 37.15,
+        "difficulty": 3.67,
+        "effort": 136.22,
+        "level": 0.27,
+        "bugs": 0.01,
+        "time": 8,
+        "intelligentContent": 10.13,
+        "number_operators": 5,
+        "number_operands": 11,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 39,
+        "loc": 62,
+        "lloc": 23,
+        "mi": 106.27,
+        "mIwoC": 59.17,
+        "commentWeight": 47.1,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.75,
+        "relativeSystemComplexity": 2.75,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 11,
+        "totalSystemComplexity": 11,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\ItemsIndexedEvent",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndex",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getProcessedIds",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 2,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Component\\EventDispatcher\\Event",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "parents": [
+            "Drupal\\Component\\EventDispatcher\\Event"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 12,
+        "vocabulary": 5,
+        "volume": 27.86,
+        "difficulty": 2.67,
+        "effort": 74.3,
+        "level": 0.38,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 10.45,
+        "number_operators": 4,
+        "number_operands": 8,
+        "number_operators_unique": 2,
+        "number_operands_unique": 3,
+        "cloc": 33,
+        "loc": 52,
+        "lloc": 19,
+        "mi": 109.05,
+        "mIwoC": 61.85,
+        "commentWeight": 47.19,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 2.67,
+        "relativeSystemComplexity": 2.67,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 8,
+        "totalSystemComplexity": 8,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 2,
+        "instability": 0.67,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Event\\SearchApiEvents",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 0,
+        "length": 19,
+        "vocabulary": 19,
+        "volume": 80.71,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0.03,
+        "time": 0,
+        "intelligentContent": 161.42,
+        "number_operators": 0,
+        "number_operands": 19,
+        "number_operators_unique": 0,
+        "number_operands_unique": 19,
+        "cloc": 223,
+        "loc": 246,
+        "lloc": 23,
+        "mi": 106.58,
+        "mIwoC": 56.81,
+        "commentWeight": 49.77,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\Event\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Hook\\SearchApiViewsHooks",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewsData",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "argumentPluginsAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cachePluginsAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterPluginsAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rowPluginsAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findFieldAlias",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHandlers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldHandlerForProperty",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addSpecialFields",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createDatasourceTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "adjustHandlers",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getHandlerMapping",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldHandlerMapping",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addHandlersForProperties",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createEntityTypeTable",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllowedValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBundleNames",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 10,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 130,
+        "ccn": 113,
+        "ccnMethodMax": 28,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeBundleInfoInterface",
+            "Drupal\\Core\\Entity\\EntityFieldManagerInterface",
+            "Psr\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface",
+            "Drupal\\Component\\Plugin\\PluginManagerInterface",
+            "Psr\\Log\\LoggerInterface",
+            "Drupal\\Core\\Utility\\Error",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\Utility\\Error",
+            "Drupal\\Core\\TypedData\\DataDefinitionInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Datasource\\DatasourceInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\search_api\\Event\\MappingViewsHandlersEvent",
+            "Drupal\\search_api\\Event\\MappingViewsFieldHandlersEvent",
+            "Drupal",
+            "Drupal"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 4,
+        "length": 1819,
+        "vocabulary": 295,
+        "volume": 14924.11,
+        "difficulty": 37.58,
+        "effort": 560853.57,
+        "level": 0.03,
+        "bugs": 4.97,
+        "time": 31159,
+        "intelligentContent": 397.13,
+        "number_operators": 416,
+        "number_operands": 1403,
+        "number_operators_unique": 15,
+        "number_operands_unique": 280,
+        "cloc": 299,
+        "loc": 882,
+        "lloc": 583,
+        "mi": 39.23,
+        "mIwoC": 0,
+        "commentWeight": 39.23,
+        "kanDefect": 8.96,
+        "relativeStructuralComplexity": 5625,
+        "relativeDataComplexity": 0.28,
+        "relativeSystemComplexity": 5625.28,
+        "totalStructuralComplexity": 101250,
+        "totalDataComplexity": 4.96,
+        "totalSystemComplexity": 101254.96,
+        "package": "Drupal\\search_api\\Hook\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 17,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Hook\\SearchApiHooks",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "help",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cron",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "configImportStepsAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "nodeAccessRecordsAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "theme",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "searchApiIndexInsert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewInsert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewPresave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewCrudEvent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewsUiEditDisplayFormAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkForSearchModule",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewsExposedFormAlter",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityExtraFieldInfo",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 19,
+        "nbMethods": 19,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 18,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 83,
+        "ccn": 65,
+        "ccnMethodMax": 16,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeBundleInfoInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Component\\HttpFoundation\\RequestStack",
+            "Drupal\\search_api\\Task\\TaskManagerInterface",
+            "Drupal\\search_api\\Task\\ServerTaskManagerInterface",
+            "Drupal\\search_api\\Utility\\TrackingHelperInterface",
+            "Drupal\\Component\\Plugin\\PluginManagerInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Psr\\Log\\LoggerInterface",
+            "Drupal\\Component\\Render\\FormattableMarkup",
+            "Drupal\\Core\\Utility\\Error",
+            "Drupal\\Core\\Config\\ConfigImporter",
+            "Drupal\\Core\\Site\\Settings",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\node\\NodeInterface",
+            "Drupal\\search_api\\Entity\\Index",
+            "Drupal\\views\\ViewEntityInterface",
+            "Drupal\\views\\ViewEntityInterface",
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery",
+            "Drupal\\views\\ViewEntityInterface",
+            "Drupal\\views\\ViewEntityInterface",
+            "Drupal\\views\\ViewEntityInterface",
+            "Drupal\\search_api\\Plugin\\views\\query\\SearchApiQuery",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Entity\\Display\\EntityViewDisplayInterface"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 5,
+        "length": 581,
+        "vocabulary": 202,
+        "volume": 4449.42,
+        "difficulty": 16.49,
+        "effort": 73391.78,
+        "level": 0.06,
+        "bugs": 1.48,
+        "time": 4077,
+        "intelligentContent": 269.75,
+        "number_operators": 138,
+        "number_operands": 443,
+        "number_operators_unique": 14,
+        "number_operands_unique": 188,
+        "cloc": 147,
+        "loc": 441,
+        "lloc": 294,
+        "mi": 50.86,
+        "mIwoC": 11.87,
+        "commentWeight": 38.99,
+        "kanDefect": 5.5,
+        "relativeStructuralComplexity": 3481,
+        "relativeDataComplexity": 0.3,
+        "relativeSystemComplexity": 3481.3,
+        "totalStructuralComplexity": 66139,
+        "totalDataComplexity": 5.62,
+        "totalSystemComplexity": 66144.62,
+        "package": "Drupal\\search_api\\Hook\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 23,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Hook\\ContentEntityDatasourceHooks",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityInsert",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "entityDelete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "searchApiIndexUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 5,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\datasource\\ContentEntityTrackingManager",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 2,
+        "length": 18,
+        "vocabulary": 9,
+        "volume": 57.06,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 1,
+        "bugs": 0.02,
+        "time": 0,
+        "intelligentContent": 57.06,
+        "number_operators": 0,
+        "number_operands": 18,
+        "number_operators_unique": 0,
+        "number_operands_unique": 9,
+        "cloc": 31,
+        "loc": 56,
+        "lloc": 25,
+        "mi": 102.76,
+        "mIwoC": 57.07,
+        "commentWeight": 45.69,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 16,
+        "relativeDataComplexity": 0.2,
+        "relativeSystemComplexity": 16.2,
+        "totalStructuralComplexity": 80,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 81,
+        "package": "Drupal\\search_api\\Hook\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\ConsoleException",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\search_api\\SearchApiException"
+        ],
+        "parents": [
+            "Drupal\\search_api\\SearchApiException"
+        ],
+        "implements": [],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 3,
+        "loc": 7,
+        "lloc": 4,
+        "mi": 213.45,
+        "mIwoC": 171,
+        "commentWeight": 42.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\search_api\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 1,
+        "instability": 0.5,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\FieldsHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractFields",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractFieldValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "extractItemValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "findField",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "filterForPropertyPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNestedProperties",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "retrieveNestedProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getInnerProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isContentEntityType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isFieldIdReserved",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createItem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createItemFromObject",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createField",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createFieldFromProperty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getNewFieldId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "compareFieldLabels",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 18,
+        "nbMethods": 18,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 17,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 97,
+        "ccn": 80,
+        "ccnMethodMax": 22,
+        "externals": [
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Entity\\EntityFieldManagerInterface",
+            "Drupal\\Core\\Entity\\EntityTypeBundleInfoInterface",
+            "Drupal\\search_api\\Utility\\DataTypeHelperInterface",
+            "Drupal",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "Drupal\\Core\\TypedData\\TypedDataInterface",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\Core\\TypedData\\TypedDataInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\TypedData\\ComplexDataDefinitionInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\Core\\TypedData\\DataDefinitionInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Item\\Item",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface",
+            "InvalidArgumentException",
+            "InvalidArgumentException",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Item\\Field",
+            "Symfony\\Component\\DependencyInjection\\Container",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\TypedData\\DataDefinitionInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Item\\FieldInterface",
+            "Drupal\\search_api\\Item\\FieldInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface"
+        ],
+        "lcom": 3,
+        "length": 650,
+        "vocabulary": 105,
+        "volume": 4364.26,
+        "difficulty": 27.91,
+        "effort": 121804.63,
+        "level": 0.04,
+        "bugs": 1.45,
+        "time": 6767,
+        "intelligentContent": 156.37,
+        "number_operators": 173,
+        "number_operands": 477,
+        "number_operators_unique": 11,
+        "number_operands_unique": 94,
+        "cloc": 110,
+        "loc": 440,
+        "lloc": 330,
+        "mi": 43.79,
+        "mIwoC": 8.81,
+        "commentWeight": 34.97,
+        "kanDefect": 8.29,
+        "relativeStructuralComplexity": 5929,
+        "relativeDataComplexity": 0.34,
+        "relativeSystemComplexity": 5929.34,
+        "totalStructuralComplexity": 106722,
+        "totalDataComplexity": 6.14,
+        "totalSystemComplexity": 106728.14,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 18,
+        "instability": 0.95,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\ThemeSwitcher",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "switchToDefault",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "switchBack",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 5,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\search_api\\Utility\\ThemeSwitcherInterface",
+            "Drupal\\Core\\Theme\\ThemeManagerInterface",
+            "Drupal\\Core\\Theme\\ThemeInitializationInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Utility\\ThemeSwitcherInterface"
+        ],
+        "lcom": 2,
+        "length": 39,
+        "vocabulary": 16,
+        "volume": 156,
+        "difficulty": 7.5,
+        "effort": 1170,
+        "level": 0.13,
+        "bugs": 0.05,
+        "time": 65,
+        "intelligentContent": 20.8,
+        "number_operators": 14,
+        "number_operands": 25,
+        "number_operators_unique": 6,
+        "number_operands_unique": 10,
+        "cloc": 17,
+        "loc": 48,
+        "lloc": 31,
+        "mi": 91.28,
+        "mIwoC": 51.44,
+        "commentWeight": 39.84,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 49.67,
+        "totalStructuralComplexity": 147,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 149,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\IndexingBatchHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "process",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "finish",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 26,
+        "ccn": 23,
+        "ccnMethodMax": 14,
+        "externals": [
+            "Drupal\\search_api\\Utility\\IndexingBatchHelperInterface",
+            "Drupal\\Core\\Lock\\LockBackendInterface",
+            "Drupal\\Core\\StringTranslation\\TranslationInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal\\Component\\Datetime\\TimeInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Psr\\Log\\LoggerInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Utility\\Error"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Utility\\IndexingBatchHelperInterface"
+        ],
+        "lcom": 1,
+        "length": 322,
+        "vocabulary": 70,
+        "volume": 1973.63,
+        "difficulty": 31.5,
+        "effort": 62169.32,
+        "level": 0.03,
+        "bugs": 0.66,
+        "time": 3454,
+        "intelligentContent": 62.65,
+        "number_operators": 70,
+        "number_operands": 252,
+        "number_operators_unique": 14,
+        "number_operands_unique": 56,
+        "cloc": 52,
+        "loc": 151,
+        "lloc": 99,
+        "mi": 69.75,
+        "mIwoC": 30.3,
+        "commentWeight": 39.45,
+        "kanDefect": 1.27,
+        "relativeStructuralComplexity": 361,
+        "relativeDataComplexity": 0.27,
+        "relativeSystemComplexity": 361.28,
+        "totalStructuralComplexity": 1444,
+        "totalDataComplexity": 1.1,
+        "totalSystemComplexity": 1445.1,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\CommandHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexListCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexStatusCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enableIndexCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableIndexCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "indexItemsToIndexCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "resetTrackerCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rebuildTrackerCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clearIndexCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "searchIndexCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "serverListCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "enableServerCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "disableServerCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "clearServerCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndexServerCommand",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadIndexes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "loadServers",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIndexCount",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setIndexState",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reloadEntityOverrideFree",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "t",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "logSuccess",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 22,
+        "nbMethods": 22,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 21,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 86,
+        "ccn": 65,
+        "ccnMethodMax": 14,
+        "externals": [
+            "Psr\\Log\\LoggerAwareInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal",
+            "Drupal",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\Event\\ReindexScheduledEvent",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\ConsoleException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Config\\Entity\\ConfigEntityInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Psr\\Log\\LoggerAwareInterface"
+        ],
+        "lcom": 1,
+        "length": 666,
+        "vocabulary": 131,
+        "volume": 4684.26,
+        "difficulty": 35.83,
+        "effort": 167818.7,
+        "level": 0.03,
+        "bugs": 1.56,
+        "time": 9323,
+        "intelligentContent": 130.75,
+        "number_operators": 151,
+        "number_operands": 515,
+        "number_operators_unique": 16,
+        "number_operands_unique": 115,
+        "cloc": 333,
+        "loc": 674,
+        "lloc": 341,
+        "mi": 54.61,
+        "mIwoC": 10.31,
+        "commentWeight": 44.31,
+        "kanDefect": 5.66,
+        "relativeStructuralComplexity": 3969,
+        "relativeDataComplexity": 0.37,
+        "relativeSystemComplexity": 3969.37,
+        "totalStructuralComplexity": 87318,
+        "totalDataComplexity": 8.03,
+        "totalSystemComplexity": 87326.03,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 9,
+        "instability": 0.9,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\Utility",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "createTextToken",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deepCopy",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createCombinedId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "splitCombinedId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "splitPropertyPath",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfigOverrides",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "collectOverrides",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isRunningInCli",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "matches",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "escapeHtml",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBoostFactors",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "formatBoostFactor",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 11,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 31,
+        "ccn": 20,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\Plugin\\search_api\\data_type\\value\\TextToken",
+            "static",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal",
+            "static",
+            "Drupal\\Core\\Config\\Config",
+            "Drupal\\Component\\Utility\\NestedArray",
+            "static",
+            "Drupal\\Component\\Utility\\NestedArray",
+            "Drupal\\Component\\Utility\\Html",
+            "Drupal\\Core\\Render\\Markup",
+            "Drupal"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 12,
+        "length": 215,
+        "vocabulary": 73,
+        "volume": 1330.81,
+        "difficulty": 12.54,
+        "effort": 16687.96,
+        "level": 0.08,
+        "bugs": 0.44,
+        "time": 927,
+        "intelligentContent": 106.13,
+        "number_operators": 57,
+        "number_operands": 158,
+        "number_operators_unique": 10,
+        "number_operands_unique": 63,
+        "cloc": 170,
+        "loc": 282,
+        "lloc": 112,
+        "mi": 77.39,
+        "mIwoC": 30.73,
+        "commentWeight": 46.65,
+        "kanDefect": 1.45,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 1.47,
+        "relativeSystemComplexity": 170.47,
+        "totalStructuralComplexity": 2028,
+        "totalDataComplexity": 17.64,
+        "totalSystemComplexity": 2045.64,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 30,
+        "efferentCoupling": 8,
+        "instability": 0.21,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\TrackingHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "trackReferencedEntityUpdate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getForeignEntityRelationsMap",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEntityReferenceDataDefinition",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 37,
+        "ccn": 34,
+        "ccnMethodMax": 18,
+        "externals": [
+            "Drupal\\search_api\\Utility\\TrackingHelperInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Component\\Utility\\DeprecationHelper",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Language\\LanguageManagerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\search_api\\Utility\\FieldsHelperInterface",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\Core\\Cache\\CacheableMetadata",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Utility\\Utility",
+            "Drupal\\search_api\\Event\\MappingForeignRelationshipsEvent",
+            "Drupal\\Core\\TypedData\\DataDefinitionInterface",
+            "Drupal\\Core\\Cache\\RefinableCacheableDependencyInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Utility\\TrackingHelperInterface"
+        ],
+        "lcom": 2,
+        "length": 242,
+        "vocabulary": 52,
+        "volume": 1379.51,
+        "difficulty": 17.9,
+        "effort": 24686.75,
+        "level": 0.06,
+        "bugs": 0.46,
+        "time": 1371,
+        "intelligentContent": 77.09,
+        "number_operators": 71,
+        "number_operands": 171,
+        "number_operators_unique": 9,
+        "number_operands_unique": 43,
+        "cloc": 75,
+        "loc": 196,
+        "lloc": 121,
+        "mi": 68.92,
+        "mIwoC": 28.01,
+        "commentWeight": 40.91,
+        "kanDefect": 1.96,
+        "relativeStructuralComplexity": 1089,
+        "relativeDataComplexity": 0.19,
+        "relativeSystemComplexity": 1089.19,
+        "totalStructuralComplexity": 4356,
+        "totalDataComplexity": 0.76,
+        "totalSystemComplexity": 4356.76,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 14,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\PostRequestIndexing",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "destruct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "registerIndexingOperation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeFromIndexing",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isIndexingActive",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 19,
+        "ccn": 15,
+        "ccnMethodMax": 13,
+        "externals": [
+            "Drupal\\search_api\\Utility\\PostRequestIndexingInterface",
+            "Drupal\\Core\\DestructableInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Utility\\PostRequestIndexingInterface",
+            "Drupal\\Core\\DestructableInterface"
+        ],
+        "lcom": 2,
+        "length": 97,
+        "vocabulary": 28,
+        "volume": 466.31,
+        "difficulty": 14.8,
+        "effort": 6901.44,
+        "level": 0.07,
+        "bugs": 0.16,
+        "time": 383,
+        "intelligentContent": 31.51,
+        "number_operators": 23,
+        "number_operands": 74,
+        "number_operators_unique": 8,
+        "number_operands_unique": 20,
+        "cloc": 45,
+        "loc": 112,
+        "lloc": 67,
+        "mi": 81.04,
+        "mIwoC": 39.46,
+        "commentWeight": 41.58,
+        "kanDefect": 1.42,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.3,
+        "relativeSystemComplexity": 81.3,
+        "totalStructuralComplexity": 405,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 406.5,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\QueryHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createQuery",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "addResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getAllResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "removeResults",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCurrentRequest",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 5,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\search_api\\Utility\\QueryHelperInterface",
+            "Symfony\\Component\\HttpFoundation\\RequestStack",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal\\search_api\\ParseMode\\ParseModePluginManager",
+            "SplObjectStorage",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\Query\\Query",
+            "Drupal\\search_api\\Query\\ResultSetInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Utility\\QueryHelperInterface"
+        ],
+        "lcom": 1,
+        "length": 74,
+        "vocabulary": 17,
+        "volume": 302.47,
+        "difficulty": 8.62,
+        "effort": 2605.91,
+        "level": 0.12,
+        "bugs": 0.1,
+        "time": 145,
+        "intelligentContent": 35.11,
+        "number_operators": 18,
+        "number_operands": 56,
+        "number_operators_unique": 4,
+        "number_operands_unique": 13,
+        "cloc": 42,
+        "loc": 95,
+        "lloc": 53,
+        "mi": 87.21,
+        "mIwoC": 44.34,
+        "commentWeight": 42.87,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 49,
+        "relativeDataComplexity": 0.64,
+        "relativeSystemComplexity": 49.64,
+        "totalStructuralComplexity": 343,
+        "totalDataComplexity": 4.5,
+        "totalSystemComplexity": 347.5,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\Dependencies",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "toArray",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 0,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0.5,
+        "effort": 1,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 1,
+        "number_operands": 1,
+        "number_operators_unique": 1,
+        "number_operands_unique": 1,
+        "cloc": 9,
+        "loc": 21,
+        "lloc": 12,
+        "mi": 116.67,
+        "mIwoC": 74.22,
+        "commentWeight": 42.45,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 1,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 1,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\DataTypeHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTextType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFieldTypeMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataTypeFallbackMapping",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 13,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\search_api\\Utility\\DataTypeHelperInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+            "Drupal\\search_api\\DataType\\DataTypePluginManager",
+            "Drupal\\search_api\\Event\\MappingFieldTypesEvent",
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Utility\\DataTypeHelperInterface"
+        ],
+        "lcom": 2,
+        "length": 122,
+        "vocabulary": 49,
+        "volume": 684.99,
+        "difficulty": 6.56,
+        "effort": 4492.29,
+        "level": 0.15,
+        "bugs": 0.23,
+        "time": 250,
+        "intelligentContent": 104.45,
+        "number_operators": 28,
+        "number_operands": 94,
+        "number_operators_unique": 6,
+        "number_operands_unique": 43,
+        "cloc": 39,
+        "loc": 109,
+        "lloc": 70,
+        "mi": 78.13,
+        "mIwoC": 38.15,
+        "commentWeight": 39.98,
+        "kanDefect": 1.19,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.65,
+        "relativeSystemComplexity": 81.65,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 2.6,
+        "totalSystemComplexity": 326.6,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 1,
+        "efferentCoupling": 6,
+        "instability": 0.86,
+        "violations": {}
+    },
+    {
+        "name": "Drupal\\search_api\\Utility\\PluginHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createIndexPlugin",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createIndexPlugins",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createDatasourcePlugin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createProcessorPlugin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createTrackerPlugin",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createDatasourcePlugins",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createProcessorPlugins",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "createTrackerPlugins",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 2,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 16,
+        "ccn": 8,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\search_api\\Utility\\PluginHelperInterface",
+            "Drupal\\search_api\\Datasource\\DatasourcePluginManager",
+            "Drupal\\search_api\\Processor\\ProcessorPluginManager",
+            "Drupal\\search_api\\Tracker\\TrackerPluginManager",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\SearchApiException",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface",
+            "Drupal\\search_api\\IndexInterface"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\search_api\\Utility\\PluginHelperInterface"
+        ],
+        "lcom": 2,
+        "length": 135,
+        "vocabulary": 31,
+        "volume": 668.82,
+        "difficulty": 15.9,
+        "effort": 10631.4,
+        "level": 0.06,
+        "bugs": 0.22,
+        "time": 591,
+        "intelligentContent": 42.07,
+        "number_operators": 26,
+        "number_operands": 109,
+        "number_operators_unique": 7,
+        "number_operands_unique": 24,
+        "cloc": 63,
+        "loc": 126,
+        "lloc": 63,
+        "mi": 84.35,
+        "mIwoC": 39.89,
+        "commentWeight": 44.46,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 1.6,
+        "relativeSystemComplexity": 37.6,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 14.43,
+        "totalSystemComplexity": 338.43,
+        "package": "Drupal\\search_api\\Utility\\",
+        "pageRank": 0,
+        "afferentCoupling": 0,
+        "efferentCoupling": 6,
+        "instability": 1,
+        "violations": {}
+    }
+]

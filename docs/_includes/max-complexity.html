@@ -1,0 +1,7 @@
+{% assign max_cyclo = 0 %}
+{% for item in json %}
+  {% if item[1].ccn > max_cyclo %}
+    {% assign max_cyclo = item[1].ccn %}
+  {% endif %}
+{% endfor %}
+{{ max_cyclo }}

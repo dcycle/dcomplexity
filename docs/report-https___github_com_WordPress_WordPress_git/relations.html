@@ -1,0 +1,5296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhpMetrics report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/milligram.min.css?v=v2.9.1">
+    <link rel="stylesheet" href="css/style.css?v=v2.9.1">
+    <link rel="stylesheet" href="css/roboto.css?v=v2.9.1">
+    <link rel="stylesheet" href="css/normalize.css?v=v2.9.1">
+    <link rel="stylesheet" href="css/material-icons.css?v=v2.9.1">
+</head>
+<body>
+
+
+<header class="headerbar">
+    <div class="headerbarInner">
+        <div class="float-left navigation-title">
+            <a href="index.html">
+                <h1 class="title">PhpMetrics</h1>
+                <span class="subtitle">
+                Static analyzer for PHP
+            </span>
+            </a>
+        </div>
+        <ul class="navigation-list float-right">
+            <li class="navigation-item">
+                <a class="navigation-link" href="https://github.com/phpmetrics/phpmetrics">Support</a>
+                <a class="navigation-link" href="https://phpmetrics.github.io/website/">Documentation</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<a class="hidden-xs github" href="https://github.com/phpmetrics/phpmetrics"
+   title="PhpMetrics on Github" target="blank">
+    <svg width="80" height="80" viewBox="0 0 250 250" class="github">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+            d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+            fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path
+            d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+            fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+
+
+<div class="page">
+    <div class="content content-first">
+        <div class="report-details">
+            Created at 2025-11-23 16:12:05        , with PHPMetrics v2.9.1 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+        </div>
+
+        
+
+
+<div class="row">
+    <div class="column">
+        <div class="bloc">
+            <h4>Object relations</h4>
+            <div id="chart-relations"></div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+    <div class="content">
+        <div class="logo">
+            <a href="index.html"><img src="images/phpmetrics-maintenability.png"
+                                                 alt="Logo PhpMetrics"></a>
+            <h1>PhpMetrics</h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none">
+                            <path
+                                d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
+                        </svg>
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="violations.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none">
+                            <path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z">
+                        </svg>
+                        Violations (1007)
+                    </a>
+                </li>
+                                    <li>
+                        <a href="composer.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></svg>
+                            Composer
+                        </a>
+                    </li>
+                                                <li>
+                    <a href="loc.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <path d="M0 0h24v24H0z" id="a">
+                            </defs>
+                            <clipPath id="b">
+                                <use overflow="visible" xlink:href="#a">
+                            </clipPath>
+                            <path clip-path="url(#b)"
+                                  d="M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z">
+                        </svg>
+                        Size &amp; volume
+                    </a>
+                </li>
+                <li>
+                    <a href="complexity.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0V0z" fill="none">
+                            <path
+                                d="M19.07 4.93l-1.41 1.41C19.1 7.79 20 9.79 20 12c0 4.42-3.58 8-8 8s-8-3.58-8-8c0-4.08 3.05-7.44 7-7.93v2.02C8.16 6.57 6 9.03 6 12c0 3.31 2.69 6 6 6s6-2.69 6-6c0-1.66-.67-3.16-1.76-4.24l-1.41 1.41C15.55 9.9 16 10.9 16 12c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.86 1.28-3.41 3-3.86v2.14c-.6.35-1 .98-1 1.72 0 1.1.9 2 2 2s2-.9 2-2c0-.74-.4-1.38-1-1.72V2h-1C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-2.76-1.12-5.26-2.93-7.07z">
+                        </svg>
+                        Complexity &amp; defects
+                    </a>
+                </li>
+                <li>
+                    <a href="oop.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none">
+                            <path
+                                d="M17 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zM5 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z">
+                        </svg>
+                        Object oriented metrics
+                    </a>
+                </li>
+                <li>
+                    <a href="relations.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none">
+                            <path
+                                d="M14 4l2.29 2.29-2.88 2.88 1.42 1.42 2.88-2.88L20 10V4zm-4 0H4v6l2.29-2.29 4.71 4.7V20h2v-8.41l-5.29-5.3z">
+                        </svg>
+                        Object relations
+                    </a>
+                </li>
+                <li>
+                    <a href="coupling.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <path d="M0 0h24v24H0V0z" id="a">
+                            </defs>
+                            <clipPath id="b">
+                                <use overflow="visible" xlink:href="#a">
+                            </clipPath>
+                            <path clip-path="url(#b)"
+                                  d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22V8h-7.01V5L11 9l3.99 4z">
+                        </svg>
+                        Coupling
+                    </a>
+                </li>
+                <li>
+                    <a href="packages.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M11 9.16V2c-5 .5-9 4.79-9 10s4 9.5 9 10v-7.16c-1-.41-2-1.52-2-2.84s1-2.43 2-2.84zM14.86 11H22c-.48-4.75-4-8.53-9-9v7.16c1 .3 1.52.98 1.86 1.84zM13 14.84V22c5-.47 8.52-4.25 9-9h-7.14c-.34.86-.86 1.54-1.86 1.84z">
+                        </svg>
+                        Package oriented metrics
+                    </a>
+                </li>
+                <li>
+                    <a href="package_relations.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 20.41L18.41 19 15 15.59 13.59 17 17 20.41zM7.5 8H11v5.59L5.59 19 7 20.41l6-6V8h3.5L12 3.5 7.5 8z">
+                        </svg>
+                        Package relations
+                    </a>
+                </li>
+                                <!--<li>
+                    <a href="all.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3v18h18V3H3zm8 16H5v-6h6v6zm0-8H5V5h6v6zm8 8h-6v-6h6v6zm0-8h-6V5h6v6z">
+                            <path d="M0 0h24v24H0z" fill="none">
+                        </svg>
+                        All metrics
+                    </a>
+                </li>-->
+                <!--                <li>-->
+                <!--                    <a href="#">-->
+                <!--                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"-->
+                <!--                             xmlns="http://www.w3.org/2000/svg">-->
+                <!--                            <path-->
+                <!--                                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z">-->
+                <!--                            <path d="M0 0h24v24H0z" fill="none">-->
+                <!--                        </svg>-->
+                <!--                        Third party-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <!--<li class="sep">
+                    <a href="panel.html">
+                        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none">
+                            <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z">
+                        </svg>
+                        TV Panel
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="js/functions.js?v=v2.9.1"></script>
+<script src="js/d3.v3.js"></script>
+<script src="js/d3.hexbin.v0.js"></script>
+<script src="js/sort-table.min.js?v=v2.9.1"></script>
+<script src="js/graph-maintainability.js?v=v2.9.1"></script>
+<script src="js/graph-licenses.js?v=v2.9.1"></script>
+<script src="js/FileSaver.min.js?v=v2.9.1"></script>
+
+<script src="js/clusterize.min.js?v=v2.9.1"></script>
+<link rel="stylesheet" href="css/clusterize.css?v=v2.9.1">
+
+<script src="classes.js?v=v2.9.1"></script>
+
+<script>
+    var accessibilityEnabled = false;
+</script>
+
+</body>
+</html>
+
+
+<script>
+
+
+    var relations = [
+    {
+        "name": "\\WP_Post_Comments_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_Comments_List_Table"
+        ]
+    },
+    {
+        "name": "\\WP_Comments_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table"
+        ]
+    },
+    {
+        "name": "\\WP_Privacy_Data_Export_Requests_List_Table",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Privacy_Requests_Table",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_List_Table",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Query",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Terms_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table"
+        ]
+    },
+    {
+        "name": "\\WP_Users_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table",
+            "\\WP_User_Query"
+        ]
+    },
+    {
+        "name": "\\WP_User_Query",
+        "size": 3000,
+        "relations": [
+            "\\WP_Meta_Query",
+            "\\WP_Date_Query",
+            "\\WP_User"
+        ]
+    },
+    {
+        "name": "\\Plugin_Upgrader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Upgrader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Error",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Privacy_Policy_Content",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Bulk_Plugin_Upgrader_Skin",
+        "size": 3000,
+        "relations": [
+            "\\Bulk_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\Bulk_Upgrader_Skin",
+        "size": 3000,
+        "relations": [
+            "\\WP_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\WP_Theme_Install_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_Themes_List_Table"
+        ]
+    },
+    {
+        "name": "\\WP_Themes_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table",
+            "\\WP_Theme"
+        ]
+    },
+    {
+        "name": "\\WP_Filesystem_SSH2",
+        "size": 3000,
+        "relations": [
+            "\\WP_Filesystem_Base",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Filesystem_Base",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Community_Events",
+        "size": 3000,
+        "relations": [
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\File_Upload_Upgrader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Language_Pack_Upgrader_Skin",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Upgrader_Skin",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Language_Pack_Upgrader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Automatic_Updater",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Plugin_Installer_Skin",
+        "size": 3000,
+        "relations": [
+            "\\WP_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\PclZip",
+        "size": 3000,
+        "relations": [
+            "\\PclZip"
+        ]
+    },
+    {
+        "name": "\\WP_Ajax_Upgrader_Skin",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Automatic_Upgrader_Skin",
+        "size": 3000,
+        "relations": [
+            "\\WP_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\WP_Theme",
+        "size": 3000,
+        "relations": [
+            "\\WP_Theme",
+            "\\WP_Error",
+            "\\UnexpectedValueException"
+        ]
+    },
+    {
+        "name": "\\Walker_Nav_Menu_Checklist",
+        "size": 3000,
+        "relations": [
+            "\\Walker_Nav_Menu"
+        ]
+    },
+    {
+        "name": "\\Walker_Nav_Menu",
+        "size": 3000,
+        "relations": [
+            "\\Walker"
+        ]
+    },
+    {
+        "name": "\\WP_MS_Sites_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table",
+            "\\WP_User_Query",
+            "\\WP_Site"
+        ]
+    },
+    {
+        "name": "\\WP_Site",
+        "size": 3000,
+        "relations": [
+            "\\WP_Site",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_Application_Passwords_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table",
+            "\\WP_Application_Passwords"
+        ]
+    },
+    {
+        "name": "\\WP_Application_Passwords",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Walker_Nav_Menu_Edit",
+        "size": 3000,
+        "relations": [
+            "\\Walker_Nav_Menu"
+        ]
+    },
+    {
+        "name": "\\Core_Upgrader",
+        "size": 3000,
+        "relations": [
+            "\\WP_Upgrader",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\Theme_Upgrader",
+        "size": 3000,
+        "relations": [
+            "\\WP_Upgrader",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\Plugin_Upgrader_Skin",
+        "size": 3000,
+        "relations": [
+            "\\WP_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\WP_Site_Health",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Site_Health_Auto_Updates",
+        "size": 3000,
+        "relations": [
+            "\\WP_Automatic_Updater",
+            "\\Automatic_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\stdClass",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Internal_Pointers",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Bulk_Theme_Upgrader_Skin",
+        "size": 3000,
+        "relations": [
+            "\\Bulk_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\Theme_Installer_Skin",
+        "size": 3000,
+        "relations": [
+            "\\WP_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\Walker_Category_Checklist",
+        "size": 3000,
+        "relations": [
+            "\\Walker"
+        ]
+    },
+    {
+        "name": "\\Walker",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ftp_sockets",
+        "size": 3000,
+        "relations": [
+            "\\ftp_base"
+        ]
+    },
+    {
+        "name": "\\ftp_base",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Plugin_Install_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table",
+            "\\WP_Plugin_Dependencies"
+        ]
+    },
+    {
+        "name": "\\WP_Plugin_Dependencies",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Filesystem_Direct",
+        "size": 3000,
+        "relations": [
+            "\\WP_Filesystem_Base",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Filesystem_ftpsockets",
+        "size": 3000,
+        "relations": [
+            "\\WP_Filesystem_Base",
+            "\\WP_Error",
+            "\\ftp"
+        ]
+    },
+    {
+        "name": "\\ftp",
+        "size": 3000,
+        "relations": [
+            "\\ftp_pure"
+        ]
+    },
+    {
+        "name": "\\WP_Links_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table"
+        ]
+    },
+    {
+        "name": "\\WP_MS_Users_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table",
+            "\\WP_User_Query"
+        ]
+    },
+    {
+        "name": "\\Custom_Image_Header",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Importer",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Posts_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table"
+        ]
+    },
+    {
+        "name": "\\WP_Privacy_Data_Removal_Requests_List_Table",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\_WP_List_Table_Compat",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table"
+        ]
+    },
+    {
+        "name": "\\ftp_pure",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_MS_Themes_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table",
+            "\\WP_Theme"
+        ]
+    },
+    {
+        "name": "\\WP_Filesystem_FTPext",
+        "size": 3000,
+        "relations": [
+            "\\WP_Filesystem_Base",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Plugins_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table",
+            "\\stdClass",
+            "\\WP_Plugin_Dependencies"
+        ]
+    },
+    {
+        "name": "\\WP_Media_List_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_List_Table"
+        ]
+    },
+    {
+        "name": "\\WP_Site_Icon",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Theme_Upgrader_Skin",
+        "size": 3000,
+        "relations": [
+            "\\WP_Upgrader_Skin"
+        ]
+    },
+    {
+        "name": "\\WP_Screen",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Debug_Data",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Network_Query",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\DateTimeZone",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\DateTime",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Imagick",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_User_Search",
+        "size": 3000,
+        "relations": [
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Privacy_Data_Export_Requests_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_Privacy_Data_Export_Requests_List_Table"
+        ]
+    },
+    {
+        "name": "\\WP_Privacy_Data_Removal_Requests_Table",
+        "size": 3000,
+        "relations": [
+            "\\WP_Privacy_Data_Removal_Requests_List_Table"
+        ]
+    },
+    {
+        "name": "\\Custom_Background",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\MagpieRSS",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\RSSCache",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Cloner",
+        "size": 3000,
+        "relations": [
+            "\\WP_Block"
+        ]
+    },
+    {
+        "name": "\\WP_Block",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\anonymous@000000000000cb7b0000000000000000",
+        "size": 3000,
+        "relations": [
+            "\\WP_HTML_Tag_Processor",
+            "\\WP_HTML_Span"
+        ]
+    },
+    {
+        "name": "\\WP_HTML_Tag_Processor",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Span",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Navigation_Block_Renderer",
+        "size": 3000,
+        "relations": [
+            "\\static",
+            "\\WP_HTML_Tag_Processor",
+            "\\WP_Block_List"
+        ]
+    },
+    {
+        "name": "\\static",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_List",
+        "size": 3000,
+        "relations": [
+            "\\Iterator",
+            "\\ArrayAccess",
+            "\\Countable",
+            "\\WP_Block_Type_Registry",
+            "\\WP_Block"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Setting",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Editor_Context",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_PHPMailer",
+        "size": 3000,
+        "relations": [
+            "\\PHPMailer\\PHPMailer\\PHPMailer",
+            "\\static"
+        ]
+    },
+    {
+        "name": "\\PHPMailer\\PHPMailer\\PHPMailer",
+        "size": 3000,
+        "relations": [
+            "\\PHPMailer\\PHPMailer\\Exception",
+            "\\static",
+            "\\PHPMailer\\PHPMailer\\SMTP",
+            "\\PHPMailer\\PHPMailer\\OAuthTokenProvider"
+        ]
+    },
+    {
+        "name": "\\wpdb",
+        "size": 3000,
+        "relations": [
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Block_Metadata_Registry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Comment_Query",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Meta_Query",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Date_Query",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Walker_Category",
+        "size": 3000,
+        "relations": [
+            "\\Walker"
+        ]
+    },
+    {
+        "name": "\\WP_Recovery_Mode_Cookie_Service",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Styles",
+        "size": 3000,
+        "relations": [
+            "\\WP_Dependencies"
+        ]
+    },
+    {
+        "name": "\\WP_Dependencies",
+        "size": 3000,
+        "relations": [
+            "\\_WP_Dependency"
+        ]
+    },
+    {
+        "name": "\\_WP_Editors",
+        "size": 3000,
+        "relations": [
+            "\\WP_Query"
+        ]
+    },
+    {
+        "name": "\\WP_Translation_Controller",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Translation_File",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Translation_File_PHP",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Translation_File_MO",
+        "size": 3000,
+        "relations": [
+            "\\WP_Translation_File"
+        ]
+    },
+    {
+        "name": "\\Plural_Forms",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Translations",
+        "size": 3000,
+        "relations": [
+            "\\WP_Translation_Controller",
+            "\\Translation_Entry"
+        ]
+    },
+    {
+        "name": "\\Translation_Entry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_riff",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_handler",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_lib",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getID3",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_mpeg",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_id3v2",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_mp3",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getid3_lib"
+        ]
+    },
+    {
+        "name": "\\Exception",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_ac3",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getid3_lib"
+        ]
+    },
+    {
+        "name": "\\getid3_dts",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getid3_lib"
+        ]
+    },
+    {
+        "name": "\\getid3_flac",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_ogg",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_apetag",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_id3v1",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getid3_lib"
+        ]
+    },
+    {
+        "name": "\\getid3_quicktime",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getid3_lib",
+            "\\getid3_id3v1",
+            "\\getID3",
+            "\\getid3_mp3",
+            "\\getid3_id3v2",
+            "\\getid3_tag_nikon_nctg"
+        ]
+    },
+    {
+        "name": "\\getid3_tag_nikon_nctg",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_lyrics3",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getid3_lib",
+            "\\getID3",
+            "\\getid3_apetag"
+        ]
+    },
+    {
+        "name": "\\getid3_exception",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\tag_class",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\class_name",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_matroska",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getid3_lib",
+            "\\getid3_riff",
+            "\\getID3",
+            "\\class",
+            "\\getid3_ogg",
+            "\\Exception"
+        ]
+    },
+    {
+        "name": "\\class",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\COM",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\getid3_asf",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getID3",
+            "\\getid3_lib",
+            "\\getid3_riff",
+            "\\getid3_id3v2"
+        ]
+    },
+    {
+        "name": "\\getid3_flv",
+        "size": 3000,
+        "relations": [
+            "\\getid3_handler",
+            "\\getid3_lib",
+            "\\AVCSequenceParameterSetReader",
+            "\\AMFStream",
+            "\\AMFReader"
+        ]
+    },
+    {
+        "name": "\\AVCSequenceParameterSetReader",
+        "size": 3000,
+        "relations": [
+            "\\getid3_lib"
+        ]
+    },
+    {
+        "name": "\\AMFStream",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\AMFReader",
+        "size": 3000,
+        "relations": [
+            "\\AMFStream"
+        ]
+    },
+    {
+        "name": "\\PHPMailer\\PHPMailer\\DSNConfigurator",
+        "size": 3000,
+        "relations": [
+            "\\PHPMailer\\PHPMailer\\DSNConfigurator",
+            "\\PHPMailer\\PHPMailer\\PHPMailer",
+            "\\PHPMailer\\PHPMailer\\Exception"
+        ]
+    },
+    {
+        "name": "\\PHPMailer\\PHPMailer\\Exception",
+        "size": 3000,
+        "relations": [
+            "\\Exception"
+        ]
+    },
+    {
+        "name": "\\PHPMailer\\PHPMailer\\SMTP",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\PHPMailer\\PHPMailer\\OAuthTokenProvider",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\PHPMailer\\PHPMailer\\OAuth",
+        "size": 3000,
+        "relations": [
+            "\\PHPMailer\\PHPMailer\\OAuthTokenProvider",
+            "\\League\\OAuth2\\Client\\Grant\\RefreshToken"
+        ]
+    },
+    {
+        "name": "\\League\\OAuth2\\Client\\Grant\\RefreshToken",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\PHPMailer\\PHPMailer\\POP3",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Session_Tokens",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\manager",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Theme_JSON_Data",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Theme_JSON",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Theme_JSON_Schema",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_oEmbed_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Roles",
+        "size": 3000,
+        "relations": [
+            "\\WP_Role"
+        ]
+    },
+    {
+        "name": "\\WP_Role",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Classic_To_Block_Menu_Converter",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Template",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTTP_Requests_Response",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTTP_Response",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Response",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Utility\\CaseInsensitiveDictionary",
+        "size": 3000,
+        "relations": [
+            "\\ArrayAccess",
+            "\\IteratorAggregate",
+            "\\WpOrg\\Requests\\Exception",
+            "\\ArrayIterator"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Response\\Headers",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Http_Cookie",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Scripts",
+        "size": 3000,
+        "relations": [
+            "\\WP_Dependencies"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menus",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Setting",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Setting",
+            "\\WP_Customize_Manager",
+            "\\Exception",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Item_Setting",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Setting",
+            "\\WP_Customize_Manager",
+            "\\Exception",
+            "\\stdClass",
+            "\\WP_Post",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menus_Panel",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Panel",
+            "\\WP_Screen"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Location_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Section",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Section"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Item_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Filter_Setting",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Setting"
+        ]
+    },
+    {
+        "name": "\\WP",
+        "size": 3000,
+        "relations": [
+            "\\WP_MatchesMapRegex"
+        ]
+    },
+    {
+        "name": "\\WP_MatchesMapRegex",
+        "size": 3000,
+        "relations": [
+            "\\WP_MatchesMapRegex"
+        ]
+    },
+    {
+        "name": "\\Walker_CategoryDropdown",
+        "size": 3000,
+        "relations": [
+            "\\Walker"
+        ]
+    },
+    {
+        "name": "\\WP_Script_Modules",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Site_Query",
+        "size": 3000,
+        "relations": [
+            "\\WP_Meta_Query",
+            "\\WP_Date_Query"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Panel",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Duotone",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Theme_JSON_Resolver",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\SimplePie",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Category",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Category"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Category",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Net_IPv6",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Net\\IPv6"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Net\\IPv6",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Cache_File",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Cache\\File"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Cache\\File",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Cache_DB",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Cache\\DB"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Cache\\DB",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Cache_MySQL",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Cache\\MySQL"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Cache\\MySQL",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Cache\\DB",
+            "\\SimplePie\\Cache",
+            "\\PDO"
+        ]
+    },
+    {
+        "name": "\\SimplePie_Cache_Redis",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Cache\\Redis"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Cache\\Redis",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Cache\\Base",
+            "\\SimplePie\\Cache",
+            "\\Redis"
+        ]
+    },
+    {
+        "name": "\\SimplePie_Parser",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Parser"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Parser",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\RegistryAware",
+            "\\SimplePie\\Registry",
+            "\\DOMDocument",
+            "\\DOMXpath",
+            "\\XMLReader"
+        ]
+    },
+    {
+        "name": "\\SimplePie_Sanitize",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Sanitize"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Sanitize",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Cache",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Cache"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Cache",
+        "size": 3000,
+        "relations": [
+            "\\class",
+            "\\SimplePie\\Cache\\File"
+        ]
+    },
+    {
+        "name": "\\SimplePie_File",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\File"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\File",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Registry",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Registry"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Registry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Parse_Date",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Parse\\Date"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Parse\\Date",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Copyright",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Copyright"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Copyright",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Content_Type_Sniffer",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Content\\Type\\Sniffer"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Content\\Type\\Sniffer",
+        "size": 3000,
+        "relations": [
+            "\\InvalidArgumentException"
+        ]
+    },
+    {
+        "name": "\\SimplePie_Locator",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Locator"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Locator",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\RegistryAware",
+            "\\SimplePie\\File",
+            "\\DOMDocument",
+            "\\Psr\\Http\\Client\\ClientInterface",
+            "\\Psr\\Http\\Message\\RequestFactoryInterface",
+            "\\Psr\\Http\\Message\\UriFactoryInterface",
+            "\\SimplePie\\HTTP\\Psr18Client",
+            "\\SimplePie\\Registry",
+            "\\SimplePie\\Misc",
+            "\\SimplePie\\HTTP\\Response",
+            "\\SimplePie\\Exception",
+            "\\DOMXpath",
+            "\\SimplePie\\HTTP\\Client",
+            "\\SimplePie\\HTTP\\FileClient"
+        ]
+    },
+    {
+        "name": "\\SimplePie_XML_Declaration_Parser",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\XML\\Declaration\\Parser"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\XML\\Declaration\\Parser",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Decode_HTML_Entities",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Misc",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Misc"
+        ]
+    },
+    {
+        "name": "\\SimplePie_HTTP_Parser",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\HTTP\\Parser"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\HTTP\\Parser",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Restriction",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Restriction"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Restriction",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Credit",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Credit"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Credit",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Item",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Item"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Item",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Enclosure",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Enclosure"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Enclosure",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Misc"
+        ]
+    },
+    {
+        "name": "\\SimplePie_IRI",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\IRI"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\IRI",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Source",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Source"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Source",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\RegistryAware",
+            "\\SimplePie\\Item",
+            "\\SimplePie\\Registry"
+        ]
+    },
+    {
+        "name": "\\SimplePie_Author",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Author"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Author",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Exception",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Exception"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Exception",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Caption",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Caption"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Caption",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\Misc",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Rating",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Rating"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Rating",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie_Core",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie"
+        ]
+    },
+    {
+        "name": "\\SimplePie_gzdecode",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Gzdecode"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Gzdecode",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Exception"
+        ]
+    },
+    {
+        "name": "\\SimplePie_Autoloader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\Cache\\CallableNameFilter",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Psr\\Http\\Client\\ClientInterface",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Psr\\Http\\Message\\RequestFactoryInterface",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Psr\\Http\\Message\\UriFactoryInterface",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\HTTP\\Psr18Client",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\HTTP\\Client",
+            "\\Psr\\Http\\Client\\ClientInterface",
+            "\\Psr\\Http\\Message\\RequestFactoryInterface",
+            "\\Psr\\Http\\Message\\UriFactoryInterface",
+            "\\SimplePie\\HTTP\\Response",
+            "\\InvalidArgumentException",
+            "\\SimplePie\\HTTP\\ClientException",
+            "\\SimplePie\\HTTP\\Psr7Response",
+            "\\SimplePie\\HTTP\\RawTextResponse"
+        ]
+    },
+    {
+        "name": "\\Psr\\SimpleCache\\CacheInterface",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\Cache\\Psr16",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Cache\\DataCache",
+            "\\Psr\\SimpleCache\\CacheInterface"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Cache\\NameFilter",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\Cache\\BaseDataCache",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\InvalidArgumentException",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\DOMDocument",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\DOMXpath",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\HTTP\\Response",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\Cache\\DataCache",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\HTTP\\Client",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\HTTP\\FileClient",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\HTTP\\Client",
+            "\\SimplePie\\Registry",
+            "\\SimplePie\\HTTP\\Response",
+            "\\InvalidArgumentException",
+            "\\SimplePie\\Misc",
+            "\\SimplePie\\HTTP\\ClientException"
+        ]
+    },
+    {
+        "name": "\\SimplePie\\Cache\\Base",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\PDO",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Redis",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\RegistryAware",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\XMLReader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\DOMXPath",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\DOMText",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ReflectionClass",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\HTTP\\ClientException",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\HTTP\\RawTextResponse",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimplePie\\HTTP\\Psr7Response",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Psr\\Http\\Message\\ResponseInterface",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\UConverter",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Textdomain_Registry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Services_JSON",
+        "size": 3000,
+        "relations": [
+            "\\Services_JSON",
+            "\\stdClass",
+            "\\PEAR"
+        ]
+    },
+    {
+        "name": "\\Services_JSON_Error",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\PEAR",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Term_Query",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Locale_Switcher",
+        "size": 3000,
+        "relations": [
+            "\\WP_Locale",
+            "\\WP_Translation_Controller"
+        ]
+    },
+    {
+        "name": "\\WP_Locale",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Walker_Comment",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Rewrite",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTTP_Proxy",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_SimplePie_File",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\File",
+            "\\SimplePie\\Misc"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Manager",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Selective_Refresh",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Widgets",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Sidebar_Section",
+            "\\WP_Sidebar_Block_Editor_Control",
+            "\\WP_Widget_Area_Customize_Control",
+            "\\WP_Widget_Form_Customize_Control",
+            "\\WP_Error",
+            "\\WP_Block_Editor_Context"
+        ]
+    },
+    {
+        "name": "\\setting_class",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\panel_type",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Section",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\section_type",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Control",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\control_type",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Themes_Panel",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Panel"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Themes_Section",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Section"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Site_Icon_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Cropped_Image_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Cropped_Image_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Image_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Color_Control",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Header_Image_Setting",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Setting",
+            "\\Custom_Image_Header"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Media_Control",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Header_Image_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Image_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Background_Image_Setting",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Setting"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Background_Image_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Image_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Background_Position_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Custom_CSS_Setting",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Setting",
+            "\\Exception",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Code_Editor_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Block_Supports",
+        "size": 3000,
+        "relations": [
+            "\\WP_Block_Type_Registry"
+        ]
+    },
+    {
+        "name": "\\WP_Block_Type_Registry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\AtomFeed",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\AtomEntry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\AtomParser",
+        "size": 3000,
+        "relations": [
+            "\\AtomFeed",
+            "\\AtomEntry"
+        ]
+    },
+    {
+        "name": "\\WP_Text_Diff_Renderer_Table",
+        "size": 3000,
+        "relations": [
+            "\\Text_Diff_Renderer",
+            "\\Text_Diff",
+            "\\this"
+        ]
+    },
+    {
+        "name": "\\Text_Diff_Renderer",
+        "size": 3000,
+        "relations": [
+            "\\Text_Diff_Op_copy"
+        ]
+    },
+    {
+        "name": "\\Text_Diff",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\this",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\wp_xmlrpc_server",
+        "size": 3000,
+        "relations": [
+            "\\IXR_Server",
+            "\\IXR_Error",
+            "\\WP_Error",
+            "\\IXR_Date"
+        ]
+    },
+    {
+        "name": "\\IXR_Server",
+        "size": 3000,
+        "relations": [
+            "\\IXR_Message",
+            "\\IXR_Value",
+            "\\IXR_Error"
+        ]
+    },
+    {
+        "name": "\\IXR_Error",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\IXR_Date",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ArrayAccess",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\UnexpectedValueException",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Text_Diff_Renderer_inline",
+        "size": 3000,
+        "relations": [
+            "\\Text_Diff_Renderer_inline"
+        ]
+    },
+    {
+        "name": "\\Text_Diff_Renderer_inline",
+        "size": 3000,
+        "relations": [
+            "\\Text_Diff_Renderer_inline"
+        ]
+    },
+    {
+        "name": "\\WP_HTTP_Requests_Hooks",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Hooks",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Fatal_Error_Handler",
+        "size": 3000,
+        "relations": [
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Abilities_Registry",
+        "size": 3000,
+        "relations": [
+            "\\ability_class",
+            "\\WP_Ability_Categories_Registry",
+            "\\LogicException"
+        ]
+    },
+    {
+        "name": "\\ability_class",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Ability_Categories_Registry",
+        "size": 3000,
+        "relations": [
+            "\\WP_Ability_Category",
+            "\\LogicException"
+        ]
+    },
+    {
+        "name": "\\LogicException",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Ability_Category",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Ability",
+        "size": 3000,
+        "relations": [
+            "\\InvalidArgumentException",
+            "\\WP_Error",
+            "\\LogicException"
+        ]
+    },
+    {
+        "name": "\\WP_Block_Type",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Parser_Frame",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Styles_Registry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Autoload",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Port",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\InvalidArgument",
+            "\\WpOrg\\Requests\\Exception"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\InvalidArgument",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\HookManager",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Utility\\InputValidator",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Requests",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\transport",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Auth\\Basic",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Auth",
+            "\\WpOrg\\Requests\\Exception\\ArgumentCount",
+            "\\WpOrg\\Requests\\Exception\\InvalidArgument",
+            "\\WpOrg\\Requests\\Hooks"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Proxy\\Http",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Cookie\\Jar",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Iri",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\IdnaEncoder",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Utility\\InputValidator",
+            "\\WpOrg\\Requests\\Exception\\InvalidArgument",
+            "\\WpOrg\\Requests\\Exception"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Ipv6",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Transport\\Fsockopen",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Transport",
+            "\\WpOrg\\Requests\\Utility\\InputValidator",
+            "\\WpOrg\\Requests\\Exception\\InvalidArgument",
+            "\\WpOrg\\Requests\\Exception",
+            "\\WpOrg\\Requests\\Utility\\CaseInsensitiveDictionary",
+            "\\WpOrg\\Requests\\Requests",
+            "\\class",
+            "\\WpOrg\\Requests\\Ssl"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Transport",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Ssl",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Utility\\InputValidator",
+            "\\WpOrg\\Requests\\Exception\\InvalidArgument"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Transport\\Curl",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Transport",
+            "\\WpOrg\\Requests\\Utility\\InputValidator",
+            "\\WpOrg\\Requests\\Exception\\InvalidArgument",
+            "\\WpOrg\\Requests\\Exception",
+            "\\class",
+            "\\WpOrg\\Requests\\Exception\\Transport\\Curl",
+            "\\WpOrg\\Requests\\Requests",
+            "\\RecursiveArrayIterator",
+            "\\RecursiveIteratorIterator"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Transport\\Curl",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Transport"
+        ]
+    },
+    {
+        "name": "\\RecursiveArrayIterator",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\RecursiveIteratorIterator",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Utility\\FilteredIterator",
+        "size": 3000,
+        "relations": [
+            "\\ArrayIterator",
+            "\\WpOrg\\Requests\\Utility\\InputValidator",
+            "\\WpOrg\\Requests\\Exception\\InvalidArgument"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Proxy",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\ArgumentCount",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\exception",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Auth",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Session",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Utility\\InputValidator",
+            "\\WpOrg\\Requests\\Exception\\InvalidArgument",
+            "\\WpOrg\\Requests\\Cookie\\Jar",
+            "\\WpOrg\\Requests\\Requests",
+            "\\LogicException",
+            "\\WpOrg\\Requests\\Iri"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Cookie",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\UnexpectedValueException",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\IteratorAggregate",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ArrayIterator",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Transport",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status304",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status502",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status503",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status305",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status501",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status500",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status306",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status504",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status511",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status505",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status401",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status415",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status429",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status428",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status414",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status400",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status416",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status402",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status403",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status417",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status413",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status407",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status406",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status412",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status404",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status410",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\StatusUnknown",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status411",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status405",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status408",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status409",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status431",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WpOrg\\Requests\\Exception\\Http\\Status418",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Exception\\Http"
+        ]
+    },
+    {
+        "name": "\\WP_HTML_Token",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Open_Elements",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Closure",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Stack_Event",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Processor_State",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Active_Formatting_Elements",
+        "size": 3000,
+        "relations": [
+            "\\WP_HTML_Token"
+        ]
+    },
+    {
+        "name": "\\WP_HTML_Processor",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Unsupported_Exception",
+        "size": 3000,
+        "relations": [
+            "\\Exception"
+        ]
+    },
+    {
+        "name": "\\WP_HTML_Decoder",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Attribute_Token",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Doctype_Info",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTML_Text_Replacement",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_URL_Pattern_Prefixer",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\anonymous@0000000000009ee30000000000000000",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\internal_processor_class",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\PO",
+        "size": 3000,
+        "relations": [
+            "\\PO"
+        ]
+    },
+    {
+        "name": "\\Gettext_Translations",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\POMO_Reader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\POMO_FileReader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\POMO_StringReader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\POMO_CachedFileReader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\POMO_CachedIntFileReader",
+        "size": 3000,
+        "relations": [
+            "\\POMO_CachedFileReader"
+        ]
+    },
+    {
+        "name": "\\Translations",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\NOOP_Translations",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\MO",
+        "size": 3000,
+        "relations": [
+            "\\MO",
+            "\\Translation_Entry"
+        ]
+    },
+    {
+        "name": "\\WP_Admin_Bar",
+        "size": 3000,
+        "relations": [
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_Recovery_Mode_Key_Service",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Parser",
+        "size": 3000,
+        "relations": [
+            "\\WP_Block_Parser_Block",
+            "\\WP_Block_Parser_Frame"
+        ]
+    },
+    {
+        "name": "\\WP_Block_Parser_Block",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Embed",
+        "size": 3000,
+        "relations": [
+            "\\WP_Query"
+        ]
+    },
+    {
+        "name": "\\RecursiveDirectoryIterator",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\RegexIterator",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Sitemaps",
+        "size": 3000,
+        "relations": [
+            "\\WP_Sitemaps_Registry",
+            "\\WP_Sitemaps_Renderer",
+            "\\WP_Sitemaps_Index",
+            "\\WP_Sitemaps_Posts",
+            "\\WP_Sitemaps_Taxonomies",
+            "\\WP_Sitemaps_Users",
+            "\\WP_Sitemaps_Stylesheet"
+        ]
+    },
+    {
+        "name": "\\WP_Sitemaps_Registry",
+        "size": 3000,
+        "relations": [
+            "\\WP_Sitemaps_Provider"
+        ]
+    },
+    {
+        "name": "\\WP_Sitemaps_Renderer",
+        "size": 3000,
+        "relations": [
+            "\\SimpleXMLElement"
+        ]
+    },
+    {
+        "name": "\\WP_Sitemaps_Index",
+        "size": 3000,
+        "relations": [
+            "\\WP_Sitemaps_Registry"
+        ]
+    },
+    {
+        "name": "\\WP_Sitemaps_Posts",
+        "size": 3000,
+        "relations": [
+            "\\WP_Sitemaps_Provider",
+            "\\WP_Query"
+        ]
+    },
+    {
+        "name": "\\WP_Sitemaps_Taxonomies",
+        "size": 3000,
+        "relations": [
+            "\\WP_Sitemaps_Provider",
+            "\\WP_Term_Query"
+        ]
+    },
+    {
+        "name": "\\WP_Sitemaps_Users",
+        "size": 3000,
+        "relations": [
+            "\\WP_Sitemaps_Provider",
+            "\\WP_User_Query"
+        ]
+    },
+    {
+        "name": "\\WP_Sitemaps_Stylesheet",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Sitemaps_Provider",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SimpleXMLElement",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Avifinfo\\Tile",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Avifinfo\\Prop",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Avifinfo\\Dim_Prop",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Avifinfo\\Chan_Prop",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Avifinfo\\Features",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Avifinfo\\Box",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Avifinfo\\Parser",
+        "size": 3000,
+        "relations": [
+            "\\Avifinfo\\Features",
+            "\\Avifinfo\\Box",
+            "\\Avifinfo\\Dim_Prop",
+            "\\Avifinfo\\Chan_Prop",
+            "\\Avifinfo\\Prop",
+            "\\Avifinfo\\Tile"
+        ]
+    },
+    {
+        "name": "\\PasswordHash",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Processor",
+        "size": 3000,
+        "relations": [
+            "\\Exception",
+            "\\WP_HTML_Span"
+        ]
+    },
+    {
+        "name": "\\WP_List_Util",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_User_Request",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Ajax_Response",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Walker_Page",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\_WP_Dependency",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Bindings_Registry",
+        "size": 3000,
+        "relations": [
+            "\\WP_Block_Bindings_Source",
+            "\\UnexpectedValueException"
+        ]
+    },
+    {
+        "name": "\\WP_Block_Bindings_Source",
+        "size": 3000,
+        "relations": [
+            "\\LogicException"
+        ]
+    },
+    {
+        "name": "\\WP_Block_Templates_Registry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Recovery_Mode",
+        "size": 3000,
+        "relations": [
+            "\\WP_Recovery_Mode_Cookie_Service",
+            "\\WP_Recovery_Mode_Key_Service",
+            "\\WP_Recovery_Mode_Link_Service",
+            "\\WP_Recovery_Mode_Email_Service",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Recovery_Mode_Link_Service",
+        "size": 3000,
+        "relations": [
+            "\\WP_Recovery_Mode_Cookie_Service",
+            "\\WP_Recovery_Mode_Key_Service"
+        ]
+    },
+    {
+        "name": "\\WP_Recovery_Mode_Email_Service",
+        "size": 3000,
+        "relations": [
+            "\\WP_Recovery_Mode_Link_Service",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\Snoopy",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Iterator",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Countable",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Comment",
+        "size": 3000,
+        "relations": [
+            "\\WP_Comment"
+        ]
+    },
+    {
+        "name": "\\WP_oEmbed",
+        "size": 3000,
+        "relations": [
+            "\\WP_Error",
+            "\\DOMDocument",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Crypto",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Crypto"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Crypto",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\HChaCha20",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_HChaCha20"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_HChaCha20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Poly1305",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Poly1305"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Poly1305",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Util",
+            "\\InvalidArgumentException",
+            "\\ParagonIE_Sodium_Core_Poly1305_State"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\ChaCha20\\Ctx",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_ChaCha20_Ctx"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_ChaCha20_Ctx",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\ChaCha20\\IetfCtx",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_ChaCha20_IetfCtx"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_ChaCha20_IetfCtx",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\HSalsa20",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_HSalsa20"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_HSalsa20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\XChaCha20",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_XChaCha20"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_XChaCha20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\X25519",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_X25519"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_X25519",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519",
+            "\\ParagonIE_Sodium_Core_Curve25519_Fe",
+            "\\TypeError"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\ChaCha20",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_ChaCha20"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_ChaCha20",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Util",
+            "\\ParagonIE_Sodium_Core_ChaCha20_Ctx",
+            "\\SodiumException",
+            "\\ParagonIE_Sodium_Core_ChaCha20_IetfCtx"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Curve25519",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Curve25519",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Salsa20",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Salsa20"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Salsa20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\BLAKE2b",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_BLAKE2b"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_BLAKE2b",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Util",
+            "\\SodiumException",
+            "\\SplFixedArray"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Poly1305\\State",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Poly1305_State"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Poly1305_State",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\SipHash",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_SipHash"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_SipHash",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Xsalsa20",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_XSalsa20"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_XSalsa20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Ed25519",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Ed25519"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Ed25519",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Util",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Util"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Util",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Curve25519\\H",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_H"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Curve25519_H",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Util"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Curve25519\\Fe",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Fe"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Curve25519_Fe",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\Precomp",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Ge_Precomp"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Curve25519_Ge_Precomp",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Fe",
+            "\\TypeError"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\P3",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Ge_P3"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Curve25519_Ge_P3",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\P2",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Ge_P2"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Curve25519_Ge_P2",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Fe",
+            "\\TypeError"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\Cached",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Ge_Cached"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Curve25519_Ge_Cached",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Fe",
+            "\\TypeError"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\P1p1",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Ge_P1p1"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Curve25519_Ge_P1p1",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Curve25519_Fe",
+            "\\TypeError"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\File",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_File"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_File",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Util",
+            "\\TypeError",
+            "\\SodiumException",
+            "\\ParagonIE_Sodium_Compat",
+            "\\ParagonIE_Sodium_Core_Ed25519",
+            "\\ParagonIE_Sodium_Crypto32",
+            "\\ParagonIE_Sodium_Crypto",
+            "\\ParagonIE_Sodium_Core_HSalsa20",
+            "\\ParagonIE_Sodium_Core_Salsa20",
+            "\\ParagonIE_Sodium_Core_Poly1305_State",
+            "\\ParagonIE_Sodium_Core32_Ed25519",
+            "\\ParagonIE_Sodium_Core32_HSalsa20",
+            "\\ParagonIE_Sodium_Core32_Util",
+            "\\ParagonIE_Sodium_Core32_Salsa20",
+            "\\ParagonIE_Sodium_Core32_Poly1305_State"
+        ]
+    },
+    {
+        "name": "\\ParagonIE\\Sodium\\Compat",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Compat"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Compat",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_Util",
+            "\\SodiumException",
+            "\\ParagonIE_Sodium_Core_Base64_Original",
+            "\\ParagonIE_Sodium_Core_Base64_UrlSafe",
+            "\\ParagonIE_Sodium_Core_AEGIS128L",
+            "\\ParagonIE_Sodium_Core_AEGIS256",
+            "\\ParagonIE_Sodium_Crypto32",
+            "\\ParagonIE_Sodium_Crypto",
+            "\\ParagonIE_Sodium_Core32_SipHash",
+            "\\ParagonIE_Sodium_Core_SipHash",
+            "\\ParagonIE_Sodium_Core32_Ed25519",
+            "\\ParagonIE_Sodium_Core_Ed25519",
+            "\\ParagonIE_Sodium_Core32_XSalsa20",
+            "\\ParagonIE_Sodium_Core_XSalsa20",
+            "\\ParagonIE_Sodium_Core32_XChaCha20",
+            "\\ParagonIE_Sodium_Core_XChaCha20",
+            "\\TypeError",
+            "\\ParagonIE_Sodium_Core_Ristretto255",
+            "\\ParagonIE_Sodium_Core32_Int64"
+        ]
+    },
+    {
+        "name": "\\SodiumException",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\RangeException",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\SplFixedArray",
+        "size": 3000,
+        "relations": [
+            "\\SplFixedArray"
+        ]
+    },
+    {
+        "name": "\\TypeError",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_SecretStream_State",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_SecretStream_State",
+            "\\ParagonIE_Sodium_Core_Util"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_HChaCha20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_ChaCha20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Int32",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Util",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Int64",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_SecretStream_State",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Poly1305",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Poly1305_State",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_ChaCha20_Ctx",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_ChaCha20_IetfCtx",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_HSalsa20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Salsa20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_XChaCha20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_X25519",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Curve25519",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Curve25519_Fe",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Curve25519_H",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core32_Util"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Curve25519_Ge_P3",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core32_Curve25519_Fe"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Curve25519_Ge_Cached",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core32_Curve25519_Fe"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Curve25519_Ge_P1p1",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core32_Curve25519_Fe",
+            "\\ParagonIE_Sodium_Core32_Curve25519"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Curve25519_Ge_Precomp",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core32_Curve25519_Fe",
+            "\\ParagonIE_Sodium_Core32_Curve25519"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Curve25519_Ge_P2",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core32_Curve25519_Fe"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_BLAKE2b",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_SipHash",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_XSalsa20",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core32_Ed25519",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_AEGIS256",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_AES",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_AEGIS_State256",
+        "size": 3000,
+        "relations": [
+            "\\SodiumException",
+            "\\ParagonIE_Sodium_Core_Util",
+            "\\ParagonIE_Sodium_Core_AES"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_AES_Block",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_AES_Block",
+            "\\InvalidArgumentException"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_AES_KeySchedule",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_AES_Expanded",
+        "size": 3000,
+        "relations": [
+            "\\ParagonIE_Sodium_Core_AES_KeySchedule"
+        ]
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_AEGIS_State128L",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Base64_UrlSafe",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Base64_Original",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_AEGIS128L",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\OutOfBoundsException",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Core_Ristretto255",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\ParagonIE_Sodium_Crypto32",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Image_Editor",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Post",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Widget",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Hook",
+        "size": 3000,
+        "relations": [
+            "\\WP_Hook"
+        ]
+    },
+    {
+        "name": "\\WP_SimplePie_Sanitize_KSES",
+        "size": 3000,
+        "relations": [
+            "\\SimplePie\\Sanitize"
+        ]
+    },
+    {
+        "name": "\\WP_User_Meta_Session_Tokens",
+        "size": 3000,
+        "relations": [
+            "\\WP_Session_Tokens"
+        ]
+    },
+    {
+        "name": "\\WP_Navigation_Fallback",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Http_Encoding",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Network",
+        "size": 3000,
+        "relations": [
+            "\\WP_Network"
+        ]
+    },
+    {
+        "name": "\\WP_Metadata_Lazyloader",
+        "size": 3000,
+        "relations": [
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\Text_Exception",
+        "size": 3000,
+        "relations": [
+            "\\Exception"
+        ]
+    },
+    {
+        "name": "\\Text_MappedDiff",
+        "size": 3000,
+        "relations": [
+            "\\Text_Diff"
+        ]
+    },
+    {
+        "name": "\\Text_Diff_Op",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Text_Diff_Op_copy",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Text_Diff_Op_delete",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Text_Diff_Op_add",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Text_Diff_Op_change",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Text_Diff_Engine_xdiff",
+        "size": 3000,
+        "relations": [
+            "\\Text_Diff_Op_copy",
+            "\\Text_Diff_Op_add",
+            "\\Text_Diff_Op_delete"
+        ]
+    },
+    {
+        "name": "\\Text_Diff_Engine_shell",
+        "size": 3000,
+        "relations": [
+            "\\Text_Diff",
+            "\\Text_Diff_Op_copy",
+            "\\Text_Diff_Op_delete",
+            "\\Text_Diff_Op_change",
+            "\\Text_Diff_Op_add"
+        ]
+    },
+    {
+        "name": "\\Text_Diff_Engine_native",
+        "size": 3000,
+        "relations": [
+            "\\Text_Diff_Op_copy",
+            "\\Text_Diff_Op_change",
+            "\\Text_Diff_Op_delete",
+            "\\Text_Diff_Op_add"
+        ]
+    },
+    {
+        "name": "\\Text_Diff_Engine_string",
+        "size": 3000,
+        "relations": [
+            "\\PEAR",
+            "\\Text_Diff_Op_copy",
+            "\\Text_Diff_Op_add",
+            "\\Text_Diff_Op_delete",
+            "\\Text_Diff_Op_change"
+        ]
+    },
+    {
+        "name": "\\WP_Http_Curl",
+        "size": 3000,
+        "relations": [
+            "\\WP_Http",
+            "\\WP_HTTP_Proxy",
+            "\\WP_Error",
+            "\\WP_Http_Encoding"
+        ]
+    },
+    {
+        "name": "\\WP_Http",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Token_Map",
+        "size": 3000,
+        "relations": [
+            "\\WP_Token_Map"
+        ]
+    },
+    {
+        "name": "\\WP_Tax_Query",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\wp_atom_server",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Pattern_Categories_Registry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Exception",
+        "size": 3000,
+        "relations": [
+            "\\Exception"
+        ]
+    },
+    {
+        "name": "\\IXR_Message",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\IXR_Value",
+        "size": 3000,
+        "relations": [
+            "\\IXR_Value"
+        ]
+    },
+    {
+        "name": "\\IXR_ClientMulticall",
+        "size": 3000,
+        "relations": [
+            "\\IXR_Client"
+        ]
+    },
+    {
+        "name": "\\IXR_Client",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\IXR_Request",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\IXR_Base64",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Requests",
+        "size": 3000,
+        "relations": [
+            "\\WpOrg\\Requests\\Requests",
+            "\\WpOrg\\Requests\\Autoload"
+        ]
+    },
+    {
+        "name": "\\WP_Term",
+        "size": 3000,
+        "relations": [
+            "\\WP_Term",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_Font_Collection",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Font_Utils",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Font_Face",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Font_Library",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Font_Face_Resolver",
+        "size": 3000,
+        "relations": [
+            "\\static",
+            "\\WP_Theme_JSON_Resolver"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Factory",
+        "size": 3000,
+        "relations": [
+            "\\widget"
+        ]
+    },
+    {
+        "name": "\\widget",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Http_Streams",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_HTTP_Fsockopen",
+        "size": 3000,
+        "relations": [
+            "\\WP_Http_Streams"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Sidebar_Section",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Section"
+        ]
+    },
+    {
+        "name": "\\WP_Sidebar_Block_Editor_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Area_Customize_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Form_Customize_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\POP3",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Taxonomy",
+        "size": 3000,
+        "relations": [
+            "\\class"
+        ]
+    },
+    {
+        "name": "\\WP_Post_Type",
+        "size": 3000,
+        "relations": [
+            "\\class"
+        ]
+    },
+    {
+        "name": "\\WP_User",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Paused_Extensions_Storage",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Walker_PageDropdown",
+        "size": 3000,
+        "relations": [
+            "\\Walker"
+        ]
+    },
+    {
+        "name": "\\WP_Image_Editor_Imagick",
+        "size": 3000,
+        "relations": [
+            "\\WP_Image_Editor",
+            "\\Imagick",
+            "\\WP_Error",
+            "\\ImagickPixel"
+        ]
+    },
+    {
+        "name": "\\ImagickPixel",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Block_Patterns_Registry",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Widget_Block",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Tag_Cloud",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Archives",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Meta",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Media",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Widget_Recent_Posts",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget",
+            "\\WP_Query"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Links",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Search",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Pages",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Custom_HTML",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Categories",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Media_Gallery",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget_Media"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Recent_Comments",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Nav_Menu_Widget",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Media_Image",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget_Media"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Calendar",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_RSS",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Text",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget",
+            "\\DOMDocument"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Media_Video",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget_Media"
+        ]
+    },
+    {
+        "name": "\\WP_Widget_Media_Audio",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget_Media"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Template_Revisions_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Revisions_Controller",
+            "\\WP_REST_Templates_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Revisions_Controller",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_REST_Templates_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\stdClass",
+            "\\WP_Error",
+            "\\WP_REST_Response",
+            "\\WP_Block_Templates_Registry"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Response",
+        "size": 3000,
+        "relations": [
+            "\\WP_HTTP_Response",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Font_Collections_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Font_Library",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Controller",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_REST_Posts_Controller",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_REST_Post_Meta_Fields",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Meta_Fields"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Request",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_REST_Block_Patterns_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_Block_Patterns_Registry"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Post_Types_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Block_Renderer_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Block_Type_Registry",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\server",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_REST_Widget_Types_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_REST_Response",
+            "\\WP_Error",
+            "\\stdClass",
+            "\\WP_Block_Type_Registry"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Template_Autosaves_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Autosaves_Controller",
+            "\\WP_REST_Templates_Controller",
+            "\\WP_REST_Revisions_Controller",
+            "\\WP_REST_Response",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Autosaves_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Revisions_Controller",
+            "\\WP_REST_Posts_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Plugins_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response",
+            "\\WP_Ajax_Upgrader_Skin",
+            "\\Plugin_Upgrader",
+            "\\Language_Pack_Upgrader"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Abilities_V1_Run_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Widgets_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_REST_Response",
+            "\\WP_Error",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Site_Health_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Debug_Data",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Post_Statuses_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Global_Styles_Controller",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_REST_Themes_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_Theme_JSON_Resolver"
+        ]
+    },
+    {
+        "name": "\\WP_REST_URL_Details_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_Http"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Menu_Items_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Posts_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Application_Passwords_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_Application_Passwords",
+            "\\WP_REST_Response",
+            "\\WP_User"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Blocks_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Posts_Controller"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Navigation_Fallback_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_Navigation_Fallback"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Edit_Site_Export_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Attachments_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Posts_Controller",
+            "\\WP_Error",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Taxonomies_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Pattern_Directory_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Settings_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Font_Families_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Posts_Controller",
+            "\\WP_Error",
+            "\\WP_Query",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Sidebars_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_REST_Response",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Search_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Block_Types_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Block_Type_Registry",
+            "\\WP_Block_Styles_Registry",
+            "\\WP_REST_Response",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Block_Directory_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Abilities_V1_List_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_REST_Response",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Block_Pattern_Categories_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response",
+            "\\WP_Block_Pattern_Categories_Registry"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Global_Styles_Revisions_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Revisions_Controller",
+            "\\WP_REST_Global_Styles_Controller",
+            "\\WP_Error",
+            "\\WP_Query",
+            "\\WP_REST_Response",
+            "\\WP_Theme_JSON",
+            "\\stdClass",
+            "\\WP_Theme_JSON_Resolver"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Users_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_REST_User_Meta_Fields",
+            "\\WP_Error",
+            "\\WP_User_Query",
+            "\\WP_REST_Response",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_REST_User_Meta_Fields",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Meta_Fields"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Terms_Controller",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_REST_Term_Meta_Fields",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Meta_Fields"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Abilities_V1_Categories_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_REST_Response",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Comments_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\WP_REST_Comment_Meta_Fields",
+            "\\WP_Error",
+            "\\WP_Comment_Query",
+            "\\WP_REST_Response",
+            "\\WP_User",
+            "\\WP_REST_Posts_Controller"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Comment_Meta_Fields",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Meta_Fields"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Font_Faces_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Posts_Controller",
+            "\\WP_Error",
+            "\\WP_Font_Utils",
+            "\\WP_Query",
+            "\\stdClass"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Menus_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Terms_Controller",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Menu_Locations_Controller",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Controller",
+            "\\stdClass",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Server",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Request",
+            "\\WP_Error",
+            "\\WP_REST_Response"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Search_Handler",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_REST_Term_Search_Handler",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Search_Handler",
+            "\\WP_REST_Request",
+            "\\WP_Term_Query"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Post_Search_Handler",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Search_Handler",
+            "\\WP_REST_Request",
+            "\\WP_Query"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Post_Format_Search_Handler",
+        "size": 3000,
+        "relations": [
+            "\\WP_REST_Search_Handler",
+            "\\WP_REST_Request"
+        ]
+    },
+    {
+        "name": "\\WP_REST_Meta_Fields",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Style_Engine_CSS_Declarations",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Style_Engine_CSS_Rule",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Style_Engine_Processor",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Style_Engine",
+        "size": 3000,
+        "relations": [
+            "\\static",
+            "\\WP_Style_Engine_CSS_Rules_Store",
+            "\\WP_Style_Engine_CSS_Rule",
+            "\\WP_Style_Engine_CSS_Declarations",
+            "\\WP_Style_Engine_Processor"
+        ]
+    },
+    {
+        "name": "\\WP_Style_Engine_CSS_Rules_Store",
+        "size": 3000,
+        "relations": [
+            "\\static",
+            "\\WP_Style_Engine_CSS_Rule"
+        ]
+    },
+    {
+        "name": "\\anonymous@000000000000b8b60000000000000000",
+        "size": 3000,
+        "relations": [
+            "\\WP_HTML_Tag_Processor",
+            "\\WP_HTML_Span",
+            "\\WP_HTML_Text_Replacement"
+        ]
+    },
+    {
+        "name": "\\WP_Interactivity_API",
+        "size": 3000,
+        "relations": [
+            "\\WP_Interactivity_API_Directives_Processor"
+        ]
+    },
+    {
+        "name": "\\WP_Interactivity_API_Directives_Processor",
+        "size": 3000,
+        "relations": [
+            "\\WP_HTML_Tag_Processor",
+            "\\WP_HTML_Text_Replacement",
+            "\\WP_HTML_Processor"
+        ]
+    },
+    {
+        "name": "\\WP_Image_Editor_GD",
+        "size": 3000,
+        "relations": [
+            "\\WP_Image_Editor",
+            "\\WP_Error"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Image_Control",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Name_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_New_Menu_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control",
+            "\\WP_Customize_Manager"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Theme_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Upload_Control",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\partial_class",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Auto_Add_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Nav_Menu_Locations_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_New_Menu_Section",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Section",
+            "\\WP_Customize_Manager"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Partial",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Partial"
+        ]
+    },
+    {
+        "name": "\\WP_Customize_Date_Time_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control",
+            "\\DateTimeZone",
+            "\\DateTime"
+        ]
+    },
+    {
+        "name": "\\WP_HTTP_IXR_Client",
+        "size": 3000,
+        "relations": [
+            "\\IXR_Client",
+            "\\IXR_Request",
+            "\\IXR_Error",
+            "\\IXR_Message"
+        ]
+    },
+    {
+        "name": "\\Twenty_Eleven_Ephemera_Widget",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget",
+            "\\WP_Query"
+        ]
+    },
+    {
+        "name": "\\TwentyNineteen_Walker_Comment",
+        "size": 3000,
+        "relations": [
+            "\\Walker_Comment"
+        ]
+    },
+    {
+        "name": "\\TwentyNineteen_SVG_Icons",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Twenty_Twenty_One_SVG_Icons",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Twenty_Twenty_One_Customize",
+        "size": 3000,
+        "relations": [
+            "\\Twenty_Twenty_One_Customize_Color_Control"
+        ]
+    },
+    {
+        "name": "\\Twenty_Twenty_One_Customize_Color_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Color_Control"
+        ]
+    },
+    {
+        "name": "\\Twenty_Twenty_One_Dark_Mode",
+        "size": 3000,
+        "relations": [
+            "\\Twenty_Twenty_One_Custom_Colors",
+            "\\Twenty_Twenty_One_Customize_Notice_Control"
+        ]
+    },
+    {
+        "name": "\\Twenty_Twenty_One_Custom_Colors",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Twenty_Twenty_One_Customize_Notice_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\Twenty_Fourteen_Ephemera_Widget",
+        "size": 3000,
+        "relations": [
+            "\\WP_Widget",
+            "\\WP_Query"
+        ]
+    },
+    {
+        "name": "\\Featured_Content",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\TwentyTwenty_Walker_Page",
+        "size": 3000,
+        "relations": [
+            "\\Walker_Page"
+        ]
+    },
+    {
+        "name": "\\TwentyTwenty_Script_Loader",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\TwentyTwenty_SVG_Icons",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\TwentyTwenty_Customize",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Color_Control",
+            "\\TwentyTwenty_Separator_Control"
+        ]
+    },
+    {
+        "name": "\\TwentyTwenty_Separator_Control",
+        "size": 3000,
+        "relations": [
+            "\\WP_Customize_Control"
+        ]
+    },
+    {
+        "name": "\\TwentyTwenty_Non_Latin_Languages",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\TwentyTwenty_Walker_Comment",
+        "size": 3000,
+        "relations": [
+            "\\Walker_Comment"
+        ]
+    }
+];
+
+    /**
+     * Thanks to http://bl.ocks.org/mbostock/raw/7607999/
+     */
+    function updateRelationsChart() {
+
+
+        var diameter = document.getElementById('chart-relations').offsetWidth,
+            radius = diameter / 2,
+            innerRadius = radius - 120;
+
+        var cluster = d3.layout.cluster()
+            .size([360, innerRadius])
+            .sort(null)
+            .value(function (d) {
+                return d.size;
+            });
+
+        var bundle = d3.layout.bundle();
+
+        var line = d3.svg.line.radial()
+            .interpolate("bundle")
+            .tension(.85)
+            .radius(function (d) {
+                return d.y;
+            })
+            .angle(function (d) {
+                return d.x / 180 * Math.PI;
+            });
+
+        var svg = d3.select("#chart-relations").append("svg")
+            .attr("width", diameter)
+            .attr("height", diameter)
+            .append("g")
+            .attr("transform", "translate(" + radius + "," + radius + ")");
+
+        var link = svg.append("g").selectAll(".link"),
+            node = svg.append("g").selectAll(".node");
+
+
+        var nodes = cluster.nodes(packageHierarchy(relations)),
+            links = packageImports(nodes);
+        link = link
+            .data(bundle(links))
+            .enter().append("path")
+            .each(function (d) {
+                d.source = d[0], d.target = d[d.length - 1];
+            })
+            .attr("class", "link")
+            .attr("d", line);
+
+        node = node
+            .data(nodes.filter(function (n) {
+                return !n.children;
+            }))
+            .enter().append("text")
+            .attr("class", "node")
+            .attr("dy", ".31em")
+            .attr("transform", function (d) {
+                return "rotate(" + (d.x - 90) + ")translate(" + (d.y + 8) + ",0)" + (d.x < 180 ? "" : "rotate(180)");
+            })
+            .style("text-anchor", function (d) {
+                return d.x < 180 ? "start" : "end";
+            })
+            .text(function (d) {
+                return d.key;
+            })
+            .on("mouseover", mouseovered)
+            .on("mouseout", mouseouted);
+
+
+//        d3.data(relations);
+
+        function mouseovered(d) {
+            node
+                .each(function (n) {
+                    n.target = n.source = false;
+                });
+
+            link
+                .classed("link--target", function (l) {
+                    if (l.target === d) return l.source.source = true;
+                })
+                .classed("link--source", function (l) {
+                    if (l.source === d) return l.target.target = true;
+                })
+                .filter(function (l) {
+                    return l.target === d || l.source === d;
+                })
+                .each(function () {
+                    this.parentNode.appendChild(this);
+                });
+
+            node
+                .classed("node--target", function (n) {
+                    return n.target;
+                })
+                .classed("node--source", function (n) {
+                    return n.source;
+                });
+        }
+
+        function mouseouted(d) {
+            link
+                .classed("link--target", false)
+                .classed("link--source", false);
+
+            node
+                .classed("node--target", false)
+                .classed("node--source", false);
+        }
+
+        d3.select(self.frameElement).style("height", diameter + "px");
+
+        // Lazily construct the package hierarchy from class names.
+        function packageHierarchy(classes) {
+            var map = {};
+
+            function find(name, data) {
+                name = (data ? name + ' ' : name);
+                var node = map[name], i;
+                if (!node) {
+                    node = map[name] = data || {name: name, children: []};
+                    if (name.length) {
+                        node.parent = find(name.substring(0, i = name.lastIndexOf("\\")));
+                        if (!node.parent.children) {
+                            node.parent.children = []; // fix anomalies
+                        }
+                        node.parent.children.push(node);
+                        node.key = name;//name.substring(i + 1);
+                    }
+                }
+                return node;
+            }
+
+            classes.forEach(function (d) {
+                find(d.name, d);
+            });
+
+            return map[""];
+        }
+
+        // Return a list of imports for the given array of nodes.
+        function packageImports(nodes) {
+            var map = {},
+                imports = [];
+
+            // Compute a map from name to node.
+            nodes.forEach(function (d) {
+                map[d.name] = d;
+            });
+
+            // For each import, construct a link from the source to target node.
+            nodes.forEach(function (d) {
+                if (d.relations) d.relations.forEach(function (i) {
+                    imports.push({source: map[d.name], target: map[i]});
+                });
+            });
+
+            return imports;
+        }
+
+
+    }
+
+    document.onreadystatechange = function () {
+        if (document.readyState === 'complete') {
+            updateRelationsChart();
+        }
+    };
+
+</script>

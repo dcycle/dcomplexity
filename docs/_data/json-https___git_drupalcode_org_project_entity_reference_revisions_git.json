@@ -1,0 +1,2420 @@
+{
+    "entity_reference_revisions_field_views_data": {
+        "name": "entity_reference_revisions_field_views_data",
+        "cloc": 9,
+        "loc": 31,
+        "lloc": 22,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Form\\OrphanedCompositeEntitiesDeleteForm": {
+        "name": "Drupal\\entity_reference_revisions\\Form\\OrphanedCompositeEntitiesDeleteForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Form\\FormBase",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\FormBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 78,
+        "vocabulary": 33,
+        "volume": 393.46,
+        "difficulty": 2.13,
+        "effort": 837.69,
+        "level": 0.47,
+        "bugs": 0.13,
+        "time": 47,
+        "intelligentContent": 184.81,
+        "number_operators": 12,
+        "number_operands": 66,
+        "number_operators_unique": 2,
+        "number_operands_unique": 31,
+        "cloc": 42,
+        "loc": 80,
+        "lloc": 38,
+        "mi": 92.16,
+        "mIwoC": 47.1,
+        "commentWeight": 45.06,
+        "kanDefect": 0.38,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.51,
+        "relativeSystemComplexity": 64.51,
+        "totalStructuralComplexity": 320,
+        "totalDataComplexity": 2.56,
+        "totalSystemComplexity": 322.56,
+        "package": "Drupal\\entity_reference_revisions\\Form\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Form\\": {
+        "name": "Drupal\\entity_reference_revisions\\Form\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Form\\OrphanedCompositeEntitiesDeleteForm"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Form\\FormBase",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Form\\",
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\Core\\Messenger\\",
+            "Drupal\\entity_reference_revisions\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\entity_reference_revisions\\": 0.8421052631578947
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\TypedData\\EntityRevisionDataDefinition": {
+        "name": "Drupal\\entity_reference_revisions\\TypedData\\EntityRevisionDataDefinition",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "createFromDataType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDataType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 9,
+        "ccn": 8,
+        "ccnMethodMax": 5,
+        "externals": [
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinition",
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinitionInterface",
+            "InvalidArgumentException",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinition"
+        ],
+        "implements": [
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinitionInterface"
+        ],
+        "lcom": 2,
+        "length": 61,
+        "vocabulary": 22,
+        "volume": 272.03,
+        "difficulty": 11.14,
+        "effort": 3031.14,
+        "level": 0.09,
+        "bugs": 0.09,
+        "time": 168,
+        "intelligentContent": 24.41,
+        "number_operators": 22,
+        "number_operands": 39,
+        "number_operators_unique": 8,
+        "number_operands_unique": 14,
+        "cloc": 12,
+        "loc": 45,
+        "lloc": 33,
+        "mi": 84.62,
+        "mIwoC": 48.75,
+        "commentWeight": 35.87,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.42,
+        "relativeSystemComplexity": 25.42,
+        "totalStructuralComplexity": 50,
+        "totalDataComplexity": 0.83,
+        "totalSystemComplexity": 50.83,
+        "package": "Drupal\\entity_reference_revisions\\TypedData\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\TypedData\\": {
+        "name": "Drupal\\entity_reference_revisions\\TypedData\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\TypedData\\EntityRevisionDataDefinition"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinition",
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinitionInterface",
+            "InvalidArgumentException",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Entity\\TypedData\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsFieldItemList": {
+        "name": "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsFieldItemList",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "referencedEntities",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processDefaultValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultValuesFormSubmit",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "hasAffectingChanges",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 38,
+        "ccn": 35,
+        "ccnMethodMax": 17,
+        "externals": [
+            "Drupal\\Core\\Field\\EntityReferenceFieldItemList",
+            "Drupal\\Core\\Field\\EntityReferenceFieldItemListInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\FieldableEntityInterface",
+            "Drupal\\Core\\Field\\FieldDefinitionInterface",
+            "Drupal",
+            "Drupal",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal",
+            "Drupal\\Core\\Field\\FieldItemListInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Field\\EntityReferenceFieldItemList"
+        ],
+        "implements": [
+            "Drupal\\Core\\Field\\EntityReferenceFieldItemListInterface"
+        ],
+        "lcom": 4,
+        "length": 246,
+        "vocabulary": 41,
+        "volume": 1317.96,
+        "difficulty": 29.35,
+        "effort": 38688.44,
+        "level": 0.03,
+        "bugs": 0.44,
+        "time": 2149,
+        "intelligentContent": 44.9,
+        "number_operators": 64,
+        "number_operands": 182,
+        "number_operators_unique": 10,
+        "number_operands_unique": 31,
+        "cloc": 26,
+        "loc": 144,
+        "lloc": 118,
+        "mi": 58.84,
+        "mIwoC": 28.25,
+        "commentWeight": 30.59,
+        "kanDefect": 3.8,
+        "relativeStructuralComplexity": 625,
+        "relativeDataComplexity": 0.38,
+        "relativeSystemComplexity": 625.38,
+        "totalStructuralComplexity": 2500,
+        "totalDataComplexity": 1.54,
+        "totalSystemComplexity": 2501.54,
+        "package": "Drupal\\entity_reference_revisions\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\": {
+        "name": "Drupal\\entity_reference_revisions\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsFieldItemList",
+            "Drupal\\entity_reference_revisions\\EntityNeedsSaveTrait",
+            "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger",
+            "Drupal\\entity_reference_revisions\\EntityNeedsSaveInterface"
+        ],
+        "incoming_class_dependencies": [
+            "Drupal\\entity_reference_revisions\\Form\\OrphanedCompositeEntitiesDeleteForm",
+            "Drupal\\entity_reference_revisions\\Plugin\\QueueWorker\\OrphanPurger",
+            "Drupal\\entity_reference_revisions\\Commands\\EntityReferenceRevisionsCommands"
+        ],
+        "incoming_package_dependencies": [
+            "Drupal\\entity_reference_revisions\\Form\\",
+            "Drupal\\entity_reference_revisions\\Plugin\\QueueWorker\\",
+            "Drupal\\entity_reference_revisions\\Commands\\"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Field\\EntityReferenceFieldItemList",
+            "Drupal\\Core\\Field\\EntityReferenceFieldItemListInterface",
+            "Drupal",
+            "Drupal\\Core\\Entity\\FieldableEntityInterface",
+            "Drupal\\Core\\Field\\FieldDefinitionInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Field\\FieldItemListInterface",
+            "Drupal\\Core\\Entity\\EntityStorageInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Entity\\EntityFieldManagerInterface",
+            "Drupal\\Core\\Datetime\\DateFormatterInterface",
+            "Drupal\\Component\\Datetime\\TimeInterface",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\Core\\Entity\\ContentEntityInterface",
+            "Drupal\\Core\\Site\\Settings"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Field\\",
+            "\\",
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\Core\\Form\\",
+            "Drupal\\Core\\Datetime\\",
+            "Drupal\\Component\\Datetime\\",
+            "Drupal\\Core\\Database\\",
+            "Drupal\\Core\\Messenger\\",
+            "Drupal\\Core\\Site\\"
+        ],
+        "abstraction": 0.5,
+        "instability": 0.8421052631578947,
+        "dependent_instabilities": [],
+        "distance": 0.24190495145855567,
+        "normalized_distance": 0.3421052631578947,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\QueueWorker\\OrphanPurger": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\QueueWorker\\OrphanPurger",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "processItem",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Core\\Queue\\QueueWorkerBase",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger",
+            "Drupal\\Core\\Database\\Connection",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\Core\\Queue\\QueueWorkerBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface"
+        ],
+        "lcom": 2,
+        "length": 73,
+        "vocabulary": 24,
+        "volume": 334.7,
+        "difficulty": 4.36,
+        "effort": 1458.35,
+        "level": 0.23,
+        "bugs": 0.11,
+        "time": 81,
+        "intelligentContent": 76.82,
+        "number_operators": 12,
+        "number_operands": 61,
+        "number_operators_unique": 3,
+        "number_operands_unique": 21,
+        "cloc": 51,
+        "loc": 85,
+        "lloc": 34,
+        "mi": 94.98,
+        "mIwoC": 48.38,
+        "commentWeight": 46.6,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 256,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 256.33,
+        "totalStructuralComplexity": 768,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 769,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\QueueWorker\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\QueueWorker\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\QueueWorker\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\QueueWorker\\OrphanPurger"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Queue\\QueueWorkerBase",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger",
+            "Drupal\\Core\\Database\\Connection",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Queue\\",
+            "Drupal\\Core\\Plugin\\",
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\entity_reference_revisions\\",
+            "Drupal\\Core\\Database\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\entity_reference_revisions\\": 0.8421052631578947
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Derivative\\MigrateEntityReferenceRevisions": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Derivative\\MigrateEntityReferenceRevisions",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getDerivativeDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\migrate\\Plugin\\Derivative\\MigrateEntityRevision"
+        ],
+        "parents": [
+            "Drupal\\migrate\\Plugin\\Derivative\\MigrateEntityRevision"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 20,
+        "vocabulary": 14,
+        "volume": 76.15,
+        "difficulty": 2.32,
+        "effort": 176.52,
+        "level": 0.43,
+        "bugs": 0.03,
+        "time": 10,
+        "intelligentContent": 32.85,
+        "number_operators": 3,
+        "number_operands": 17,
+        "number_operators_unique": 3,
+        "number_operands_unique": 11,
+        "cloc": 6,
+        "loc": 19,
+        "lloc": 13,
+        "mi": 100.36,
+        "mIwoC": 62.12,
+        "commentWeight": 38.23,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0.67,
+        "totalSystemComplexity": 4.67,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\Derivative\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Derivative\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Derivative\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\Derivative\\MigrateEntityReferenceRevisions"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\migrate\\Plugin\\Derivative\\MigrateEntityRevision"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\migrate\\Plugin\\Derivative\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\DataType\\EntityReferenceRevisions": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\DataType\\EntityReferenceRevisions",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getTargetDefinition",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTargetNew",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTarget",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isTargetLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTargetIdentifier",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 23,
+        "ccn": 18,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\Core\\Entity\\Plugin\\DataType\\EntityReference",
+            "Drupal",
+            "InvalidArgumentException"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\Plugin\\DataType\\EntityReference"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 92,
+        "vocabulary": 18,
+        "volume": 383.63,
+        "difficulty": 23.6,
+        "effort": 9053.74,
+        "level": 0.04,
+        "bugs": 0.13,
+        "time": 503,
+        "intelligentContent": 16.26,
+        "number_operators": 33,
+        "number_operands": 59,
+        "number_operators_unique": 8,
+        "number_operands_unique": 10,
+        "cloc": 69,
+        "loc": 131,
+        "lloc": 62,
+        "mi": 85.49,
+        "mIwoC": 40.39,
+        "commentWeight": 45.1,
+        "kanDefect": 0.57,
+        "relativeStructuralComplexity": 144,
+        "relativeDataComplexity": 0.49,
+        "relativeSystemComplexity": 144.49,
+        "totalStructuralComplexity": 864,
+        "totalDataComplexity": 2.92,
+        "totalSystemComplexity": 866.92,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\DataType\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\DataType\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\DataType\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\DataType\\EntityReferenceRevisions",
+            "Drupal\\entity_reference_revisions\\Plugin\\DataType\\EntityRevisionsAdapter"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Entity\\Plugin\\DataType\\EntityReference",
+            "Drupal",
+            "InvalidArgumentException",
+            "Drupal\\Core\\Entity\\Plugin\\DataType\\EntityAdapter",
+            "IteratorAggregate",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Entity\\Plugin\\DataType\\",
+            "\\",
+            "Drupal\\Core\\TypedData\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\DataType\\EntityRevisionsAdapter": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\DataType\\EntityRevisionsAdapter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Drupal\\Core\\Entity\\Plugin\\DataType\\EntityAdapter",
+            "IteratorAggregate",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Entity\\Plugin\\DataType\\EntityAdapter"
+        ],
+        "implements": [
+            "IteratorAggregate",
+            "Drupal\\Core\\TypedData\\ComplexDataInterface"
+        ],
+        "lcom": 0,
+        "length": 0,
+        "vocabulary": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 0,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 0,
+        "number_operators": 0,
+        "number_operands": 0,
+        "number_operators_unique": 0,
+        "number_operands_unique": 0,
+        "cloc": 17,
+        "loc": 21,
+        "lloc": 4,
+        "mi": 220.22,
+        "mIwoC": 171,
+        "commentWeight": 49.22,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\DataType\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\diff\\Field\\EntityReferenceRevisionsFieldDiffBuilder": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\diff\\Field\\EntityReferenceRevisionsFieldDiffBuilder",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "build",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntitiesToDiff",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 11,
+        "ccn": 10,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\diff\\FieldDiffBuilderBase",
+            "Drupal\\diff\\FieldReferenceInterface",
+            "Drupal\\Core\\Field\\FieldItemListInterface",
+            "Drupal\\Core\\Field\\FieldItemListInterface"
+        ],
+        "parents": [
+            "Drupal\\diff\\FieldDiffBuilderBase"
+        ],
+        "implements": [
+            "Drupal\\diff\\FieldReferenceInterface"
+        ],
+        "lcom": 2,
+        "length": 56,
+        "vocabulary": 19,
+        "volume": 237.88,
+        "difficulty": 6.96,
+        "effort": 1656.69,
+        "level": 0.14,
+        "bugs": 0.08,
+        "time": 92,
+        "intelligentContent": 34.16,
+        "number_operators": 17,
+        "number_operands": 39,
+        "number_operators_unique": 5,
+        "number_operands_unique": 14,
+        "cloc": 19,
+        "loc": 52,
+        "lloc": 33,
+        "mi": 89.16,
+        "mIwoC": 48.89,
+        "commentWeight": 40.27,
+        "kanDefect": 1.28,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 1,
+        "relativeSystemComplexity": 5,
+        "totalStructuralComplexity": 8,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 10,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\diff\\Field\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\diff\\Field\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\diff\\Field\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\diff\\Field\\EntityReferenceRevisionsFieldDiffBuilder"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\diff\\FieldDiffBuilderBase",
+            "Drupal\\diff\\FieldReferenceInterface",
+            "Drupal\\Core\\Field\\FieldItemListInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\diff\\",
+            "Drupal\\Core\\Field\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldWidget\\EntityReferenceRevisionsAutocompleteWidget": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldWidget\\EntityReferenceRevisionsAutocompleteWidget",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "massageFormValues",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldWidget\\EntityReferenceAutocompleteWidget",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal"
+        ],
+        "parents": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldWidget\\EntityReferenceAutocompleteWidget"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 36,
+        "vocabulary": 15,
+        "volume": 140.65,
+        "difficulty": 5.27,
+        "effort": 741.6,
+        "level": 0.19,
+        "bugs": 0.05,
+        "time": 41,
+        "intelligentContent": 26.67,
+        "number_operators": 7,
+        "number_operands": 29,
+        "number_operators_unique": 4,
+        "number_operands_unique": 11,
+        "cloc": 18,
+        "loc": 37,
+        "lloc": 19,
+        "mi": 100.64,
+        "mIwoC": 56.53,
+        "commentWeight": 44.11,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 36,
+        "relativeDataComplexity": 0.57,
+        "relativeSystemComplexity": 36.57,
+        "totalStructuralComplexity": 36,
+        "totalDataComplexity": 0.57,
+        "totalSystemComplexity": 36.57,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldWidget\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldWidget\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldWidget\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldWidget\\EntityReferenceRevisionsAutocompleteWidget"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldWidget\\EntityReferenceAutocompleteWidget",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldWidget\\",
+            "Drupal\\Core\\Form\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldType\\EntityReferenceRevisionsItem": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldType\\EntityReferenceRevisionsItem",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "storageSettingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getPreconfiguredOptions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "propertyDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "schema",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onChange",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteRevision",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "delete",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "onDependencyRemoval",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "generateSampleValue",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isEntityLoaded",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 15,
+        "nbMethods": 15,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 15,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 112,
+        "ccn": 98,
+        "ccnMethodMax": 21,
+        "externals": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldType\\EntityReferenceItem",
+            "Drupal\\Core\\TypedData\\OptionsProviderInterface",
+            "Drupal\\Core\\Field\\PreconfiguredFieldUiOptionsInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal",
+            "Drupal",
+            "Drupal\\Core\\Field\\FieldStorageDefinitionInterface",
+            "Drupal",
+            "Drupal\\Core\\TypedData\\DataReferenceTargetDefinition",
+            "Drupal\\Core\\TypedData\\DataReferenceDefinition",
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinition",
+            "Drupal\\Core\\Field\\FieldStorageDefinitionInterface",
+            "Drupal",
+            "InvalidArgumentException",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal\\Core\\Field\\FieldDefinitionInterface",
+            "Drupal",
+            "Drupal\\Core\\Field\\FieldDefinitionInterface",
+            "Drupal",
+            "Drupal",
+            "Drupal",
+            "Drupal\\Component\\Utility\\Random"
+        ],
+        "parents": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldType\\EntityReferenceItem"
+        ],
+        "implements": [
+            "Drupal\\Core\\TypedData\\OptionsProviderInterface",
+            "Drupal\\Core\\Field\\PreconfiguredFieldUiOptionsInterface"
+        ],
+        "lcom": 7,
+        "length": 677,
+        "vocabulary": 119,
+        "volume": 4667.79,
+        "difficulty": 21.88,
+        "effort": 102134.71,
+        "level": 0.05,
+        "bugs": 1.56,
+        "time": 5674,
+        "intelligentContent": 213.33,
+        "number_operators": 200,
+        "number_operands": 477,
+        "number_operators_unique": 10,
+        "number_operands_unique": 109,
+        "cloc": 129,
+        "loc": 415,
+        "lloc": 286,
+        "mi": 45.56,
+        "mIwoC": 7.54,
+        "commentWeight": 38.01,
+        "kanDefect": 4.61,
+        "relativeStructuralComplexity": 14641,
+        "relativeDataComplexity": 0.15,
+        "relativeSystemComplexity": 14641.15,
+        "totalStructuralComplexity": 219615,
+        "totalDataComplexity": 2.2,
+        "totalSystemComplexity": 219617.2,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldType\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 12,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldType\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldType\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldType\\EntityReferenceRevisionsItem"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldType\\EntityReferenceItem",
+            "Drupal\\Core\\TypedData\\OptionsProviderInterface",
+            "Drupal\\Core\\Field\\PreconfiguredFieldUiOptionsInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal",
+            "Drupal\\Core\\Field\\FieldStorageDefinitionInterface",
+            "Drupal\\Core\\TypedData\\DataReferenceTargetDefinition",
+            "Drupal\\Core\\TypedData\\DataReferenceDefinition",
+            "Drupal\\Core\\Entity\\TypedData\\EntityDataDefinition",
+            "InvalidArgumentException",
+            "Drupal\\Core\\Field\\FieldDefinitionInterface",
+            "Drupal\\Component\\Utility\\Random"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldType\\",
+            "Drupal\\Core\\TypedData\\",
+            "Drupal\\Core\\Field\\",
+            "Drupal\\Core\\Form\\",
+            "\\",
+            "Drupal\\Core\\Entity\\TypedData\\",
+            "Drupal\\Component\\Utility\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsLabelFormatter": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsLabelFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defaultSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewElements",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "checkAccess",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 10,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsFormatterBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Field\\FieldItemListInterface",
+            "Drupal\\Core\\Entity\\EntityInterface"
+        ],
+        "parents": [
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 109,
+        "vocabulary": 36,
+        "volume": 563.52,
+        "difficulty": 10.02,
+        "effort": 5644.93,
+        "level": 0.1,
+        "bugs": 0.19,
+        "time": 314,
+        "intelligentContent": 56.26,
+        "number_operators": 26,
+        "number_operands": 83,
+        "number_operators_unique": 7,
+        "number_operands_unique": 29,
+        "cloc": 35,
+        "loc": 85,
+        "lloc": 50,
+        "mi": 84.25,
+        "mIwoC": 42.33,
+        "commentWeight": 41.91,
+        "kanDefect": 0.59,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.55,
+        "relativeSystemComplexity": 100.55,
+        "totalStructuralComplexity": 500,
+        "totalDataComplexity": 2.73,
+        "totalSystemComplexity": 502.73,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsLabelFormatter",
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsEntityFormatter",
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsFormatterBase"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Field\\FieldItemListInterface",
+            "Drupal\\Core\\Entity\\EntityInterface",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\Core\\Field\\FieldDefinitionInterface",
+            "Drupal\\Core\\Logger\\LoggerChannelFactoryInterface",
+            "Drupal\\Core\\Entity\\EntityDisplayRepositoryInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal",
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldFormatter\\EntityReferenceFormatterBase"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Form\\",
+            "Drupal\\Core\\Field\\",
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\Core\\Plugin\\",
+            "Drupal\\Core\\Logger\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\",
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldFormatter\\"
+        ],
+        "abstraction": 0.3333333333333333,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0.23570226039551578,
+        "normalized_distance": 0.33333333333333326,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsEntityFormatter": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsEntityFormatter",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultSettings",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "settingsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "viewElements",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isApplicable",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 7,
+        "nbMethods": 7,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 13,
+        "ccn": 7,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsFormatterBase",
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface",
+            "Drupal\\Core\\Field\\FieldDefinitionInterface",
+            "Drupal\\Core\\Logger\\LoggerChannelFactoryInterface",
+            "Drupal\\Core\\Entity\\EntityDisplayRepositoryInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Field\\FieldItemListInterface",
+            "Drupal",
+            "Drupal\\Core\\Field\\FieldDefinitionInterface",
+            "Drupal"
+        ],
+        "parents": [
+            "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsFormatterBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\ContainerFactoryPluginInterface"
+        ],
+        "lcom": 4,
+        "length": 155,
+        "vocabulary": 51,
+        "volume": 879.23,
+        "difficulty": 10.18,
+        "effort": 8952.12,
+        "level": 0.1,
+        "bugs": 0.29,
+        "time": 497,
+        "intelligentContent": 86.35,
+        "number_operators": 27,
+        "number_operands": 128,
+        "number_operators_unique": 7,
+        "number_operands_unique": 44,
+        "cloc": 68,
+        "loc": 126,
+        "lloc": 58,
+        "mi": 85.37,
+        "mIwoC": 39.98,
+        "commentWeight": 45.39,
+        "kanDefect": 0.52,
+        "relativeStructuralComplexity": 625,
+        "relativeDataComplexity": 0.37,
+        "relativeSystemComplexity": 625.37,
+        "totalStructuralComplexity": 4375,
+        "totalDataComplexity": 2.58,
+        "totalSystemComplexity": 4377.58,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsFormatterBase": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\EntityReferenceRevisionsFormatterBase",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "prepareView",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 3,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldFormatter\\EntityReferenceFormatterBase"
+        ],
+        "parents": [
+            "Drupal\\Core\\Field\\Plugin\\Field\\FieldFormatter\\EntityReferenceFormatterBase"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 17,
+        "vocabulary": 6,
+        "volume": 43.94,
+        "difficulty": 1.4,
+        "effort": 61.52,
+        "level": 0.71,
+        "bugs": 0.01,
+        "time": 3,
+        "intelligentContent": 31.39,
+        "number_operators": 3,
+        "number_operands": 14,
+        "number_operators_unique": 1,
+        "number_operands_unique": 5,
+        "cloc": 11,
+        "loc": 26,
+        "lloc": 15,
+        "mi": 104.72,
+        "mIwoC": 62.44,
+        "commentWeight": 42.28,
+        "kanDefect": 0.61,
+        "relativeStructuralComplexity": 1,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 1.5,
+        "totalStructuralComplexity": 1,
+        "totalDataComplexity": 0.5,
+        "totalSystemComplexity": 1.5,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\Field\\FieldFormatter\\",
+        "pageRank": 0.1,
+        "afferentCoupling": 2,
+        "efferentCoupling": 1,
+        "instability": 0.33,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\migrate\\destination\\EntityReferenceRevisions": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\migrate\\destination\\EntityReferenceRevisions",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "setConfiguration",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getConfiguration",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "defaultConfiguration",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntityTypeId",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "save",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getIds",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEntity",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rollback",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rollbackTranslation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "rollbackNonTranslation",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 10,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 5,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 35,
+        "ccn": 28,
+        "ccnMethodMax": 16,
+        "externals": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\EntityRevision",
+            "Drupal\\Component\\Plugin\\ConfigurableInterface",
+            "Drupal\\Core\\Entity\\ContentEntityInterface",
+            "Drupal\\migrate\\MigrateException",
+            "Drupal\\migrate\\MigrateException",
+            "Drupal\\migrate\\Row",
+            "Drupal\\migrate\\MigrateException"
+        ],
+        "parents": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\EntityRevision"
+        ],
+        "implements": [
+            "Drupal\\Component\\Plugin\\ConfigurableInterface"
+        ],
+        "lcom": 3,
+        "length": 197,
+        "vocabulary": 33,
+        "volume": 993.75,
+        "difficulty": 15.89,
+        "effort": 15789.51,
+        "level": 0.06,
+        "bugs": 0.33,
+        "time": 877,
+        "intelligentContent": 62.54,
+        "number_operators": 54,
+        "number_operands": 143,
+        "number_operators_unique": 6,
+        "number_operands_unique": 27,
+        "cloc": 62,
+        "loc": 174,
+        "lloc": 112,
+        "mi": 70.47,
+        "mIwoC": 30.55,
+        "commentWeight": 39.92,
+        "kanDefect": 1.34,
+        "relativeStructuralComplexity": 784,
+        "relativeDataComplexity": 0.24,
+        "relativeSystemComplexity": 784.24,
+        "totalStructuralComplexity": 7840,
+        "totalDataComplexity": 2.38,
+        "totalSystemComplexity": 7842.38,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\migrate\\destination\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 5,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\migrate\\destination\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\migrate\\destination\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\migrate\\destination\\EntityReferenceRevisions"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\EntityRevision",
+            "Drupal\\Component\\Plugin\\ConfigurableInterface",
+            "Drupal\\Core\\Entity\\ContentEntityInterface",
+            "Drupal\\migrate\\MigrateException",
+            "Drupal\\migrate\\Row"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\migrate\\Plugin\\migrate\\destination\\",
+            "Drupal\\Component\\Plugin\\",
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\migrate\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\views\\style\\EntityReferenceRevisions": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\views\\style\\EntityReferenceRevisions",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "evenEmpty",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 4,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\style\\StylePluginBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal",
+            "Drupal\\Component\\Utility\\Xss"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\style\\StylePluginBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 73,
+        "vocabulary": 33,
+        "volume": 368.24,
+        "difficulty": 2.9,
+        "effort": 1067.9,
+        "level": 0.34,
+        "bugs": 0.12,
+        "time": 59,
+        "intelligentContent": 126.98,
+        "number_operators": 15,
+        "number_operands": 58,
+        "number_operators_unique": 3,
+        "number_operands_unique": 30,
+        "cloc": 41,
+        "loc": 81,
+        "lloc": 40,
+        "mi": 91.16,
+        "mIwoC": 46.55,
+        "commentWeight": 44.61,
+        "kanDefect": 0.68,
+        "relativeStructuralComplexity": 121,
+        "relativeDataComplexity": 0.37,
+        "relativeSystemComplexity": 121.37,
+        "totalStructuralComplexity": 484,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 485.5,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\views\\style\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\views\\style\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\views\\style\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\views\\style\\EntityReferenceRevisions"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\views\\Plugin\\views\\style\\StylePluginBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal",
+            "Drupal\\Component\\Utility\\Xss"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\views\\Plugin\\views\\style\\",
+            "Drupal\\Core\\Form\\",
+            "\\",
+            "Drupal\\Component\\Utility\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\views\\row\\EntityReferenceRevisions": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\views\\row\\EntityReferenceRevisions",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildOptionsForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\row\\Fields",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\row\\Fields"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 41,
+        "vocabulary": 21,
+        "volume": 180.09,
+        "difficulty": 4.84,
+        "effort": 872.29,
+        "level": 0.21,
+        "bugs": 0.06,
+        "time": 48,
+        "intelligentContent": 37.18,
+        "number_operators": 10,
+        "number_operands": 31,
+        "number_operators_unique": 5,
+        "number_operands_unique": 16,
+        "cloc": 25,
+        "loc": 49,
+        "lloc": 24,
+        "mi": 98.54,
+        "mIwoC": 53.83,
+        "commentWeight": 44.71,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.5,
+        "relativeSystemComplexity": 25.5,
+        "totalStructuralComplexity": 75,
+        "totalDataComplexity": 1.5,
+        "totalSystemComplexity": 76.5,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\views\\row\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\views\\row\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\views\\row\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\views\\row\\EntityReferenceRevisions"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\views\\Plugin\\views\\row\\Fields",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\views\\Plugin\\views\\row\\",
+            "Drupal\\Core\\Form\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\views\\display\\EntityReferenceRevisions": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\views\\display\\EntityReferenceRevisions",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "defineOptions",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "optionsSummary",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getType",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "execute",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "render",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "usesExposed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "query",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "validate",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 8,
+        "nbMethods": 8,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 7,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 20,
+        "ccn": 13,
+        "ccnMethodMax": 7,
+        "externals": [
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase",
+            "Drupal"
+        ],
+        "parents": [
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase"
+        ],
+        "implements": [],
+        "lcom": 5,
+        "length": 191,
+        "vocabulary": 51,
+        "volume": 1083.43,
+        "difficulty": 9.73,
+        "effort": 10545.42,
+        "level": 0.1,
+        "bugs": 0.36,
+        "time": 586,
+        "intelligentContent": 111.31,
+        "number_operators": 45,
+        "number_operands": 146,
+        "number_operators_unique": 6,
+        "number_operands_unique": 45,
+        "cloc": 68,
+        "loc": 157,
+        "lloc": 89,
+        "mi": 77.07,
+        "mIwoC": 34.48,
+        "commentWeight": 42.59,
+        "kanDefect": 1.17,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.52,
+        "relativeSystemComplexity": 225.52,
+        "totalStructuralComplexity": 1800,
+        "totalDataComplexity": 4.13,
+        "totalSystemComplexity": 1804.13,
+        "package": "Drupal\\entity_reference_revisions\\Plugin\\views\\display\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Plugin\\views\\display\\": {
+        "name": "Drupal\\entity_reference_revisions\\Plugin\\views\\display\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Plugin\\views\\display\\EntityReferenceRevisions"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\views\\Plugin\\views\\display\\DisplayPluginBase",
+            "Drupal"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\views\\Plugin\\views\\display\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\EntityNeedsSaveTrait": {
+        "name": "Drupal\\entity_reference_revisions\\EntityNeedsSaveTrait",
+        "interface": false,
+        "abstract": true,
+        "final": false,
+        "methods": [
+            {
+                "name": "needsSave",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setNeedsSave",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "postSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 1,
+        "nbMethodsSetters": 1,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityStorageInterface"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 1,
+        "length": 11,
+        "vocabulary": 6,
+        "volume": 28.43,
+        "difficulty": 2.25,
+        "effort": 63.98,
+        "level": 0.44,
+        "bugs": 0.01,
+        "time": 4,
+        "intelligentContent": 12.64,
+        "number_operators": 2,
+        "number_operands": 9,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 17,
+        "loc": 35,
+        "lloc": 18,
+        "mi": 106.39,
+        "mIwoC": 62.3,
+        "commentWeight": 44.09,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0.67,
+        "relativeSystemComplexity": 4.67,
+        "totalStructuralComplexity": 12,
+        "totalDataComplexity": 2,
+        "totalSystemComplexity": 14,
+        "package": "Drupal\\entity_reference_revisions\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger": {
+        "name": "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteUnusedRevision",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "deleteOrphansBatchOperation",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "batchSubmitFinished",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setBatch",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "doBatchSubmitFinished",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isUsed",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "isValidParent",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCompositeEntityTypes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 9,
+        "nbMethods": 9,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 8,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 36,
+        "ccn": 28,
+        "ccnMethodMax": 9,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Entity\\EntityFieldManagerInterface",
+            "Drupal\\Core\\Datetime\\DateFormatterInterface",
+            "Drupal\\Component\\Datetime\\TimeInterface",
+            "Drupal\\Core\\Database\\Connection",
+            "Drupal\\Core\\Messenger\\MessengerInterface",
+            "Drupal\\Core\\Entity\\ContentEntityInterface",
+            "Drupal\\Core\\Site\\Settings",
+            "Drupal",
+            "Drupal\\Core\\Entity\\ContentEntityInterface"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 2,
+        "length": 425,
+        "vocabulary": 98,
+        "volume": 2811.25,
+        "difficulty": 18.86,
+        "effort": 53030.43,
+        "level": 0.05,
+        "bugs": 0.94,
+        "time": 2946,
+        "intelligentContent": 149.03,
+        "number_operators": 93,
+        "number_operands": 332,
+        "number_operators_unique": 10,
+        "number_operands_unique": 88,
+        "cloc": 143,
+        "loc": 307,
+        "lloc": 164,
+        "mi": 67.32,
+        "mIwoC": 23.77,
+        "commentWeight": 43.55,
+        "kanDefect": 2.33,
+        "relativeStructuralComplexity": 3136,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 3136.23,
+        "totalStructuralComplexity": 28224,
+        "totalDataComplexity": 2.07,
+        "totalSystemComplexity": 28226.07,
+        "package": "Drupal\\entity_reference_revisions\\",
+        "pageRank": 0.15,
+        "afferentCoupling": 3,
+        "efferentCoupling": 9,
+        "instability": 0.75,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Commands\\EntityReferenceRevisionsCommands": {
+        "name": "Drupal\\entity_reference_revisions\\Commands\\EntityReferenceRevisionsCommands",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "purge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "interact",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 1,
+        "wmc": 4,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drush\\Commands\\DrushCommands",
+            "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger",
+            "Drush\\Utils\\StringUtils"
+        ],
+        "parents": [
+            "Drush\\Commands\\DrushCommands"
+        ],
+        "implements": [],
+        "lcom": 1,
+        "length": 30,
+        "vocabulary": 12,
+        "volume": 107.55,
+        "difficulty": 2.5,
+        "effort": 268.87,
+        "level": 0.4,
+        "bugs": 0.04,
+        "time": 15,
+        "intelligentContent": 43.02,
+        "number_operators": 5,
+        "number_operands": 25,
+        "number_operators_unique": 2,
+        "number_operands_unique": 10,
+        "cloc": 28,
+        "loc": 53,
+        "lloc": 25,
+        "mi": 100.01,
+        "mIwoC": 54.88,
+        "commentWeight": 45.14,
+        "kanDefect": 0.45,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.13,
+        "relativeSystemComplexity": 81.13,
+        "totalStructuralComplexity": 243,
+        "totalDataComplexity": 0.4,
+        "totalSystemComplexity": 243.4,
+        "package": "Drupal\\entity_reference_revisions\\Commands\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\entity_reference_revisions\\Commands\\": {
+        "name": "Drupal\\entity_reference_revisions\\Commands\\",
+        "classes": [
+            "Drupal\\entity_reference_revisions\\Commands\\EntityReferenceRevisionsCommands"
+        ],
+        "outgoing_class_dependencies": [
+            "Drush\\Commands\\DrushCommands",
+            "Drupal\\entity_reference_revisions\\EntityReferenceRevisionsOrphanPurger",
+            "Drush\\Utils\\StringUtils"
+        ],
+        "outgoing_package_dependencies": [
+            "Drush\\Commands\\",
+            "Drupal\\entity_reference_revisions\\",
+            "Drush\\Utils\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": {
+            "Drupal\\entity_reference_revisions\\": 0.8421052631578947
+        },
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\entity_reference_revisions\\EntityNeedsSaveInterface": {
+        "name": "Drupal\\entity_reference_revisions\\EntityNeedsSaveInterface",
+        "interface": true,
+        "abstract": true,
+        "methods": [
+            {
+                "name": "needsSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setNeedsSave",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "kanDefect": 0.15,
+        "package": "Drupal\\entity_reference_revisions\\",
+        "pageRank": 0.04,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\InterfaceMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.89,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": {
+            "drupal\/core": {
+                "latest": "11.2.8",
+                "license": [
+                    "GPL-2.0-or-later"
+                ],
+                "homepage": "",
+                "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+                "time": "2025-11-12T21:53:29+00:00",
+                "zip": "https:\/\/api.github.com\/repos\/drupal\/core\/zipball\/e9c111ea8f26f751797fbf6a918f845730fc95ee",
+                "compare": true,
+                "type": "drupal-core",
+                "github_stars": 193,
+                "github_watchers": 14,
+                "github_forks": 59,
+                "github_open_issues": 0,
+                "download_total": 58315072,
+                "download_monthly": 972944,
+                "download_daily": 8137,
+                "favers": 215,
+                "name": "drupal\/core",
+                "installed": null,
+                "required": "^10.2 || ^11",
+                "status": "unknown"
+            }
+        },
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "searches": {
+        "name": "searches",
+        "violations": {},
+        "_type": "Hal\\Metric\\SearchMetric"
+    }
+}

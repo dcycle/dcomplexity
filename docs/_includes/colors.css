@@ -1,0 +1,27 @@
+:root {
+  --light: #EEF0F2;
+  --dark: #0D21A1
+}
+
+* {
+  color: var(--dark);
+}
+
+a {
+  text-decoration-style: dotted;
+}
+
+.body,
+.section {
+  background-color: var(--light);
+}
+
+.invert-colors {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.invert-colors a,
+.invert-colors .text {
+  color: var(--light);
+}

@@ -1,0 +1,1413 @@
+{
+    "Drupal\\admin_toolbar_search\\Form\\AdminToolbarSearchSettingsForm": {
+        "name": "Drupal\\admin_toolbar_search\\Form\\AdminToolbarSearchSettingsForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEditableConfigNames",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 4,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\ConfigFormBase"
+        ],
+        "implements": [],
+        "lcom": 3,
+        "length": 53,
+        "vocabulary": 19,
+        "volume": 225.14,
+        "difficulty": 2.76,
+        "effort": 622.45,
+        "level": 0.36,
+        "bugs": 0.08,
+        "time": 35,
+        "intelligentContent": 81.43,
+        "number_operators": 6,
+        "number_operands": 47,
+        "number_operators_unique": 2,
+        "number_operands_unique": 17,
+        "cloc": 37,
+        "loc": 61,
+        "lloc": 24,
+        "mi": 100.01,
+        "mIwoC": 53.29,
+        "commentWeight": 46.72,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 81,
+        "relativeDataComplexity": 0.4,
+        "relativeSystemComplexity": 81.4,
+        "totalStructuralComplexity": 324,
+        "totalDataComplexity": 1.6,
+        "totalSystemComplexity": 325.6,
+        "package": "Drupal\\admin_toolbar_search\\Form\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_search\\Form\\": {
+        "name": "Drupal\\admin_toolbar_search\\Form\\",
+        "classes": [
+            "Drupal\\admin_toolbar_search\\Form\\AdminToolbarSearchSettingsForm"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Form\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar_search\\Constants\\AdminToolbarSearchConstants": {
+        "name": "Drupal\\admin_toolbar_search\\Constants\\AdminToolbarSearchConstants",
+        "interface": false,
+        "abstract": false,
+        "final": true,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [],
+        "parents": [],
+        "implements": [],
+        "lcom": 0,
+        "length": 10,
+        "vocabulary": 10,
+        "volume": 33.22,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0.01,
+        "time": 0,
+        "intelligentContent": 66.44,
+        "number_operators": 0,
+        "number_operands": 10,
+        "number_operators_unique": 0,
+        "number_operands_unique": 10,
+        "cloc": 11,
+        "loc": 16,
+        "lloc": 5,
+        "mi": 121.93,
+        "mIwoC": 73.97,
+        "commentWeight": 47.97,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Drupal\\admin_toolbar_search\\Constants\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 0,
+        "instability": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_search\\Constants\\": {
+        "name": "Drupal\\admin_toolbar_search\\Constants\\",
+        "classes": [
+            "Drupal\\admin_toolbar_search\\Constants\\AdminToolbarSearchConstants"
+        ],
+        "abstraction": 0,
+        "dependent_instabilities": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar_search\\Controller\\AdminToolbarSearchController": {
+        "name": "Drupal\\admin_toolbar_search\\Controller\\AdminToolbarSearchController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "search",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Symfony\\Component\\HttpFoundation\\JsonResponse"
+        ],
+        "parents": [
+            "Drupal\\Core\\Controller\\ControllerBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 12,
+        "vocabulary": 6,
+        "volume": 31.02,
+        "difficulty": 2,
+        "effort": 62.04,
+        "level": 0.5,
+        "bugs": 0.01,
+        "time": 3,
+        "intelligentContent": 15.51,
+        "number_operators": 4,
+        "number_operands": 8,
+        "number_operators_unique": 2,
+        "number_operands_unique": 4,
+        "cloc": 19,
+        "loc": 34,
+        "lloc": 15,
+        "mi": 109.57,
+        "mIwoC": 63.77,
+        "commentWeight": 45.8,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 9,
+        "relativeDataComplexity": 0.63,
+        "relativeSystemComplexity": 9.63,
+        "totalStructuralComplexity": 18,
+        "totalDataComplexity": 1.25,
+        "totalSystemComplexity": 19.25,
+        "package": "Drupal\\admin_toolbar_search\\Controller\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_search\\Controller\\": {
+        "name": "Drupal\\admin_toolbar_search\\Controller\\",
+        "classes": [
+            "Drupal\\admin_toolbar_search\\Controller\\AdminToolbarSearchController"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Symfony\\Component\\HttpFoundation\\JsonResponse"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Controller\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Symfony\\Component\\HttpFoundation\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar_search\\SearchLinks": {
+        "name": "Drupal\\admin_toolbar_search\\SearchLinks",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getLinks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBundleableEntitiesList",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "routeExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 40,
+        "ccn": 37,
+        "ccnMethodMax": 34,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal\\Core\\Routing\\RouteProviderInterface",
+            "Drupal\\Core\\Cache\\Context\\CacheContextsManager",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url",
+            "Drupal\\Core\\Url"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 1,
+        "length": 556,
+        "vocabulary": 91,
+        "volume": 3618.33,
+        "difficulty": 16.08,
+        "effort": 58194.87,
+        "level": 0.06,
+        "bugs": 1.21,
+        "time": 3233,
+        "intelligentContent": 224.97,
+        "number_operators": 170,
+        "number_operands": 386,
+        "number_operators_unique": 7,
+        "number_operands_unique": 84,
+        "cloc": 82,
+        "loc": 251,
+        "lloc": 169,
+        "mi": 60.22,
+        "mIwoC": 21.51,
+        "commentWeight": 38.71,
+        "kanDefect": 3.03,
+        "relativeStructuralComplexity": 1089,
+        "relativeDataComplexity": 0.2,
+        "relativeSystemComplexity": 1089.2,
+        "totalStructuralComplexity": 4356,
+        "totalDataComplexity": 0.79,
+        "totalSystemComplexity": 4356.79,
+        "package": "Drupal\\admin_toolbar_search\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 8,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_search\\": {
+        "name": "Drupal\\admin_toolbar_search\\",
+        "classes": [
+            "Drupal\\admin_toolbar_search\\SearchLinks"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal\\Core\\Routing\\RouteProviderInterface",
+            "Drupal\\Core\\Cache\\Context\\CacheContextsManager",
+            "Drupal\\Core\\Cache\\CacheBackendInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal\\Core\\Cache\\Cache",
+            "Drupal\\Core\\Url"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\Core\\Extension\\",
+            "Drupal\\Core\\Routing\\",
+            "Drupal\\Core\\Cache\\Context\\",
+            "Drupal\\Core\\Cache\\",
+            "Drupal\\Core\\Config\\",
+            "Drupal\\Core\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "admin_toolbar_tools_post_update_helper_added_config_factory": {
+        "name": "admin_toolbar_tools_post_update_helper_added_config_factory",
+        "cloc": 11,
+        "loc": 15,
+        "lloc": 4,
+        "violations": {},
+        "_type": "Hal\\Metric\\FunctionMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Form\\AdminToolbarToolsSettingsForm": {
+        "name": "Drupal\\admin_toolbar_tools\\Form\\AdminToolbarToolsSettingsForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEditableConfigNames",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\ConfigFormBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 80,
+        "vocabulary": 31,
+        "volume": 396.34,
+        "difficulty": 3.64,
+        "effort": 1443.79,
+        "level": 0.27,
+        "bugs": 0.13,
+        "time": 80,
+        "intelligentContent": 108.8,
+        "number_operators": 12,
+        "number_operands": 68,
+        "number_operators_unique": 3,
+        "number_operands_unique": 28,
+        "cloc": 58,
+        "loc": 97,
+        "lloc": 39,
+        "mi": 93.4,
+        "mIwoC": 46.83,
+        "commentWeight": 46.56,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.33,
+        "relativeSystemComplexity": 196.33,
+        "totalStructuralComplexity": 980,
+        "totalDataComplexity": 1.67,
+        "totalSystemComplexity": 981.67,
+        "package": "Drupal\\admin_toolbar_tools\\Form\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Form\\": {
+        "name": "Drupal\\admin_toolbar_tools\\Form\\",
+        "classes": [
+            "Drupal\\admin_toolbar_tools\\Form\\AdminToolbarToolsSettingsForm"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Form\\",
+            "Symfony\\Component\\DependencyInjection\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Plugin\\Derivative\\ExtraLinks": {
+        "name": "Drupal\\admin_toolbar_tools\\Plugin\\Derivative\\ExtraLinks",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDerivativeDefinitions",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "routeExists",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "installedThemes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 5,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 74,
+        "ccn": 70,
+        "ccnMethodMax": 68,
+        "externals": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase",
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal\\Core\\Routing\\RouteProviderInterface",
+            "Drupal\\Core\\Extension\\ThemeHandlerInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal\\Core\\Session\\AccountInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "parents": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase"
+        ],
+        "implements": [
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface"
+        ],
+        "lcom": 2,
+        "length": 1715,
+        "vocabulary": 319,
+        "volume": 14264.36,
+        "difficulty": 19.36,
+        "effort": 276222.48,
+        "level": 0.05,
+        "bugs": 4.75,
+        "time": 15346,
+        "intelligentContent": 736.62,
+        "number_operators": 381,
+        "number_operands": 1334,
+        "number_operators_unique": 9,
+        "number_operands_unique": 310,
+        "cloc": 104,
+        "loc": 400,
+        "lloc": 296,
+        "mi": 43.1,
+        "mIwoC": 7.59,
+        "commentWeight": 35.52,
+        "kanDefect": 6.13,
+        "relativeStructuralComplexity": 1444,
+        "relativeDataComplexity": 0.15,
+        "relativeSystemComplexity": 1444.15,
+        "totalStructuralComplexity": 7220,
+        "totalDataComplexity": 0.77,
+        "totalSystemComplexity": 7220.77,
+        "package": "Drupal\\admin_toolbar_tools\\Plugin\\Derivative\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 10,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Plugin\\Derivative\\": {
+        "name": "Drupal\\admin_toolbar_tools\\Plugin\\Derivative\\",
+        "classes": [
+            "Drupal\\admin_toolbar_tools\\Plugin\\Derivative\\ExtraLinks"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Component\\Plugin\\Derivative\\DeriverBase",
+            "Drupal\\Core\\Plugin\\Discovery\\ContainerDeriverInterface",
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Extension\\ModuleHandlerInterface",
+            "Drupal\\Core\\Routing\\RouteProviderInterface",
+            "Drupal\\Core\\Extension\\ThemeHandlerInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal\\Core\\Session\\AccountInterface",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "static"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Component\\Plugin\\Derivative\\",
+            "Drupal\\Core\\Plugin\\Discovery\\",
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\Core\\Extension\\",
+            "Drupal\\Core\\Routing\\",
+            "Drupal\\Core\\Config\\",
+            "Drupal\\Core\\Session\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\MenuLinkEntity": {
+        "name": "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\MenuLinkEntity",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheContexts",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheTags",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getCacheMaxAge",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 6,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 6,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 14,
+        "ccn": 9,
+        "ccnMethodMax": 4,
+        "externals": [
+            "Drupal\\Core\\Menu\\MenuLinkDefault",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Menu\\MenuLinkDefault"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 58,
+        "vocabulary": 20,
+        "volume": 250.67,
+        "difficulty": 6.33,
+        "effort": 1587.59,
+        "level": 0.16,
+        "bugs": 0.08,
+        "time": 88,
+        "intelligentContent": 39.58,
+        "number_operators": 20,
+        "number_operands": 38,
+        "number_operators_unique": 5,
+        "number_operands_unique": 15,
+        "cloc": 38,
+        "loc": 84,
+        "lloc": 46,
+        "mi": 88.89,
+        "mIwoC": 45.72,
+        "commentWeight": 43.17,
+        "kanDefect": 0.5,
+        "relativeStructuralComplexity": 196,
+        "relativeDataComplexity": 0.71,
+        "relativeSystemComplexity": 196.71,
+        "totalStructuralComplexity": 1176,
+        "totalDataComplexity": 4.27,
+        "totalSystemComplexity": 1180.27,
+        "package": "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 2,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\": {
+        "name": "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\",
+        "classes": [
+            "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\MenuLinkEntity",
+            "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\MenuLinkPlugin"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Menu\\MenuLinkDefault",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Component\\Render\\FormattableMarkup"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Menu\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Drupal\\Component\\Render\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\MenuLinkPlugin": {
+        "name": "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\MenuLinkPlugin",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getTitle",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getDescription",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 3,
+        "nbMethods": 3,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 6,
+        "ccn": 4,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\Core\\Menu\\MenuLinkDefault",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Component\\Render\\FormattableMarkup"
+        ],
+        "parents": [
+            "Drupal\\Core\\Menu\\MenuLinkDefault"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 49,
+        "vocabulary": 17,
+        "volume": 200.29,
+        "difficulty": 4.18,
+        "effort": 836.91,
+        "level": 0.24,
+        "bugs": 0.07,
+        "time": 46,
+        "intelligentContent": 47.93,
+        "number_operators": 10,
+        "number_operands": 39,
+        "number_operators_unique": 3,
+        "number_operands_unique": 14,
+        "cloc": 31,
+        "loc": 58,
+        "lloc": 27,
+        "mi": 97.4,
+        "mIwoC": 52.12,
+        "commentWeight": 45.28,
+        "kanDefect": 0.29,
+        "relativeStructuralComplexity": 25,
+        "relativeDataComplexity": 0.72,
+        "relativeSystemComplexity": 25.72,
+        "totalStructuralComplexity": 75,
+        "totalDataComplexity": 2.17,
+        "totalSystemComplexity": 77.17,
+        "package": "Drupal\\admin_toolbar_tools\\Plugin\\Menu\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Controller\\ToolbarController": {
+        "name": "Drupal\\admin_toolbar_tools\\Controller\\ToolbarController",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "reloadPage",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushAll",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushJsCss",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushPlugins",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushStatic",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushMenu",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushViews",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "flushTwig",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "runCron",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "cacheRender",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "themeRebuild",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 12,
+        "nbMethods": 12,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 12,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 15,
+        "ccn": 4,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse"
+        ],
+        "parents": [
+            "Drupal\\Core\\Controller\\ControllerBase"
+        ],
+        "implements": [],
+        "lcom": 2,
+        "length": 151,
+        "vocabulary": 38,
+        "volume": 792.44,
+        "difficulty": 8.71,
+        "effort": 6903.81,
+        "level": 0.11,
+        "bugs": 0.26,
+        "time": 384,
+        "intelligentContent": 90.96,
+        "number_operators": 36,
+        "number_operands": 115,
+        "number_operators_unique": 5,
+        "number_operands_unique": 33,
+        "cloc": 157,
+        "loc": 280,
+        "lloc": 123,
+        "mi": 79.42,
+        "mIwoC": 33.57,
+        "commentWeight": 45.84,
+        "kanDefect": 0.36,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.82,
+        "relativeSystemComplexity": 225.82,
+        "totalStructuralComplexity": 2700,
+        "totalDataComplexity": 9.81,
+        "totalSystemComplexity": 2709.81,
+        "package": "Drupal\\admin_toolbar_tools\\Controller\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\Controller\\": {
+        "name": "Drupal\\admin_toolbar_tools\\Controller\\",
+        "classes": [
+            "Drupal\\admin_toolbar_tools\\Controller\\ToolbarController"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Controller\\ControllerBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Symfony\\Component\\HttpFoundation\\RedirectResponse"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Controller\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Symfony\\Component\\HttpFoundation\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\AdminToolbarToolsHelper": {
+        "name": "Drupal\\admin_toolbar_tools\\AdminToolbarToolsHelper",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildLocalTasksToolbar",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getBundleableEntitiesList",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getRebuildEntityTypes",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 4,
+        "nbMethods": 4,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 12,
+        "ccn": 9,
+        "ccnMethodMax": 6,
+        "externals": [
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Menu\\LocalTaskManagerInterface",
+            "Drupal\\Core\\Routing\\RouteMatchInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal\\Core\\Cache\\CacheableMetadata",
+            "Drupal\\Core\\Cache\\CacheableMetadata",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Url"
+        ],
+        "parents": [],
+        "implements": [],
+        "lcom": 1,
+        "length": 152,
+        "vocabulary": 59,
+        "volume": 894.16,
+        "difficulty": 5.65,
+        "effort": 5050.36,
+        "level": 0.18,
+        "bugs": 0.3,
+        "time": 281,
+        "intelligentContent": 158.31,
+        "number_operators": 30,
+        "number_operands": 122,
+        "number_operators_unique": 5,
+        "number_operands_unique": 54,
+        "cloc": 71,
+        "loc": 141,
+        "lloc": 70,
+        "mi": 82.42,
+        "mIwoC": 37.87,
+        "commentWeight": 44.54,
+        "kanDefect": 0.89,
+        "relativeStructuralComplexity": 225,
+        "relativeDataComplexity": 0.25,
+        "relativeSystemComplexity": 225.25,
+        "totalStructuralComplexity": 900,
+        "totalDataComplexity": 1,
+        "totalSystemComplexity": 901,
+        "package": "Drupal\\admin_toolbar_tools\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 7,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar_tools\\": {
+        "name": "Drupal\\admin_toolbar_tools\\",
+        "classes": [
+            "Drupal\\admin_toolbar_tools\\AdminToolbarToolsHelper"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Entity\\EntityTypeManagerInterface",
+            "Drupal\\Core\\Menu\\LocalTaskManagerInterface",
+            "Drupal\\Core\\Routing\\RouteMatchInterface",
+            "Drupal\\Core\\Config\\ConfigFactoryInterface",
+            "Drupal\\Core\\Cache\\CacheableMetadata",
+            "Drupal\\Core\\Render\\Element",
+            "Drupal\\Core\\Url"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Entity\\",
+            "Drupal\\Core\\Menu\\",
+            "Drupal\\Core\\Routing\\",
+            "Drupal\\Core\\Config\\",
+            "Drupal\\Core\\Cache\\",
+            "Drupal\\Core\\Render\\",
+            "Drupal\\Core\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar\\Form\\AdminToolbarSettingsForm": {
+        "name": "Drupal\\admin_toolbar\\Form\\AdminToolbarSettingsForm",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "create",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getEditableConfigNames",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getFormId",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "buildForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "submitForm",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 5,
+        "nbMethods": 5,
+        "nbMethodsPrivate": 1,
+        "nbMethodsPublic": 4,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 7,
+        "ccn": 3,
+        "ccnMethodMax": 3,
+        "externals": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup",
+            "Drupal\\Core\\Form\\FormStateInterface"
+        ],
+        "parents": [
+            "Drupal\\Core\\Form\\ConfigFormBase"
+        ],
+        "implements": [],
+        "lcom": 4,
+        "length": 199,
+        "vocabulary": 73,
+        "volume": 1231.78,
+        "difficulty": 3.81,
+        "effort": 4698.34,
+        "level": 0.26,
+        "bugs": 0.41,
+        "time": 261,
+        "intelligentContent": 322.94,
+        "number_operators": 21,
+        "number_operands": 178,
+        "number_operators_unique": 3,
+        "number_operands_unique": 70,
+        "cloc": 66,
+        "loc": 124,
+        "lloc": 58,
+        "mi": 84.71,
+        "mIwoC": 39.49,
+        "commentWeight": 45.23,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 169,
+        "relativeDataComplexity": 0.36,
+        "relativeSystemComplexity": 169.36,
+        "totalStructuralComplexity": 845,
+        "totalDataComplexity": 1.79,
+        "totalSystemComplexity": 846.79,
+        "package": "Drupal\\admin_toolbar\\Form\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar\\Form\\": {
+        "name": "Drupal\\admin_toolbar\\Form\\",
+        "classes": [
+            "Drupal\\admin_toolbar\\Form\\AdminToolbarSettingsForm"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Form\\ConfigFormBase",
+            "Symfony\\Component\\DependencyInjection\\ContainerInterface",
+            "Drupal\\Core\\Form\\FormStateInterface",
+            "Drupal\\Core\\StringTranslation\\TranslatableMarkup"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Form\\",
+            "Symfony\\Component\\DependencyInjection\\",
+            "Drupal\\Core\\StringTranslation\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Drupal\\admin_toolbar\\Render\\Element\\AdminToolbar": {
+        "name": "Drupal\\admin_toolbar\\Render\\Element\\AdminToolbar",
+        "interface": false,
+        "abstract": false,
+        "final": false,
+        "methods": [
+            {
+                "name": "trustedCallbacks",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "preRenderTray",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 2,
+        "nbMethods": 2,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 2,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 2,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Drupal\\Core\\Security\\TrustedCallbackInterface",
+            "Drupal",
+            "Drupal\\Core\\Menu\\MenuTreeParameters",
+            "Drupal"
+        ],
+        "parents": [],
+        "implements": [
+            "Drupal\\Core\\Security\\TrustedCallbackInterface"
+        ],
+        "lcom": 2,
+        "length": 40,
+        "vocabulary": 19,
+        "volume": 169.92,
+        "difficulty": 1.82,
+        "effort": 309.85,
+        "level": 0.55,
+        "bugs": 0.06,
+        "time": 17,
+        "intelligentContent": 93.18,
+        "number_operators": 9,
+        "number_operands": 31,
+        "number_operators_unique": 2,
+        "number_operands_unique": 17,
+        "cloc": 29,
+        "loc": 53,
+        "lloc": 24,
+        "mi": 99.7,
+        "mIwoC": 54.14,
+        "commentWeight": 45.56,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 100,
+        "relativeDataComplexity": 0.23,
+        "relativeSystemComplexity": 100.23,
+        "totalStructuralComplexity": 200,
+        "totalDataComplexity": 0.45,
+        "totalSystemComplexity": 200.45,
+        "package": "Drupal\\admin_toolbar\\Render\\Element\\",
+        "pageRank": 0.08,
+        "afferentCoupling": 0,
+        "efferentCoupling": 3,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Drupal\\admin_toolbar\\Render\\Element\\": {
+        "name": "Drupal\\admin_toolbar\\Render\\Element\\",
+        "classes": [
+            "Drupal\\admin_toolbar\\Render\\Element\\AdminToolbar"
+        ],
+        "outgoing_class_dependencies": [
+            "Drupal\\Core\\Security\\TrustedCallbackInterface",
+            "Drupal",
+            "Drupal\\Core\\Menu\\MenuTreeParameters"
+        ],
+        "outgoing_package_dependencies": [
+            "Drupal\\Core\\Security\\",
+            "\\",
+            "Drupal\\Core\\Menu\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.5,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": [],
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "searches": {
+        "name": "searches",
+        "violations": {},
+        "_type": "Hal\\Metric\\SearchMetric"
+    }
+}
