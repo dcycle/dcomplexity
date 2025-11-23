@@ -27,8 +27,8 @@ faq:
       en: "How can I suggest a Drupal module to be added?"
       fr: "Comment puis-je suggérer un module Drupal à ajouter?"
     answer:
-      en: 'Add a pull request to <https://github.com/dcycle/dcomplexity> suggesting the module on the file ./docs/_data/drupalprojects.yml.'
-      fr: 'Ajoutez une demande de fusion ("pull request") à <https://github.com/dcycle/dcomplexity> suggérant le module dans le fichier ./docs/_data/drupalprojects.yml.'
+      en: 'Add a pull request to <https://github.com/dcycle/dcomplexity> suggesting the module on the file ./docs/_data/projects.yml.'
+      fr: 'Ajoutez une demande de fusion ("pull request") à <https://github.com/dcycle/dcomplexity> suggérant le module dans le fichier ./docs/_data/projects.yml.'
   - question:
       en: "How often is the website updated?"
       fr: "À quelle fréquence le site Web est-il mis à jour?"
@@ -36,8 +36,8 @@ faq:
       en: 'Not often!'
       fr: 'Pas souvent!'
   - question:
-      en: "If I add a module to ./docs/_data/drupalprojects.yml, how can I update the website to include it?"
-      fr: "Si j'ajoute un module à ./docs/_data/drupalprojects.yml, comment puis-je mettre à jour le site Web pour l'inclure?"
+      en: "If I add a module to ./docs/_data/projects.yml, how can I update the website to include it?"
+      fr: "Si j'ajoute un module à ./docs/_data/projects.yml, comment puis-je mettre à jour le site Web pour l'inclure?"
     answer:
       en: '`./scripts/run.sh`'
       fr: '`./scripts/run.sh`'
