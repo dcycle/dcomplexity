@@ -4,3 +4,12 @@ The projects:
 FAQ:
   en: "FAQ"
   fr: "FAQ"
+Metrics:
+  en: "Metrics"
+  fr: "Métriques"
+Source code:
+  en: "Source code"
+  fr: "Code source"
+Max cyclomatic complexity:
+  en: "Max cyclomatic complexity"
+  fr: "Complexité cyclomatique maximale"

@@ -47,3 +47,15 @@ faq:
     answer:
       en: "No! I hadn't event heard of him until today. He's not bad, you should check him out."
       fr: "Non! Je n'avais même pas entendu parler de lui jusqu'à aujourd'hui. Il n'est pas mal, vous devriez l'écouter."
+  - question:
+      en: "How can I interpret the metrics shown on this website?"
+      fr: "Comment puis-je interpréter les métriques affichées sur ce site Web?"
+    answer:
+      en: "<https://phpmetrics.github.io/website/metrics/>"
+      fr: "<https://phpmetrics.github.io/website/metrics/>"
+  - question:
+      en: "How can I contact you?"
+      fr: "Comment puis-je vous contacter?"
+    answer:
+      en: "Via LinkedIn at <https://www.linkedin.com/in/albertalbala>"
+      fr: "Via LinkedIn à <https://www.linkedin.com/in/albertalbala>"

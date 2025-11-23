@@ -32,8 +32,6 @@
   name: Paragraphs Drupal module
 - git_repo: https://git.drupalcode.org/project/libraries.git
   name: Libraries Drupal module
-- git_repo: https://git.drupalcode.org/project/jquery_ui.git
-  name: jQuery UI Drupal module
 - git_repo: https://git.drupalcode.org/project/imce.git
   name: IMCE Drupal module
 - git_repo: https://git.drupalcode.org/project/views.git

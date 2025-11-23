@@ -1,6 +1,8 @@
-{% assign t = site.data.translations %}{% assign l = page.lang %}<!DOCTYPE html>
+{% capture code %}
+{% assign t = site.data.translations %}
+{% assign l = page.lang %}
+<!DOCTYPE html>
 <html lang="{{ l }}">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +11,10 @@
   <style>
     body {
       font-family: sans-serif;
-      color: #023047;
-      background: #219ebc;
       margin: 0;
     }
-    .section-nav {
-      background: #f1faee;
-    }
     a {
-      color: #457b9d;
       text-decoration-style: dotted;
-    }
-    a:hover {
-      color: #1d3557;
     }
     section {
       padding: 20px 20px;
@@ -39,7 +32,6 @@
       display: grid;
       grid-template-columns: 100%;
       grid-gap: 10px;
-      color: #444;
     }
     @media (min-width: 600px) {
       .grid-wrapper {
@@ -52,12 +44,23 @@
       }
     }
     .grid-item {
-      background-color: #444;
-      color: #fff;
       border-radius: 5px;
       padding: 20px;
+      text-align: center;
+    }
+    .grid-item .title {
       font-size: 150%;
     }
+    .grid-item ul {
+      list-style: none;
+      padding: 0;
+    }
+    .grid-item ul li {
+      display: inline;
+      margin: 0 5px;
+    }
+    {% include accordion.css %}
+    {% include colors.css %}
   </style>
 </head>
 
@@ -65,7 +68,7 @@
   <section class="section-top">
     <h1>Drupal Complexity</h1>
   </section>
-  <section class="section-nav">
+  <section class="section-nav invert-colors">
   <nav>
     <ul>
       <li><a href="#p">{{ t["The projects"][l] }}</a></li>
@@ -83,19 +86,44 @@
   <h2 id="p">{{ t["The projects"][l] }}</h2>
   <div class="grid-wrapper">
     {% for project in site.data.projects %}
-      <div class="grid-item"><a href="/report-{{ project.git_repo | replace: ":", "_" | replace: "/", "_"  }}">{{ project.name }}</a></div>
+      {% assign clean = project.git_repo | replace: '/', '_' | replace: ':', '_' | replace: '.', '_' %}
+      <div class="grid-item invert-colors">
+        <div class="title text">{{ project.name }}</div>
+        <ul>
+          <li>
+          <a href="{{ project.git_repo }}" target="_blank">
+            {{ t["Source code"][l] }}
+          </a>
+          </li>
+          <li>
+          <a href="/report-{{ clean }}">
+            {{ t["Metrics"][l] }}
+          </a>
+          </li>
+          </a>
+        </ul>
+        <div class="text">
+          {% assign jsonfile = 'json-' | append: clean %}
+          {% assign json = site.data[jsonfile] %}
+          {{ t["Max cyclomatic complexity"][l] }}: {% include max-complexity.html %}
+        </div>
+      </div>
     {% endfor %}
   </div>
   </section>
   <section>
   <h2 id="faq">{{ t["FAQ"][l] }}</h2>
-  <ul>
+  <div class="accordion">
     {% for project in site.data.faq.faq %}
-      <h3>{{ project.question[l] }}</h3>
+    <details>
+      <summary>{{ project.question[l] }}</summary>
       <p>{{ project.answer[l] | markdownify }}</p>
+    </details>
     {% endfor %}
-  </ul>
+  </div>
   </section>
-</body>
 
+</body>
 </html>
+{% endcapture %}
+{{ code | remove: "  " | strip_newlines }}
