@@ -65,3 +65,9 @@ faq:
     answer:
       en: "Glad you asked: see [here](https://docs.google.com/presentation/d/1p8Q6o6BIO21iS1-iLzHOB8d6QN1G2TYk_z4XM8Bj-2I/edit?slide=id.g3a9c5af0fda_0_65#slide=id.g3a9c5af0fda_0_65)"
       fr: "Content que vous ayez demandé: voir [ici](https://docs.google.com/presentation/d/1p8Q6o6BIO21iS1-iLzHOB8d6QN1G2TYk_z4XM8Bj-2I/edit?slide=id.g3a9c5af0fda_0_65#slide=id.g3a9c5af0fda_0_65)"
+  - question:
+      en: "Who made the preview image on social media posts?"
+      fr: "Qui a réalisé l'image d'aperçu sur les publications des réseaux sociaux?"
+    answer:
+      en: "I prompted ChatGTP with 'I have a website where I run several open source PHP projects through PHPMetrics, a tool to determine their relative code complexity. I need to have a preview image for that, can you make one? It shouldn't look like stock photography and should be rather sober, and contain no text'. So much for 'contain no text'!"
+      fr: "J'ai demandé à ChatGTP 'I have a website where I run several open source PHP projects through PHPMetrics, a tool to determine their relative code complexity. I need to have a preview image for that, can you make one? It shouldn't look like stock photography and should be rather sober, and contain no text'. Pas mal, mais il semble pas avoir compris 'contain no text' !"
