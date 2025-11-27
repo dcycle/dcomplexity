@@ -49,7 +49,7 @@
 <div class="page">
     <div class="content content-first">
         <div class="report-details">
-            Created at 2025-11-23 16:18:36        , with PHPMetrics v2.9.1 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2025-11-27 15:51:33        , with PHPMetrics v2.9.1 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
         
@@ -58,7 +58,7 @@
 <div class="row">
     <div class="column">
         <div class="bloc">
-            <h4>Object relations</h4>
+            <h4>Package relations</h4>
             <div id="chart-relations"></div>
         </div>
     </div>
@@ -93,7 +93,7 @@
                             <path d="M0 0h24v24H0z" fill="none">
                             <path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z">
                         </svg>
-                        Violations (0)
+                        Violations (34)
                     </a>
                 </li>
                                     <li>
@@ -245,7 +245,357 @@
 <script>
 
 
-    var relations = [];
+    var relations = [
+    {
+        "name": "global",
+        "size": 3000,
+        "relations": [
+            "PhpParser"
+        ]
+    },
+    {
+        "name": "PhpParser",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "Hal\\Component\\Tree",
+        "size": 3000,
+        "relations": [
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Component\\Tree\\Util",
+        "size": 3000,
+        "relations": [
+            "Hal\\Component\\Tree"
+        ]
+    },
+    {
+        "name": "Hal\\Component\\Tree\\Operator",
+        "size": 3000,
+        "relations": [
+            "Hal\\Component\\Tree",
+            "Hal\\Component\\Tree\\Util",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Component\\File",
+        "size": 3000,
+        "relations": [
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Component\\Issue",
+        "size": 3000,
+        "relations": [
+            "Hal\\Component\\Output",
+            "PhpParser\\PrettyPrinter"
+        ]
+    },
+    {
+        "name": "Hal\\Component\\Output",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "PhpParser\\PrettyPrinter",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "Hal\\Component\\Ast",
+        "size": 3000,
+        "relations": [
+            "PhpParser"
+        ]
+    },
+    {
+        "name": "Hal\\Search",
+        "size": 3000,
+        "relations": [
+            "Hal\\Metric",
+            "global",
+            "Hal\\Application\\Config"
+        ]
+    },
+    {
+        "name": "Hal\\Metric",
+        "size": 3000,
+        "relations": [
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Application\\Config",
+        "size": 3000,
+        "relations": [
+            "Hal\\Metric\\Group",
+            "Hal\\Search",
+            "Hal\\Metric",
+            "Hal\\Application\\Config\\File",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Report\\Html",
+        "size": 3000,
+        "relations": [
+            "Hal\\Application\\Config",
+            "Hal\\Component\\Output",
+            "Hal\\Metric",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Report\\Cli",
+        "size": 3000,
+        "relations": [
+            "Hal\\Report",
+            "Hal\\Application\\Config",
+            "Hal\\Component\\Output",
+            "Hal\\Metric"
+        ]
+    },
+    {
+        "name": "Hal\\Report",
+        "size": 3000,
+        "relations": [
+            "Hal\\Metric",
+            "Hal\\Application\\Config"
+        ]
+    },
+    {
+        "name": "Hal\\Report\\Json",
+        "size": 3000,
+        "relations": [
+            "Hal\\Report",
+            "Hal\\Application\\Config",
+            "Hal\\Component\\Output",
+            "Hal\\Metric",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Report\\Csv",
+        "size": 3000,
+        "relations": [
+            "Hal\\Application\\Config",
+            "Hal\\Component\\Output",
+            "Hal\\Metric",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Report\\Violations\\Xml",
+        "size": 3000,
+        "relations": [
+            "Hal\\Application\\Config",
+            "Hal\\Component\\Output",
+            "Hal\\Metric",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Application",
+        "size": 3000,
+        "relations": [
+            "Hal\\Component\\Issue",
+            "Hal\\Application\\Config",
+            "Hal\\Component\\File",
+            "Hal\\Search",
+            "Hal\\Metric",
+            "Hal\\Violation",
+            "Hal\\Report\\Cli",
+            "Hal\\Report\\Html",
+            "Hal\\Report\\Csv",
+            "Hal\\Report\\Json",
+            "Hal\\Report\\Violations\\Xml",
+            "Hal\\Component\\Output",
+            "Hal\\Component\\Ast",
+            "PhpParser\\NodeVisitor",
+            "Hal\\Metric\\Class_",
+            "Hal\\Metric\\Class_\\Complexity",
+            "Hal\\Metric\\Class_\\Coupling",
+            "Hal\\Metric\\Class_\\Text",
+            "Hal\\Metric\\Class_\\Component",
+            "Hal\\Metric\\Class_\\Structural",
+            "Hal\\Metric\\Package",
+            "Hal\\Metric\\System\\Coupling",
+            "Hal\\Metric\\System\\Changes",
+            "Hal\\Metric\\System\\UnitTesting",
+            "Hal\\Metric\\System\\Packages\\Composer"
+        ]
+    },
+    {
+        "name": "Hal\\Violation",
+        "size": 3000,
+        "relations": [
+            "global",
+            "Hal\\Metric",
+            "Hal\\Violation\\Class_",
+            "Hal\\Violation\\Package",
+            "Hal\\Violation\\Search"
+        ]
+    },
+    {
+        "name": "PhpParser\\NodeVisitor",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "Hal\\Metric\\Class_",
+        "size": 3000,
+        "relations": [
+            "PhpParser",
+            "Hal\\Metric",
+            "Hal\\Component\\Ast",
+            "Hal\\Metric\\Helper"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\Class_\\Complexity",
+        "size": 3000,
+        "relations": [
+            "PhpParser",
+            "Hal\\Metric",
+            "Hal\\Component\\Ast",
+            "global",
+            "Hal\\Metric\\Helper"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\Class_\\Coupling",
+        "size": 3000,
+        "relations": [
+            "PhpParser",
+            "Hal\\Metric",
+            "Hal\\Component\\Ast",
+            "global",
+            "Hal\\Component\\Tree",
+            "Hal\\Metric\\Helper"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\Class_\\Text",
+        "size": 3000,
+        "relations": [
+            "PhpParser",
+            "Hal\\Metric",
+            "Hal\\Component\\Ast",
+            "PhpParser\\PrettyPrinter"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\Class_\\Component",
+        "size": 3000,
+        "relations": [
+            "PhpParser",
+            "Hal\\Metric",
+            "Hal\\Component\\Ast",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\Class_\\Structural",
+        "size": 3000,
+        "relations": [
+            "PhpParser",
+            "Hal\\Metric",
+            "Hal\\Component\\Ast",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\Package",
+        "size": 3000,
+        "relations": [
+            "Hal\\Metric",
+            "PhpParser"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\System\\Coupling",
+        "size": 3000,
+        "relations": [
+            "Hal\\Metric",
+            "Hal\\Component\\Tree",
+            "Hal\\Component\\Tree\\Operator"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\System\\Changes",
+        "size": 3000,
+        "relations": [
+            "Hal\\Application\\Config",
+            "Hal\\Metric",
+            "global"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\System\\UnitTesting",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "Hal\\Metric\\System\\Packages\\Composer",
+        "size": 3000,
+        "relations": [
+            "global",
+            "Hal\\Application\\Config",
+            "Hal\\Metric",
+            "Hal\\Component\\File"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\Group",
+        "size": 3000,
+        "relations": [
+            "Hal\\Metric"
+        ]
+    },
+    {
+        "name": "Hal\\Application\\Config\\File",
+        "size": 3000,
+        "relations": [
+            "Hal\\Application\\Config",
+            "global",
+            "Hal\\Search"
+        ]
+    },
+    {
+        "name": "Hal\\Violation\\Search",
+        "size": 3000,
+        "relations": [
+            "Hal\\Violation",
+            "Hal\\Metric"
+        ]
+    },
+    {
+        "name": "Hal\\Violation\\Class_",
+        "size": 3000,
+        "relations": [
+            "Hal\\Violation",
+            "Hal\\Metric"
+        ]
+    },
+    {
+        "name": "Hal\\Violation\\Package",
+        "size": 3000,
+        "relations": [
+            "Hal\\Violation",
+            "Hal\\Metric"
+        ]
+    },
+    {
+        "name": "Hal\\Metric\\Helper",
+        "size": 3000,
+        "relations": []
+    }
+];
 
     /**
      * Thanks to http://bl.ocks.org/mbostock/raw/7607999/
@@ -255,7 +605,7 @@
 
         var diameter = document.getElementById('chart-relations').offsetWidth,
             radius = diameter / 2,
-            innerRadius = radius - 120;
+            innerRadius = radius - 320;
 
         var cluster = d3.layout.cluster()
             .size([360, innerRadius])
@@ -366,16 +716,16 @@
 
             function find(name, data) {
                 name = (data ? name + ' ' : name);
-                var node = map[name], i;
+                var node = map[name];
                 if (!node) {
                     node = map[name] = data || {name: name, children: []};
                     if (name.length) {
-                        node.parent = find(name.substring(0, i = name.lastIndexOf("\\")));
+                        node.parent = find("");
                         if (!node.parent.children) {
                             node.parent.children = []; // fix anomalies
                         }
                         node.parent.children.push(node);
-                        node.key = name;//name.substring(i + 1);
+                        node.key = name.trim();
                     }
                 }
                 return node;
